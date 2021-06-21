@@ -1,0 +1,91 @@
+<section class="p-sectionGhost">
+  <div class="p-sectionGhost__body">
+    <h2 class="p-sectionTtl--line"><img src="/images/section_ttl_ghost__pc.png" width="286" height="36"
+        alt="サイバーゴースト一覧" /></h2>
+    <div class="c-grid">
+      <div class="c-grid__body">
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost1/index.html" class="p-ghostLink"> <img src="/images/ghost_link01__pc.png" width="250"
+              height="105" alt="#1 ドッペルゲンガー 標的型攻撃" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link01_disable__pc.png" width="250" height="105"
+              alt="#1 ドッペルゲンガー 標的型攻撃" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost2/index.html" class="p-ghostLink"> <img src="/images/ghost_link02__pc.png" width="250"
+              height="105" alt="#2 ハインリッヒ ランサムウェア" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link02_disable__pc.png" width="250" height="105"
+              alt="#2 ハインリッヒ ランサムウェア" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost3/index.html" class="p-ghostLink"><img src="/images/ghost_link03__pc.png" width="250"
+              height="105" alt="#3 フラー Webサービスからの個人情報窃取" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link03_disable__pc.png" width="250" height="105"
+              alt="#3 フラー Webサービスからの個人情報窃取" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost4/index.html" class="p-ghostLink"><img src="/images/ghost_link04__pc.png" width="250"
+              height="105" alt="#4 サガー 集中アクセスによるサービス停止" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link04_disable__pc.png" width="250" height="105"
+              alt="#4 サガー 集中アクセスによるサービス停止" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost5/index.html" class="p-ghostLink"><img src="/images/ghost_link05__pc.png" width="250"
+              height="105" alt="#5 ユダ 内部不正" /></a>
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost6/index.html" class="p-ghostLink"><img src="/images/ghost_link06__pc.png" width="250"
+              height="105" alt="#6 フェイク Webサイトの改ざん" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link06_disable__pc.png" width="250" height="105"
+              alt="#6 フェイク Webサイトの改ざん" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost7/index.html" class="p-ghostLink"> <img src="/images/ghost_link07__pc.png" width="250"
+              height="105" alt="#7 ベラム インターネットバンキング不正送金" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link07_disable__pc.png" width="250" height="105"
+              alt="#7 ベラム インターネットバンキング不正送金" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost8/index.html" class="p-ghostLink"><img src="/images/ghost_link08__pc.png" width="250"
+              height="105" alt="#8 バッドアップル 悪意のあるスマホアプリ" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link08_disable__pc.png" width="250" height="105"
+              alt="#8 バッドアップル 悪意のあるスマホアプリ" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost9/index.html" class="p-ghostLink"><img src="/images/ghost_link09__pc.png" width="250"
+              height="105" alt="#9 テラー ワンクリック詐欺" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link09_disable__pc.png" width="250" height="105"
+              alt="#9 テラー ワンクリック詐欺" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost10/index.html" class="p-ghostLink"><img src="/images/ghost_link10__pc.png" width="250"
+              height="105" alt="#10 ウルトラ Webサービスへの不正ログイン" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link10_disable__pc.png" width="250" height="105"
+              alt="#10 ウルトラ Webサービスへの不正ログイン" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost11/index.html" class="p-ghostLink"><img src="/images/ghost_link11__pc.png" width="250"
+              height="105" alt="#11 レージィ 公開された脆弱性情報の悪用" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link11_disable__pc.png" width="250" height="105"
+              alt="#11 レージィ 公開された脆弱性情報の悪用" /></div> -->
+        </div>
+
+        <div class="c-grid__body__item">
+          <a href="/ghost/ghost12/index.html" class="p-ghostLink"><img src="/images/ghost_link12__pc.png" width="250"
+              height="105" alt="#12 ユビキタス：IoT機器を踏み台にした攻撃" /></a>
+          <!-- <div class="p-ghostLink--disable"><img src="/images/ghost_link12_disable__pc.png" width="250" height="105"
+              alt="#12 ユビキタス：IoT機器を踏み台にした攻撃" /></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

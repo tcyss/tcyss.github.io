@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>【注意喚起】Fortinet社製FortiOSのSSL VPN機能の脆弱性の影響を受けるホスト情報の公開について</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/cyberthreat/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">サイバー脅威情報</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">【注意喚起】Fortinet社製FortiOSのSSL VPN機能の脆弱性の影響を受けるホスト情報の公開について</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">【注意喚起】Fortinet社製FortiOSのSSL VPN機能の脆弱性の影響を受けるホスト情報の公開について</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2020.12. 1">2020.12. 1</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<p>JPCERT/CCから『Fortinet 社製 FortiOS の SSL VPN 機能の脆弱性 (CVE-2018-13379) の影響を受けるホストに関する情報の公開について』が公開されました。</p>
+<h4>１ 概要</h4>
+<p>本脆弱性を悪用された場合、ネットワークを介して</p>
+<ul>
+<li>SSL-VPNの接続に利用するユーザー名及びパスワードを窃取されてしまう</li>
+<li>製品上の任意のファイルの内容を盗み見られてしまう</li>
+</ul>
+<p>などのおそれがあります。<br><br></p>
+<h4>２ 対象</h4>
+<p>本脆弱性の影響を受けるバージョンは、以下のとおりです。</p>
+<p>※以下のバージョンのFortiOSが導入されている機器において、SSL-VPN機能を利用している場合</p>
+<ul>
+<li>FortiOS v6.0.0 から v6.0.4</li>
+<li>FortiOS v5.6.3 から v5.6.7</li>
+<li>FortiOS v5.4.6 から v5.4.12</li>
+</ul>
+<h4>３ 対策</h4>
+<p>JPSERT/CCでは、上記対象製品を使用し、脆弱性の影響を受けるバージョンおよび条件で稼働している場合、影響を軽減するための対応、対策等について以下を推奨しています。</p>
+<ul>
+<li>対策<br>- 当該製品を脆弱性の影響を受けないバージョンにアップデートする<br>- SSL-VPNの認証に多要素認証を導入する</li>
+<li>対応<br>- 当該製品のユーザアカウントのパスワードを変更する</li>
+<li>侵害有無確認<br>- 当該製品のユーザアカウントに意図しないユーザがいないことを確認する<br>- 当該製品のユーザアカウントに紐づくメールアドレスが正しいことを確認する<br>- 当該製品のログから、正規の利用とは異なる認証試行がないか確認する<br>- 当該製品を経由してアクセス可能なシステムやネットワークにおける侵害有無を確認する</li>
+</ul>
+<h4>４ 参考情報</h4>
+<p><span>本脆弱性情報は 2019年5月に公開され、2019年8月頃に脆弱性の詳細に関する情報が公開されています。</span></p>
+<p><span>2019年8月以降にバージョンアップ対応を行った場合は、対応前に脆弱性を悪用された可能性もあります。</span></p>
+<p><span>そのため、JPCERT/CCでは、既に対応済みでもアカウントのパスワード変更を実施することを推奨しています。</span></p>
+<dl class="p-lineMarker">
+<dt class="p-lineMarker__ttl">関連リンク</dt>
+<dt class="p-lineMarker__body">
+<ul class="c-linkList">
+<li class="c-linkList__item"><a href="https://www.jpcert.or.jp/newsflash/2020112701.html" target="_blank" rel="noopener noreferrer" title="Fortinet 社製 FortiOS の SSL VPN 機能の脆弱性 (CVE-2018-13379) の影響を受けるホストに関する情報の公開について：JPCERT/CC">Fortinet 社製 FortiOS の SSL VPN 機能の脆弱性 (CVE-2018-13379) の影響を受けるホストに関する情報の公開について：JPCERT/CC</a></li>
+</ul>
+</dt>
+</dl>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

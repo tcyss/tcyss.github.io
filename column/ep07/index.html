@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>Episode7 公開された脆弱性情報の悪用</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading catColumn">
+        <div class="p-categoryHeading__body">
+          <div class="p-categoryHeading__body__ttl">
+            <h1><img src="/images/h1_column.png" alt="セキュリティコラム 教えて所長!" /></h1>
+          <p class="p-categoryHeading__body__ttl__lead">所長の助手の小林です。<br />このページでは、僕と一緒にサイバーセキュリティの勉強ができますよ。</p>
+          </div>
+          <div class="p-categoryHeading__body__character">
+            <img src="/images/heading_chara_column__pc.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/column/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティコラム</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">Episode7 公開された脆弱性情報の悪用</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+<section id="ep7" class="p-epColumn u-m-b30">
+  <h2 class="h2Balloon"><span class="h2Balloon__body">Episode7：公開された脆弱性情報の悪用</span></h2>
+  <div class="p-epColumn__body">
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>ただいま～。頼まれたお遣い行ってきましたよ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_green__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>ああ、ありがとう</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>とりあえず冷蔵庫入れておきますね</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>ああ、頼む</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>所長は何をしていたんですか</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>脆弱性レポートを読んでいたんだ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>ぜいじゃくせい？それなんですか？</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>コンピュータのプログラムは人が作ったものだからね、どうしてもミスによって、セキュリティ上の欠陥が含まれることがあるんだ。それを脆弱性と言うんだ。</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>そうなんですか</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>それで、その脆弱性が発見されると、こうやって公表されて注意喚起されるんだ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>なるほど。これを見て対応をするんですね。便利だなあ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>そうなんだが、これは両刃の剣でもあってね</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>どういうことですか</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>悪いことをしようとしている連中にとってもありがたい情報ってことさ。その情報を使えば、そのプログラムを使っている相手に効率よく攻撃できるだろ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>なるほど、言われてみるとそうですね</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>公表されたその日のうちに、その情報を使っての攻撃が観測されることもあるんだ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>へー、犯罪者ってのも勤勉なんですね</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>そうだな。だから、この情報を早めにキャッチして、自分のところで対策が必要か確認する必要があるな</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>常にチェックが必要ってことなんですね。それも大変だ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>そうなんだ。十分な人員がいる組織ばかりじゃないからな。対策が遅れがちなところがどうしても出てきてしまう。それを狙うやつがこいつさ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem__ghost">
+      <p class="p-epColumnItem__ghost__ttl">犯罪者ファイル#11：レージィ</p>
+      <div class="p-epColumnItem__ghost__body">
+        <div class="p-epColumnItem__ghost__body__img">
+          <img src="/images/ghost_img11__pc.png" width="125" height="124" alt="画像：レージィ" />
+        </div>
+        <div class="p-epColumnItem__ghost__body__txt">
+          <p>各国のセキュリティ警告情報を監視し、新たに報告された脆弱性情報を使った不正プログラムの作成を得意とする。</p>
+          <ul class="c-linkList">
+            <li class="c-linkList__item"><a href="/ghost/ghost11/">レージィについての詳細</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>へー、女性なんですね</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>ああ、そうだな</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>なんか強そうですね。僕なら腕力でも負けそう・・・</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>ごほん。まあ、できうる限りこまめに情報をチェックしようってことだよ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>はーい。じゃ、いい時間だし、先ほど買ってきたものとコーヒーお出ししますね</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>ああ、頼む</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>このお店のプリンはしっかりと固いんですね。ああ、おいしい。</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_green__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>ふわとろもいいが、プリンとサイバーセキュリティはしっかりとかたいほうがいいな</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>そ、そうですね。ところで、台所散らかしっぱなしでしたよ。洗い物もこまめにチェックした方がいいんじゃないかなあ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_purple__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>げほっ。あ、うん、気をつけるよ</p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>大丈夫です。これ食べ終わったら、一緒に片づけておきますね</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/column_episodelist.inc';
+?>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

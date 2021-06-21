@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>Episode18 パスワードの使いまわし</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading catColumn">
+        <div class="p-categoryHeading__body">
+          <div class="p-categoryHeading__body__ttl">
+            <h1><img src="/images/h1_column.png" alt="セキュリティコラム 教えて所長!" /></h1>
+          <p class="p-categoryHeading__body__ttl__lead">所長の助手の小林です。<br />このページでは、僕と一緒にサイバーセキュリティの勉強ができますよ。</p>
+          </div>
+          <div class="p-categoryHeading__body__character">
+            <img src="/images/heading_chara_column__pc.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/column/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティコラム</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">Episode18 パスワードの使いまわし</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+<section id="ep18" class="p-epColumn u-m-b30">
+  <h2 class="h2Balloon">
+    <span class="h2Balloon__body">Episode18 パスワードの使いまわし</span>
+  </h2>
+  <div class="p-epColumn__body">
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              所長！<br />
+              お気に入りのECサイトに不正ログインされてしまいました！
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              ほう　それでプロテインでも大量注文されたのか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              所長　ふざけないでくださいよ！
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_green__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              いや悪い悪い<br />
+              フラグを自ら回収するとは小林君らしいと思ってな
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              それで　状況はどうなんだ<br />
+              そのECサイトから利用者のIDやパスワードが流出していたのか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              えっとECサイトの方の話によると<br />
+              ・サイトからの情報流出の事実無し<br />
+              ・不正ログインされたのは僕のアカウントのみ<br />
+              ・１回でログインが成功している<br />
+              ・ログインの記録が海外からだったので念のため連絡した<br />
+              とのことです
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              なるほど　海外からの不正ログイン...<br />
+              コイツの可能性もあるな
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem__ghost">
+      <p class="p-epColumnItem__ghost__ttl">犯罪者ファイル#10：ウルトラ</p>
+      <div class="p-epColumnItem__ghost__body">
+        <div class="p-epColumnItem__ghost__body__img">
+          <img src="/images/ghost_img10__pc.png" width="125" height="124" alt="画像：ウルトラ" />
+        </div>
+        <div class="p-epColumnItem__ghost__body__txt">
+          <p>アカウント情報を基にした、パスワード推測能力は非常に高く、周囲からは「パスワードはウルトラに聞け」と言われるほど。名前や誕生日、辞書に載っているような文字列をパスワードを設定していればウルトラの恰好の餌食となる。</p>
+          <ul class="c-linkList">
+            <li class="c-linkList__item"><a href="/ghost/ghost10/">ウルトラについての詳細</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              えっと　なんていうか近代的なゴーストですね
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              コイツの特技はインターネット上に公開されている情報を基にしたパスワードの推測なんだが...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              え　僕　SNSとかで個人情報を公開した記憶ないんですけど<br />
+              そもそも　パスワードは誕生日とかじゃないし
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              まあ聞くんだ小林君<br />
+              コイツは公開情報の他　過去に流出したID・パスワードを悪用することもあるんだよ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              僕　パスワードの管理には自信がある方なんですけどね
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              なにも　小林君から流出したとは言っていない
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              どういうことですか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              小林君はIDとパスワードの使い回しの常習犯だからな<br />
+              こういうことが起こった可能性があるということだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem__ghost">
+      <div class="p-epColumnItem__ghost__body">
+        <div>
+          <img src="/images/column18_danger.png" width="564" height="168" alt="画像：危険性" />
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              つまり　どこかのサイトから流出した可能性があるってことですか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              あくまで可能性の話だ<br />
+              小林君から流出した可能性だって否定できんぞ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              なるほど　今回の不正ログインは僕だけじゃなくサイト側のセキュリティ対策にも問題があったってことですね
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              そうではない<br />
+              ID・パスワードを使いまわしていなければ今回のような不正ログインが起こる可能性は低かったということだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              そうとなれば　やることは１つだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              『サイトごとにIDとパスワードを変える』ですね
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              そのとおり<br />
+              IDは難しいかもしれないが　パスワードの変更は早急にな
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              参考まで　過去に流出したパスワード等を検索できるサイトの紹介ページを用意したぞ<br />
+              あくまで民間のサービスのため　その点を理解したうえで活用してくれ<br />
+             <a href="/security/guidebook/269/index.html" target="_blank" rel="noopenner">『メールアドレス・パスワードの流出チェック』</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              へぇ　こんなサイトがあるんですね<br />
+              さっそく　ポチポチっと...
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              所長　何か「Oh no -- pwned!」って出たんですが！？
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              それは流出履歴がある場合の画面だ<br />
+              一度でも流出した情報はリスト化され悪用される恐れが高い<br />
+              検索した文字列の使用は避けた方が賢明だろう
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              ところで　どんな文字列を入力したんだ？
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              えっと　僕が使いまわしているパスワード「fukkin6」です
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+              なんかもう　今回は使いまわし以前の問題な気がしてきたよ...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/column_episodelist.inc';
+?>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

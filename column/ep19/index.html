@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>Episode19 パスワード付きZipファイルと「マルウェア」</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading catColumn">
+        <div class="p-categoryHeading__body">
+          <div class="p-categoryHeading__body__ttl">
+            <h1><img src="/images/h1_column.png" alt="セキュリティコラム 教えて所長!" /></h1>
+          <p class="p-categoryHeading__body__ttl__lead">所長の助手の小林です。<br />このページでは、僕と一緒にサイバーセキュリティの勉強ができますよ。</p>
+          </div>
+          <div class="p-categoryHeading__body__character">
+            <img src="/images/heading_chara_column__pc.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/column/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティコラム</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">Episode19 パスワード付きZipファイルと「マルウェア」</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+<section id="ep19" class="p-epColumn u-m-b30">
+<h2 class="h2Balloon"><span class="h2Balloon__body">Episode19 パスワード付きZIPファイルと「マルウェア」</span></h2>
+<div class="p-epColumn__body">
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>所長　難しい顔して何を見ているんですか？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>ちょっと小林君<br>このメールを見てくれないか？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem__ghost">
+<div class="p-epColumnItem__ghost__body">
+<div><img src="/images/column19_zipmail.png" width="564" height="168" alt="画像：危険性" caption="false"></div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>すごく簡単な文章ですね<br>それでこのメールがどうかしたんですか？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>実はこのメールの添付ファイルは『emotet』の感染に繋がるファイルを圧縮したものだったんだよ</p>
+<p>参考：<a href="https://www.ipa.go.jp/security/announce/20191202.html" target="_blank" rel="noopener noreferrer" title="「Emotet」と呼ばれるウイルスへの感染を狙うメールについて">「Emotet」と呼ばれるウイルスへの感染を狙うメールについて【IPA】</a></p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>あれ？『emotet』関係のメールはウイルス対策ソフトが自動的に削除してくれるはずじゃ？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>そのとおり　ウチの事務所では『emotet』に限らずマルウェア付きと疑われるメールは　受信者に届く前に検査され削除される</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>それなら　どうしてこの『emotet』メールが削除されなかったんですか？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>それはだな　添付ファイルが「<em>パスワード付きZIPファイルだった</em>」からなんだ</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>え？「パスワード付きZIPファイル」だと削除されないんですか？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>削除というか「ファイルがパスワードで暗号化されてしまいウイルス対策ソフトが十分に検査できなかった」という感じだな</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>そっか　検査できないんじゃマルウェアかどうかもわからず削除もされない<br>こんな手口よく思いつきますよね～</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>関心している場合じゃないよ小林君！<br>これは事務所のセキュリティ担当の私からすると実に恐ろしいことなんだぞ</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>恐ろしい？<br>どういうことですか？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_orange__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>わからないか小林君<br>今まで自動的に削除されてきた『emotet』メールが小林君に届くんだぞ！</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>それってつまり　受信者の僕が気付かなかったら『終わり』ってことですか？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>そう『終わり』　端末は『emotet』に感染だ<br>想像しただけでも恐ろしいだろう？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>ちょっと　パスワード付きZIPさん　お願いしますよ!!</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>まぁ念のため受信端末自体に『emotet』対策をしているため大きな問題に発展することはないと思うが<br>これが『未知のマルウェア』だったらと考えると...</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>完全にアウトですね<br>特に僕なんか「危ないメールは対策ソフトが自動的に削除してくれてるから～」って油断していますからね</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>私が難しい顔になっていたのもわかるだろう？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>所長の難しい顔　嫌いじゃないですけどね</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>余談だが　米国政府のセキュリティ機関は『emotet』対策の検討項目として「ウイルス対策ソフトで検査できないメールの添付ファイル（zipファイル等）はブロック」を推奨<sup>※</sup>している</p>
+<p>※<a href="https://us-cert.cisa.gov/ncas/alerts/aa20-280a" target="_blank" rel="noopener noreferrer" title="CISA（Alert：Emotet Malware）">CISA（Alert：Emotet Malware）</a></p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>話を戻すが　とりあえず今回私が伝えたいことは小林君には伝わったかな？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>はい</p>
+<ul>
+<li>パスワード付きZIPファイルといった暗号化されたファイルアはセキュリティ製品の検査をすり抜けることがある</li>
+<li>だから受信者自身もそういった添付ファイルの取扱いには十分注意する</li>
+</ul>
+<p>ということですね？</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>そのとおりだ<br>セキュリティ製品の導入も大切だが個々のセキュリティ意識を高めることも大切なんだ<br>よろしく頼むぞ小林君</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/column_episodelist.inc';
+?>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

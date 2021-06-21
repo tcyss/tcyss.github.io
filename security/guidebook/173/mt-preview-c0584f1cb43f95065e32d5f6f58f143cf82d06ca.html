@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>MISSION 1-10 Webサービスへの不正ログイン</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/guidebook/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">ガイドブック</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">MISSION 1-10 Webサービスへの不正ログイン</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">MISSION 1-10 Webサービスへの不正ログイン</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2021.03.26">2021.03.26</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<p><strong>POINT１：個人情報の窃取やオンラインショッピングでの不正注文が狙いだ！</strong></p>
+<p>Webサービスから盗み取ったIDとパスワードを悪用し、ほかのサイトに不正ログインして、なりすましを行ったり、不正な注文をしたりする攻撃です。</p>
+<h5>サービス提供者の被害例</h5>
+<ul>
+<li>サービス提供しているサイトから情報を盗み取り、不正な注文やポイントの不正使用を実行</li>
+<li>利用者の個人情報の閲覧、窃取</li>
+<li>登録している利用者にサイトを装ったメールを不正送信</li>
+</ul>
+<h5>サービス利用者の被害例</h5>
+<p>なりすましによるインターネットバンキングでの不正送金やオンラインショッピングでの不正注文</p>
+<p><img width="559" height="321" class="mt-image-none" alt="M1-10-1.png" src="/2020/03/security/images/M1-10-1.png"></p>
+<hr>
+<p><strong>POINT２：代表的な攻撃手法の特徴</strong></p>
+<p><strong>パスワードの推測や情報漏えい型のウイルス</strong></p>
+<p>名前や誕生日、IDと同一の文字列、連続した英数字など使われやすい文字列を攻撃者が入力し不正ログインされます。</p>
+<p>以下が主な攻撃手法の一例です。また、情報漏えいを引き起こすタイプのウイルス感染によってもユーザーIDやパスワードが不正利用される確率が高まります。</p>
+<h5>パスワードリスト攻撃</h5>
+<p>別のWebサービスから窃取したIDやパスワードを使って不正ログイン。</p>
+<h5>総当たり攻撃</h5>
+<p>攻撃者側がツール等を用いて考えられる全てのパターンを試す、文字通り「総当たり」の不正ログイン手法。</p>
+<h5>ソーシャルエンジニアリング攻撃</h5>
+<p>主要な攻撃手法の1つ。例えば、パソコン画面等ののぞき見によってIDやパスワードを窃取する手法です。</p>
+<p><img width="447" height="291" class="mt-image-none" alt="M1-10-2.png" src="/2020/03/security/images/M1-10-2.png"></p>
+<hr>
+<p><strong>＜不正ログインを防ぐ対策はこれだ！＞</strong></p>
+<h5>サービス提供者</h5>
+<ul>
+<li>簡単なパスワード、容易に推測できるパスワードを許可しない</li>
+<li><span style="font-size: 14px;">多要素認証を導入（Webとスマートフォンをつかったログインなど）</span></li>
+</ul>
+<h5>サービス利用者</h5>
+<ul>
+<li>複数のWebサービスで同一パスワードを使い回さない</li>
+<li>パスワード管理は他人に知られず、自分でも忘れないよう徹底する</li>
+<li>パスワードのほか多要素認証（ログイン時に事前登録されている電話番号との連携を通じた認証など）を採用しているサイトを利用する</li>
+<li>離席時のログアウトなどパソコン画面ののぞき見防止策を講じる</li>
+<li>パスワードが流出したと疑われるときには速やかに変更する</li>
+</ul>
+<hr>
+<p>⇒ <a title="MISSION 1-9 巧妙・悪質化するワンクリック詐欺" href="/security/guidebook/172/index.html"><strong>MISSION 1-9 巧妙・悪質化するワンクリック詐欺</strong></a></p>
+<p>⇒ <a title="MiSSION 1-11 公開された脆弱性対策情報の悪用" href="/security/guidebook/174/index.html"><strong>MiSSION 1-11 公開された脆弱性対策情報の悪用</strong></a></p>
+<p>⇒ <a title="ガイドブックTOPページ" href="/security/guidebook/index.html"><strong>ガイドブックTOP</strong></a></p>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

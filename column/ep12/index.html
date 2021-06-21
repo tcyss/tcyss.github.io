@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>Episode12 攻撃は外部からだけとは限らない？</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading catColumn">
+        <div class="p-categoryHeading__body">
+          <div class="p-categoryHeading__body__ttl">
+            <h1><img src="/images/h1_column.png" alt="セキュリティコラム 教えて所長!" /></h1>
+          <p class="p-categoryHeading__body__ttl__lead">所長の助手の小林です。<br />このページでは、僕と一緒にサイバーセキュリティの勉強ができますよ。</p>
+          </div>
+          <div class="p-categoryHeading__body__character">
+            <img src="/images/heading_chara_column__pc.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/column/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティコラム</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">Episode12 攻撃は外部からだけとは限らない？</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+<section id="ep12" class="p-epColumn u-m-b30">
+  <h2 class="h2Balloon"><span class="h2Balloon__body">Episode12：攻撃は外部からだけとは限らない？</span></h2>
+  <div class="p-epColumn__body">
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            所長　所長　この手紙みてくださいよ！
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            なんだ　急に<br />
+            どうせまた架空請求か何かだろう・・・　どれどれ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            『小林様　この度は、弊社社員の不注意により紛失したUSBメモリを届けていただき大変感謝を申し上げます。これを機に社内の更なる情報セキュリティ向上に・・・』
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            ああ　<a href="/column/ep11/">以前小林君が拾った怪しいUSBの件</a>か。<br />
+            無事に届いたみたいで何よりだったな<br />
+            実は、ひっそり家に持ち帰って中身を見ているんじゃないかと疑っていたんだよ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            そんなことしませんよ！　まっすぐ警察に届けましたよ！
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            それより　手紙の最後の方を見てくださいよ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            まあまあ　疑っていたのは冗談だよ<br />
+            <br />
+            なになに　『　・・・つきましてはこころばかりではございますがお礼をしたく、一度弊社までご連絡を・・・　』
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            そう　お礼！
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            あのUSBメモリにこの対応とは　余程重要な情報が記録されていたんだろう
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            見た目はそうでもなかったんですけどね
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            そうだな　そこまで重要なUSBであればストラップを取り付ける等して　紛失防止に努めても良かったはずなんだが<br />
+            紛失した社員は　不注意だったとはいえ　相当青ざめたに違いない
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            仮に個人情報だったとして　悪い人が拾って　インターネット上に流されでもしたら　大変な騒ぎになっちゃいますからね
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            でも、所長の言ったとおり本当に重要な情報が記録されたUSBメモリだったなら　持ち出す時にたくさんのチェックがあっても良さそうなんですけど
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            そこなんだよ　小林君
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            コンピュータ等の『機械』は設定すれば設定したとおりの動きをするが<br />
+            『人間』の場合はそうは簡単にはいかない
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            それって　どういうことですか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            『不正のトライアングル』という言葉を聞いたことあるかい？<br />
+            <br />
+            そうか　聞いたことないか
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            ちょっと　まだ返事してないんですけど<br />
+            （聞いたことないけど）
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            『不正のトライアングル』というのは　簡単に説明すると<br />
+            不正は「動機」「機会」「正当化」の3つの要因が揃ったときに行われてしまう<br />
+            という理論のことなんだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            例えば　<a href="/column/ep11/">前回の小林君USB事件</a>の場合だと
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            動機は『USBメモリに記録されたデータを見たい』<br />
+            機会は『パソコンを管理している私が事務所にいないからバレない』<br />
+            正当化は『事務所のパソコンに事務専用以外のUSBメモリを接続してはいけない約束だけど　USBメモリの中身を確認しないと落とし主に返せないから仕方がない』
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            動機は『USBメモリを落とし主に返したい』ですからね
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            と　まあ　3つの要素が揃ったわけだが<br />
+            たまたま　私がその場に現れ　「機会」が失われたため、不正が行われなかったというわけだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            へぇ～
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_orange__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            「へぇ～」じゃないよ　小林君<br />
+            この件は　立派な　内部不正に当たるんだぞ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            な　内部不正！？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            そうだ　小林君は私が戻らなければ事務所の約束事を破るところだった<br />
+            もし　そのUSBメモリが原因で事務所のパソコンが乗っ取られ　外部に個人情報が漏洩でもしたら大変なことだったんだぞ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            言い換えるなら<br />
+            小林君による事務所内部からのサイバー攻撃の寸前だったということだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            な　内部からの攻撃だなんて！？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            僕　別にそんなつもりじゃなかったのに...<br />
+            もう　事務所クビですか...？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            心配するな<br />
+            小林君がそんな大胆なことをする人間ではないということは良く知っているよ<br />
+            多分こいつに付け込まれる寸前　というか付け込まれたんだろう
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 犯罪者ファイル -->
+    <div class="p-epColumnItem__ghost">
+      <p class="p-epColumnItem__ghost__ttl">犯罪者ファイル#5：ユダ</p>
+      <div class="p-epColumnItem__ghost__body">
+        <div class="p-epColumnItem__ghost__body__img">
+          <img src="/images/ghost_img05__pc.png" width="125" height="124" alt="画像：ユダ" />
+        </div>
+        <div class="p-epColumnItem__ghost__body__txt">
+          <p>サイバー空間を介さず、人間の心に直接アクセスできる能力を有するエスパーゴースト。</p>
+          <ul class="c-linkList">
+            <li class="c-linkList__item"><a href="/ghost/ghost5/">ユダについての詳細</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            ユダ？<br />
+            エスパー？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            こいつはサイバーセキュリティ界のみならず　様々な組織から重要警戒対象としてマークされているゴーストだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            重要警戒対象なんて超Vip待遇ですね
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            正直　こいつに狙われたら私でもどうなるかわからん
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            所長でも対応できないって　どうにか防ぐ方法は無いんですか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            さっき　不正は「動機」「機会」「正当化」の3つの要因が揃ったときに行われると言ったが　この内「動機」と「正当化」は人それぞれの感情に基づくもので完全にコントロールすることは非常に難しい
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            ユダは　その人間の感情が大きく影響を及ぼす「動機」と「正当化」に目をつけるわけだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            多くのサイバーゴーストがシステムの脆弱性といった機械的な弱みを狙う中<br />
+            人間の感情といった機械の様に設定のできない部分を狙うのは　このユダだけだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            僕も　ダメなのは分かってはいましたが中身を見たいという感情は抑えられませんでしたからね
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            そこで　残りの「機会」に注目する
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            例えば<br />
+            『事務所のパソコンには登録されたUSBデバイス以外は認識しないように設定する』<br />
+            とかね
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            そんな設定にされていたんですか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            実は　そうだったんだよ<br />
+            だから　私が事務所に居なくても小林君の内部不正は「機会」が無い為　成功しようがなかった<br />
+            もちろん　外部USBメモリが接続されるという不正に対してのみの「機会」に限定されるがね
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            ちなみに　小林君が事務所に来る前から設定してあるんだよ<br />
+            私自身　うっかりミスが起きないとは言い切れないからな
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            トライアングルの1つでも成立しなければ不正が行われないのであれば　人の感情に左右される「動機」「正当化」に着目するより　物理的に対策が可能な「機会」1つに力を注いだ方が効率的だろう　
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            なるほど～<br />
+            てっきり　所長は僕のことを信用していないんじゃないかと思っちゃいました
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            だが　だからといって「動機」や「正当化」への対策をしなくてもよいと言っているわけではないからな
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            えー　どうしてですか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            いくら厳しい規則や強固なシステムを構築し「機会」を失くしたと思っても　結局は人間が行うことだから　抜け穴がないとも言い切れない
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            逆に　私に不満を持って一泡吹かせようと目論んでいる小林君に　事務所内の職員相談員が優しい言葉を掛け不満を解消してあげれば　「動機」の面で不正を防止できる可能性があるということだ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            え　この事務所に職員相談員っていましたっけ？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            職員相談員は　私だよ<br />
+            普段から小林君の愚痴や不満を聞いたりアドバイスしたりしているだろう？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            あ　それもそうでしたね<br />
+            ありがとうございます　所長
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            それと　IPAでは内部不正防止に向けたガイドラインとして<br />
+            「<a href="https://www.ipa.go.jp/security/fy24/reports/insider/" target="_blank" rel="noopener">組織における内部不正ガイドライン</a>」<br />
+            を掲載している
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            これから組織における内部不正に取り組もうという方や　既に取り組んでいる方でまだご覧になっていない場合は是非参考としてしていただきたい<br />
+            <br />
+            過去の内部不正事例も載っているぞ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            ところで所長<br />
+            事務所の冷蔵庫にしまってあったケーキ知らないですか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_green__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            ん　あ～　とても美味しかったよ<br />
+            また　頼むよ
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            また頼むよじゃないですよ！<br />
+            あのケーキは　僕が食べようと思って買ってきたやつですよ！
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            仕方がないだろ<br />
+            甘いものが食べたいと思って冷蔵庫を開けたらケーキがあるんだぞ<br />
+            食べない方が難しいだろう
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_green__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            食べられたくなかったら　冷蔵庫に鍵でもかけといてくれよ<br />
+            さっき人の感情は制御が難しいって説明したばかりじゃないか
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            あ　そっか<br />
+            冷蔵庫に鍵をかけて「機会」をなくせば・・・
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            あと　冷蔵庫前に防犯カメラを設置するというのも良いアイデアだと思わないか？
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            えっと　防犯カメラの設置は・・・誰かが見てるってことだから・・・<br />
+            『機会』　かな
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            って　ケーキを冷蔵庫にしまったのはユダの話を聞く前ですよ！
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 冴羽 -->
+    <div class="p-epColumnItem--right">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            くそ　ユダの奴め！ゆるせん！<br />
+            待ってろよ　今日こそ決着をつけてやる！
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 小林 -->
+    <div class="p-epColumnItem--left">
+      <div class="p-epColumnItem__chara">
+        <img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林" />
+      </div>
+      <div class="p-epColumnItem__balloon">
+        <div class="p-epColumnItem__balloon__body">
+          <p>
+            ちょ　所長　どこに行くんですか！<br />
+            って逃げないでくださいよ！
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/column_episodelist.inc';
+?>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

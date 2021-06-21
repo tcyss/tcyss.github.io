@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>NSA（米国家安全保障局）が公開した、海外のサイバー攻撃で悪用された脆弱性に関する注意喚起</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/cyberthreat/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">サイバー脅威情報</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">NSA（米国家安全保障局）が公開した、海外のサイバー攻撃で悪用された脆弱性に関する注意喚起</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">NSA（米国家安全保障局）が公開した、海外のサイバー攻撃で悪用された脆弱性に関する注意喚起</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2020.10.26">2020.10.26</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<p>2020年10月20日、NSA（米国家安全保障局）から公開された、海外のサイバー攻撃で悪用された脆弱性に関する注意喚起です。</p>
+<h4>１　概要</h4>
+<ul>
+<li>NSA（米国家安全保障局）から、海外のサイバー攻撃で悪用された脆弱性に関する情報<sup>※1</sup>が公開されました。</li>
+<li>脆弱性を悪用された場合、ネットワークを介して『任意のコードを実行されてしまう』『機微な情報を窃取されてしまう』などの恐れがあります。</li>
+</ul>
+<p>東京2020大会を控え、日本もサイバー攻撃の標的となる恐れ<sup>※2</sup>があります。</p>
+<p>利用している製品が、脆弱性の対象かどうかを改めて確認していただき、脆弱性の対象である場合は、アップデートの実施をお願いいたします。</p>
+<p>※1　<a href="https://media.defense.gov/2020/Oct/20/2002519884/-1/-1/0/CSA_CHINESE_EXPLOIT_VULNERABILITIES_UOO179811.PDF" target="_blank" rel="noopener noreferrer" title="NSA（米国家安全保障局）Cybersecurity_Advisory（英文）【PDF:376KB】">NSA（米国家安全保障局）Cybersecurity_Advisory（英文）【PDF:376KB】</a></p>
+<p>※2　<a href="http://www.moj.go.jp/psia/20130807.html" target="_blank" rel="noopener noreferrer" title="サイバー攻撃の現状2020【公安調査庁】">サイバー攻撃の現状2020【公安調査庁】</a></p>
+<h4>２　対象</h4>
+<p>NSA（米国家安全保障局）の資料に掲載されている製品及びバージョンは、以下のとおりです。</p>
+<table>
+<tbody>
+<tr>
+<th>＃</th>
+<th>
+<p>CVE番号</p>
+</th>
+<th>脆弱性の対象製品</th>
+<th>脆弱性の<br>悪用による影響</th>
+</tr>
+<tr>
+<td>
+<p class="u-center">1</p>
+</td>
+<td>CVE-2019-11510</td>
+<td>
+<ul>
+<li>Pulse Connect Secureの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">8.2R12.1より前のバージョン<br>8.3R7.1より前のバージョン<br>9.0R3.4より前のバージョン</p>
+</td>
+<td>
+<p>機微な情報を窃取される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">2</p>
+</td>
+<td>CVE-2020-5902</td>
+<td>
+<ul>
+<li>F5 BIG-IPの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">15.0.0から15.1.0.3<br>14.1.0から14.1.2.5<br>13.1.0から13.1.3.3<br>12.1.0から12.1.5.1<br>11.6.1から11.6.5.1</p>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">3</p>
+</td>
+<td>CVE-2019-19781</td>
+<td>
+<ul>
+<li>Citrix ADC and Gatewayの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">13.0.47.24より前のバージョン<br>12.1.55.18より前のバージョン<br>12.0.63.13より前のバージョン<br>11.1.63.15より前のバージョン<br>10.5.70.12より前のバージョン</p>
+<ul>
+<li>SD-WAN WANOP 4000-WO、4100-WO、5000-WO、5100-WOの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">10.2.6bより前のバージョン<br>11.0.3bより前のバージョン</p>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">4</p>
+</td>
+<td>CVE-2020-8193<br>CVE-2020-8195<br>CVE-2020-8196</td>
+<td>
+<ul>
+<li>Citrix ADC and Gatewayの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">13.0-58.30より前のバージョン<br>12.1-57.18より前のバージョン<br>12.0-63.21より前のバージョン<br>11.1-64.14より前のバージョン<br>10.5-70.18より前のバージョン</p>
+<ul>
+<li>Citrix ADC FIPS 12.1-55より前のバージョン</li>
+<li>SD-WAN WANOPの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">10.2.7より前のバージョン<br>11.0.3dより前のバージョン<br>11.1.1aより前のバージョン</p>
+</td>
+<td>
+<p>機微な情報を窃取される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">5</p>
+</td>
+<td>CVE-2019-0708</td>
+<td>
+<ul>
+<li>Microsoft Windows XP及びWindows 7</li>
+<li>Microsoft Windows Server 2003及び2008</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">6</p>
+</td>
+<td>CVE-2020-15505</td>
+<td>
+<ul>
+<li>MobileIron Core and Connector 10.6以前のバージョン</li>
+<li>MobileIron Sentry 9.8以前のバージョン</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">7</p>
+</td>
+<td>CVE-2020-1350</td>
+<td>
+<ul>
+<li>Microsoft Windows Server 2008から2019</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">8</p>
+</td>
+<td>CVE-2020-1472</td>
+<td>
+<ul>
+<li>Microsoft Windows Server 2008から2019</li>
+</ul>
+</td>
+<td>
+<p>管理者権限への昇格を実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">9</p>
+</td>
+<td>CVE-2019-1040</td>
+<td>
+<ul>
+<li>Microsoft Windows 7から10</li>
+<li>Microsoft Windows Server 2008から2019</li>
+</ul>
+</td>
+<td>
+<p>中間者攻撃を実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">10</p>
+</td>
+<td>CVE-2018-6789</td>
+<td>
+<ul>
+<li>Exim 4.90.1より前のバージョン</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">11</p>
+</td>
+<td>CVE-2020-0688</td>
+<td>
+<ul>
+<li>Microsoft Exchange Serverの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">2010 Service Pack 3 Update Rollup 29以前のバージョン<br>2013 Cumulative Update 22以前のバージョン<br>2016 Cumulative Update 13以前のバージョン<br>2019 Cumulative Update 2以前のバージョン</p>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">12</p>
+</td>
+<td>CVE-2018-4939</td>
+<td>
+<ul>
+<li>Adobe ColdFusion (2016 release) Update 5以前のバージョン</li>
+<li>Adobe ColdFusion 11 Update 13以前のバージョン</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">13</p>
+</td>
+<td>CVE-2015-4852</td>
+<td>
+<ul>
+<li>Oracle WebLogic Server 10.3.6.0、12.1.2.0、12.1.3.0及び12.2.1.0</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">14</p>
+</td>
+<td>CVE-2020-2555</td>
+<td>
+<ul>
+<li>Oracle Coherence 3.7.1.0、12.1.3.0.0、12.2.1.3.0及び12.2.1.4.0</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">15</p>
+</td>
+<td>CVE-2019-3396</td>
+<td>
+<ul>
+<li>Atlassian Confluenceの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">6.6.12より前のバージョン<br>6.7.0から6.12.3より前のバージョン<br>6.13.0から6.13.3より前のバージョン<br>6.14.0から6.14.2より前のバージョン</p>
+</td>
+<td>
+<p>任意のコードを実行される等</p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">16</p>
+</td>
+<td>CVE-2019-11580</td>
+<td>
+<ul>
+<li>Atlassian Crowdの以下のバージョン</li>
+</ul>
+<p style="padding-left: 30px;">2.1.0から3.0.5より前のバージョン<br>3.1.0から3.1.6より前のバージョン<br>3.2.0から3.2.8より前のバージョン<br>3.3.0から3.3.5より前のバージョン<br>3.4.0から3.4.4より前のバージョン</p>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">17</p>
+</td>
+<td>CVE-2020-10189</td>
+<td>
+<ul>
+<li>Zoho ManageEngine Desktop Central 10.0.479より前のバージョン</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">18</p>
+</td>
+<td>CVE-2020-18935</td>
+<td>
+<ul>
+<li>Progress Telerik UI for ASP.NET AJAX 2019.3.1023</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">19</p>
+</td>
+<td>CVE-2020-0601</td>
+<td>
+<ul>
+<li>Microsoft Windows 10</li>
+<li>Microsoft Windows Server 2016及び2019</li>
+</ul>
+</td>
+<td>
+<p>中間者攻撃を実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">20</p>
+</td>
+<td>CVE-2019-0803</td>
+<td>
+<ul>
+<li>Microsoft Windows 7から10</li>
+<li>Microsoft Windows Server 2008から2019</li>
+</ul>
+</td>
+<td>
+<p>管理者権限への昇格を実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">21</p>
+</td>
+<td>CVE-2017-6327</td>
+<td>
+<ul>
+<li>Symantec Messaging Gateway 10.6.3-267より前のバージョン</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">22</p>
+</td>
+<td>CVE-2020-3118</td>
+<td>
+<ul>
+<li>Cisco IOS XR 5.2.5、6.5.2、6.5.3、6.6.25及び7.0.1</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="u-center">23</p>
+</td>
+<td>CVE-2020-8515</td>
+<td>
+<ul>
+<li>Vigor2960 1.3.1_Beta</li>
+<li>Vigor3900 1.4.4_Beta</li>
+<li>Vigor300B 1.3.3_Beta、1.4.2.1_Beta及び1.4.4_Beta</li>
+</ul>
+</td>
+<td>
+<p>任意のコードを実行される</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>※詳細につきましては、NSA（米国家安全保障局）の資料をご覧ください。</p>
+<h4>３　対策</h4>
+<p>各製品の開発元から、各脆弱性を修正したバージョンやパッチが公開されています。</p>
+<p><em>前表の中に利用している製品が存在する場合は、当該製品の保守業者に、既に製品のアップデートの実施やパッチの適用が完了しているかを確認していただき、未完了の場合は、アップデートの実施やパッチの適用をお願いいたします。</em></p>
+<dl class="p-lineMarker">
+<dt class="p-lineMarker__ttl">関連リンク</dt>
+<dd class="p-lineMarker__body">
+<ul class="c-linkList">
+<li class="c-linkList__item"><a href="https://www.nsa.gov/News-Features/Feature-Stories/Article-View/Article/2387347/nsa-warns-chinese-state-sponsored-malicious-cyber-actors-exploiting-25-cves/" target="_blank" rel="noopener noreferrer" title="NSA【米国家安全保障局】情報ページ">NSA【米国家安全保障局】情報ページ</a></li>
+</ul>
+</dd>
+</dl>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

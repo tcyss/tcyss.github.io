@@ -1,0 +1,7 @@
+#AuthType Basic
+#AuthName "Secret Zone"
+#AuthUserFile "c:/var/www/acl/cybersecurity-tokyo/.htpasswd"
+#AuthGroupFile /dev/null
+#Require valid-user
+
+Redirect /topics/73/ /security/cyberthreat/73/

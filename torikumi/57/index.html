@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>標的型メール攻撃訓練　検証レポート</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/torikumi/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">東京都の取組</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">標的型メール攻撃訓練　検証レポート</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">標的型メール攻撃訓練　検証レポート</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2018.11.27">2018.11.27</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<p>みなさんは、標的型メール攻撃訓練をご存知かな。<br />
+ウィルスを添付したメールや、悪質なサイトに誘導するメールを送付する「標的型メール攻撃」が多発しているが、それを模したメールを自社員に送り、社員の対応状況を確認する訓練だ。<br />
+東京都は平成29年度、標的型メール攻撃訓練を都内中小企業100社に提供した。</p>
+<div class="p-point">
+  <div class="p-point__chara"><img src="/images/point_chara_pink.png" width="80" height="79" alt="画像：冴羽" /></div>
+  <div class="p-point__balloon">
+    <div class="p-point__balloon__body">
+      <p>訓練結果を統計処理したものについて、内容を見てみよう。</p>
+    </div>
+  </div>
+</div>
+<hr>
+<h3 class="u-center u-m-t50">標的型メール攻撃訓練　検証レポート</h3>
+<p class="u-right">東京都産業労働局</p>
+<h4>1．訓練実施対象企業の状況</h4>
+<h5>（1）訓練タイプ選択の状況（URL型、添付ファイル型別）</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_01.png" width="500" height="410" alt="グラフ：応募企業が選択した訓練タイプ">
+</p>
+<p>メール本文内のURLをクリックさせる「URL型」と、メールに添付した添付ファイルを開封させる「添付ファイル型」の二形式の訓練を提供したところ、応募企業の約80％が「URL型」を選択しました。</p>
+<div class="p-point">
+  <div class="p-point__chara"><img src="/images/point_chara_pink.png" width="80" height="79" alt="画像：冴羽" /></div>
+  <div class="p-point__balloon">
+    <div class="p-point__balloon__body">
+      <p>応募企業の多くは、不審なURLが記載されたメールを送付する「URL型訓練」を希望したようだな。<br />
+      より引っかかりやすく危険だと考えた方が多かったのかも知れない。</p>
+    </div>
+  </div>
+</div>
+<h5>（2）業種別応募企業数</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_02.png" width="500" height="410" alt="グラフ：応募企業の業種別分類">
+</p>
+<p class="u-centerLeft">サービス業を主とする企業が多数となりました。</p>
+<h5>（3）訓練対象者の年齢別人数</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_03.png" width="500" height="410" alt="グラフ：訓練対象者の年齢別人数（訓練実施後のアンケート調査より）">
+</p>
+<p class="u-centerLeft">30歳代、40歳代の訓練対象者が多数となりました。</p>
+<h5>（4）訓練対象者の年齢別人数</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_04.png" width="500" height="410" alt="グラフ：訓練対象者の性別人数（訓練実施後のアンケート調査より）">
+</p>
+<p class="u-centerLeft">男性の訓練対象者が多数となりました。</p>
+<h4>2．訓練タイプ別　標的型メール訓練実施結果</h4>
+<h5>（1）URL型訓練　誘導先URLアクセス割合</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_05.png" width="500" height="360" alt="グラフ：URL型の訓練実施結果">
+</p>
+<p class="u-centerLeft">URL型訓練の対象者のうち、URLをクリックし、誘導先URLにアクセスしてしまった人の割合は24％でした。</p>
+<h5>（2）添付ファイル型訓練　添付ファイル開封割合</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_06.png" width="500" height="360" alt="グラフ：添付ファイル型の訓練実施結果">
+</p>
+<p class="u-centerLeft">添付ファイル型訓練の対象者のうち、添付ファイルを開封してしまった人の割合は12％でした。</p>
+<div class="p-point">
+  <div class="p-point__chara"><img src="/images/point_chara_pink.png" width="80" height="79" alt="画像：冴羽" /></div>
+  <div class="p-point__balloon">
+    <div class="p-point__balloon__body">
+      <p>URL型訓練で誘導先URLにアクセスしてしまった人は<em>24％</em>、添付ファイル型訓練で添付ファイルを開封してしまった人は<em>12％</em>で、<em>URL型にはより多くの人が騙されてしまう</em>というデータが出た。<br />
+      URL型の攻撃がより危険である、という予想は当たっていたわけだ。</p>
+    </div>
+  </div>
+</div>
+<h4>3．訓練対象者の対応状況</h4>
+<h5>（1）標的型訓練メールに対する対応状況（引っかからなかった人の場合）</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_07.png" width="580" height="360" alt="グラフ：アクセス・開封しなかった人の対応状況（訓練実施後のアンケート調査より）">
+</p>
+<h5>（2）標的型訓練メールに対する対応状況（引っかかってしまった人の場合）</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_08.png" width="580" height="430" alt="グラフ：アクセス・開封した人の対応状況（訓練実施後のアンケート調査より）">
+</p>
+<div class="p-point">
+  <div class="p-point__chara"><img src="/images/column_saiba_orange__pc.png" width="80" height="79" alt="画像：冴羽" /></div>
+  <div class="p-point__balloon">
+    <div class="p-point__balloon__body">
+      <p>標的型メール訓練に引っかかってしまった人の6割以上が、特に不審とも思わずURLにアクセス・添付ファイルを開封してしまったようだ。<br />
+        標的型メール攻撃については<a href="/column/#ep2">Episode2：標的型攻撃（セキュリティコラム）</a>で紹介しているので、もう一度確認してみてほしい。</p>
+    </div>
+  </div>
+</div>
+<h4>4．訓練対象者　属性別統計</h4>
+<h5>（1）引っかかってしまった人の割合（業種別）</h5>
+<div class="c-grid">
+  <div class="c-grid__body">
+    <div class="c-grid__body__item u-width6">
+      <p class="u-center">
+        <img src="/images/torikumi_20181113_09.png" width="390" height="290" alt="グラフ：訓練実施結果（サービス業）">
+      </p>
+    </div>
+    <div class="c-grid__body__item u-width6">
+      <p class="u-center">
+        <img src="/images/torikumi_20181113_10.png" width="390" height="290" alt="グラフ：訓練実施結果（卸売業）">
+      </p>
+    </div>
+    <div class="c-grid__body__item u-width6">
+      <p class="u-center">
+        <img src="/images/torikumi_20181113_11.png" width="390" height="290" alt="グラフ：訓練実施結果（小売業）">
+      </p>
+    </div>
+    <div class="c-grid__body__item u-width6">
+      <p class="u-center">
+        <img src="/images/torikumi_20181113_12.png" width="390" height="290" alt="グラフ：訓練実施結果（製造業その他）">
+      </p>
+    </div>
+  </div>
+</div>
+<p class="u-centerLeft">引っかかった割合がサービス業では比較的低く、卸売業、小売業では比較的高くなりました。 </p>
+<h5>（2）引っかかってしまった人の割合（年齢別）</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_13.png" width="500" height="370" alt="グラフ：アクセス・開封した割合 年齢別（訓練後実施したアンケート調査より）">
+</p>
+<p class="u-centerLeft">引っかかった割合が10歳代で低くなったほかは、年齢別で大きな差はありませんでした。 </p>
+<h5>（3）引っかかってしまった人の割合（男女別）</h5>
+<p class="u-center">
+  <img src="/images/torikumi_20181113_14.png" width="500" height="370" alt="グラフ：アクセス・開封した割合 男女別（訓練実施後のアンケート調査より）">
+</p>
+<p class="u-centerLeft">引っかかった割合の性別による差は、ほとんどありませんでした。 </p>
+<div class="p-point">
+  <div class="p-point__chara"><img src="/images/point_chara_pink.png" width="80" height="79" alt="画像：冴羽" /></div>
+  <div class="p-point__balloon">
+    <div class="p-point__balloon__body">
+      <p>性別ではほとんど差が出なかったのが印象的だな。<br />
+      業種別や、年代別ではある程度の差が出ているので、引っかかった割合の多いところに属する方は、この結果を他人事とは思わず、サイバーセキュリティ意識の向上に努めていただきたい。</p>
+    </div>
+  </div>
+</div>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<!--#include virtual="/include/footer_slider.inc"-->
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>
