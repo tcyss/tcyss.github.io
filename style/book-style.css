@@ -185,6 +185,10 @@ h5{  line-height:1.2;  font-size: 110%; margin:1em 0 0.5em 0 ; }
 
 h6{  line-height:1.2;  font-size: 100%; margin-bottom :1em ; }
 
+p{ font-size:  90%; }
+
+li{ font-size:  90%; }
+
 /* リンク指定
 ---------------------------------------------------------------- */
 /* 基本設定（上：横組み　下：縦組み） */
