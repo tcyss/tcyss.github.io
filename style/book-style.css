@@ -27,6 +27,9 @@ ver.1.1.3
 ・作品別カスタマイズ領域
 
 【更新履歴】
+2021/06/21
+・見出し（h1～h6）の定義変更
+
 2014/11/01 ver.1.1.1
 ・「特殊リンク指定」を追加
 ・「注釈リンクの下線と色」を変更
@@ -53,6 +56,7 @@ ver.1.1.3
 .color-info { color:#595757; }
 
 
+
 .midashi1 {
  line-height:1.2;
  font-size: 150%;
@@ -62,7 +66,19 @@ ver.1.1.3
 .naka-midashi1 {
  line-height:1.2;
  margin:1em 0 0.5em 0 ;
+ font-size: 130%;
+}
+
+.naka-midashi2 {
+ line-height:1.2;
+ margin:1em 0 0.5em 0 ;
  font-size: 110%;
+}
+
+.ko-midashi {
+ line-height:1.2;
+ margin:1em 0 0.5em 0 ;
+ font-size: 100%;
 }
 
 table {
@@ -124,6 +140,11 @@ td.midashi02 {
 
 
 /* 見出しのデフォルト書体指定
+「極意」改版用に修正
+font-family: serif-ja, serif ⇒ sans-serif-ja, sans-serif;
+font-weight: bold;
+color:#595757;
+2021.06.26 Nakayama
 ---------------------------------------------------------------- */
 /* 横組み用 */
 .hltr h1,
@@ -132,7 +153,11 @@ td.midashi02 {
 .hltr h4,
 .hltr h5,
 .hltr h6 {
-  font-family: serif-ja, serif;
+  line-height:1.2; 
+  font-family: sans-serif-ja, sans-serif;
+  font-weight: bold;
+  color:#595757;
+  
 }
 /* 縦組み用 */
 .vrtl h1,
@@ -144,6 +169,21 @@ td.midashi02 {
   font-family: serif-ja-v, serif-ja, serif;
 }
 
+/* -------------------------------------------------------------
+ * 極意用段落属性設定　h1～h6
+ 2021.06.26 Nakayama
+ * ------------------------------------------------------------- */
+h1{  line-height:1.2;  font-size: 170%; margin-bottom :1em ; }
+ 
+h2{  line-height:1.2;  font-size: 170%; margin-bottom :1em ; }
+
+h3{  line-height:1.2;  font-size: 130%; margin:1em 0 0.5em 0 ; }
+
+h4{  line-height:1.2;  font-size: 120%; margin:1em 0 0.5em 0 ; }
+
+h5{  line-height:1.2;  font-size: 110%; margin:1em 0 0.5em 0 ; }
+
+h6{  line-height:1.2;  font-size: 100%; margin-bottom :1em ; }
 
 /* リンク指定
 ---------------------------------------------------------------- */
@@ -343,8 +383,10 @@ body.p-image .main {
 /* テキスト中心のページ
 ---------------------------------------------------------------- */
 body.p-text {
+
 }
 body.p-text .main {
+
 }
 
 
