@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="ja" class="hltr" xml:lang="ja"><head>
+    
+    <title>中小企業向けサイバーセキュリティ対策の極意</title>
+    <link rel="stylesheet" type="text/css" href="item/style/book-style.css"/>
+</head>
+
+<body class="p-text">
+    <div class="main">
+        <h2 class="color-info">【注意喚起】Emotetウイルスに注意</h2>
+        <p style="text-align: right;">2022.3.3 改訂</p>
+      <p>Emotetの感染が拡大しています。中小企業におかれましても、下記の内容について注意して、適切に対応してください。最新情報を、タイムリーに反映させていきます。</p>
+
+        <h4><strong><b>Emotetとは</b></strong>（2022.3.3更新）</h4>
+        <ul>
+            <li>情報の窃取に加え、更に他のウイルスへの感染のために悪用されるウイルスであり、悪意のある者によって、フィッシングメール、標的型メールに添付される等して、感染の拡大が試みられる。</li>
+            <li>取引先等との実際にやり取りしたメールへの返信メールの形で、ZIPファイル添付されていたり、正しそうなURLが記載されている。</li>
+ 
+        </ul>
+<h4><strong><b>Emotetの感染を拡大する手口</b></strong>（2022.3.3更新）</h4> 
+                <ul>
+                <li>メールアカウントへの不正アクセス等で、過去のメールやアドレス帳が、盗まれ、その内容とアドレスを転用し、ウイルスを添付したメールの形で、過去のメールと同様の相手先に送られる。 </li>
+                <li>受け取った人は、本物のメールと信じて、ファイルを開いてウイルスに感染し、感染者の環境内の情報が攻撃者に搾取されていく。 感染によって、同様の行為が繰り返され、被害が拡散されていく。</li>
+                <li>自分自身が送信者となったメールが送られてくる場合もある。</li>
+                </ul>
+
+<h4><strong><b>Emotetの感染を防ぐために</b></strong>（2022.3.3更新）</h4> 
+<ul>
+<li>特にEmotetに関して、
+<ul>
+<li>身に覚えのないメールは開かない</li>
+<li>メールに添付ファイルがあった場合、確かに本物のメールであるか、しっかり見極める</li>
+<li>自分が送信したメールの返信メールであっても、添付されているZIP等で圧縮されたファイルは開かない。(特に暗号化されているZIPファイルは、ウイルスチェックがされていない)</li>
+<li>Word、Excelの文書を開いたとき、「編集を有効にする」「コンテンツの有効化」を聞かれても、有効にしない</li>
+<li>メールの送信者が取引先等からであっても、メール本文内のURLは、偽装されていないか、不審なURLでないかを見極める</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>一般的にウイルスに感染しないために
+<ul>
+<li>OSやソフトウェアは常に最新の状態にする</li>
+<li>ウイルス対策ソフトを導入する</li>
+<li>パスワードを強化する。二段階認証を設定する</li>
+<li>共有フォルダのアクセス権を確認する</li>
+<li>常に報道されているような脅威や攻撃の手口を知る</li>
+</ul>
+</li>
+</ul>
+
+<h4><strong><b>感染が疑われる場合</b></strong>（2022.3.3更新）</h4> 
+<ul>
+<li>感染したPCが接続していた組織内ネットワーク内の全PCをEmotetチェッカーで確認する</li>
+<li>感染したPCが接続していた組織内ネットワーク内の全PCのウイルスチェックを行う（Emotetにより、別のウイルスが感染している可能性がある）</li>
+</ul>
+<h4><strong><b>感染してしまったら</b></strong>（2022.3.3更新）</h4> 
+<ul>
+<li>感染したPCが利用していたメールアカウントなどのパスワード変更</li>
+<li>感染したPCが接続していた組織内ネットワーク内の全PCをEmotetチェッカーで確認する</li>
+<li>感染したPCが接続していた組織内ネットワーク内の全PCのウイルスチェックを行いウイルスを削除するう</li>
+<li>メールの送信者へ、Emotetに感染している可能性があることを伝える</li>
+</ul>
+
+<!--
+       
+        <p>＝＝＝＝＝＝＝＝＝＝＝＝</p>
+        <h4><strong><b>問合せの例</b></strong>（2022.3.3更新）</h4>
+        <ul>
+            <li>Emotetに感染してしまった（したかもしれない）がどうすればよいか</li>
+            <li>取引先から、Emotetと思われるメールが送られてきた</li>
+            <li>EMOCHECKの使い方</li>
+            というような問合せが急増しています。
+        </ul>
+        <h4><strong><b>対処パターン</b></strong>（2022.3.3更新）</h4>
+        <ul>
+            <li><a href="#Emotet-A01">Emotetと疑われるメールが届き、添付ファイルを開いた場合</a></li>
+            <li><a href="#Emotet-A02">Emotetと疑われるメールが自社名で各所（自社を含む）に届いた場合</a></li>
+            <li><a href="#Emotet-A03">Emotetと疑われるメールが自社名で各所（自社を含む）に届いた場合（取引先への対応を含む）</a></li>
+        </ul>
+
+        <h4><strong><b>問合わせる前に、一般的な対応策を知る</b></strong>（2022.3.3更新）</h4>
+        <p>まずは、組織内のシステム管理者にご相談ください。</p>
+        <p>Emotetの一般的な対応策については、IPA、JPCERT/CC等の関係機関が、詳細な情報を提供しています。本サイト内に、それらの情報源へのリンクをリストアップしています。</p>
+        <p>相談前に、最新の情報を参照して対応策を検討してください。</p>
+        <ul>
+            <li><a href="https://cybersecurity-tokyo.jp/security/guidebook/355/index.html">INFORMATION 6-1 App.01 もしかしてサイバー攻撃？ 緊急時には、ここに連絡を！</a></li>
+
+            <li><a href="https://cybersecurity-tokyo.jp/security/guidebook/355/index.html#CHECK4_Emotet">「Emotet」と呼ばれるウイルスに感染した</a></li>
+        </ul>
+
+        <p>自力で対応ができない場合は、機器の設置状況、運用状況がわかる機器の購入先、保守業者等にご相談ください。</p>
+
+        <h4 id="CHECK4_Emotet">情報源へのリンク</h4>
+        <p>※「INFORMATION 6-1 App.01 もしかしてサイバー攻撃？ 緊急時には、ここに連絡を！」からの抜粋</p>
+        <ul>
+            <li>参考情報
+                <ul>
+                    <li><a href="https://www.ipa.go.jp/security/announce/20191202.html">「Emotet」と呼ばれるウイルスへの感染を狙うメールについて</a>　(IPA)
+                        <ul>
+                            <li><a href="https://www.ipa.go.jp/security/announce/20191202.html#L17">攻撃活動再開後の状況／被害相談の例 （2021年12月9日 追記）</a></li>
+                            <li><a href="https://www.ipa.go.jp/security/announce/20191202.html#L18">Emotetの攻撃活動の急増 （2022年2月9日 追記）</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.jpcert.or.jp/at/2019/at190044.html">マルウエアEmotetの感染に関する注意喚起</a>　(JPCERT/CC)</li>
+                    <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html">マルウエアEmotetへの対応FAQ</a>　(JPCERT/CC)（2022.2.7更新）
+                        <ul>
+                            <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html#1">1. 外部からなりすましメールが届いたという報告があった場合どうすればよいですか?</a></li>
+                            <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html#2">2. Emotet の感染有無を確認するためにはどうすればよいですか? </a>
+                                <ul>
+
+                                    <li>2-1.EmoCheckによるEmotet感染有無の確認</li>
+                                    <li><a href="https://github.com/JPCERTCC/EmoCheck/releases">2-1-1.EmoCheckのダウンロード&実行</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html#3">3. EmotetはWindows OS以外に感染しますか?</a></li>
+                            <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html#4">4. Emotet の感染を確認した場合どのように対処すればよいですか?</a></li>
+                            <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html#5">5. Emotetに窃取されたメールの送信を止めるにはどうすればよいですか?</a></li>
+                            <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html#6">6. Emotetに感染するとどのような被害が起こりますか?</a></li>
+                            <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html#7">7. Emotetに感染しないためにはどのような対策が必要ですか?</a></li>
+                            <li><a href="https://blogs.jpcert.or.jp/ja/2019/12/Emotetfaq.html#8">（参考）メールに添付されるWordファイルを開いた場合の表示例</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.keishicho.metro.tokyo.lg.jp/kurashi/cyber/CS_ad.files/EmoCheck.pdf">【パンフレット】EmoCheckの使い方の手引き【PDF版】</a>（警視庁サイバーセキュリティ対策本部）（2022.3.3更新）</li>
+                </ul>
+            </li>
+
+            <li>参考情報 (ポータルサイト内)
+                <ul>
+                    <li><a href="https://cybersecurity-tokyo.jp/security/guidebook/193/index.html">MISSION 2-9　今やろう！ 電子メールへの備え　電子メールの安全利用</a></li>
+                    <li><a href="https://cybersecurity-tokyo.jp/security/guidebook/322/index.html">ケーススタディー４：企業データが人質に！日常に潜むサイバー攻撃の魔手</a></li>
+                    <li><a href="https://cybersecurity-tokyo.jp/column/ep16/">Episode16 「マルウェア」は忘れたころにやってくる？</a></li>
+                    <li><a href="https://cybersecurity-tokyo.jp/security/guidebook/176/index.html">MISSION 1-13 中小企業におけるサイバー攻撃被害の例</a></li>
+                    <li><a href="https://cybersecurity-tokyo.jp/2020/02/18/security/docs/Emotet.pdf">ファイルを介して感染するマルウェア「Emotet」についての注意喚起	【PDF版】</a></li>
+                </ul>
+            </li>
+        </ul>
+        <h4 id="Emotet-A01">Emotetと疑われるメールが届き、添付ファイルを開いた場合</h4>
+        <h4 id="Emotet-A02">Emotetと疑われるメールが自社名で各所（自社を含む）に届いた場合</h4>
+        <h4 id="Emotet-A03">Emotetと疑われるメールが自社名で各所（自社を含む）に届いた場合（取引先への対応を含む）</h4>
+-->
+        <hr/>
+        <dl class="p-lineMarker">
+            <dt class="p-lineMarker__ttl">【関連リンク】</dt>
+            <dd class="p-lineMarker__body">
+                <ul>
+                    <li><strong>全般的な脅威と対策は</strong>
+                        <ul>
+                            <li class="c-linkList__item">⇒ <a href="item/xhtml/security/guidebook/index.html"><strong>ガイドブック『中小企業向けサイバーセキュリティ対策の極意』</strong></a></li>
+                        </ul>
+                    </li>
+                    <li><strong>クイックリスト</strong>
+                        <ul>
+                            <li class="c-linkList__item">⇒ <strong><a href="item/xhtml/security/guidebook/355/index.html">もしかしてサイバー攻撃？ 緊急時には、ここに連絡を！</a></strong></li>
+                            <li class="c-linkList__item">⇒ <strong><a href="item/xhtml/security/guidebook/356/index.html">やられる前に、しっかり予防を！ ここに相談！</a></strong></li>
+                            <li class="c-linkList__item">⇒ <strong><a href="item/xhtml/security/guidebook/372/index.html">経営者の理解のもと、組織としてセキュリティ対策をしっかりと！</a></strong></li>
+                            <li class="c-linkList__item">⇒ <strong><a href="item/xhtml/security/guidebook/341/index.html">セキュリティお役立ちリンク集！</a></strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+
+    </div>
+
+
+</body></html>
