@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>INFORMATION 6-4 App.02 情報資産台帳の作成と詳細リスク分析</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+  <!--#include virtual="/include/gtag.inc"-->
+</head>
+<body>
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/guidebook/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">ガイドブック</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">INFORMATION 6-4 App.02 情報資産台帳の作成と詳細リスク分析</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">INFORMATION 6-4 App.02 情報資産台帳の作成と詳細リスク分析</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2021.11.22">2021.11.22</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<h3>概要</h3>
+<p>「中小企業の情報セキュリティ対策ガイドライン」では、「本格的に取り組む」アクションとして、①管理体制の構築、②IT活用方針と情報セキュリティの予算化、③情報セキュリティ規程の作成、④委託時の対策、⑤点検と改善が、挙げられています。<br> ③情報セキュリティ規程の作成に当たっては、まず、どんな情報資産を保有し、それぞれの情報資産に対してどんなリスクがあるか、それを見極めた上で、どのようなリスク対策をするかを決定することがことが重要です。次のステップで、リスク対策を実施できるようにルール化した「情報セキュリティ規程」を作成します。</p>
+<p>※【引用】<a href="https://www.ipa.go.jp/security/keihatsu/sme/guideline/">中小企業の情報セキュリティ対策ガイドライン第3版</a>【IPA】より抜粋し要約</p>
+<h3>策定の流れ</h3>
+<p><img class="fit" align="center" src="/security/images/T_3-19.png" alt=""></p>
+<h3>手順1 情報資産の洗い出し</h3>
+<p>業種、事業内容、IT環境によって保有する情報資産は異なるため、自社の情報資産を一通り洗い出し、情報資産ごとの機密性・完全性・可用性を評価し、それぞれの評価値から重要度を算定する</p>
+<h4>情報資産管理台帳の作成</h4>
+<p>情報資産管理台帳は洗い出した情報資産を「見える化」するための方法の一つ</p>
+<p><img class="fit" align="center" src="/security/images/I_6-4A-1.png" alt=""></p>
+<h5>①業務分類</h5>
+<ul>
+    <li>情報資産に関連する業務や部署名を記入します。情報資産は業務に関連して発生しますので、まず関連業務や部署を特定し、その業務や部署で利用している情報を洗い出すと記入漏れが少なくなります。</li>
+</ul>
+<h5>②情報資産名称</h5>
+<ul>
+    <li>情報資産の内容を簡潔に記入します。正式名称がないものは社内の通称で構いません。管理方法や重要度が同じものは1行にまとめます。</li>
+</ul>
+<h5>③備考</h5>
+<ul>
+    <li>必要に応じて説明等を記入します。</li>
+</ul>
+<h5>④利用者範囲</h5>
+<ul>
+    <li>情報資産を利用してよい部署等を記入します。</li>
+</ul>
+<h5>⑤管理部署</h5>
+<ul>
+    <li>情報資産の管理責任がある部署等を記入します。小規模事業者であれば担当者名を記入しても構いません。</li>
+</ul>
+<h5>⑥媒体・保存先</h5>
+<ul>
+    <li>情報資産の媒体や保存場所を記入します。書類と電子データの両方で保存している場合は、それぞれ完全性・可用性（機密性は同一）や脅威・脆弱性が異なるので2行に分けて記入します。 例）見積書「電子データを事務所PC に保存」「印刷して書類を保管」</li>
+</ul>
+<h5>⑦個人情報の種類</h5>
+<ul>
+    <li>各項目が個人情報保護法、マイナンバー法で定義されています。</li>
+</ul>
+<h5>⑧重要度</h5>
+<ul>
+    <li>重要度定義シートまたは中小企業の情報セキュリティ対策ガイドライン45表10を参照して、情報資産の機密性、完全性、可用性それぞれの評価値を記入します。3種類の評価値から中小企業の情報セキュリティ対策ガイドラインP.46表11に基づき重要度が表示されます。なお、⑦でいずれかの個人情報が「有」の場合、重要度は自動的に「2」となります。</li>
+</ul>
+<h5>⑨保存期限</h5>
+<ul>
+    <li>法定文書は法律で定められた保存期限を、それ以外は利用が完了して廃棄、消去が必要となる期限を記入します。</li>
+</ul>
+<h5>⑩登録日</h5>
+<ul>
+    <li>登録した日付を記入します。内容を更新した場合は更新日に修正します。</li>
+</ul>
+<h4>情報資産ごとの機密性・完全性・可用性の評価</h4>
+<p>機密性、完全性、可用性が損なわれた場合の事業への影響や、法律で安全管理義務があるなど、評価基準を参考に評価値２～０を記入します。</p>
+<h5>機密性</h5>
+<p>アクセスを許可された者だけが情報にアクセスできる</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th scope="row">機密性レベル２</th>
+            <td>
+                <ul>
+                    <li>法律で安全管理（漏えい、滅失又はき損防止）が義務付けられている</li>
+                    <li>守秘義務の対象や限定提供データ12 として指定されている</li>
+                    <li>漏えいすると取引先や顧客に大きな影響がある</li>
+                    <li>自社の営業秘密として管理すべき（不正競争防止法による保護を受けるため）漏えいすると自社に深刻な影響がある</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">機密性レベル１</th>
+            <td>
+                <ul>
+                    <li>漏えいすると業務に大きな影響がある</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">機密性レベル０</th>
+            <td>
+                <ul>
+                    <li>漏えいしても業務にほとんど影響はない</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <!--
+    <li>機密性レベル２
+      <ul>
+        <li>法律で安全管理（漏えい、滅失又はき損防止）が義務付けられている</li>
+        <li>守秘義務の対象や限定提供データ12 として指定されている</li>
+        <li>漏えいすると取引先や顧客に大きな影響がある</li>
+        <li>自社の営業秘密として管理すべき（不正競争防止法による保護を受けるため）漏えいすると自社に深刻な影響がある</li>
+      </ul>
+    </li>
+    <li>機密性レベル１
+      <ul>
+        <li>漏えいすると業務に大きな影響がある</li>
+      </ul>
+    </li>
+    <li>機密性レベル０
+      <ul>
+        <li>漏えいしても業務にほとんど影響はない</li>
+      </ul>
+    </li>
+    -->
+</ul>
+<h5>完全性</h5>
+<p>情報や情報の処理方法が正確で完全である</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th scope="row">完全性レベル２</th>
+            <td>
+                <ul>
+                    <li>法律で安全管理（漏えい、滅失又はき損防止）が義務付けられている</li>
+                    <li>改ざんされると自社に深刻な影響または取引先や顧客に大きな影響がある</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">完全性レベル１</th>
+            <td>
+                <ul>
+                    <li>改ざんされると業務に大きな影響がある</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">完全性レベル０</th>
+            <td>
+                <ul>
+                    <li>改ざんされても事業にほとんど影響はない</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <!--
+    <li>完全性レベル２
+      <ul>
+        <li>法律で安全管理（漏えい、滅失又はき損防止）が義務付けられている</li>
+        <li>改ざんされると自社に深刻な影響または取引先や顧客に大きな影響がある</li>
+      </ul>
+    </li>
+    <li>完全性レベル１
+      <ul>
+        <li>改ざんされると業務に大きな影響がある</li>
+      </ul>
+    </li>
+    <li>完全性レベル０
+      <ul>
+        <li>改ざんされても事業にほとんど影響はない</li>
+      </ul>
+    </li>
+-->
+</ul>
+<h5>可用性</h5>
+<p>許可された者が必要な時に情報資産にアクセスできる</p>
+<table border="1">
+    <tbody>
+        <tr>
+            <th scope="row">可用性レベル２</th>
+            <td>
+                <ul>
+                    <li>利用できなくなると自社に深刻な影響または取引先や顧客に大きな影響がある</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">可用性レベル１</th>
+            <td>
+                <ul>
+                    <li>利用できなくなると事業に大きな影響がある</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">可用性レベル０</th>
+            <td>
+                <ul>
+                    <li>利用できなくなっても事業にほとんど影響はない</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <!--
+    <li>可用性レベル２
+      <ul>
+        <li>利用できなくなると自社に深刻な影響または取引先や顧客に大きな影響がある</li>
+      </ul>
+    </li>
+    <li>可用性レベル１
+      <ul>
+        <li>利用できなくなると事業に大きな影響がある</li>
+      </ul>
+    </li>
+    <li>可用性レベル０
+      <ul>
+        <li>利用できなくなっても事業にほとんど影響はない</li>
+      </ul>
+    </li>
+-->
+</ul>
+<h4>機密性・完全性・可用性の評価値から重要度を算定</h4>
+<p>重要度は、機密性、完全性、可用性いずれかの最大値で判断します。 「情報資産管理台帳」に記入した機密性・完全性・可用性の評価値をもとに、判断基準に従い、重要度を算定します。</p>
+<table border="2">
+    <tbody>
+        <tr>
+            <td>
+                <p>※下記の場合は、<span style="color: #ff0000;">算定結果に関わらず、重要度は２</span>とします。</p>
+                <ul>
+                    <li>企業の存続を左右しかねない場合
+                        <ul>
+                            <li>事故が起きると法的責任を問われる</li>
+                            <li>取引先、顧客、個人に大きな影響がある</li>
+                            <li>事業に深刻な影響を及ぼす</li>
+                        </ul>
+                    </li>
+                    <li>個人情報を含む場合</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<h5>情報資産の重要度の判断基準</h5>
+<table border="1">
+    <tbody>
+        <tr>
+            <th scope="row">重要度レベル２</th>
+            <td>
+                <ul>
+                    <li>機密性・完全性・可用性評価値のいずれかまたはすべてが「2」の情報資産</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">重要度レベル１</th>
+            <td>
+                <ul>
+                    <li>機密性・完全性・可用性評価値のうち最大値が「1」の情報資産</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">重要度レベル０</th>
+            <td>
+                <ul>
+                    <li>機密性・完全性・可用性評価値すべてが「0」の情報資産</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <!--
+    <li>重要度レベル２
+      <ul>
+        <li>機密性・完全性・可用性評価値のいずれかまたはすべてが「2」の情報資産</li>
+      </ul>
+    </li>
+    <li>重要度レベル１
+      <ul>
+        <li>機密性・完全性・可用性評価値のうち最大値が「1」の情報資産</li>
+      </ul>
+    </li>
+    <li>重要度レベル０
+      <ul>
+        <li>機密性・完全性・可用性評価値すべてが「0」の情報資産</li>
+      </ul>
+    </li>
+-->
+</ul>
+<h3>手順２ リスク値の算定</h3>
+<h4>優先的・重点的に対策が必要な情報資産を把握する</h4>
+<p>洗い出した情報資産について、対策の優先度を決めるため、リスク値（リスクの大きさ）を算定</p>
+<h4>リスク値＝重要度×被害発生可能性</h4>
+<p><img class="fit" align="center" src="/security/images/I_6-4A-2.png" alt=""></p>
+<h4>「被害発生可能性」</h4>
+<p>「被害発生可能性」は「脅威の起こりやすさ」と「脆弱性のつけ込みやすさ」の２つの数値から算出</p>
+<h5>脅威の起こりやすさ</h5>
+<table border="1">
+    <tbody>
+        <tr>
+            <th scope="row">脅威レベル３</th>
+            <td>
+                <ul>
+                    <li>通常の状況で脅威が発生する（いつ発生してもおかしくない）</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">脅威レベル２</th>
+            <td>
+                <ul>
+                    <li>特定の状況で脅威が発生する（年に数回程度）</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">脅威レベル１</th>
+            <td>
+                <ul>
+                    <li>通常の状況で脅威が発生することはない</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <!--
+    <li>脅威レベル３
+      <ul>
+        <li>通常の状況で脅威が発生する（いつ発生してもおかしくない）</li>
+      </ul>
+    </li>
+    <li>脅威レベル２
+      <ul>
+        <li>特定の状況で脅威が発生する（年に数回程度）</li>
+      </ul>
+    </li>
+    <li>脅威レベル１
+      <ul>
+        <li>通常の状況で脅威が発生することはない</li>
+      </ul>
+    </li>
+-->
+</ul>
+<h5>脆弱性のつけ込みやすさ</h5>
+<table border="1">
+    <tbody>
+        <tr>
+            <th scope="row">脆弱性レベル３</th>
+            <td>
+                <ul>
+                    <li>対策を実施していない（ほぼ無防備）</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">脆弱性レベル２</th>
+            <td>
+                <ul>
+                    <li>部分的に対策を実施している</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">脆弱性レベル１</th>
+            <td>
+                <ul>
+                    <li>必要な対策をすべて実施している</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <!--
+    <li>脆弱性レベル３
+      <ul>
+        <li>対策を実施していない（ほぼ無防備）</li>
+      </ul>
+    </li>
+    <li>脆弱性レベル２
+      <ul>
+        <li>部分的に対策を実施している</li>
+      </ul>
+    </li>
+    <li>脆弱性レベル１
+      <ul>
+        <li>必要な対策をすべて実施している</li>
+      </ul>
+    </li>
+-->
+</ul>
+<h5>被害発生可能性</h5>
+<ul>
+    <ul>
+        <li>被害発生可能性=脅威レベル÷（4－脆弱性レベル）</li>
+    </ul>
+</ul>
+<p><img class="fit" align="center" src="/security/images/I_6-4A-3.png" alt=""></p>
+<ul>
+    <!--
+<table border="1">
+  <colgroup><col span="5"/>
+  </colgroup>
+<tbody><tr>
+    <td>　</td>
+    <td colspan="4"> 　　　脆弱性　　　 </td>
+  </tr>
+  <tr>
+    <td rowspan="4">脅威</td>
+    <td></td>
+    <td>3</td>
+    <td>2</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><b>3</b></td>
+    <td><b>2</b></td>
+    <td><b>1</b></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><b>2</b></td>
+    <td><b>1</b></td>
+    <td><b>1</b></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><b>1</b></td>
+    <td><b>1</b></td>
+    <td><b>1</b></td>
+  </tr>
+</tbody>
+</table>
+-->
+</ul>
+<table border="1">
+    <tbody>
+        <tr>
+            <th scope="row">被害発生可能性レベル３</th>
+            <td>
+                <ul>
+                    <li>通常の状況で被害が発生する（いつ発生してもおかしくない）</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">被害発生可能性レベル２</th>
+            <td>
+                <ul>
+                    <li>特定の状況で被害が発生する（年に数回程度）</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">被害発生可能性レベル１</th>
+            <td>
+                <ul>
+                    <li>通常の状況で被害が発生することはない</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+    <!--
+    <li>被害発生可能性レベル３
+      <ul>
+        <li>通常の状況で被害が発生する（いつ発生してもおかしくない）</li>
+      </ul>
+    </li>
+    <li>被害発生可能性レベル２
+      <ul>
+        <li>特定の状況で被害が発生する（年に数回程度）</li>
+      </ul>
+    </li>
+    <li>被害発生可能性レベル１
+      <ul>
+        <li>通常の状況で被害が発生することはない</li>
+      </ul>
+    </li>
+-->
+</ul>
+<h3>手順３ 情報セキュリティ対策を決定</h3>
+<ul>
+    <li>リスクの大きな情報資産に対して必要とされる対策を決める</li>
+</ul>
+<h4>リスク対策の分類</h4>
+<ul>
+    <li>①リスクを低減（リスクの発生確率を下げる対策）
+        <ul>
+            <li>情報セキュリティ対策を導入ないし強化することで、脆弱性を改善し、事故が起きる可能性を下げる</li>
+            <li>例：重要な情報へのアクセス制御、ソフトウェアの更新の徹底</li>
+        </ul>
+    </li>
+    <li>②リスクを回避（リスクが発生する可能性を除去する対策）
+        <ul>
+            <li>仕事のやりかたを変える、情報システムの利用方法を変えるなどして、想定されるリスクそのものをなくす</li>
+            <li>例：端末の持ち出し禁止 （外部での盗難のリスクを回避）</li>
+        </ul>
+    </li>
+    <li>③リスクを移転（リスクを他者等の移す対策）
+        <ul>
+            <li>自社よりも有効な対策を行っている、あるいは補償能力がある他社のサービスを利用することで自社の負担を下げる</li>
+            <li>例：クラウドサービスの利用、サイバー保険の加入</li>
+        </ul>
+    </li>
+    <li>④リスクを保有（残留リスクとして識別）
+        <ul>
+            <li>事故が発生しても許容する</li>
+            <li>あるいは対策にかかる費用が損害額を上回る場合などは対策を講じず、現状を維持する</li>
+        </ul>
+    </li>
+</ul>
+<h3>参考資料</h3>
+<h4>中小企業の情報セキュリティ対策ガイドライン第3版【IPA】</h4>
+<ul>
+    <li>第2部実践編
+        <ul>
+            <li>「より強固にするための方策」の「詳細リスク分析の実施方法」</li>
+        </ul>
+    </li>
+</ul>
+<h4>サイバーセキュリティ経営ガイドライン [Ver.2.0]【METI/IPA】</h4>
+<ul>
+    <li>サイバーセキュリティ経営の重要10項目
+        <ul>
+            <li>指示4：サイバーセキュリティリスクの把握とリスク対応に関する計画の策定</li>
+        </ul>
+    </li>
+</ul>
+<dl class="p-lineMarker">
+    <dt class="p-lineMarker__ttl">【関連リンク】</dt>
+    <dd class="p-lineMarker__body">
+        <ul>
+            <li><strong>全般的な脅威と対策は</strong>
+                <ul>
+                    <li class="c-linkList__item">⇒ <a href="/security/guidebook/index.html"><strong>ガイドブック『中小企業向けサイバーセキュリティ対策の極意』</strong></a></li>
+                </ul>
+            </li>
+            <li><strong>クイックリスト</strong>
+                <ul>
+                    <li class="c-linkList__item">⇒ <strong><a href="/security/guidebook/355/index.html">もしかしてサイバー攻撃？ 緊急時には、ここに連絡を！</a></strong></li>
+                    <li class="c-linkList__item">⇒ <strong><a href="/security/guidebook/356/index.html">やられる前に、しっかり予防を！ ここに相談！</a></strong></li>
+                    <li class="c-linkList__item">⇒ <strong><a href="/security/guidebook/372/index.html">経営者の理解のもと、組織としてセキュリティ対策をしっかりと！</a></strong></li>
+                    <li class="c-linkList__item">⇒ <strong><a href="/security/guidebook/341/index.html">セキュリティお役立ちリンク集！</a></strong></li>
+                </ul>
+            </li>
+        </ul>
+    </dd>
+</dl>
+<dl class="p-lineMarker">
+    <dt class="p-lineMarker__ttl">【前後のページ】</dt>
+    <dd class="p-lineMarker__body">
+        <ul>
+            <li class="c-linkList__item">← <a href="/security/guidebook/326/index.html">INFORMATION 6-4：中小企業の情報セキュリティ対策の段階的レベルアップ </a></li>
+            <li class="c-linkList__item">→ <a href="/security/guidebook/337/index.html">INFORMATION 6-4 App.03 情報セキュリティ関連規程に記載すべき項目</a></li>
+        </ul>
+    </dd>
+</dl>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>
