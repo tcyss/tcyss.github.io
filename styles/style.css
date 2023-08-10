@@ -510,7 +510,7 @@ h5 {
   margin: 0;
   padding: 0 10px 0 9px;
   color: #000;
-  font-size: 200%;
+  font-size: 120%;
   line-height: 158%;
   font-weight: bold;
 }
@@ -542,7 +542,7 @@ h6 {
   margin: 0;
   padding: 0 10px 0 9px;
   color: #000;
-  font-size: 100%;
+  font-size: 110%;
   line-height: 158%;
   font-weight: bold;
 }
