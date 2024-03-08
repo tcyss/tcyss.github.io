@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>事例：某病院のランサムウェア被害</title>
+	<meta name="Description" content="サイバーセキュリティを取り巻く環境及び中小企業に求められるサイバーセキュリティ対策" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar01/page2-3-2.html">
+	<meta name="og:title" content="事例：某病院のランサムウェア被害">
+	<meta name="og:description" content="サイバーセキュリティを取り巻く環境及び中小企業に求められるサイバーセキュリティ対策">
+	<meta name="twitter:title" content="事例：某病院のランサムウェア被害">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page2-1-1.html">第2章. 事例を知る：重大なインシデント発生から課題解決まで</a> ／ <a href="page2-3-1.html">2-3. 実際の被害事例からみるケーススタディ</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>2-3-2.</span>
+					事例：某病院のランサムウェア被害
+				</h4>
+
+				<p>
+					病院内で重大なインシデントが発生しました。複数のプリンタが同時に犯行声明を印刷し、<a class="yogo" id="lockbit20">LockBit2.0</a><a class="yogo" id="ransomware">ランサムウェア</a>に感染したことが判明しました。この攻撃により、電子カルテ等の端末と関連するサーバのデータが<a class="yogo" id="angouka">暗号化</a>され、患者の診察記録が閲覧できなくなり、病院の機能は停止しました。侵入経路は、導入されている<a class="yogo" id="vpn">VPN</a>装置の<a class="yogo" id="zeijakusei">脆弱性</a>を悪用したものと考えられ、これは過去に話題になった脆弱性と同じものでした。病院は事前に策定された<a class="yogo" id="bcp">BCP（事業継続計画）</a>を発動し、迅速な対応を行い、警察への相談や関係機関の連携を行いました。<br>対策方針として全体の状況把握や情報漏えいの特定よりも、データの復元やシステムの再構築に取組みました。<a class="yogo" id="forensics">フォレンジック</a>を担当した事業者が一部のデータを復元することができ、復元端末の初期化やセキュリティの見直しを行い、数か月後に通常の診療を再開することができました。
+				</p>
+				
+				<div class="image_set">
+					<img src="../images/seminar01/232_kougeki.jpg" alt="" class="img_232_1">
+					<p class="cap">図13. 攻撃の概要図</p>
+				</div>
+
+				<div class="box">
+					<h6>問題点</h6>
+					<ul>
+						<li class="li"><span></span>VPN装置は導入当初からソフトウェアの更新が行われていなかった。</li>
+						<li class="li"><span></span>厚生労働省からの注意喚起はあったが、病院側が<a class="yogo" id="riskHyouka">リスク評価</a>できず被害を想定できなかった。</li>
+						<li class="li"><span></span>庶務係がIT担当者を一人で兼任しており、セキュリティの知識・技術が不十分であった。</li>
+						<li class="li"><span></span>「VPN装置を使用すれば外部からの<a class="yogo" id="cyberAttack">サイバー攻撃</a>を受けない」という誤解があった。</li>
+						<li class="li"><span></span>ベンダーがシステムの動作優先で、セキュリティ対策を考慮していなかった。</li>
+					</ul>
+					<h6>教訓</h6>
+					<ul>
+						<li class="li"><span></span>取引をしているベンダーと情報交換、コミュニケーションをとる。</li>
+						<li class="li"><span></span>経営者・担当者のセキュリティレベル向上を図る。</li>
+						<li class="li"><span></span>インシデントが発生したときの被害を想定する。</li>
+					</ul>
+				</div>
+
+				<p>会社の規模、業種を問わず、ランサムウェアの被害に遭う可能性はあります。大事なことは、「自社が狙われている」という危機感を持つことです。ランサムウェアに限らず、他の事例も含めて、危機感を持ちセキュリティ対策を総合的に取組むことが重要です。</p>
+
+				<div class="link_area">
+					<p>詳細理解のため参考となる文献（参考文献）</p>
+					<ul>
+						<li class="li"><span></span><a href="https://www.ipa.go.jp/security/todokede/crack-virus/ug65p9000000nnpa-att/000108764.pdf" target="_blank">コンピュータウイルス・不正アクセスの届出事例</a></li>
+					</ul>
+				</div>
+
+			</div>
+			<div class="page_link_area">
+				<div class="page_link">
+					<a href="page2-3-1.html" class="prev">2-3-1. 最近のサイバー被害事例発生の傾向</a>
+					<a href="page2-3-3.html" class="next">2-3-3. 具体的な対応策</a>
+				</div>
+				<div class="top_link">
+					<a href="index.html" class="top">目次にもどる</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

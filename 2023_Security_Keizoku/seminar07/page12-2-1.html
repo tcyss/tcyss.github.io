@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>セキュリティ インシデント事例を参考とした実施手順</title>
+	<meta name="Description" content="【LV.1 クイックアプローチ】【LV.2 ベースラインアプローチ】の概要" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar07/page12-2-1.html">
+	<meta name="og:title" content="セキュリティ インシデント事例を参考とした実施手順">
+	<meta name="og:description" content="【LV.1 クイックアプローチ】【LV.2 ベースラインアプローチ】の概要">
+	<meta name="twitter:title" content="セキュリティ インシデント事例を参考とした実施手順">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="sec_ttl">
+		<p>第12章. 具体的手順の作成（LV.1 クイックアプローチ/<br class="pc_none">LV.2 ベースラインアプローチ）</p>
+		<h2>12-2. 【LV.1 クイックアプローチ】セキュリティインシデント事例を参考とした実施手順</h2>
+	</section>
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="con_area">
+				<h4>
+					<span>12-2-1.</span>
+					セキュリティインシデント事例を参考とした実施手順
+				</h4>
+
+				<h5 class="uline">
+					LV.1 クイックアプローチ
+				</h5>
+
+				<p class="mb42_sp">
+					クイックアプローチでは、自社で発生する可能性が高い、または実際に発生したときの被害が大きいと考えられる<a class="yogo" id="securityIncident">セキュリティインシデント</a>事例を参考に、対策基準を策定します。決定した対策基準をもとに、具体的に実施する内容（実施手順）を作成します。
+				</p>
+
+				<p class="blue_bold">対策基準・実施手順作成の手順</p>
+				<p class="mb28">
+					セキュリティインシデント事例をもとに<a class="yogo" id="riskAssessment">リスクアセスメント</a>を実施します。以下は、情報セキュリティ10大脅威2023にランクインしている「内部不正による情報漏えい」に関するセキュリティインシデント事例です。
+				</p>
+
+				<div class="box mb0">
+					<h5 class="mb42">事例：内部不正による情報漏えいの疑い（卸売業・小売業、従業員数6~20名以下）</h5>
+
+					<p class="blue_bold">被害内容</p>
+					<p>
+						元従業員が退職前に大量にファイルをダウンロードしました。また、同従業員が使用していたPCの履歴が消去され、専門家でも復旧できない状態になっていました。<br>
+						機密情報の持ち出しをした確定的な証拠が得られなかったため、結果的には被害届を提出しませんでした。しかし、この判断をするまでに2年かかりました。その間、弁護士に情報提供するために、多くの作業が必要になりました。たとえば、経営者と総務担当は、情報漏えいしたと疑われる膨大なログを確認し、どれが機密情報に該当するかチェックする作業を強いられました。トラブル発生時は、人件費だけでなく、心的負担も大きくかかりました。
+					</p>
+					<p class="blue_bold">被害発生の原因</p>
+					<p class="last">
+						社外からの脅威の対策としてウイルス対策ソフトウェアや電子メールへの対応、アクセス制限などは進めていたが、社内から発生する脅威の対策は不十分であったこと。
+					</p>
+				</div>
+				<p class="cap mb0">
+					セキュリティインシデント事例：内部不正による情報漏えい<br>
+					(出典) IPA「2021年度 中小企業における情報セキュリティ対策に関する実態調査 -事例集- 」を基に作成
+				</p>
+
+				<div class="down_img under_168">
+					<img src="../images/down.svg" alt="">
+				</div>
+
+				<p class="big_text bold center_text left_text_sp mb42">
+					セキュリティインシデント事例をもとに、リスクアセスメントの実施<br class="sp_none">
+					（リスク特定、リスク分析、<a class="yogo" id="riskHyouka">リスク評価</a>）
+				</p>
+
+				<p class="blue_bold">リスク特定（例）</p>
+				<p class="mb28">
+					セキュリティインシデント事例を参考に、<a class="yogo" id="informationAssets">情報資産</a>の洗い出しと、「<a class="yogo" id="kimitsusei">機密性</a>」「<a class="yogo" id="kanzensei">完全性</a>」「<a class="yogo" id="kayousei">可用性</a>」の観点から重要度を算出します。セキュリティインシデント事例では、従業員が使用していたPCが悪用されていたため、以下の資産目録の例では「媒体・保存先」が従業員が使用するPCである情報資産を洗い出しています。機密性・完全性・可用性の評価値と、重要度は「11-2-2. リスクの特定」で解説した方法で算出します。リスクアセスメントの詳細は「第11章. リスクマネジメント」を参照してください。
+				</p>
+				<p class="small_text mb28">機密性・完全性・可用性の評価値は、1~3で記載。<br class="pc_none">重要度は、機密性・完全性・可用性いずれかの最大値。</p>
+
+				<img src="../images/seminar07/1221_tokutei.jpg" alt="" class="img_1221_1 mb14_sp">
+				<p class="cap mb56_sp">
+					資産目録の例<br>（出典）IPA 「リスク分析シート」を基に作成
+				</p>
+
+				<p class="blue_bold">リスク分析（例）</p>
+				<p class="mb28">
+					リスク特定で算出した重要度と、被害発生可能性からリスクレベルを算出します。被害発生可能性は、セキュリティインシデント事例と同様の被害がどの程度起きやすいかを考慮して算出します。被害発生可能性・リスクレベルの詳しい算出方法は、「11-2-3. リスクの分析」を参照してください。
+				</p>
+
+				<div class="small_box mb28">
+					<p class="big_text bold center_text left_text_sp mb0">「リスクレベル」＝「重要度」×「被害発生可能性」</p>
+				</div>
+
+				<p class="center_text left_text_sp small_text_sp mb28">リスクレベルの算出方法</p>
+
+				<img src="../images/seminar07/1221_bunseki.jpg" alt="" class="img_1221_2 mb56 mb56_sp">
+
+				<p class="blue_bold">リスク評価（例）</p>
+				<p class="mb28">リスクレベルをもとに、必要なリスク対応を検討します。今回は、例としてリスク低減や回避を選択します。</p>
+
+				<div class="box mb0">
+					<p class="blue_bold mb0 mb0_sp">リスク低減</p>
+					<p class="mb28">セキュリティ対策（管理策）を採用することによって、リスクの発生確率を低くしたり、リスクが顕在化したときの影響の大きさを小さくしたりすること</p>
+
+					<p class="blue_bold mb0 mb0_sp">リスク移転</p>
+					<p class="mb28">リスクを他者に移して、自分たちの責任範囲外にしたり、リスクが顕在化したときの損失を他者に引き受けさせたりすること</p>
+
+					<p class="blue_bold mb0 mb0_sp">リスク回避</p>
+					<p class="mb28">リスクが発生する可能性のある環境を排除するなど、リスクそのものをなくそうとすること</p>
+
+					<p class="blue_bold mb0 mb0_sp">リスク受容（保有）</p>
+					<p class="last">対策を行わずにリスクを受け入れるということ</p>
+				</div>
+
+				<div class="down_img under_168">
+					<img src="../images/down.svg" alt="">
+				</div>
+
+				<p class="big_text bold center_text left_text_sp mb42 mb42_sp">
+					リスク評価をもとに対策基準・実施手順の作成
+				</p>
+
+				<p class="blue_bold">対策基準の策定（例）</p>
+				<p class="mb28">リスク評価の結果を参考に対策基準を策定します。今回の例では、リスク低減や回避に関する対策基準を決定しています。対策基準の例は以下の通りです。</p>
+
+				<div class="box mb56 mb56_sp">
+					<p class="blue_bold mb0 mb0_sp">対策基準（例）</p>
+					<ul class="last">
+						<li class="li"><span></span>社内の機密情報に関する社内規定の策定</li>
+						<li class="li"><span></span>重要情報の管理、保護</li>
+						<li class="li"><span></span>物理的管理の実施</li>
+						<li class="li"><span></span>従業員向け研修の実施</li>
+					</ul>
+				</div>
+
+				<p class="blue_bold">実施手順の作成（例）</p>
+				<p class="mb28">情報セキュリティ関連規程を参考に、実施手順を作成します。情報セキュリティ関連規程とは、情報セキュリティに関する社内規則の見本です。情報セキュリティ関連規程から、対策基準に合った規則を選択し、赤字の箇所を自社の状況に合わせて編集することで、実施手順を作成します。</p>
+
+				<div class="box">
+					<h5 class="mb42 mt28_sp">実施手順の作成（例）</h5>
+
+					<p class="blue_bold">機密情報に関する社内規定の策定</p>
+					<p class="mb0">（例）従業員の責務<br>従業員は以下を遵守する</p>
+					<ul>
+						<li class="li"><span></span><strong class="red">従業員</strong>は、当社が営業秘密として管理する情報およびその複製物の一切を許可されていない組織、人に提供してはならない。</li>
+						<li class="li"><span></span><strong class="red">従業員</strong>は、当社の情報セキュリティ方針および関連規程を遵守する。<strong class="red">違反時の懲戒</strong>については、<strong class="red">就業規則</strong>に準じる。</li>
+						<li class="li"><span></span><strong class="red">従業員</strong>は、在職中に交付された業務に関連する資料、個人情報、顧客・取引先から当社が交付を受けた資料またはそれらの複製物の一切を退職時に返還する。</li>
+						<li class="li"><span></span><strong class="red">従業員</strong>は、在職中に知り得た当社の営業秘密または業務遂行上知り得た<strong class="red">技術的機密</strong>を利用して、競合的あるいは競業的行為を行ってはならない。</li>
+					</ul>
+
+					<p class="blue_bold">重要情報の管理、保護</p>
+					<p class="mb14">（例）利用者アカウントの管理<br>利用者の認証に用いるアカウントが不要になる場合、<strong class="red">システム管理者</strong>は、当該アカウントの削除または無効化を、<strong class="red">当該アカウントが不要になった日の翌日までに</strong>実施する。</p>
+
+					<p class="blue_bold">物理的管理の実施</p>
+					<p class="mb0">（例）情報資産の社外持ち出し管理<br>情報資産を社外に持ち出す場合には、以下を実施する。</p>
+					<ul>
+						<li class="li"><span></span><strong class="red">社外秘の場合は所属部門長</strong>の許可を得る。</li>
+						<li class="li"><span></span><strong class="red">極秘の場合は代表取締役</strong>の許可を得る。</li>
+						<li class="li"><span></span><strong class="red">ノートパソコンのハードディスクに保存して持ち出す場合は、ハードディスク/フォルダー/データ</strong>を<a class="yogo" id="angouka">暗号化</a><strong class="red">する。</strong></li>
+						<li class="li"><span></span><strong class="red">スマホ、タブレット</strong>に保存して持ち出す場合は、<strong class="red">セキュリティロックを設定する。</strong></li>
+						<li class="li"><span></span><strong class="red">USBメモリなどの小型電子媒体</strong>は、<strong class="red">大きなタグをつける/ストラップで体やカバンに固定する/落としてもすぐに分かるように鈴をつける。</strong></li>
+						<li class="li"><span></span><strong class="red">屋外でネットワークへ接続して極秘または社外秘の情報資産を送受信する場合は、暗号化する。</strong></li>
+						<li class="li"><span></span><strong class="red">携行中は常に監視可能な距離を保つ。</strong></li>
+					</ul>
+
+					<p class="blue_bold">従業員向けの研修</p>
+					<p class="mb0">
+						（例）情報セキュリティ教育<br>
+						<strong class="red">教育責任者</strong>は、以下の点を考慮し、情報セキュリティに関する教育計画を<strong class="red">年度単位</strong>で立案する。<br>
+						対象者：<strong class="red">全従業員</strong><br>
+						テーマ：以下は必須とする。
+					</p>
+					<ul class="last">
+						<li class="li"><span></span><strong class="red">情報セキュリティ関連規程の説明（入社時、就業時）</strong></li>
+						<li class="li"><span></span><strong class="red">最新の脅威に対する注意喚起（随時）</strong></li>
+						<li class="li"><span></span><strong class="red">関連法令の理解（関連法令の公布・施行時）</strong></li>
+						<li class="li"><span></span><strong class="red">個人情報の取扱いに関する留意事項</strong></li>
+						<li class="li"><span></span><strong class="red">コンプライアンス教育</strong></li>
+					</ul>
+				</div>
+
+				<div class="link_area">
+					<p>詳細理解のため参考となる文献（参考文献）</p>
+					<ul>
+						<li class="li"><span></span><a href="https://www.ipa.go.jp/security/guide/sme/ug65p90000019cbk-att/000055794.docx" target="_blank">情報セキュリティ関連規程（サンプル）</a></li>
+					</ul>
+				</div>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page12-1-1.html" class="prev">12-1-1. クイックアプローチ・ベースラインアプローチ</a>
+						<a href="page12-3-1.html" class="next">12-3-1. 情報セキュリティ対策ガイドラインの活用</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

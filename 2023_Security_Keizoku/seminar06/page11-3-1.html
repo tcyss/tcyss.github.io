@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>対策案の検討</title>
+	<meta name="Description" content="リスクマネジメント：リスク対応" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar04/page7-3-1.html">
+	<meta name="og:title" content="対策案の検討">
+	<meta name="og:description" content="リスクマネジメント：リスク対応">
+	<meta name="twitter:title" content="対策案の検討">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="sec_ttl">
+		<p>第11章. リスクマネジメント</p>
+		<h2>11-3. リスクマネジメント：リスク対応</h2>
+	</section>
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="con_area">
+				<h4>
+					<span>11-3-1.</span>
+					対策案の検討
+				</h4>
+
+				<h5 class="uline">リスク対応プロセス</h5>
+
+				<p>
+					リスク対応とは、「リスクを修正するプロセス」<small>[25]</small>のことです。<a class="yogo" id="riskAssessment">リスクアセスメント</a>プロセスの結果に基づいており、リスク基準に基づき対応すべき優先順位づけされたリスクに対応する内容となります。
+				</p>
+
+				<div class="box mb0">
+					<p class="blue_bold mb7_sp">1．適切な情報セキュリティリスク対応の選択肢の選定</p>
+					<p class="mb14_sp">リスク対応の選択肢は以下の通りです。</p>
+					<p class="blue_small">リスク回避</p>
+					<p>リスクが発生する可能性のある環境を排除するなど、リスクそのものをなくそうとすることです。たとえば、個人情報を受け取らないようにしたり、その業務自体をやめたりするといった方法です。</p>
+					<p class="blue_small">リスク低減</p>
+					<p>セキュリティ対策（管理策）を採用することによって、リスクの発生確率を低くしたり、リスクが顕在化したときの影響の大きさを小さくすることです。「軽減」「修正」と呼ばれることもあります。</p>
+					<p class="blue_small">リスク移転</p>
+					<p>リスクを他者に移して、自分たちの責任範囲外にしたり、リスクが顕在化したときの損失を他者に引き受けさせることです。たとえばクラウドのサーバを利用することによって、サーバが破壊されたり盗難されたりするリスクを移転することができます。「共有」と呼ばれることもあります。</p>
+					<p class="blue_small"> リスク受容（保有）</p>
+					<p class="mb28">対策を行わずにリスクを受け入れるということです。被害は大きいが発生可能性がほとんどない場合や、発生しても被害がほぼない場合が該当します。</p>
+
+					<p class="blue_bold mb7_sp">2．情報セキュリティリスク対応の選択肢の実施に必要な全ての管理策の決定</p>
+					<p class="mb28">ISO/IEC 27001:2022の附属書A、ISO/IEC 27017などの管理策集から、リスクの回避、低減、移転、受容（保有）の中から選択したリスク対応に必要な全ての管理策を決定します。</p>
+
+					<p class="blue_bold mb7_sp">3．決定した管理策とISO/IEC 27001:2022附属書A の管理策との比較</p>
+					<p class="mb28">必要な全ての管理策を、ISO/IEC 27001:2022附属書Aに挙げられている管理策と比較します。</p>
+
+					<p class="blue_bold mb7_sp">4．適用宣言書の作成</p>
+					<p class="mb28">必要な全ての管理策と、その理由及び実施状況を文書化します。適用宣言書に含まれる全ての管理策の実施状況は、“実施された”、“一部実施された”または“実施されていない”として記述できます。</p>
+
+					<p class="blue_bold mb7_sp">5．情報セキュリティリスク対応計画</p>
+					<p class="mb0">組織がリスクに対応する必要性を含んだリスク対応計画を作成します。リスク対応計画とは、組織のリスク受容基準を満たすようにリスクを修正するための計画のことです。</p>
+					<ul class="mb28">
+						<li class="li"><span></span>組織の必要な管理策を実施するためのプロジェクト計画</li>
+						<li class="li"><span></span>リスクを修正するために管理策が環境と相互にどのように作用するかを記述した設計計画</li>
+					</ul>
+					<p class="blue_bold mb7_sp">6．リスク所有者による承認</p>
+					<p class="mb28">リスク所有者は、リスク対応計画を承認します。</p>
+
+					<p class="blue_bold mb7_sp">7．残留している情報セキュリティリスクの受容</p>
+					<p class="last">リスク所有者は、残留リスクが受容可能かどうかを判断し、決定します。</p>
+				</div>
+				<p class="cap">（出典）ISO/IEC「ISO/IEC 27005:2022」を基に作成</p>
+
+				<p class="cap">[25]: JISC 日本産業標準調査会.”JIS Q 27000:2019 情報技術－セキュリティ技術－情報セキュリティマネジメントシステム－用語”. <a href="https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Q27000" target="_blank">https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Q27000</a>, （2023-09-21）.</p>
+
+				<h5 class="uline">リスク対応プロセス（例）</h5>
+
+				<div class="box">
+					<img src="../images/seminar06/1131_homepage.png" alt="" class="img_1131_1">
+
+					<h5>例：自社のホームページ（電子データ）</h5>
+
+					<p class="blue_bold mb7_sp">リスクの内容</p>
+					<p class="mb28"><a class="yogo" id="illegalAccess">不正アクセス</a>で価格が<a class="yogo" id="kaizan">改ざん</a>されたり、ウイルスが仕掛けられると顧客や閲覧者に被害が発生し、信用を失う</p>
+
+					<p class="blue_bold mb7_sp">リスク対応</p>
+					<p class="mb28"><a class="yogo" id="riskHyouka">リスク評価</a>の結果をもとにリスク対応を決定する（今回は例として「リスクを低減する」方法を選択）</p>
+					
+					<p class="mb28">対策例：不正アクセスが発生する可能性を低減させるために、アクセス権限を最小化したり、パスワードを複雑にしたり、<a class="yogo" id="tayousoNinshou">多要素認証</a>を実施したりするなど、認証の強化を行い、不正アクセスが発生する可能性を低減する</p>
+
+					<p class="mb28">対応する管理策：5.15アクセス制御</p>
+
+					<p class="blue_bold mb7_sp">対策基準の策定（対策基準の例）</p>
+					<p class="mb0">技術的対策</p>
+					<ul class="last">
+						<li class="li"><span></span>公開サーバへの不正アクセス対策</li>
+						<li class="li"><span></span>公開サーバへのアクセス権の最小化と管理の強化 </li>
+						<li class="li"><span></span>多要素認証の設定の有効化 </li>
+					</ul>
+				</div>
+
+				<h5 class="uline">残留リスク</h5>
+
+				<p class="mb28">
+					残留リスクとは、「リスク対応後に残っているリスク」<small>[26]</small>のことです。残留リスクを受容するためには、リスク所有者の承認が必要になります。受容可能だと判断された残留リスクであっても、資産の価値や脅威、<a class="yogo" id="zeijakusei">脆弱性</a>など環境の変化に合わせて、リスクレベル（リスクの大きさ）を見直し、必要に応じて追加のリスク対応を行う必要があります。
+				</p>
+
+				<img src="../images/seminar06/1131_zanryurisk.jpg" alt="" class="img_1131_2">
+				<p class="cap mb42_sp">
+					図52. 残留リスクの概要<br>
+					（出典）MSQA「ISMS推進マニュアル活用ガイドブック 2022年 1.0版」を基に作成
+				</p>
+
+				<p class="cap">[26]: JISC 日本産業標準調査会.”JIS Q 27000:2019 情報技術－セキュリティ技術－情報セキュリティマネジメントシステム－用語”. <a href="https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Q27000" target="_blank">https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Q27000</a>, （2023-09-21）.</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page11-2-4.html" class="prev">11-2-4. リスクマネジメント：リスクアセスメント</a>
+						<a href="editorialnote.html" class="next">編集後記</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

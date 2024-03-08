@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>実施手順の策定</title>
+	<meta name="Description" content="物理的管理策" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar09/page16-1-2.html">
+	<meta name="og:title" content="実施手順の策定">
+	<meta name="og:description" content="物理的管理策">
+	<meta name="twitter:title" content="実施手順の策定">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page16-1-1.html">第16章. 物理的管理策</a> / <a href="page16-1-1.html">16-1. 物理的管理策を参考とした対策基準・実施手順の策定</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>16-1-2.</span>
+					実施手順の策定
+				</h4>
+
+				<p>
+					管理策（対策基準）をもとに策定されたセキュリティ対策の実施手順の例を紹介します。紹介する例と、ISO/IEC 27002に記載されている各管理策の手引の内容を参考に、自社に適した実施手順を策定してください。
+				</p>
+
+				<h5 class="mb28_sp">7.1 物理的セキュリティ境界</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>
+							当組織は、「レイアウト図」により、セキュリティ境界を定義する。
+							<p class="cap">※レイアウト図は、第13章 4.3 情報セキュリティマネジメントシステムの適用範囲の決定の物理的境界レイアウト図（例）を参照</p>
+						</li>
+						<li class="li num mb14"><span>b.</span>重要な<a class="yogo" id="informationAssets">情報資産</a>のある領域の入退を制限し、入退資格を有さない者の立ち入りを制限する。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="">許可されていない者の物理アクセスを防ぐために、入口に「関係者以外立入禁止」の表示や、入退制限の標識をつけるなどの工夫は効果的です。</p>
+					<img src="../images/seminar09/1611_kinshi.png" alt="" class="img_1611_1 last">
+				</div>
+
+				<h5 class="mb28_sp">7.2 物理的入退</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb14 mb42_sp">
+						<li class="li num mb14"><span>a.</span>入退を行う対象者に対して、入退資格を設け、資格のない者の立ち入りを禁じる。入退資格は、従業者証またはセキュリティカードを交付することにより付与し、他人への貸借は禁じる。</li>
+						<li class="li num mb14"><span>b.</span>外来者の訪問は、原則として、｢入退受付票｣に氏名、身元、入退時刻を記録し、面談者が面会の確認印の押印または署名を行い、退出するまでエスコートする。</li>
+						<li class="li num mb14"><span>c.</span>宅配便などの荷物の受け取りは、各オフィスの入口より外で行うことを原則とし、例外的にオフィス内への入室を認める場合は、必ず応対者がエスコートする。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">荷物の受け取り場所は、重要な情報処理設備から離れた場所に設定することが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.3 オフィス、部屋及び施設のセキュリティ</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>各事業場は常時施錠可能とし、入退資格のない者の立ち入りを禁じる。やむを得ず施錠可能でない事業場においては、重要な情報はキャビネットに収納し施錠するなど、厳重な管理を行う。</li>
+						<li class="li num mb14"><span>b.</span>施錠、開錠は、原則として従業者が行う。</li>
+						<li class="li num mb14"><span>c.</span>入退を許可された外来者に対しては、原則として従業者が随行し、立ち入り場所を制限する。</li>
+						<li class="li num mb14"><span>d.</span>秘密の情報または活動が外部から見えないよう、ブラインドやパーティションを設置する。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">活動内容やPCのモニタなどが外部から見えたり、聞こえたりすることがないよう、外部来場者の動線ルートを事前に決めておくことが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.4 物理的セキュリティの監視</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>組織の施設は、監視カメラ、侵入者警報を設置し、認可されていないアクセスや、疑わしい行動を検知する。無人の領域には、必ず監視カメラおよび侵入者警報を設置する。</li>
+						<li class="li num mb14"><span>b.</span>監視カメラ、侵入者警報の動作確認をするため、3か月に1回点検を実施する。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">無人の領域は、警報器を設置することが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.5 物理的及び環境的脅威からの保護</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>各フロアには、火災報知器、消火器を設置する。</li>
+						<li class="li num mb14"><span>b.</span>サーバ付近に段ボールなどの燃えやすいものを置くことを禁じる。</li>
+						<li class="li num mb14"><span>c.</span>サーバの転倒対策として設置位置を工夫する。必要に応じて、転倒防止器具を利用するなどの対策を行う。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">ハザードマップなどで自社の地理的な脅威を把握し、災害時における具体的対策を講じておくことが重要です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.6 セキュリティを保つべき領域での作業</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>サーバ室には、スマートフォンやボイスレコーダー、カメラなど撮影や録音ができるものや、USBメモリなどサーバの情報をダウンロードできる機器の持ち込みは禁じる。</li>
+						<li class="li num mb14"><span>b.</span>セキュリティを保つべき領域は常時施錠し、入退資格のない者の立ち入りを禁じる。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">セキュリティを保つべき領域での作業ルールが適切に守られているか確認することが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.7 クリアデスク・クリアスクリーン</a></h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14">
+							<span>a.</span>クリアデスク
+							<ul>
+								<li class="li"><span></span>離席時や帰宅時には、重要情報や個人情報を含む書類や記憶媒体を机上やその周辺に放置しない。</li>
+								<li class="li"><span></span>書類やデータは、重要なものとそうでないものを区別して整理する。</li>
+								<li class="li"><span></span>プリンタ、コピーに出力した印刷分は放置せず速やかに取り出す。</li>
+							</ul>
+						</li>
+						<li class="li num mb14">
+							<span>b.</span>クリアスクリーン
+							<ul>
+								<li class="li"><span></span>利用者は、食事やトイレ、会議などで自席を離れる場合には、コンピュータのログアウト（ログオフ）や<a class="yogo" id="screenLock">スクリーンロック</a>を行い、第三者がコンピュータを操作したり、画面を盗み見たりできないようにする。</li>
+								<li class="li"><span></span>ログインID、パスワードを机上に貼付することは禁じる。</li>
+							</ul>
+						</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">クリアデスク、クリアスクリーンについてのルールが適切に守られているか、チェックシートなどで徹底することも効果的です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.8 装置の設置及び保護</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>スイッチ、<a class="yogo" id="wirelessLan">無線LAN</a>アクセスポイントなどは、人目につくところや通行量の多い場所を避けて設置する。</li>
+						<li class="li num mb14"><span>b.</span>サーバは、サーバ室など隔離されたエリアに設置する。隔離されていないエリアに設置する場合は、ラックなどへ収容する。</li>
+						<li class="li num mb14"><span>c.</span>サーバが設置されたエリアでの飲食、喫煙は禁じる。</li>
+						<li class="li num mb14"><span>d.</span>サーバが設置されたエリアの温度、湿度を監視し、サーバに悪影響を与えない状態を維持する。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">サーバ周辺に水などの配管などが通っていないか、確認することが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.9 構外にある資産のセキュリティ</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>
+							社外にノートPC等を持ち出す場合は、
+							<ul>
+								<li class="li num"><span>1.</span>ログインパスワードを設定する。</li>
+								<li class="li num"><span>2.</span>必要のない機密情報、個人情報を格納しない。</li>
+								<li class="li num"><span>3.</span>格納するファイルは<a class="yogo" id="angouka">暗号化</a>する（パスワードをつける）。</li>
+								<li class="li num"><span>4.</span>OS・ソフトウェアが最新バージョンになっており、セキュリティソフトが入っていることを確認する。</li>
+								<li class="li num"><span>5.</span>ノートPCなどが入ったカバンなどを交通機関の網棚などには置かず、常時携帯する。</li>
+							</ul>
+						</li>
+						<li class="li num mb14"><span>b.</span>
+							公共交通機関を利用する際に、顧客情報や個人情報など、重要な情報をノートPCや社用携帯で閲覧することは禁じる。
+						</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">公共交通機関を利用する際に、装置（例：スマートフォン、ノートPCなど）上の情報をのぞき見られるリスクから保護することが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.10 記憶媒体</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>外づけの記録媒体の持ち出し・持ち込みは、事前に許可を得た上で行う。また、不使用時は、キャビネットに施錠保管を行う。</li>
+						<li class="li num mb14"><span>b.</span>記憶媒体に収納する情報は必要最小限なものとし、必要のない機密情報や個人情報、会社の重要情報は保存しない。</li>
+						<li class="li num mb14"><span>c.</span>格納するファイルは暗号化して（パスワードをつけて）保存する。</li>
+						<li class="li num mb14"><span>d.</span>外部記憶媒体や、重要な情報が記された文書を机上や、棚上などに放置することは禁じる。</li>
+						<li class="li num mb14"><span>e.</span>私有の外部記憶媒体を持ち込む場合、社有の外部記憶媒体を持ち出す場合は、該当部門の責任者および情報システム管理者の許可を得る。</li>
+						<li class="li num mb14"><span>f.</span>外部記憶媒体でデータを受け渡す場合は、データの内容に応じてセキュリティを確保できるような受け渡し方法をとる。</li>
+						<li class="li num mb14"><span>g.</span>お客様のUSBメモリなどの記憶媒体を預かった場合は、使用する前に必ずアンチウイルスソフトによりスキャンを行う。</li>
+						<li class="li num mb14"><span>h.</span>不要な媒体を処分する場合は、「5.10 情報及びその他の関連資産の利用の許容範囲」のルールに従う。</li>
+						<li class="li num mb14"><span>i.</span>媒体を輸送する場合は、必要に応じて梱包などにより保護するとともに、「5.10 情報及びその他の関連資産の利用の許容範囲」のルールに従う。</li>
+						<li class="li num mb14"><span>j.</span>サーバ、ネットワーク機器（スイッチ、ルータなど）の設置場所を、情報システム管理者の許可なく移動することは禁じる。</li>
+						<li class="li num mb14"><span>k.</span>当組織の資産および顧客から預かった資産を、情報セキュリティ委員長の許可なく無断で持ち出すことは禁じる。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">USBメモリやハードディスクなどの記憶媒体だけでなく、紙の文書に対しても対策を行うことが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.11 <a class="yogo" id="SupportUtilities">サポートユーティリティ</a></h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>情報システム管理者は、必要に応じて<a class="yogo" id="UninterruptiblePowerSupply">無停電電源装置</a>を設置する。無停電電源装置は、ランプの確認などにより、バッテリーの寿命が尽きていないことや、緊急時の切り替えが問題なく行えるかを定期的に確認する。</li>
+						<li class="li num mb14"><span>b.</span>情報システム管理者は、フロア（装置の設置場所）が適切な温度に保たれていることを適時確認する。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">停電対策として無停電電源装置だけでなく、補助発電装備を利用することも有効です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.12 ケーブル配線のセキュリティ</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>人が通る箇所のケーブル配線は、できるだけ床下か天井に配線する。床上に配線する場合には、モール、ケーブルカバーによる保護を行う。</li>
+						<li class="li num mb14"><span>b.</span>配線ケーブルに異常がないか、3か月に1回点検を行う。</li>
+						<li class="li num mb14"><span>c.</span>誤接続を防止するために、ケーブルにラベルをつける、役割ごとに色の異なるケーブルを使う。</li>
+						<li class="li num mb14"><span>d.</span>ケーブル配線図を作成するとともに、機器の増設や移設で配線が変更になった場合には配線図を更新する。</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">周辺機器の増設や移設に際して、ケーブル類の適正化を確認することが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.13 装置の保守</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<p class="mb28">
+						サーバ、ネットワーク機器など主要な装置は、製造元から提供されたマニュアルを参照し、製造元が推奨する頻度にて点検、保守を行い、記録する。
+					</p>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">装置の点検・保守が定期的に実施され、記録されているか確認することが大切です。</p>
+				</div>
+
+				<h5 class="mb28_sp">7.14 装置のセキュリティを保った処分又は再利用</h5>
+
+				<div class="box">
+					<h5 class="mt14_sp">実施手順（例）</h5>
+
+					<ul class="mb28">
+						<li class="li num mb14"><span>a.</span>
+							PCを処分する場合は、従業員が各自で処理せず、情報システム管理者に処理を依頼する。情報システム管理者は、ハードディスクなどの記憶媒体については、物理的破壊もしくは、完全消去により処分する。
+						</li>
+						<li class="li num mb14"><span>b.</span>
+							上記以外の方法により、処分する必要があると認められる場合、事前に情報セキュリティ委員長の承認を得ることを要するものとする。
+						</li>
+						<li class="li num mb14"><span>c.</span>
+							情報システム管理者は、装置を再利用する場合、不要な情報を完全に消去し、またライセンス供与されたソフトウェアが消去されたことを確認の上、再利用する。
+						</li>
+					</ul>
+
+					<div class="border"></div>
+
+					<p class="blue_bold mb7_sp">ワンポイントアドバイス</p>
+					<p class="last">廃棄・再利用する際、情報を消去する責任者と手順を定めることが大切です。</p>
+				</div>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page16-1-1.html" class="prev">16-1-1. 対策基準の策定</a>
+						<a href="page16-2-1.html" class="next">16-2-1. BYOD（Bring Your Own Device）</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

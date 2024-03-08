@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>リスクの分析</title>
+	<meta name="Description" content="リスクマネジメント：リスクアセスメント" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar06/page11-2-3.html">
+	<meta name="og:title" content="リスクの分析">
+	<meta name="og:description" content="リスクマネジメント：リスクアセスメント">
+	<meta name="twitter:title" content="リスクの分析">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page11-1-1.html">第11章. リスクマネジメント</a> ／ <a href="page11-2-1.html">11-2. リスクマネジメント：リスクアセスメント</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>11-2-3.</span>
+					リスクの分析
+				</h4>
+
+				<h5 class="uline">リスク分析（例）</h5>
+
+				<p class="mb28">
+					特定されたリスクに対して「リスク分析」を行います。リスク分析とは、「リスクの性質を理解し、リスクレベルを決定するプロセス」<small>[24]</small>のことです。リスクレベル（リスクの大きさ）は、優先的・重点的に対策が必要な<a class="yogo" id="informationAssets">情報資産</a>を把握するために使用されます。リスクレベル（リスクの大きさ）を算定するにはさまざまな方法があります。算定方法の一例を以下に示します。
+				</p>
+
+				<img src="../images/seminar06/1123_text.png" alt="" class="img_1123_1 center">
+
+				<div class="box mb0">
+					<p>
+						「被害発生可能性」とは、脅威が<a class="yogo" id="zeijakusei">脆弱性</a>を利用して、どの程度被害をもたらす可能性があるかを示す指標です。「脅威の起こりやすさ」と「脆弱性のつけ込みやすさ」の2つの数値を「被害発生可能性の換算表」に当てはめて算出します。
+					</p>
+
+					<div class="table colum_2 s1123_1 mb28 mb42_sp">
+						<div class="th"><div class="col1"><p>起こりやすさ（脅威）</p></div></div>
+						
+						<div class="td">
+							<div class="col1"><p>3</p></div>
+							<div class="col2"><p>通常の状況で脅威が発生する（いつ発生してもおかしくない）</p></div>
+						</div>
+						
+						<div class="td">
+							<div class="col1"><p>2</p></div>
+							<div class="col2"><p>特定の状況で脅威が発生する（年に数回程度）</p></div>
+						</div>
+
+						<div class="td">
+							<div class="col1"><p>1</p></div>
+							<div class="col2"><p>通常の状況で脅威が発生することはない（通常発生しない）</p></div>
+						</div>
+					</div>
+
+					<div class="table colum_2 s1123_1 mb28 mb28_sp">
+						<div class="th"><div class="col1"><p>つけ込みやすさ（脆弱性）</p></div></div>
+						
+						<div class="td">
+							<div class="col1"><p>3</p></div>
+							<div class="col2"><p>対策を実施していない（ほぼ無防備）</p></div>
+						</div>
+						
+						<div class="td">
+							<div class="col1"><p>2</p></div>
+							<div class="col2"><p>部分的に対策を実施している（一部対策を実施）</p></div>
+						</div>
+
+						<div class="td">
+							<div class="col1"><p>1</p></div>
+							<div class="col2"><p>必要な対策をすべて実施している（対策を実施）</p></div>
+						</div>
+					</div>
+
+					<img src="../images/seminar06/1123_down.png" alt="" class="img_1123_2">
+
+					<p class="blue_bold">被害発生可能性の換算表</p>
+					<div class="table colum_graph s1123_2">
+						<div class="th_set">
+							<p class="th_txt">付け込みやすさ<br class="pc_none">（脆弱性）</p>
+							<div class="th">
+								<div class="col"><p>3</p></div>
+								<div class="col"><p>2</p></div>
+								<div class="col"><p>1</p></div>
+							</div>
+						</div>
+						<div class="td_set">
+							<div class="left_set">
+								<div class="left_col"><p>起こりやすさ<br class="pc_none">（脅威）</p></div>
+								<div class="right_col td">
+									<div class="col"><p>3</p></div>
+									<div class="col"><p>2</p></div>
+									<div class="col"><p>1</p></div>
+								</div>
+							</div>
+							<div class="right_set">
+								<div class="td">
+									<div class="col"><p>3</p></div>
+									<div class="col"><p>2</p></div>
+									<div class="col"><p>1</p></div>
+								</div>
+								<div class="td">
+									<div class="col"><p>2</p></div>
+									<div class="col"><p>1</p></div>
+									<div class="col"><p>1</p></div>
+								</div>
+								<div class="td">
+									<div class="col"><p>1</p></div>
+									<div class="col"><p>1</p></div>
+									<div class="col"><p>1</p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p class="mb7 mb0_sp">（例）</p>
+					<ul class="last">
+						<li class="li mb14">
+							<span></span>脅威の起こりやすさ：「2」、 脆弱性のつけ込みやすさ：「2」<br>
+							➡ <strong class="underline">被害発生可能性は<strong class="bold">「1」</strong>：通常の状況で被害が発生することはない</strong>
+						</li>
+						<li class="li mb14">
+							<span></span>脅威の起こりやすさ：「3」、脆弱性のつけ込みやすさ：「2」<br>
+							➡ <strong class="underline">被害発生可能性は<strong class="bold">「2」</strong>：特定の状況で被害が発生する（年に数回程度）</strong>
+						</li>
+						<li class="li">
+							<span></span>脅威の起こりやすさ：「3」、脆弱性のつけ込みやすさ：「3」<br>
+							➡ <strong class="underline">被害発生可能性は<strong class="bold">「3」</strong>通常の状況で被害が発生する（いつ発生してもおかしくない）</strong>
+						</li>
+					</ul>
+				</div>
+				<p class="cap">
+					[24]: JISC 日本産業標準調査会.”JIS Q 27000:2019 情報技術－セキュリティ技術－情報セキュリティマネジメントシステム－用語”. <a href="https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Q27000" target="_blank">https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Q27000</a>, （2023-09-21）.
+				</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page11-2-2.html" class="prev">11-2-2. リスクの特定</a>
+						<a href="page11-2-4.html" class="next">11-2-4. リスクの評価</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

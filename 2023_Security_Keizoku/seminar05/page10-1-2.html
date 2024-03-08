@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>脅威の識別</title>
+	<meta name="Description" content="脅威 、脆弱性、リスクの定義と関係性" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar05/page10-1-2.html">
+	<meta name="og:title" content="脅威の識別">
+	<meta name="og:description" content="脅威 、脆弱性、リスクの定義と関係性">
+	<meta name="twitter:title" content="脅威の識別">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page10-1-1.html">第10章. 脅威、脆弱性、リスクの定義と関係性</a> ／ <a href="page10-1-1.html">10-1. 用語の定義および関係性と識別方法</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>10-1-2.</span>
+					脅威の識別
+				</h4>
+
+				<h5 class="uline">脅威の識別</h5>
+
+				<p class="mb28">
+					脅威は「脆弱性」につけいり顕在化することで、組織に損失や損害を与える事故を生じさせます。脅威を、人為的脅威（意図的脅威、偶発的脅威）と環境的脅威に区別して把握することで、必要なセキュリティ対策を整理しやすくなります。
+				</p>
+
+				<img src="../images/seminar05/1012_kyoui.jpg" alt="" class="img_1012_1">
+				<p class="cap mb42">図45. 脅威の分類と、被害例と対策<br>
+					（出典）MSQA「ISMS推進マニュアル活用ガイドブック 2022年 1.0版」を基に作成</p>
+
+				<div class="table colum_3 s1012_1 mb28_pc mb28_sp">
+					<div class="th">
+						<div class="col1"><p>類型</p></div>
+						<div class="col2"><p>脅威</p></div>
+						<div class="col3"><p>原因</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>
+							物理的損傷
+						</p></div>
+						<div class="col2"><p>
+							火災、水害、汚染、大事故、機器や媒体の破壊、粉塵、腐食、凍結
+						</p></div>
+						<div class="col3"><p>
+							A/D/E
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>
+							自然現象
+						</p></div>
+						<div class="col2"><p>
+							気候、地震、火山活動、気象現象、洪水
+						</p></div>
+						<div class="col3"><p>
+							E
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>
+							重要なサービスの喪失
+						</p></div>
+						<div class="col2"><p>
+							空調や給水システムの故障/電気通信機器の故障
+						</p></div>
+						<div class="col3"><p>
+							A/D
+						</p></div>
+					</div>
+					<div class="td item2">
+						<div class="col2"><p>
+							電力供給の停止
+						</p></div>
+						<div class="col3"><p>
+							A/D/E
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>
+							情報を危うくすること
+						</p></div>
+						<div class="col2"><p>
+							遠隔スパイ行為、盗聴、媒体や文章の盗難、機器の盗難、再利用又は廃棄した媒体からの復元、ハードウェアの改ざん、位置検知
+						</p></div>
+						<div class="col3"><p>
+							D
+						</p></div>
+					</div>
+					<div class="td item2">
+						<div class="col2"><p>
+							漏洩・信頼できない情報源からのデータ・ソフトウェアの改ざん
+						</p></div>
+						<div class="col3"><p>
+							A/D
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>
+							技術的な故障
+						</p></div>
+						<div class="col2"><p>
+							機器の故障、機器の誤動作、ソフトウェアの誤作動
+						</p></div>
+						<div class="col3"><p>
+							A
+						</p></div>
+					</div>
+					<div class="td item2">
+						<div class="col2"><p>
+							情報システムの飽和、情報システムの保守に関する違反
+						</p></div>
+						<div class="col3"><p>
+							A/D
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>
+							認可されていない行為
+						</p></div>
+						<div class="col2"><p>
+							許可されていない機器の使用、ソフトウェアの不正コピー、データの破壊、データの違法な処理
+						</p></div>
+						<div class="col3"><p>
+							D
+						</p></div>
+					</div>
+					<div class="td item2">
+						<div class="col2"><p>
+							海賊版又は（不正）コピーソフトウェアの使用
+						</p></div>
+						<div class="col3"><p>
+							A/D
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>
+							機能を危うくすること
+						</p></div>
+						<div class="col2"><p>
+							使用時のミス
+						</p></div>
+						<div class="col3"><p>
+							A
+						</p></div>
+					</div>
+					<div class="td item2">
+						<div class="col2"><p>
+							権限の乱用/権限の詐称
+						</p></div>
+						<div class="col3"><p>
+							A/D
+						</p></div>
+					</div>
+					<div class="td item2">
+						<div class="col2"><p>
+							要員の可用性に関する違反
+						</p></div>
+						<div class="col3"><p>
+							A/D/E
+						</p></div>
+					</div>
+				</div>
+				<p class="mb0 mb14_sp">A：偶発的脅威（Accidental）　D：意図的脅威（Deliberate）　E：環境的脅威（Environmental）</p>
+				<p class="cap">脅威の一覧表の例<br>（出典）「ISO/IEC 27005」を基に作成</p>
+
+				<div class="line mb56_sp"></div>
+
+				<p>
+					脅威を洗い出すには自組織にある資産に対する脅威を識別して、「脅威の一覧表の例」のようなリストを作成します。その際には、利用者や他の事業部の関係者、外部の専門家などから得られる、脅威に関する情報を活用することが大切です。<br>脅威の洗い出しの考え方として、意図的脅威は、攻撃の動機や必要なスキル、利用可能なリソースを考慮しつつ、資産の特性や魅力、脆弱性などから、どのような要因が脅威となるかを識別できます。一方で偶発的脅威は、環境や気候、人為的なミスや誤動作などから影響を及ぼす可能性を識別できます。
+				</p>
+
+				<div class="table colum_2 s1012_2 mb0">
+					<div class="th">
+						<div class="col1"><p>脅威の種類</p></div>
+						<div class="col2"><p>想定される被害とセキュリティ対策</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>
+							環境的脅威<br>(Environmental → E)
+						</p></div>
+						<div class="col2"><p>
+							環境的脅威として地震や高潮がありますが、地震や高潮の発生そのものをコントロールすることはできません。従って、地震の発生可能性が低い場所を選択する、地震が発生した場合に素早く検知し、災害から回復する対策を重視する、などのセキュリティ対策が選択されることになります。
+						</p></div>
+					</div>
+
+					<div class="td left_item_set">
+						<div class="left_item"><p>人為的脅威</p></div>
+						<div class="col1"><p>
+							意図的脅威<br>(Deliberate → D)
+						</p></div>
+						<div class="col2"><p>
+							「（内部者が企業秘密を）漏洩する」という脅威が考えられます。この様な脅威については、当該行為が犯罪行為（不正競争防止法違反）であり、罰せられること、会社は企業規則により漏洩者を罰すること、場合によっては損害賠償請求を行うということを規程で明確に示し、教育を実施するという抑止的な対策が有効になります。漏洩を早期に検知するといった対策も重要になります。
+						</p></div>
+					</div>
+
+					<div class="td left_item_under">
+						<div class="col1"><p>
+							偶発的脅威<br>(Accidental → A)
+						</p></div>
+						<div class="col2"><p>
+							「入力ミス」がありますが、入力ミスが生じない様に、二回ずつ入力する、一定の範囲の値しか入力できない様にする、チェックデジットやチェックサムを設けるといった技術対策が有効となります。
+						</p></div>
+					</div>
+				</div>
+				<p class="cap">脅威の分類と、被害例と対策<br>
+					（出典）MSQA「ISMS推進マニュアル活用ガイドブック 2022年 1.0版」を基に作成</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page10-1-1.html" class="prev">10-1-1. 用語の定義と関係性</a>
+						<a href="page10-1-3.html" class="next">10-1-3. 脆弱性の識別</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

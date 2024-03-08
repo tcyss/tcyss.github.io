@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>第16章. 物理的管理策</title>
+	<meta name="Description" content="各章のポイント" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar10/page19-2-16.html">
+	<meta name="og:title" content="第16章. 物理的管理策">
+	<meta name="og:description" content="各章のポイント">
+	<meta name="twitter:title" content="第16章. 物理的管理策">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page19-1-1.html">19章. 総括編</a> ／ <a href="page19-2-1.html">19-2. 各章のポイント</a></p>
+			</div>
+			<div class="con_area">
+				<h4 class="mb28">
+					<span>19-2-16.</span>
+					第16章. 物理的管理策
+				</h4>
+				<ul class="mb28">
+					<li class="li"><strong class="bold"><span></span>16-1. 物理的管理策を参考とした対策基準・実施手順の策定</strong></li>
+					<li class="li"><strong class="bold"><span></span>16-2. 各種テーマごとの対策</strong></li>
+				</ul>
+
+				<div class="box mb28">
+					<p class="blue_bold">章の目的</p>
+					<p class="mb28">第16章では、情報セキュリティ方針に従ってセキュリティ対策を実施するための具体的な規則としての「対策基準」と、セキュリティ対策の実施手順や方法である「実施手順」について理解することを目的とします。</p>
+					<p class="blue_bold">主な達成目標</p>
+					<ul class="last">
+						<li class="li"><span></span>物理的管理策をもとに、対策基準を策定する手順を理解すること。</li>
+						<li class="li"><span></span>策定した対策基準をもとに、具体的な実施手順を策定する方法を理解すること。</li>
+					</ul>
+				</div>
+
+				<p class="loupe blue_bold mb7_sp">主なキーワード</p>
+				<p>物理的管理策、BYOD、MDM</p>
+
+				<h5 class="uline">要旨</h5>
+
+				<div class="box mb42">
+					<p class="blue_bold">16章の全体概要</p>
+					<p class="last">対策基準を策定する際は、ISO/IEC 27001:2022附属書Aの合計93項目の管理策を参考にできます。管理策を参考に、対策基準・実施手順を策定する手順について解説しています。16章では「物理的管理策」を参考に、対策基準を策定する手順について説明し、対策基準それぞれに対応する実施手順の例を説明しています。またテーマごとの対策として、「BYOD」、「MDM」を紹介しています。</p>
+				</div>
+
+				<p class="arrow_lightblue blue_bold"><span></span>16-1. 物理的管理策を参考とした対策基準・実施手順の策定</p>
+				<ul class="mb28">
+					<li class="li mb14">
+						<span></span>対策基準の策定<br>
+						ISO/IEC 27001:2022附属書Aの物理的管理策（14項目）を参考に、対策基準を策定します。<a class="yogo" id="riskAssessment">リスクアセスメント</a>の内容をもとに必要な管理策を選択し、決定した管理策を対策基準とします。<br>
+						対策基準の内容は、基本方針とともに公開可能なものとして作成します。<a class="yogo" id="isms">ISMS</a>に基づく管理策を用いて対策基準を策定する際は、ISO/IEC 27001:2022の文献を参照しながら作成してください。
+					</li>
+					<li class="li mb14">
+						<span></span>実施手順の策定<br>
+						管理策（対策基準）をもとに策定されたセキュリティ対策の実施手順の例を、それぞれ紹介しています。紹介する例と、ISO/IEC 27002に記載されている各管理策の手引きの内容を参考に、自社に適した実施手順を策定しましょう。
+					</li>
+				</ul>
+
+				<div class="beshi_list mb56_sp">
+					<div class="th_19 s4-7"><p>物理的管理策の項目</p></div>
+					<ul class="s4-7">
+						<li>7.1 物理的セキュリティ境界</li>
+						<li>7.2 物理的入退</li>
+						<li>7.3 オフィス、部屋及び施設のセキュリティ</li>
+						<li>7.4 物理的セキュリティの監視</li>
+						<li>7.5 物理的及び環境的脅威からの保護</li>
+						<li>7.6 セキュリティを保つべき領域での作業</li>
+						<li>7.7 クリアデスク・クリアスクリーン</li>
+						<li>7.8 装置の設置及び保護</li>
+						<li>7.9 構外にある資産のセキュリティ</li>
+						<li>7.10 記憶媒体</li>
+						<li>7.11 <a class="yogo" id="SupportUtilities">サポートユーティリティ</a></li>
+						<li>7.12 ケーブル配線のセキュリティ</li>
+						<li>7.13 装置の保守</li>
+						<li>7.14 装置のセキュリティを保った処分又は再利用</li>
+					</ul>
+				</div>
+
+				<p class="arrow_lightblue blue_bold"><span></span>16-2. 各種テーマごとの対策</p>
+				<p class="mb14">テーマごとに、概要や関連する管理策、運用手順などについて説明しています。</p>
+				<p class="li mb14">
+					<span></span>BYOD（Bring Your Own Device）<br>
+					BYODとは、個人が私物として所有している端末（PCやスマートフォンなど）を業務に使う利用形態のことです。BYOD導入に向けたポイント、運用手順を説明しています。
+				</p>
+
+				<p class="mb0"><strong class="bold">メリット</strong></p>
+				<ul class="mb14">
+					<li class="li">
+						<span></span>コスト削減<br>
+						企業は、端末の調達や管理にコストがかかりません。故障した際の修理費用や老朽化した端末の入れ替えも基本的には個人負担となります。
+					</li>
+					<li class="li">
+						<span></span>使い慣れた端末の業務利用<br>
+						従業員は、自分の使い慣れた端末を使用でき、操作方法や設定などを新たに覚える必要がないため作業効率があがります。また、仕事用とプライベート用に分けて端末を複数台持つ必要がなくなります。
+					</li>
+				</ul>
+				<p class="mb0"><strong class="bold">デメリット</strong></p>
+				<ul class="mb28">
+					<li class="li">
+						<span></span><a class="yogo" id="ShadowIT">シャドーIT</a><br>
+						ルールの整備や技術的な対策を講じないと、シャドーITが増加してしまう恐れがあります。
+					</li>
+					<li class="li">
+						<span></span>セキュリティリスク<br>
+						個人の端末では、業務に関係ないWebサイトやアプリケーションを利用されるため、ウイルス感染や<a class="yogo" id="illegalAccess">不正アクセス</a>といった被害にあう可能性が高くなります。
+					</li>
+				</ul>
+
+				<p class="li mb14">
+					<span></span>MDM（Mobile Device Management）<br>
+					MDMとは、企業で保有しているモバイル端末 (スマート フォンやタブレットなど) を一元管理できるシステムのことです。MDMの導入に向けたポイント、運用手順を説明しています。
+				</p>
+
+				<p class="blue_small mb0">MDMを導入する際のポイント</p>
+				<p class="li check">
+					<span></span>利用者の意見を反映した社内ルールの策定、およびMDMの選定<br>
+					MDMは情報セキュリティの向上や業務効率化に役立ちますが、いくつか注意点があります。たとえば、紛失・盗難されたデバイスがネットワークに接続されていない場合には、初期化などのリモート制御ができません。また、MDMによる制限が厳しくなりすぎると、使い勝手が悪くなり利用者から不満がでる可能性があります。利用者の意見を聞きながら、社内ルールの策定やMDMの選定を進めることが重要です。
+				</p>
+
+				<h5 class="uline">訴求ポイント</h5>
+
+				<div class="box mb42">
+					<p class="blue_bold">章を通した気づき・学び</p>
+					<p class="last">ISO/IEC 27002の内容を参考に物理的管理策の対策基準を決定し、実施手順を作成することが大切です。ドキュメントの作成・更新は大切ですが、本来の目標は、効果的な情報セキュリティ対策の計画と実行にあることを忘れないことが重要です。</p>
+				</div>
+
+				<p class="bulb blue_bold">認識していただきたい実施概要</p>
+				<ul class="mb56">
+					<li class="li check"><span></span>リスクアセスメントの結果をもとに必要な物理的管理策を選択し、対策基準を策定すること。</li>
+					<li class="li check"><span></span>対策基準は、基本方針とともに公開可能なものとして策定すること。</li>
+					<li class="li check"><span></span>決定した対策基準をもとに、具体的に実践するための実施手順を策定すること。</li>
+					<li class="li check"><span></span>実施手順は、組織の内部文書として従業員に対してわかりやすい実施手順を策定するよう心掛けること。</li>
+					<li class="li check"><span></span>BYOD、MDMの概要および運用手順を理解すること。</li>
+				</ul>
+
+				<div class="link_area">
+					<p>実践のために参考となる文献（参考文献）</p>
+					<ul>
+						<li class="li"><span></span><a href="https://www.iso.org/standard/27001" target="_blank">ISO/IEC 27001:2022</a></li>
+						<li class="li"><span></span><a href="https://www.iso.org/standard/75652.html" target="_blank">ISO/IEC 27002:2022</a></li>
+					</ul>
+				</div>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page19-2-15.html" class="prev">19-2-15. 第15章. 人的管理策</a>
+						<a href="page19-2-17.html" class="next">19-2-17. 第17章. 技術的管理策</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

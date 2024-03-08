@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>最近のサイバー被害事例発生の傾向</title>
+	<meta name="Description" content="サイバーセキュリティを取り巻く環境及び中小企業に求められるサイバーセキュリティ対策" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar01/page2-3-1.html">
+	<meta name="og:title" content="最近のサイバー被害事例発生の傾向">
+	<meta name="og:description" content="サイバーセキュリティを取り巻く環境及び中小企業に求められるサイバーセキュリティ対策">
+	<meta name="twitter:title" content="最近のサイバー被害事例発生の傾向">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="sec_ttl">
+		<p>第2章. 事例を知る：重大なインシデント発生から課題解決まで</p>
+		<h2>2-3. 実際の被害事例からみるケーススタディ</h2>
+	</section>
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="con_area">
+				<h4>
+					<span>2-3-1.</span>
+					最近のサイバー被害事例発生の傾向
+				</h4>
+
+				<p>
+					<a class="yogo" id="illegalAccess">不正アクセス</a>によって引き起こされるインシデントを通じて、被害が起きた原因の分析内容および効果的なセキュリティ対策と<a class="yogo" id="bestPractice">ベストプラクティス</a>を紹介します。
+				</p>
+
+				<h5 class="uline">テレワーク対応時の<a class="yogo" id="zeijakusei">脆弱性</a>対策の不備により不正アクセスされた事例</h5>
+
+				<div class="box">
+					<h6>被害の概要</h6>
+					<p>ある企業が<a class="yogo" id="firewall">ファイアウォール</a>とVPN機能を備えた装置を導入しました。最初は、ファイアウォールの機能のみ利用していましたが、テレワークを実現するためにVPNを有効化した結果、存在していた脆弱性が悪用され、不正アクセスが行われました。その結果、装置の設定ファイルやログファイル、さらには<a class="yogo" id="ipAddress">IPアドレス</a>を含む設定情報が盗まれ、ダークWeb上で公開されてしまいました。<small>[6]</small></p>
+					<h6>被害の原因</h6>
+					<p>VPNの脆弱性情報が公開された際には、VPN機能を無効にしていたため、対策は必要ないと判断されていました。しかし、テレワークに対応するためにVPN機能を有効にしたことで、脆弱性が露呈し、不正アクセスが行われました。このように、機器の利用用途が変わった場合には、必要なセキュリティ対策も変わる可能性があることを考慮していなかったことが、不正アクセスの一因とされています。</p>
+					<h6>対策・ベストプラクティス</h6>
+					<ul>
+						<li class="li"><span></span>システムの構成変更や機器の設定変更が行われる際には、利用用途の変更等も考慮し、適切なセキュリティ設定や脆弱性対策が行われているかを確認することが重要です。必要に応じて<a class="yogo" id="zeijakuseiShindan">脆弱性診断</a>を受けることも有効な対策の1つです。</li>
+						<li class="li"><span></span>VPN装置は外部のネットワークからアクセス可能な位置に設置されることが多く、外部の攻撃者から攻撃されやすくなります。そのため、VPN装置のベンダーのWebサイト等を確認し、未対策の脆弱性がないかを点検することが大切です。</li>
+					</ul>
+				</div>
+
+				<div class="image_set center">
+					<img src="../images/seminar01/231_kogeki.jpg" alt="" class="img_231_1">
+					<p class="cap">
+						図12. 攻撃の概要図<br>
+						(出典) IPA「コンピュータウイルス・不正アクセスの届出事例［2022年下半期（7月～12月）］」を基に作成
+					</p>
+				</div>
+
+				<p class="cap">
+					[6]:IPA.”コンピュータウイルス・不正アクセスの届出事例 ［2020年下半期（7月～12月）］”. <a href="https://www.ipa.go.jp/security/todokede/crack-virus/ug65p9000000nnpa-att/000088780.pdf" target="_blank">https://www.ipa.go.jp/security/todokede/crack-virus/ug65p9000000nnpa-att/000088780.pdf</a> , (2023-07-06).
+				</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page2-2-5.html" class="prev">2-2-5. ランサムウェア感染の実態</a>
+						<a href="page2-3-2.html" class="next">2-3-2. 事例：某病院のランサムウェア被害</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

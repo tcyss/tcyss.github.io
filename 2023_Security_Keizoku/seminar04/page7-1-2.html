@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>フレームワーク選択の重要性</title>
+	<meta name="Description" content="セキュリティフレームワークの概要" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar04/page7-1-2.html">
+	<meta name="og:title" content="フレームワーク選択の重要性">
+	<meta name="og:description" content="セキュリティフレームワークの概要">
+	<meta name="twitter:title" content="フレームワーク選択の重要性">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page7-1-1.html">第7章. セキュリティフレームワーク</a> / <a href="page7-1-1.html">7-1. セキュリティフレームワークの概要</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>7-1-2.</span>
+					フレームワーク選択の重要性
+				</h4>
+
+				<div class="text_set_list">
+					<div class="list_item">
+						<h6><span>［ISO/IEC発行］</span><a class="yogo" id="isms">ISMS</a>（情報セキュリティマネジメントシステム）[ISO/IEC27001,27002]</h6>
+						<p class="hand">網羅的なセキュリティフレームワーク</p>
+						<p>情報の<a class="yogo" id="kimitsusei">機密性</a>、<a class="yogo" id="kanzensei">完全性</a>、<a class="yogo" id="kayousei">可用性</a>を保護するための体系的な仕組みであり、技術的対策だけでなく、従業員の教育や訓練、組織体制の整備などが含まれています。必ずしも、組織全体で適用する必要はなく、組織の必要に応じて、適用範囲を決定できるという特徴があります。<small>[15]</small></p>
+					</div>
+					
+					<div class="list_item">
+						<h6><span>［ISO/IEC発行］</span>ISO/IEC27017</h6>
+						<p class="hand">クラウドサービス</p>
+						<p>クラウドサービスに関する情報セキュリティ対策を実施するためのガイドライン規格で、ISO/IEC27002をベースに作成されています。この規格は、クラウドサービスの提供者とクラウドサービスの利用者の両方を対象としています。クラウドサービスに関するリスクの低減や、クラウドサービスを適切に利用する組織体制を確立できます。<br>また、情報セキュリティ全般に関するマネジメントシステム規格であるISO/IEC 27001の取組みをISO/IEC 27017で強化することで、クラウドサービスにも対応した情報セキュリティ管理体制を構築することができます。</p>
+					</div>
+					
+					<div class="list_item">
+						<h6><span>［NIST発行］</span><a class="yogo" id="nist">CSF</a>（サイバーセキュリティフレームワーク）</h6>
+						<p class="hand">重要インフラ</p>
+						<p>CSFの正式名称は「重要インフラのサイバーセキュリティを改善するための<a class="yogo" id="framework">フレームワーク</a>」となり、重要インフラ向けのセキュリティフレームワークとして発行されました。NISTが定義するサイバーセキュリティ対策アプローチの中で最も上位に位置付けられており、セキュリティ管理手法の概念や管理方針・体制の整備など包括的な内容が記載されています。<br>CSFの下位概念に位置付けられているのがSP800シリーズ（SP 800-53/SP 800-171/SP 800-161など）となり、 SP800シリーズの内容については後述します。</p>
+					</div>
+					
+					<div class="list_item">
+						<h6><span>［経済産業省発行］</span><a class="yogo" id="cpsf">CPSF</a>（サイバー・フィジカル・セキュリティ対策フレームワーク）</h6>
+						<p class="hand">Society 5.0における産業社会</p>
+						<p>ISMS、CSFの概念を包含したフレームワークであり、サイバー空間におけるセキュリティ対策から、サイバー空間とフィジカル空間のそれぞれにおけるリスクを洗い出し、そのセキュリティ対策を整理しています。Society5.0を意識したセキュリティリスクとその対策方法について記述されている特徴があります。<br>リスク源を適切に捉えるために産業社会を3層構造と6つの構成要素で捉えており、産業界が自らのセキュリティ対策に活用できるよう、対策例がまとめられています。</p>
+					</div>
+					
+					<div class="list_item">
+						<h6><span>［経済産業省/IPA発行］</span>サイバーセキュリティ経営ガイドライン</h6>
+						<p class="hand">経営者を中心としたセキュリティ対策</p>
+						<p><a class="yogo" id="cyberAttack">サイバー攻撃</a>の多様化・巧妙化に伴い、サイバー攻撃から企業を守るために必要なことをまとめたガイドラインです。 ISMSのフレームワークがベースとなっており、サイバー攻撃から企業を守る観点で、経営者が認識する必要のある3原則と、経営者が情報セキュリティ対策を実施する上での責任者となる担当幹部（CISOなど）に指示すべき重要10項目をまとめているという特徴があります。<small>[16]</small><br>サイバー攻撃から企業を守る観点で、“サイバーセキュリティは経営問題”と定義し、経営者を中心とした組織的な対策の見直し・強化を求めています。</p>
+					</div>
+					
+					<div class="list_item">
+						<h6><span>［PCI SSC発行］</span>PCI DSS（国際的なクレジット産業向けのデータセキュリティ基準）</h6>
+						<p class="hand">クレジットカード産業</p>
+						<p>クレジットカード情報を取扱う全ての事業者に対して国際カードブランド5社が共同で策定した、クレジットカードの取扱いにおけるセキュリティの国際基準です（Payment Card Industry Data Security Standard の略）。<small>[17]</small><br>カード会員情報を適切に管理するため、ネットワークアーキテクチャ、ソフトウェアデザイン、セキュリティマネジメント、ポリシー、プロシジャなどに関する基準が12の要件として規定されています。</p>
+					</div>
+					
+					<div class="list_item">
+						<h6><span>［JIPDEC発行］</span>PMS（個人情報保護マネジメントシステム）</h6>
+						<p class="hand">個人情報保護</p>
+						<p>組織が業務上取り扱う個人情報を安全で適切に管理するための仕組みです。JIS Q 15001によって要求事項が定められています。この規格は、事業者が個人情報を適切に取り扱う方法を規定したもので、プライバシーの保護を直接の目的とはしていません。しかし、意図しない個人情報の取扱いが抑制されることで、結果的にプライバシーも保護されます。<small>[18]</small><br>PMSの基本的な仕組みは、個人情報保護方針を定め、この方針に基づき「PDCAサイクル」を実行することとなります。</p>
+					</div>
+					
+					<div class="list_item">
+						<h6><span>［CIS発行］</span>CIS Controls</h6>
+						<p class="hand">具体的なサイバー攻撃アプローチ</p>
+						<p>サイバー攻撃の現状と傾向を踏まえて、組織が実施すべきサイバーセキュリティ対策とその優先順位を決めるためのフレームワークで、あらゆる企業がとるべき最も基本的で重要な対応に重点を置いています。ネットワークの詳細設定や、ログの管理など、具体的で技術的な対策が中心となっている特徴があります。<br>多岐にわたる対策の中から、自社（組織）が実施すべき対策と、その優先順位を導くためのアプローチを提示したフレームワークとなります。</p>
+					</div>
+					
+					<div class="list_item">
+						<h6><span>［ISA/IEC発行］</span>ISA/IEC62443</h6>
+						<p class="hand">産業オートメーションおよび制御システム</p>
+						<p>産業用自動制御システム（Industrial Automation and Control Systems）に対するセキュリティ対策とプロセス要件を定めた一連の国際標準規格です。ISO/IEC 27001などではカバーしきれない、工場やプラントにおける制御システムのセキュリティを網羅的に対象としています。また、セキュリティ確保の対象は、ソフトウェア・ハードウェアを含む制御関連のデータ処理基盤であるシステムだけでなく、システムの運用に関わる「人」と「業務」も対象となっている特徴があります。</p>
+					</div>
+				</div>
+
+				<p class="cap">
+					[15]:ISMS-AC.”ISMS適合性評価制度”. <a href="https://isms.jp/doc/JIP-ISMS120-62.pdf" target="_blank">https://isms.jp/doc/JIP-ISMS120-62.pdf</a>, （2023-08-10）.<br>
+					[16]:経済産業省.”サイバーセキュリティ経営ガイドラインと支援ツール”. <a href="https://www.meti.go.jp/policy/netsecurity/mng_guide.html" target="_blank">https://www.meti.go.jp/policy/netsecurity/mng_guide.html</a>, （2023-08-10）.<br>
+					[17]:経済産業省.”クレジットカードシステムのセキュリティ対策の更なる強化に向けた方向性”. <a href="https://www.meti.go.jp/policy/economy/consumer/credit/2022060221001.pdf" target="_blank">https://www.meti.go.jp/policy/economy/consumer/credit/2022060221001.pdf</a>, （2023-08-17）.<br>
+					[18]:JIPDEC.”「個人情報」と「プライバシー」の違い”. <a href="https://privacymark.jp/wakaru/kouza/theme1_03.html" target="_blank">https://privacymark.jp/wakaru/kouza/theme1_03.html</a>, （2023-08-10）.
+				</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page7-1-1.html" class="prev">7-1-1. セキュリティフレームワークの役割と重要性</a>
+						<a href="page7-2-1.html" class="next">7-2-1. ISMSの概要</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

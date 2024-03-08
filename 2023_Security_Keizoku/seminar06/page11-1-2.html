@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>情報セキュリティリスクマネジメント（ISO/IEC27005）</title>
+	<meta name="Description" content="リスクマネジメント：概要" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar06/page11-1-2.html">
+	<meta name="og:title" content="情報セキュリティリスクマネジメント（ISO/IEC27005）">
+	<meta name="og:description" content="リスクマネジメント：概要">
+	<meta name="twitter:title" content="情報セキュリティリスクマネジメント（ISO/IEC27005）">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page11-1-1.html">第11章. リスクマネジメント</a> / <a href="page11-1-1.html">11-1. リスクマネジメント：概要</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>11-1-2.</span>
+					情報セキュリティリスクマネジメント（ISO/IEC27005）
+				</h4>
+
+				<p class="mb56_sp">
+					ISO/IEC 27005は、情報セキュリティにおけるリスクマネジメントに関する国際規格です。先に説明したISO31000と整合性がありますが、情報セキュリティに特化した内容になっています。この規格は、組織の<a class="yogo" id="informationAssets">情報資産</a>を安全に保つことに焦点が当てられており、情報セキュリティリスクの特定、分析、評価、対応、管理、レビューなどを実施するための手引きになっています。中小企業を含むすべての組織における情報セキュリティリスクのマネジメントに有用です。<br>
+					ISO/IEC 27005の情報セキュリティリスクマネジメントプロセスは、ISO 31000の一般的なリスクマネジメントプロセスに基づいており、リスクの特定、リスクの評価、リスクの対処、およびリスクの監視とコントロールに関するステップから構成されます。以下の図で示すように情報セキュリティリスクマネジメントプロセスは循環しており、反復的に実施されるものです。組織を取り巻く環境の変化や組織内の変化に応じて、新しいリスクが発生したり、既存のリスクが変化したりする上に、リスクへの対処法も進化するからです。特に、リスクマネジメントプロセスに含まれている<a class="yogo" id="riskAssessment">リスクアセスメント</a>は、リスク対応の方策や、対応の優先順位づけの前提になる重要な工程です。
+				</p>
+
+				<img src="../images/seminar06/1112_process.jpg" alt="" class="img_1112_1 mb28">
+				<p class="cap">図47. 情報セキュリティマネジメントプロセスの概要<br>（出典）ISO/IEC「ISO/IEC 27005:2022」を基に作成</p>
+
+				<div class="line"></div>
+
+				<p class="mb28">
+					リスクアセスメントからリスク対応までの流れを表す図を記載します。リスク対応を実施する過程では、「低減」「移転」「回避」「受容（保有）」の4つ選択があり、それらの選択は以下の図で示すプロセスで行われます。
+				</p>
+
+				<img src="../images/seminar06/1112_sentaku.jpg" alt="" class="img_1112_2">
+				<p class="cap mb56_sp">図48. リスクマネジメント全体の流れと、リスク対応の選択プロセス</p>
+
+				<div class="box mb0">
+					<p class="blue_bold">リスクを低減する</p>
+					<p class="mb28">自社で実行できる情報セキュリティ対策を導入ないし強化することで、<a class="yogo" id="zeijakusei">脆弱性</a>を改善し、事故が起きる可能性を下げます。</p>
+					
+					<p class="blue_bold">リスクを受容（保有）する</p>
+					<p class="mb28">事故が発生しても受容できる、あるいは対策にかかる費用が損害額を上回る場合などは対策を講じず、現状を維持します。</p>
+					
+					<p class="blue_bold">リスクを回避する</p>
+					<p class="mb0">仕事のやりかたを変える、情報システムの利用方法を変えるなどして、想定されるリスクそのものをなくします。</p>
+					<p class="mb0">（例）</p>
+					<ul>
+						<li class="li"><span></span>従来は商品の発送先である住所や氏名などの個人情報を発送完了後もパソコンに保存し続けていたが、保存中の漏えいを避けるために、利用後はすぐに消去する</li>
+						<li class="li"><span></span><a class="yogo" id="internetBanking">インターネットバンキング</a>に使用するパソコンでメールやウェブ閲覧をしていたが、ウイルスに感染しないようにインターネットバンキング専用のパソコンを設置し、ウイルス感染の原因となるメールやウェブ閲覧に利用せず、USBメモリ、外付けHDDも接続を禁止する</li>
+					</ul>
+					<p class="mb28">また、リスクレベルが大きく自社の対策だけでは不十分であったり、多額の費用がかかり、実施できなかったりする場合は「リスクの移転」を検討します。</p>
+					
+					<p class="blue_bold">リスクを移転する</p>
+					<p class="mb0">自社よりも有効な対策を行っている、あるいは補償能力がある他社のサービスを利用することで自社の負担を下げます。</p>
+					<p class="mb0">（例）</p>
+					<ul class="last">
+						<li class="li"><span></span>商品を販売するウェブサイトではクレジットカード番号を非保持化し、代金の決済はセキュリティ対策を十分行っている外部の決済代行サービスに変更する</li>
+						<li class="li"><span></span>社内のサーバで運用していた業務システムをセキュリティ対策の充実した外部クラウドサービスに移行する</li>
+						<li class="li"><span></span>情報漏えい、システム障害などの事故発生に伴う損失に対して保険金が支払われる情報セキュリティに関連した保険商品に加入する</li>
+					</ul>
+				</div>
+				<p class="cap">（出典）IPA 「中小企業の情報セキュリティ対策ガイドライン第3.1版」を基に作成</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page11-1-1.html" class="prev">11-1-1. リスクマネジメントプロセス（ISO31000）</a>
+						<a href="page11-1-3.html" class="next">11-1-3. ISO/IEC 27001におけるリスクマネジメント手順</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

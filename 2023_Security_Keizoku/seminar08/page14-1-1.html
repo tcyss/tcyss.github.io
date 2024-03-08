@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>対策基準の策定</title>
+	<meta name="Description" content="組織的管理策" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar08/page14-1-1.html">
+	<meta name="og:title" content="対策基準の策定">
+	<meta name="og:description" content="組織的管理策">
+	<meta name="twitter:title" content="対策基準の策定">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="title">
+		<p>第<span>14</span>章</p>
+		<h2>
+			組織的管理策
+			<small>14-1. 組織的管理策を参考とした対策基準・実施手順の策定</small>
+		</h2>
+		<div class="purpose">
+			<p class="purpose_title">章の目的</p>
+			<p class="purpose_text">第14章では、情報セキュリティ方針に従ってセキュリティ対策を実施するための具体的な規則としての「対策基準」と、セキュリティ対策の実施手順や方法である「実施手順」について学ぶことを目的とします。</p>
+			<p class="purpose_title">主な達成目標</p>
+			<ul>
+				<li class="li purpose_text"><span></span>組織的管理策をもとに、対策基準を策定する手順を理解すること。</li>
+				<li class="li purpose_text"><span></span>策定した対策基準をもとに、具体的な実施手順を策定する方法を理解すること。</li>
+			</ul>
+		</div>
+	</section>
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="con_area">
+				<h4>
+					<span>14-1-1.</span>
+					対策基準の策定
+				</h4>
+
+				<p>
+					対策基準を策定する際は、ISO/IEC 27001:2022附属書Aの合計93項目の管理策を参考にすることができます。<br>
+					組織が対策基準を策定する際は、組織の業態や規模によって重視するべき管理策は異なり、適用の必要性がない管理策も存在します。一方で、ISO/IEC 27001:2022の附属書AやISO/IEC 27002:2022にない管理策が必要となるケースもあることをご留意ください。<br>
+					自組織にとってのリスクを自ら考えて必要な管理策を選択するために、<a class="yogo" id="riskAssessment">リスクアセスメント</a>の手法を使用し、対策基準を策定します。
+				</p>
+
+				<h5 class="mb0_sp">ISO/IEC 27001:2022附属書Aの管理策</h5>
+				<div class="table colum_3 s1411 mb42">
+					<div class="th">
+						<div class="col1"><p>カテゴリ</p></div>
+						<div class="col2"><p>項目数<br>（合計93）</p></div>
+						<div class="col3"><p>概要</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>組織的管理策</p></div>
+						<div class="col2"><p>37</p></div>
+						<div class="col3"><p>
+							組織として取組む必要のある管理策。たとえば、情報セキュリティ方針、情報セキュリティの役割と責任、情報の分類などが含まれます。
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>人的管理策</p></div>
+						<div class="col2"><p>8</p></div>
+						<div class="col3"><p>
+							従業員に関して取組む必要のある管理策。従業員の採用、情報セキュリティの意識向上、情報セキュリティ教育と訓練などが含まれます。
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>物理的管理策</p></div>
+						<div class="col2"><p>14</p></div>
+						<div class="col3"><p>
+							情報システムのハードウェアや建物、設備に関する管理策。たとえば、オフィス、部屋および施設のセキュリティ、施設の物理的セキュリティ監視、装置の保守などが含まれます。
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>技術的管理策</p></div>
+						<div class="col2"><p>34</p></div>
+						<div class="col3"><p>
+							技術面での管理策。ネットワークのセキュリティ、データの<a class="yogo" id="angouka">暗号化</a>、データのバックアップ、<a class="yogo" id="zeijakusei">脆弱性</a>管理、ログ管理、<a class="yogo" id="malware">マルウェア</a>対策などが含まれます。
+						</p></div>
+					</div>
+				</div>
+
+				<div class="box">
+					<img src="../images/seminar08/1411_chuui.png" alt="" class="img_1411_1 mb28">
+					<p class="blue_bold mb28">対策基準策定時の注意点</p>
+					<p class="last">
+						<a class="yogo" id="isms">ISMS</a>の認証取得を目標にして情報セキュリティ対策を進めると、ドキュメントの整備が目的になり、本来の情報セキュリティ対策がなおざりになってしまい、ISMSが形骸化するケースが少なくありません。策定した管理策が継続的に実行されていくことが重要となります。<br>
+						<br>
+						組織は、情報セキュリティリスクを適切にコントロールするために必要となる管理策を念入りに検討し、対策基準を策定することが大切です。
+					</p>
+				</div>
+
+				<div class="line"></div>
+
+				<p>ISO/IEC 27001:2022附属書Aの合計93項目の管理策を参考に、対策基準を策定します。リスクアセスメントの内容をもとに必要な管理策を選択し、決定した管理策を対策基準とします。</p>
+
+				<h5>ISO/IEC27001:2022に基づき管理策を決定する（例）</h5>
+
+				<p class="mb14">【凡例】採用：〇・不採用：✕</p>
+
+				<div class="beshi_list sheet s1411">
+					<div class="th">
+						<p class="col1">項目</p>
+						<p class="col2">採用、不採用</p>
+					</div>
+					<ul class="s4-5">
+						<li>5.1 情報セキュリティのための方針群</li>
+						<li>5.2 情報セキュリティの役割及び責任</li>
+						<li>5.3 職務の分離</li>
+						<li>5.4 経営陣の責任</li>
+						<li>5.5 関係当局との連絡</li>
+						<li>5.6 専門組織との連絡</li>
+						<li>5.7 <a class="yogo" id="ThreatIntelligence">脅威インテリジェンス</a></li>
+						<li>5.8 プロジェクトマネジメントにおける情報セキュリティ</li>
+						<li>5.9 情報及びその他の関連資産の目録</li>
+						<li>5.10 情報及びその他の関連資産の利用の許容範囲</li>
+						<li>5.11 資産の返却</li>
+						<li>5.12 情報の分類</li>
+						<li>5.13 情報のラベル付け</li>
+						<li>5.14 情報転送</li>
+						<li>5.15 <a class="yogo" id="accessControl">アクセス制御</a></li>
+						<li>5.16 識別情報の管理</li>
+						<li>5.17 認証情報</li>
+						<li>5.18 アクセス権</li>
+						<li>5.19 供給者関係における情報セキュリティ</li>
+						<li>5.20 <a class="yogo" id="supplier">供給者</a>との合意におけるセキュリティの取扱い</li>
+						<li>5.21 ICTサプライチェーンにおける情報セキュリティの管理</li>
+						<li>5.22 供給者のサービス提供の監視、レビュー及び変更管理</li>
+						<li>5.23 クラウドサービス利用における情報セキュリティ</li>
+						<li>5.24 情報セキュリティインシデント管理の計画策定及び準備</li>
+						<li>5.25 <a class="yogo" id="InformationSecurityEvent">情報セキュリティ事象</a>の評価及び決定</li>
+						<li>5.26 情報セキュリティインシデントへの対応</li>
+						<li>5.27 情報セキュリティインシデントからの学習</li>
+						<li>5.28 証拠の収集</li>
+						<li>5.29 事業の中断・阻害時の情報セキュリティ</li>
+						<li>5.30 事業継続のための<a class="yogo" id="ict">ICT</a>の備え</li>
+						<li>5.31 法令、規制及び契約上の要求事項</li>
+						<li>5.32 知的財産権</li>
+						<li>5.33 記録の保護</li>
+						<li>5.34 プライバシー及び<a class="yogo" id="pii">PII</a>の保護</li>
+						<li>5.35 情報セキュリティの独立したレビュー</li>
+						<li>5.36 情報セキュリティのための方針群、規制及び標準の順守</li>
+						<li>5.37 操作手順書</li>
+					</ul>
+				</div>
+
+				<div class="line"></div>
+
+				<p class="mb42 mb42_sp">
+					対策基準の内容は、基本方針とともに公開可能なものとして作成します。ISMSに基づく管理策を用いて対策基準を策定する際は、ISO/IEC 27001:2022の文献を参照しながら作成してください。
+				</p>
+
+				<div class="box mb42_sp">
+					<img src="../images/seminar08/1411_taisakukijun.png" alt="" class="img_1411_2 mb28">
+
+					<h5>対策基準（例）</h5>
+
+					<p class="blue_bold">5.1 情報セキュリティのための方針群</p>
+					<p class="mb28">情報セキュリティ方針およびトピック固有の個別方針は、これを定義し、経営陣によって承認され、発行し、関連する要員および関連する利害関係者へ伝達し認識され、計画した間隔でおよび重要な変化が発生した場合にレビューしなければならない。</p>
+
+					<p class="blue_bold">5.2 情報セキュリティの役割及び責任</p>
+					<p class="mb28">情報セキュリティの役割および責任を、組織の要求に従って定め、割り当てなければならない。</p>
+
+					<p class="blue_bold">5.3 職務の分離</p>
+					<p class="mb28">相反する職務および責任範囲は、分離しなければならない。</p>
+
+					<p class="blue_bold">5.4 経営陣の責任</p>
+					<p class="mb28">経営陣は、組織の確立された情報セキュリティ方針、トピック固有の個別方針および手順に従った情報セキュリティの適用を、すべての要員に要求しなければならない。</p>
+
+					<p class="blue_bold">5.5 関係当局との連絡</p>
+					<p class="mb28">組織は、関係当局との連絡体制を確立および維持しなければならない。</p>
+
+					<p class="blue_bold">5.6 専門組織との連絡</p>
+					<p class="mb28">組織は、情報セキュリティに関する研究会または会議、および情報セキュリティの専門家による協会・団体との連絡体制を確立し維持しなければならない。</p>
+
+					<p class="blue_bold">5.7 脅威インテリジェンス</p>
+					<p class="last">情報セキュリティの脅威に関連する情報を収集および分析し、脅威インテリジェンスを構築しなければならない。</p>
+				</div>
+
+				<div class="point">ONE POINT</div>
+				<div class="box mb56_sp">
+					<p class="blue_bold">対策基準を策定する際のポイント</p>
+					<p class="last">ISO/IEC 27001:2022附属書Aの中には、中小企業にとっては負担が大きい管理策があります。ISO/IEC 27001:2022附属書Aに適切な管理策がない場合は、独自の管理策を追加することができます。組織の状況を考慮し、適切な対策基準を策定することが大切です。</p>
+				</div>
+
+				<div class="box mb42 mb42_sp">
+					<img src="../images/seminar08/1411_taisakukijun.png" alt="" class="img_1411_2 mb28">
+
+					<h5>対策基準（例）</h5>
+
+					<p class="blue_bold">5.8 プロジェクトマネジメントにおける情報セキュリティ</p>
+					<p class="mb28">情報セキュリティをプロジェクトマネジメントに組み入れなければならない。</p>
+
+					<p class="blue_bold">5.9 情報及びその他の関連資産の目録</p>
+					<p class="mb28">管理責任者を含む情報およびその他の関連資産の目録を作成し、維持しなければならない。</p>
+
+					<p class="blue_bold">5.10 情報及びその他の関連資産の利用の許容範囲</p>
+					<p class="mb28">情報およびその他の関連資産の利用並びに取扱い手順の許容範囲に関する規則は、明確にし、文書化し、実施しなければならない。</p>
+
+					<p class="blue_bold">5.11 資産の返却</p>
+					<p class="mb28">要員および必要に応じてその他の利害関係者は、雇用、契約または合意の変更または終了時に、自らが所持する組織の資産のすべてを返却しなければならない。</p>
+
+					<p class="blue_bold">5.12 情報の分類</p>
+					<p class="mb28">情報は、<a class="yogo" id="kimitsusei">機密性</a> 、<a class="yogo" id="kanzensei">完全性</a> 、<a class="yogo" id="kayousei">可用性</a>および関連する利害関係者の要求事項に基づく組織の情報セキュリティの要求に従って分類しなければならない。</p>
+
+					<p class="blue_bold">5.13 情報のラベル付け</p>
+					<p class="mb28">情報のラベル付けに関する適切な一連の手順は、「5.12 情報の分類」で確立した分類体系に従って策定し、実施しなければならない。</p>
+
+					<p class="blue_bold">5.14 情報転送</p>
+					<p class="mb28">情報転送の規則、手順または合意を、組織内および組織と他の関係者との間のすべての種類の転送設備に関して備えなければならない。</p>
+
+					<p class="blue_bold">5.15 アクセス制御</p>
+					<p class="mb28">情報およびその他の関連資産への物理的および論理的アクセスを制御するための規則を、業務および情報セキュリティの要求事項に基づいて確立し、実施しなければならない。</p>
+
+					<p class="blue_bold">5.16 識別情報の管理</p>
+					<p class="mb28">組織の情報およびその他の関連資産にアクセスする個人およびシステムを一意に特定できるようにし、アクセス権を適切に割り当てなければならない。</p>
+
+					<p class="blue_bold">5.17 認証情報</p>
+					<p class="mb28">認証情報の割り当ておよび管理は、認証情報の適切な取扱いについて要員に助言することを含む管理プロセスによって管理しなければならない。</p>
+
+					<p class="blue_bold">5.18 アクセス権</p>
+					<p class="mb28">情報およびその他の関連資産へのアクセス権は、アクセス制御に関する組織のトピック固有の個別方針および規則に従って、提供、レビュー、変更および削除しなければならない。</p>
+
+					<p class="blue_bold">5.19 供給者関係における情報セキュリティ</p>
+					<p class="mb28">供給者の製品またはサービスの使用に関連する情報セキュリティリスクを管理するためのプロセスおよび手順を定義し実施しなければならない。</p>
+
+					<p class="blue_bold">5.20 供給者との合意における情報セキュリティの取扱い</p>
+					<p class="mb28">供給者関係の種類に応じて、各供給者と、関連する情報セキュリティ要求事項を確立し合意をとらなければならない。</p>
+
+					<p class="blue_bold">5.21 ICTサプライチェーンにおける情報セキュリティの管理</p>
+					<p class="mb28">ICT 製品およびサービスの<a class="yogo" id="supplyChain">サプライチェーン</a>に関連する情報セキュリティリスクを管理するためのプロセスおよび手順を定め、実施しなければならない。</p>
+
+					<p class="blue_bold">5.22 供給者のサービス提供の監視、レビュー及び変更管理</p>
+					<p class="mb28">サービスの供給者の情報セキュリティの実践およびサービス提供の変更を定常的に監視し、レビューし、評価し、管理しなければならない。</p>
+
+					<p class="blue_bold">5.23 クラウドサービスの利用における情報セキュリティ</p>
+					<p class="mb28">クラウドサービスの取得、利用、管理および終了のプロセスを、組織の情報セキュリティ要求事項に従って定めなければならない。</p>
+
+					<p class="blue_bold">5.24 情報セキュリティインシデント管理の計画及び準備</p>
+					<p class="mb28">セキュリティインシデント管理のプロセス、役割および責任を定義、確立および伝達し、セキュリティインシデント管理の計画を定めなければならない。</p>
+
+					<p class="blue_bold">5.25 情報セキュリティ事象の評価及び決定</p>
+					<p class="mb28">情報セキュリティ事象に対して、<a class="yogo" id="securityIncident">セキュリティインシデント</a>に分類するか否かを決定するための評価を実施しなければならない。</p>
+
+					<p class="blue_bold">5.26 情報セキュリティインシデントへの対応</p>
+					<p class="mb28">セキュリティインシデントに対し、文書化した手順に従って対応しなければならない。</p>
+
+					<p class="blue_bold">5.27 情報セキュリティインシデントからの学習</p>
+					<p class="mb28">セキュリティインシデントから得られた知識を、情報セキュリティ管理策を強化し、改善するために用いなければならない。</p>
+
+					<p class="blue_bold">5.28 証拠の収集</p>
+					<p class="mb28">情報セキュリティ事象に関連する証拠の特定、収集、取得および保存のための手順を定め、実施しなければならない。</p>
+
+					<p class="blue_bold">5.29 事業の中断・阻害時の情報セキュリティ</p>
+					<p class="mb28">事業の中断・阻害時に情報セキュリティを適切なレベルに維持するための方法を定めなければならない。</p>
+
+					<p class="blue_bold">5.30 事業継続のためのICTの備え</p>
+					<p class="mb28">事業継続の目的およびICT 継続の要求事項に基づいて、ICT の備えを計画、実施、維持および試験しなければならない。</p>
+
+					<p class="blue_bold">5.31 法令・規制及び契約上の要求事項</p>
+					<p class="mb28">情報セキュリティに関する法令や契約事項を特定・文書化し、遵守しなければならない。</p>
+
+					<p class="blue_bold">5.32 知的財産権</p>
+					<p class="mb28">知的財産権を保護するための適切な手順を実施しなければならない。</p>
+
+					<p class="blue_bold">5.33 記録の保護</p>
+					<p class="mb28">記録を、消失、破壊、<a class="yogo" id="kaizan">改ざん</a>、認可されていないアクセスおよび不正な流出から保護しなければならない。</p>
+
+					<p class="blue_bold">5.34 プライバシー及びPIIの保護</p>
+					<p class="mb28">適用される法令、規制および契約上の要求事項に従って、プライバシーの維持およびPII の保護に関する要求事項を特定し、満たさなければならない。</p>
+
+					<p class="blue_bold">5.35 情報セキュリティの独立したレビュー</p>
+					<p class="mb28">情報セキュリティおよびその実施の管理に対する組織の取組みについて、あらかじめ定めた間隔で、または重大な変化が生じた場合に、独立したレビューを実施しなければならない。</p>
+
+					<p class="blue_bold">5.36 情報セキュリティのための方針群、規則及び標準の順守</p>
+					<p class="mb28">組織の情報セキュリティ方針、トピック固有の個別方針、規則および標準を遵守していることを定期的にレビューしなければならない。</p>
+
+					<p class="blue_bold">5.37 操作手順書</p>
+					<p class="last">情報処理設備の操作手順を文書化し、必要な要員に対して利用可能な状態としなければならない。</p>
+				</div>
+
+				<p>14-1-2の項では、策定した対策基準をもとに作成する実施手順について説明します。</p>
+
+				<div class="link_area">
+					<p>詳細理解のため参考となる文献（参考文献）</p>
+					<ul>
+						<li class="li"><span></span><a href="https://www.iso.org/standard/27001" target="_blank">ISO/IEC 27001:2022</a></li>
+						<li class="li"><span></span><a href="https://www.iso.org/standard/75652.html" target="_blank">ISO/IEC 27002:2022</a></li>
+					</ul>
+				</div>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="index.html" class="prev">目次</a>
+						<a href="page14-1-2.html" class="next">14-1-2. 実施手順の策定</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

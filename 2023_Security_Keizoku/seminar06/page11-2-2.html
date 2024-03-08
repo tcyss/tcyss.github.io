@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>リスクの特定</title>
+	<meta name="Description" content="リスクマネジメント：リスクアセスメント" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar06/page11-2-2.html">
+	<meta name="og:title" content="リスクの特定">
+	<meta name="og:description" content="リスクマネジメント：リスクアセスメント">
+	<meta name="twitter:title" content="リスクの特定">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page11-1-1.html">第11章. リスクマネジメント</a> ／ <a href="page11-2-1.html">11-2. リスクマネジメント：リスクアセスメント</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>11-2-2.</span>
+					リスクの特定
+				</h4>
+
+				<h5 class="uline">リスク特定</h5>
+
+				<p class="mb28">
+					<a class="yogo" id="riskAssessment">リスクアセスメント</a>の1つ目のプロセスである「リスク特定」について説明します。リスク特定とは、「リスクを発見、認識及び記述するプロセス」<small>[21]</small>のことです。リスク特定を実施するために一般的に使用されるアプローチは「資産ベースのアプローチ」および「事象ベースのアプローチ」の2つがあります。
+				</p>
+
+				<p class="blue_bold mb0">【情報セキュリティリスクの特定および記述】</p>
+				<div class="table colum_4 s1122_1 mb0">
+					<div class="th">
+						<div class="col1"><p>アプローチ手法</p></div>
+						<div class="col2"><p>概要</p></div>
+						<div class="col3"><p>メリット</p></div>
+						<div class="col4"><p>デメリット</p></div>
+					</div>
+					<div class="td">
+						<div class="col1">
+							<p><strong class="bold">資産ベースの<br class="sp_none">アプローチ</strong></p>
+						</div>
+
+						<div class="col2">
+							<ul>
+								<li class="li"><span></span>資産、脅威及び<a class="yogo" id="zeijakusei">脆弱性</a>の検査を通じてリスクを特定しアセスメントを行う。</li>
+								<li class="li"><span></span>資産は、その種類及び優先度に従って主要資産及び支援資産として特定できる。</li>
+								<li class="li"><span></span>脅威は、資産の脆弱性につけ込み、対応する情報の<a class="yogo" id="kimitsusei">機密性</a>、<a class="yogo" id="kanzensei">完全性</a>または<a class="yogo" id="kayousei">可用性</a>を侵害する。</li>
+								<li class="li"><span></span>資産のリストを作成することが望ましい。</li>
+							</ul>
+						</div>
+						<div class="col3">
+							<ul>
+								<li class="li"><span></span>資産、脅威及び脆弱性のすべての有効な組合せをISMSの適用範囲で列挙することができれば、理論上はすべてのリスクが特定される。</li>
+							</ul>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span><a class="yogo" id="informationAssets">情報資産</a>が増えたときに、資産のリストの行数が多くなる。</li>
+								<li class="li"><span></span>同様のリスクを繰り返し記載したりしなければならない場合がある。</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="td">
+						<div class="col1">
+							<p><strong class="bold">事象ベースの<br class="sp_none">アプローチ</strong></p>
+						</div>
+						<div class="col2">
+							<ul>
+								<li class="li"><span></span>事象及び結果の評価を通じてリスクを特定し、アセスメントを行う。</li>
+								<li class="li"><span></span>事象及び結果は、トップマネジメントから見た懸念、リスク所有者及び組織の状況を決定する際に特定された要求事項によって発見できる。</li>
+							</ul>
+						</div>
+						<div class="col3">
+							<ul>
+								<li class="li"><span></span>詳細なレベルで資産を特定することに多大な時間を費やすことなく、高いレベルまたは戦略的なシナリオを確立することができる。</li>
+							</ul>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>網羅性において、資産ベースのアプローチに劣る。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<p class="cap mb28">（出典）ISO/IEC「ISO/IEC 27005:2022」を基に作成</p>
+
+				<div class="down_img under_168 mb56_sp">
+					<img src="../images/down.svg" alt="">
+				</div>
+
+				<div class="table colum_2 s1122_2 mb0">
+					<div class="th">
+						<div class="col1"><p></p></div>
+						<div class="col2"><p></p></div>
+					</div>
+					<div class="td">
+						<div class="col1">
+							<p><strong class="bold">リスク所有者の<br class="sp_none">特定</strong></p>
+						</div>
+
+						<div class="col2">
+							<ul>
+								<li class="li"><span></span>特定されたリスクに対し、リスク所有者を関連付ける。</li>
+								<li class="li"><span></span>リスク所有者は、トップマネジメント、セキュリティ委員会、プロセス所有者、機能所有者、部門マネージャーおよび資産所有者など、リスクマネジメントに権限を持つ人とする。（通常、組織内で一定の権限を持つ人が選ばれる）</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<p class="cap">[21]: JISC 日本産業標準調査会.”JIS Q 27000:2019 情報技術－セキュリティ技術－情報セキュリティマネジメントシステム－用語”. <a href="https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Q27000" target="_blank">https://www.jisc.go.jp/app/jis/general/GnrJISNumberNameSearchList?show&jisStdNo=Q27000</a>, （2023-09-21）.</p>
+
+				<h5 class="uline">リスク特定（資産ベースのアプローチ）</h5>
+
+				<p class="mb28">
+					資産ベースのアプローチでは、はじめに情報資産を洗い出し（資産目録の作成）、その過程でリスク所有者を特定します。リスク所有者とは、リスクが顕在化した際に責任を取る人のことを指します。その後、情報資産ごとに「機密性」「完全性」「可用性」が損なわれた場合、事業にどれほど影響があるか評価を行い、重要度を判断します。
+				</p>
+
+				<img src="../images/seminar06/1122_approach.jpg" alt="" class="img_1122_1">
+
+				<h5>情報資産の洗い出し（例）</h5>
+
+				<p>
+					情報資産の洗い出しでは、業務で利用する電子データや書類などを特定し、資産目録を作成します。洗い出した情報資産は、「営業」「人事」「経理」など管理部門ごとに分類します。企業活動に大きな影響を与えかねない重要な情報を、できる限り漏れないように洗い出すことが重要です。影響がほとんどない情報であれば、漏れても大きな問題はありません。情報資産の洗い出しの粒度は、細かすぎると管理が大変ですが、逆に粗いと次のリスク分析が難しくなります。そのため、適度な粒度にすることが重要です。以下は、情報資産のリストアップ例です。
+				</p>
+
+				<div class="table colum_7 s1122_3 mb0">
+					<div class="th">
+						<div class="col1"><p>業務分類</p></div>
+						<div class="col2"><p>情報資産名称</p></div>
+						<div class="col3"><p>備考</p></div>
+						<div class="col4"><p>利用者範囲</p></div>
+						<div class="col5"><p>リスク<br class="sp_none">所有者</p></div>
+						<div class="col6"><p>管理部署</p></div>
+						<div class="col7"><p>媒体・保存先</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>人事</p></div>
+						<div class="col2"><p>社員名簿</p></div>
+						<div class="col3"><p>社員基本情報</p></div>
+						<div class="col4"><p>人事部</p></div>
+						<div class="col5"><p>人事部長</p></div>
+						<div class="col6"><p>人事部</p></div>
+						<div class="col7"><p>事務所PC</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>人事</p></div>
+						<div class="col2"><p>健康診断の結果</p></div>
+						<div class="col3"><p>雇入時・定期健康診断</p></div>
+						<div class="col4"><p>人事部</p></div>
+						<div class="col5"><p>人事部長</p></div>
+						<div class="col6"><p>人事部</p></div>
+						<div class="col7"><p>書類</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>経理</p></div>
+						<div class="col2"><p>給与システム<br>データ</p></div>
+						<div class="col3"><p>税務署提出用<br>源泉徴収票</p></div>
+						<div class="col4"><p>給与計算担当</p></div>
+						<div class="col5"><p>経理部長</p></div>
+						<div class="col6"><p>人事部</p></div>
+						<div class="col7"><p>事務所PC</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>経理</p></div>
+						<div class="col2"><p>当社宛請求書</p></div>
+						<div class="col3"><p>当社宛請求書の原本（過去3年分）</p></div>
+						<div class="col4"><p>総務部</p></div>
+						<div class="col5"><p>経理部長</p></div>
+						<div class="col6"><p>総務部</p></div>
+						<div class="col7"><p>書類</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>経理</p></div>
+						<div class="col2"><p>発行済請求書控え</p></div>
+						<div class="col3"><p>当社発行の請求書の控え（過去3年分）</p></div>
+						<div class="col4"><p>総務部</p></div>
+						<div class="col5"><p>経理部長</p></div>
+						<div class="col6"><p>総務部</p></div>
+						<div class="col7"><p>書類</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>営業</p></div>
+						<div class="col2"><p>顧客リスト</p></div>
+						<div class="col3"><p>得意先（直近5年間に実績があるもの）</p></div>
+						<div class="col4"><p>営業部</p></div>
+						<div class="col5"><p>営業部長</p></div>
+						<div class="col6"><p>営業部</p></div>
+						<div class="col7"><p>可搬電子媒体</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>営業</p></div>
+						<div class="col2"><p>受注伝票</p></div>
+						<div class="col3"><p>受注伝票（過去10年分）</p></div>
+						<div class="col4"><p>営業部</p></div>
+						<div class="col5"><p>営業部長</p></div>
+						<div class="col6"><p>営業部</p></div>
+						<div class="col7"><p>社内サーバ</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>営業</p></div>
+						<div class="col2"><p>受注契約書</p></div>
+						<div class="col3"><p>受注契約書原本（過去10年分）</p></div>
+						<div class="col4"><p>営業部</p></div>
+						<div class="col5"><p>営業部長</p></div>
+						<div class="col6"><p>営業部</p></div>
+						<div class="col7"><p>書類</p></div>
+					</div>
+				</div>
+				<p class="cap">資産目録の例<br>（出典）IPA 「リスク分析シート」を基に作成</p>
+
+				<p>
+					電子化された情報を洗い出す際は、「普段パソコンで見ているこのデータは、どこに保存されているのだろう」というように、社内のIT機器や利用しているクラウドサービスを思い浮かべて記入します。また、複数の組織を持つ企業の場合、管理部署ごとにシートを分けて作成すると、内容の見直しの際に便利です。
+				</p>
+
+				<div class="line"></div>
+
+				<p class="mb56_sp">
+					資産目録を作成する際、情報資産を情報、情報を支援する資産として「主要/事業資産」と「支援資産」2つのカテゴリに分類して整理する方法も有効です。
+				</p>
+
+				<div class="box mb0">
+					<h5>｢主要/事業資産｣</h5>
+
+					<p class="mb28">｢主要/事業資産｣とは、「組織にとって価値のある情報又はプロセス」<small>[22]</small>のことです。主要資産は、「事業プロセス及び事業活動」と「情報」の2つに分けられます。</p>
+
+					<p class="blue_bold">「事業プロセス及び事業活動」の例</p>
+					<ul class="mb28">
+						<li class="li"><span></span>その損失又は低下によって、組織の使命達成が不可能となるプロセス</li>
+						<li class="li"><span></span>機密プロセス又は専有技術を伴っているプロセス</li>
+						<li class="li"><span></span>修正された場合、組織の使命の達成に大きく影響するプロセス</li>
+						<li class="li"><span></span>組織が契約、法令又は規則の要求事項を遵守するために必要となるプロセス</li>
+					</ul>
+
+					<p class="blue_bold">「情報」の例</p>
+					<ul class="mb42">
+						<li class="li"><span></span>組織の使命又は事業の遂行に不可欠の情報</li>
+						<li class="li"><span></span>プライバシーに関する国内法にいう意味で、特別に定義することができる個人情報</li>
+						<li class="li"><span></span>戦略的方向性によって決定される目的の達成に必要となる戦略情報</li>
+						<li class="li"><span></span>収集、保管、処理、送信に長時間を要する高コスト情報及び高い取得費用を伴う情報</li>
+					</ul>
+
+					<h5>｢支援資産｣</h5>
+					<p class="mb28">｢支援資産｣とは、「1つ以上の事業資産の基礎となる情報システムの構成要素」<small>[23]</small>のことです。</p>
+
+					<p class="blue_bold">「支援資産」の例</p>
+					<p class="li last"><span></span>ハードウェア、ソフトウェア、ネットワーク、要員、サイト、組織</p>
+				</div>
+				<p class="cap">（出典）MSQA「ISMS推進マニュアル活用ガイドブック 2022年 1.0版」を基に作成</p>
+
+				<div class="point">ONE POINT</div>
+				<div class="box mb0">
+					<p class="blue_bold">情報資産のグループ化</p>
+					<p class="mb28">ISMS適用範囲に存在する情報資産を洗い出す作業は、負荷が非常に大きくなりやすいです。そこで、資産価値や保管形態、保管期間や用途などが同じものを1つのグループとしてまとめて管理することで、作業負荷を軽減したり、作業を効率化したりすることができます。</p>
+
+					<p>（例）事務所内のパソコンで会計ソフトや表計算ソフトを使って帳簿を作成している場合</p>
+					<img src="../images/seminar06/1122_group.jpg" alt="" class="img_1122_2 last">
+				</div>
+				<p class="cap">[22][23]: ISO.” ISO/IEC 27005:2022”. <a href="https://www.iso.org/standard/80585.html" target="_blank">https://www.iso.org/standard/80585.html</a>, （2023-09-21）.</p>
+
+				<div class="line"></div>
+
+				<p class="blue_bold">機密性・完全性・可用性が損なわれた場合の影響度を評価</p>
+
+				<p>
+					情報資産ごとに「機密性」「完全性」「可用性」が損なわれた場合の事業への影響度を評価します。具体例として、以下の評価基準を参考に「機密性」「完全性」「可用性」それぞれの評価値（3～1）を決定します。
+				</p>
+
+				<div class="table colum_4 s1122_4 mb0">
+					<div class="th">
+						<div class="col1"><p>評価値</p></div>
+						<div class="col2"><p>評価基準</p></div>
+						<div class="col3"><p>該当する情報の例</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>機密性</p></div>
+						<div class="col2"><p>3</p></div>
+						<div class="col3">
+							<p>法律で安全管理（漏えい、滅失又はき損防止）が義務付けられている</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>個人情報（個人情報保護法で定義）</li>
+								<li class="li"><span></span>特定個人情報（マイナンバーを含む個人情報）</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td brank2">
+						<div class="col3">
+							<p>
+								守秘義務の対象や<a class="yogo" id="genteiteikyodata">限定提供データ</a>として指定されている<br>
+								漏えいすると取引先や顧客に大きな影響がある
+							</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>取引先から秘密として提供された情報</li>
+								<li class="li"><span></span>取引先の製品・サービスに関わる非公開情報</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td brank2">
+						<div class="col3">
+							<p>
+								自社の営業秘密として管理すべき（不正競争防止法による保護を受けるため）<br>
+								漏えいすると自社に深刻な影響がある
+							</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>自社の独自技術・ノウハウ</li>
+								<li class="li"><span></span>取引先リスト</li>
+								<li class="li"><span></span>特許出願前の発明情報</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td brank1">
+						<div class="col2"><p>2</p></div>
+						<div class="col3">
+							<p>
+								漏えいすると事業に大きな影響がある
+							</p>
+						</div>
+						<div class="col4">
+							<p class="li"><span></span>見積書、仕入価格など顧客（取引先）との商取引に関する情報</p>
+						</div>
+					</div>
+
+					<div class="td brank1">
+						<div class="col2"><p>1</p></div>
+						<div class="col3">
+							<p>
+								漏えいしても事業にほとんど影響はない
+							</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>自社製品カタログ</li>
+								<li class="li"><span></span>ホームページ掲載情報</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>完全性</p></div>
+						<div class="col2"><p>3</p></div>
+						<div class="col3">
+							<p>法律で安全管理（漏えい、滅失又はき損防止）が義務付けられている</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>個人情報（個人情報保護法で定義）</li>
+								<li class="li"><span></span>特定個人情報（マイナンバーを含む個人情報）</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td brank2">
+						<div class="col3">
+							<p><a class="yogo" id="kaizan">改ざん</a>されると自社に深刻な影響または取引先や顧客に大きな影響がある</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>取引先から処理を委託された会計情報</li>
+								<li class="li"><span></span>取引先の口座情報</li>
+								<li class="li"><span></span>顧客から製造を委託された設計図</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td brank1">
+						<div class="col2"><p>2</p></div>
+						<div class="col3">
+							<p>
+								改ざんされると事業に大きな影響がある
+							</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>自社の会計情報</li>
+								<li class="li"><span></span>受発注・決済・契約情報</li>
+								<li class="li"><span></span>ホームページ掲載情報</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td brank1">
+						<div class="col2"><p>1</p></div>
+						<div class="col3">
+							<p>
+								改ざんされても事業にほとんど影響はない
+							</p>
+						</div>
+						<div class="col4">
+							<p class="li"><span></span>廃版製品カタログデータ</p>
+						</div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>可用性</p></div>
+						<div class="col2"><p>3</p></div>
+						<div class="col3">
+							<p>利用できなくなると自社に深刻な影響または取引先や顧客に大きな影響がある</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>顧客に提供しているECサイト</li>
+								<li class="li"><span></span>顧客に提供しているクラウドサービス</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td brank1">
+						<div class="col2"><p>2</p></div>
+						<div class="col3">
+							<p>
+								利用できなくなると事業に大きな影響がある
+							</p>
+						</div>
+						<div class="col4">
+							<ul>
+								<li class="li"><span></span>製品の設計図</li>
+								<li class="li"><span></span>商品・サービスに関するコンテンツ　（インターネット向け事業の場合）</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="td brank1">
+						<div class="col2"><p>1</p></div>
+						<div class="col3">
+							<p>
+								利用できなくなっても事業にほとんど影響はない
+							</p>
+						</div>
+						<div class="col4">
+							<p class="li"><span></span>廃版製品カタログ</p>
+						</div>
+					</div>
+				</div>
+				<p class="cap">
+					情報資産の機密性・完全性・可用性に基づく重要度の定義<br>
+					（出典）IPA 「中小企業の情報セキュリティ対策ガイドライン第3.1版」を基に作成
+				</p>
+
+				<div class="line"></div>
+
+				<p class="blue_bold">影響度の評価をもとに重要度を算定</p>
+				<p>
+					重要度の算出例を説明します。重要度は「機密性」「完全性」「可用性」いずれかの評価値の最大値で判断します。なお、事故が起きると法的責任を問われたり、取引先、顧客、個人に大きな影響があったり、事業に深刻な影響を及ぼすなど、企業の存続を左右しかねない場合や、個人情報を含む場合は、前項の算定結果に関わらず、重要度は3とします。
+				</p>
+
+				<div class="table colum_2 s1122_5">
+					<div class="th">
+						<div class="col1"><p>重要度</p></div>
+						<div class="col2"><p>情報資産の価値・事故の影響の大きさ</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>3</p></div>
+						<div class="col2"><p>
+							事故が起きると、「 法的責任を問われる」「 取引先、顧客、個人に大きな影響がある」「 事業に深刻な影響を及ぼす」など、企業の存続を左右しかねない
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>2</p></div>
+						<div class="col2"><p>
+							事故が企業の事業に重大な影響を及ぼす
+						</p></div>
+					</div>
+
+					<div class="td">
+						<div class="col1"><p>1</p></div>
+						<div class="col2"><p>
+							事故が発生しても事業にほとんど影響はない
+						</p></div>
+					</div>
+				</div>
+
+				<div class="table colum_3 s1122_6 mb0">
+					<div class="th">
+						<div class="col1"><p>重要度の判断例：自社のホームページ（電子データ）</p></div>
+						<div class="col2"><p>評価値</p></div>
+					</div>
+					
+					<div class="td">
+						<div class="col1"><p>「機密性」</p></div>
+						<div class="col2"><p>
+							公開しているホームページであり、クレジットカード情報など機密情報の保存はしていない
+						</p></div>
+						<div class="col3"><p>⇒ 1</p></div>
+					</div>
+					
+					<div class="td">
+						<div class="col1"><p>「完全性」</p></div>
+						<div class="col2"><p>
+							<a class="yogo" id="illegalAccess">不正アクセス</a>で価格が改ざんされたり、ウイルスが仕掛けられたりすると顧客や閲覧者に被害が発生し、信用を失う
+						</p></div>
+						<div class="col3"><p>⇒ 3</p></div>
+					</div>
+					
+					<div class="td">
+						<div class="col1"><p>「可用性」</p></div>
+						<div class="col2"><p>
+							サーバの障害などでアクセスできなくなると、来店客が減少し、売上も減少する
+						</p></div>
+						<div class="col3"><p>⇒ 3</p></div>
+					</div>
+
+					<div class="td">
+						<div class="txt"><p>➡　完全性と可用性の評価値3が最大値なので、<strong class="bold">重要度は評価値：3</strong></p></div>
+					</div>
+				</div>
+				<p class="cap mb42_sp">
+					重要度の判断例<br>
+					（出典）IPA 「中小企業の情報セキュリティ対策ガイドライン第3.1版」を基に作成
+				</p>
+
+				<div class="point">ONE POINT</div>
+				<div class="box">
+					<p class="blue_bold">重要度を判断する際のポイント</p>
+					<ul class="last">
+						<li class="li"><span></span>重要度の判断は、立場や見識によっても異なることがあるので、情報資産管理台帳に記入する前に「重要ではない」と判断するのではなく、記入した後に組織的に重要度を判断します。</li>
+						<li class="li"><span></span>情報資産の「重要度」は、時間経過とともに変化することがありますが、現時点の評価値を記入します。また時間経過に伴う重要度の変化を台帳上で更新することが難しい場合は、最大値で評価します。</li>
+					</ul>
+				</div>
+
+				<h5 class="uline">リスク特定（事象ベースのアプローチ）</h5>
+
+				<p>
+					事象ベースのアプローチでは、従業者の業務プロセスを起点にリスクを特定します。それにより、詳細なレベルで資産を特定することに多大な時間を費やすことなく、戦略的なシナリオを確立することができます。その結果、組織は自らのリスク対応の取組みを、重大なリスクに集中させることができます。<br>
+					前述の資産ベースのアプローチに比べると網羅性に劣るというデメリットはありますが、その分、日々の業務をもとにして洗い出すため、現実的なリスクを洗い出すことができるというメリットがあります。また、資産ベースのアプローチの際、情報資産の洗い出しにより出てきた主要資産（事業プロセスおよび事業活動）に対しても、事象ベースのアプローチでリスク特定が可能です。
+				</p>
+
+				<div class="box mb0">
+					<p class="blue_bold">① リスクの特定</p>
+					<p class="last">
+						業務プロセスや取扱っている重要な資産に対して、業務上起きたら困ること（リスク）もしくは、過去に発生して業務に影響を及ぼしたことを記載します。<br>
+						（例）<br>
+						「ネットワーク障害により、リモートによる会議が中断もしくは実施できなくなり、取引先や顧客に影響を及ぼす恐れ」
+					</p>
+				</div>
+
+				<div class="down_img under_168">
+					<img src="../images/down.svg" alt="">
+				</div>
+
+				<div class="box">
+					<p class="blue_bold">② リスク所有者の特定</p>
+					<p class="last">①で特定されたリスクの所有者を記載します。</p>
+				</div>
+
+				<div class="table colum_6 s1122_7 mb0">
+					<div class="th">
+						<div class="col1"><p>リスク</p></div>
+						<div class="col2"><p>評価値</p></div>
+						<div class="col3"><p>重要度</p></div>
+						<div class="col4"><p>リスク所有者</p></div>
+					</div>
+					<div class="set">
+						<div class="set1">
+							<p>
+								ネットワーク障害により、リモートによる会議が中断もしくは実施できなくなり、取引先や顧客に影響を及ぼす恐れ
+							</p>
+						</div>
+						<div class="set2">
+							<div class="td">
+								<div class="col1"><p>機密性</p></div>
+								<div class="col2"><p>情報が漏えいする類の事象ではない</p></div>
+								<div class="col3"><p>1</p></div>
+							</div>
+							<div class="td">
+								<div class="col1"><p>完全性</p></div>
+								<div class="col2"><p>ネットワーク障害の原因がサイバー攻撃やマルウェアの場合、情報が被害を受ける可能性がある事象である</p></div>
+								<div class="col3"><p>3</p></div>
+							</div>
+							<div class="td">
+								<div class="col1"><p>可用性</p></div>
+								<div class="col2"><p>ネットワークが利用できなくなり、自社や取引先、顧客に大きな影響をおよぼす事象である</p></div>
+								<div class="col3"><p>3</p></div>
+							</div>
+						</div>
+						<div class="set3"><p>3</p></div>
+						<div class="set4"><p>○○○○</p></div>
+					</div>
+				</div>
+				<p class="cap mb56_sp">
+					事象ベースのアプローチによるリスク特定の例<br>
+					（出典）MSQA「ISMS推進マニュアル活用ガイドブック 2022年 1.0版」を基に作成
+				</p>
+
+				<p>
+					上記内容でリスク特定を実施した後、特定されたリスクおよび「重要度」に対して<br>
+					後述のリスク分析を実施します。
+				</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page11-2-1.html" class="prev">11-2-1. リスク基準の確立</a>
+						<a href="page11-2-3.html" class="next">11-2-3. リスクの分析</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

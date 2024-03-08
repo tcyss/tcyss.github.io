@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>管理策のテーマと属性</title>
+	<meta name="Description" content="管理策のテーマと属性" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar05/page9-1-2.html">
+	<meta name="og:title" content="管理策のテーマと属性">
+	<meta name="og:description" content="管理策のテーマと属性">
+	<meta name="twitter:title" content="管理策のテーマと属性">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page9-1-1.html">第9章. 管理策のテーマと属性</a> ／ <a href="page9-1-1.html">9-1. 管理策の分類と構成</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>9-1-2.</span>
+					管理策のテーマと属性
+				</h4>
+
+				<p class="mb28">
+					ISO/IEC 27002の箇条5～8に示される4種の管理策での分類（組織的・人的・物理的・技術的）を、テーマと呼びます。管理策の分類は様々な考え方がありますが、多くの組織に共通であると考えられる最低限の分類としてこの4つが採用されています。テーマとは別の視点で、より細かに管理策を見るのに際しては、属性という機能があります。各管理策に属性が付与されたことにより、検索性が向上し、管理策のフィルタリング、並び替え、提示がしやすくなりました。
+				</p>
+
+				<img src="../images/seminar05/912_theme.jpg" alt="" class="img_912_1 mb28">
+
+				<p class="mb28">
+					管理策の属性には、他の組織や団体が発行するガイドラインなどにおける考え方を取り入れているものがあります。「サイバーセキュリティ概念」では、サイバーセキュリティ<a  class="yogo" id="framework">フレームワーク</a>における、フレームワークコアの5つの機能分類がそのまま属性値となっています。また、「運用機能」の属性値は、2022年の改訂前におけるISO/IEC 27002の管理策の分類がもとになっています。
+				</p>
+
+				<div class="table colum_3 s912">
+					<div class="th">
+						<div class="col1"><p>管理策の属性</p></div>
+						<div class="col2"><p>属性値</p></div>
+						<div class="col3"><p>関連するガイドライン等</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>
+							管理策タイプ
+						</p></div>
+						<div class="col2"><p>
+							予防、検知、是正
+						</p></div>
+						<div class="col3"><p>
+							ー
+						</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>
+							情報セキュリティ特性
+						</p></div>
+						<div class="col2"><p>
+							<a class="yogo" id="kimitsusei">機密性</a>、<a class="yogo" id="kanzensei">完全性</a>、<a class="yogo" id="kayousei">可用性</a>
+						</p></div>
+						<div class="col3"><p>
+							ISO/IEC 27001
+						</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>
+							サイバーセキュリティ概念
+						</p></div>
+						<div class="col2"><p>
+							識別、防御、検知、対応、復旧
+						</p></div>
+						<div class="col3"><p>
+							サイバーセキュリティフレームワーク
+						</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>
+							運用機能
+						</p></div>
+						<div class="col2"><p>
+							ガバナンス、資産管理、情報保護、人的資源のセキュリティ、物理的セキュリティ、システムおよびネットワークセキュリティ、アプリケーションのセキュリティ、セキュリティを保った構成、識別情報およびアクセスの管理、脅威および<a class="yogo" id="zeijakusei">脆弱性</a>の管理、継続、供給者関係のセキュリティ、法および遵守、情報セキュリティ事象管理、情報セキュリティ保証
+						</p></div>
+						<div class="col3"><p>
+							ISO/IEC 27002:2013
+						</p></div>
+					</div>
+					<div class="td">
+						<div class="col1"><p>
+							セキュリティドメイン
+						</p></div>
+						<div class="col2"><p>
+							ガバナンスおよびエコシステム、保護、防御、対応力
+						</p></div>
+						<div class="col3"><p>
+							ー
+						</p></div>
+					</div>
+				</div>
+
+				<h5 class="uline">各テーマより管理策の例示（組織的/人的）</h5>
+
+				<p class="blue_bold">【組織的管理策】5.2 情報セキュリティの役割及び責任</p>
+				<div class="box mb56_sp">
+					<p class="blue_bold">管理策タイプ</p>
+					<p class="mb28">#予防</p>
+
+					<p class="blue_bold">情報セキュリティ特性</p>
+					<p class="mb28">#機密性　#完全性　#可用性</p>
+
+					<p class="blue_bold">サイバーセキュリティ概念</p>
+					<p class="mb28">#識別</p>
+
+					<p class="blue_bold">運用機能</p>
+					<p class="mb28">#ガバナンス</p>
+
+					<p class="blue_bold">セキュリティドメイン</p>
+					<p class="mb28">#ガバナンス及びエコシステム　#対応力</p>
+
+					<div class="border"></div>
+
+					<p class="blue_bold">管理策</p>
+					<p class="mb28">情報セキュリティの役割及び責任を、組織の要求に従って定め、割り当てることが望ましい。</p>
+
+					<p class="blue_bold">目的</p>
+					<p class="last">組織内における情報セキュリティの実施、運用及び管理のために、定義され、承認され、理解される構造を確立するため。</p>
+				</div>
+
+				<p class="blue_bold">【人的管理策】6.8 情報セキュリティ事象の報告</p>
+				<div class="box mb0">
+					<p class="blue_bold">管理策タイプ</p>
+					<p class="mb28">#検知</p>
+
+					<p class="blue_bold">情報セキュリティ特性</p>
+					<p class="mb28">#機密性　#完全性　#可用性</p>
+
+					<p class="blue_bold">サイバーセキュリティ概念</p>
+					<p class="mb28">#検知</p>
+
+					<p class="blue_bold">運用機能</p>
+					<p class="mb28">#情報セキュリティ事象管理</p>
+
+					<p class="blue_bold">セキュリティドメイン</p>
+					<p class="mb28">#防御</p>
+
+					<div class="border"></div>
+
+					<p class="blue_bold">管理策</p>
+					<p class="mb28">組織は、要員が発見した又は疑いを持った情報セキュリティ事象を、適切な連絡経路を通して時機を失せずに報告するための仕組みを設けることが望ましい。</p>
+
+					<p class="blue_bold">目的</p>
+					<p class="last">要員が、特定可能な情報セキュリティ事象を時機を失せず、一貫性をもって効果的に報告することを支援するため。</p>
+				</div>
+				<p class="cap">（出典）MSQA「ISO/IEC 27002:2022 対応　情報セキュリティ管理策実践ガイド」を基に作成</p>
+
+
+				<h5 class="uline">各テーマより管理策の例示（物理的/技術的）</h5>
+
+				<p class="blue_bold">【物理的管理策】7.4 物理的セキュリティの監視</p>
+				<div class="box mb56_sp">
+					<p class="blue_bold">管理策タイプ</p>
+					<p class="mb28">#予防　#検知</p>
+
+					<p class="blue_bold">情報セキュリティ特性</p>
+					<p class="mb28">#機密性　#完全性　#可用性</p>
+
+					<p class="blue_bold">サイバーセキュリティ概念</p>
+					<p class="mb28">#防御　#検知</p>
+
+					<p class="blue_bold">運用機能</p>
+					<p class="mb28">#物理的セキュリティ</p>
+
+					<p class="blue_bold">セキュリティドメイン</p>
+					<p class="mb28">#保護　#防御</p>
+
+					<div class="border"></div>
+
+					<p class="blue_bold">管理策</p>
+					<p class="mb28">施設は、認可されていない物理的アクセスについて継続的に監視することが望ましい。</p>
+
+					<p class="blue_bold">目的</p>
+					<p class="last">認可されていない物理的アクセスを検知し、抑止するため。</p>
+				</div>
+
+				<p class="blue_bold">【技術的管理策】8.16 監視活動</p>
+				<div class="box mb0">
+					<p class="blue_bold">管理策タイプ</p>
+					<p class="mb28">#検知　#是正</p>
+
+					<p class="blue_bold">情報セキュリティ特性</p>
+					<p class="mb28">#機密性　#完全性　#可用性</p>
+
+					<p class="blue_bold">サイバーセキュリティ概念</p>
+					<p class="mb28">#検知　#対応</p>
+
+					<p class="blue_bold">運用機能</p>
+					<p class="mb28">#情報セキュリティ事象管理</p>
+
+					<p class="blue_bold">セキュリティドメイン</p>
+					<p class="mb28">#防御</p>
+
+					<div class="border"></div>
+
+					<p class="blue_bold">管理策</p>
+					<p class="mb28">情報<a class="yogo" id="securityIncident">セキュリティインシデント</a>の可能性がある事象を評価するために、ネットワーク、システム及びアプリケーションについて異常な行動・動作がないか監視し、適切な処置を講じることが望ましい。</p>
+
+					<p class="blue_bold">目的</p>
+					<p class="last">異常な行動・動作及び潜在する情報セキュリティインシデントを検出するため。</p>
+				</div>
+				<p class="cap">（出典）MSQA「ISO/IEC 27002:2022 対応　情報セキュリティ管理策実践ガイド」を基に作成</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page9-1-1.html" class="prev">9-1-1. 管理策：ISO/IEC 27002</a>
+						<a href="page10-1-1.html" class="next">10-1-1. 用語の定義と関係性</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

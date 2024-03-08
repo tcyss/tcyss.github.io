@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>対策基準の策定</title>
+	<meta name="Description" content="物理的管理策" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar09/page16-1-1.html">
+	<meta name="og:title" content="対策基準の策定">
+	<meta name="og:description" content="物理的管理策">
+	<meta name="twitter:title" content="対策基準の策定">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="title">
+		<p>第<span>16</span>章</p>
+		<h2>
+			物理的管理策
+			<small>16-1. 物理的管理策を参考とした対策基準・実施手順の策定</small>
+		</h2>
+		<div class="purpose">
+			<p class="purpose_title">章の目的</p>
+			<p class="purpose_text">第16章では、情報セキュリティ方針に従ってセキュリティ対策を実施するための具体的な規則としての「対策基準」と、セキュリティ対策の実施手順や方法である「実施手順」について学ぶことを目的とします。</p>
+			<p class="purpose_title">主な達成目標</p>
+			<ul>
+				<li class="li purpose_text"><span></span>物理的管理策をもとに、対策基準を策定する手順を理解すること。</li>
+				<li class="li purpose_text"><span></span>策定した対策基準をもとに、具体的な実施手順を策定する方法を理解すること。</li>
+			</ul>
+		</div>
+	</section>
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="con_area">
+				<h4>
+					<span>16-1-1.</span>
+					対策基準の策定
+				</h4>
+
+				<p>
+					ISO/IEC 27001:2022附属書Aの合計93項目の管理策を参考に、対策基準を策定します。<a class="yogo" id="riskAssessment">リスクアセスメント</a>の内容をもとに必要な管理策を選択し、決定した管理策を対策基準とします。
+				</p>
+
+				<h5>ISO/IEC27001:2022に基づき管理策を決定する（例）</h5>
+
+				<p class="mb14">【凡例】採用：〇・不採用：✕</p>
+
+				<div class="beshi_list sheet s1611 mb56 mb56_sp">
+					<div class="th">
+						<p class="col1">項目</p>
+						<p class="col2">採用、不採用</p>
+					</div>
+					<ul class="s4-7">
+						<li>7.1 物理的セキュリティ境界</li>
+						<li>7.2 物理的入退</li>
+						<li>7.3 オフィス、部屋及び施設のセキュリティ</li>
+						<li>7.4 物理的セキュリティの監視</li>
+						<li>7.5 物理的及び環境的脅威からの保護</li>
+						<li>7.6 セキュリティを保つべき領域での作業</li>
+						<li>7.7 クリアデスク・クリアスクリーン</li>
+						<li>7.8 装置の設置及び保護</li>
+						<li>7.9 構外にある資産のセキュリティ</li>
+						<li>7.10 記憶媒体</li>
+						<li>7.11 <a class="yogo" id="SupportUtilities">サポートユーティリティ</a></li>
+						<li>7.12 ケーブル配線のセキュリティ</li>
+						<li>7.13 装置の保守</li>
+						<li>7.14 装置のセキュリティを保った処分又は再利用</li>
+					</ul>
+				</div>
+
+				<p class="mb42 mb28_sp">
+					対策基準の内容は、基本方針とともに公開可能なものとして作成します。<a class="yogo" id="isms">ISMS</a>に基づく管理策を用いて対策基準を策定する際は、ISO/IEC 27001:2022の文献を参照しながら作成してください。
+				</p>
+
+				<div class="box mb42_sp">
+					<img src="../images/seminar08/1411_taisakukijun.png" alt="" class="img_1411_2 mb28">
+
+					<h5>対策基準（例）</h5>
+
+					<p class="blue_bold">7.1 物理的セキュリティ境界</p>
+					<p class="mb28">情報およびその他の関連資産のある領域を保護するために、物理的セキュリティ境界を定め、かつ、用いなければならない。</p>
+
+					<p class="blue_bold">7.2 物理的入退</p>
+					<p class="mb28">セキュリティを保つべき領域は、適切な入退管理策および立寄り場所によって保護しなければならない。</p>
+
+					<p class="blue_bold">7.3 オフィス、部屋及び施設のセキュリティ</p>
+					<p class="mb28">オフィス、部屋および施設に対する物理的セキュリティを設計し、実装しなければならない。</p>
+
+					<p class="blue_bold">7.4 物理的セキュリティの監視</p>
+					<p class="mb28">施設は、認可されていない物理的アクセスについて継続的に監視しなければならない。</p>
+
+					<p class="blue_bold">7.5 物理的及び環境的脅威からの保護</p>
+					<p class="mb28">自然災害およびその他の意図的または意図的でない、インフラストラクチャーに対する物理的脅威などの物理的および環境的脅威に対する保護を設計し、実装しなければならない。</p>
+
+					<p class="blue_bold">7.6 セキュリティを保つべき領域での作業</p>
+					<p class="mb28">セキュリティを保つべき領域での作業に関するセキュリティ対策を設計し、実施しなければならない。</p>
+
+					<p class="blue_bold">7.7 クリアデスク・クリアスクリーン</p>
+					<p class="mb28">書類および取外し可能な記憶媒体に対するクリアデスクの規則、並びに情報処理設備に対するクリアスクリーンの規則を定め、適切に実施しなければならない。</p>
+
+					<p class="blue_bold">7.8 装置の設置及び保護</p>
+					<p class="mb28">装置は、セキュリティを保って設置し、保護しなければならない。</p>
+
+					<p class="blue_bold">7.9 構外にある資産のセキュリティ</p>
+					<p class="mb28">構外にある資産を保護しなければならない。</p>
+
+					<p class="blue_bold">7.10 記憶媒体</p>
+					<p class="mb28">記憶媒体は、組織における分類体系および取扱いの要求事項に従って、取得、使用、移送および廃棄のライフサイクルを通して管理しなければならない。</p>
+
+					<p class="blue_bold">7.11 サポートユーティリティ</p>
+					<p class="mb28">情報処理施設・設備は、サポートユーティリティの不具合による、停電、その他の中断から保護しなければならない。</p>
+
+					<p class="blue_bold">7.12 ケーブル配線のセキュリティ</p>
+					<p class="mb28">電源ケーブル、データ伝送ケーブルまたは情報サービスを支援するケーブルの配線は、傍受、妨害または損傷から保護しなければならない。</p>
+
+					<p class="blue_bold">7.13 装置の保守</p>
+					<p class="mb28">装置は、情報の<a class="yogo" id="kayousei">可用性</a>、<a class="yogo" id="kanzensei">完全性</a>、<a class="yogo" id="kimitsusei">機密性</a>を維持することを確実にするために、正しく保守しなければならない。</p>
+
+					<p class="blue_bold">7.14 装置のセキュリティを保った処分又は再利用</p>
+					<p class="last">記憶媒体を内蔵した装置は、処分または再利用する前に、すべての取扱いに慎重を要するデータおよびライセンス供与されたソフトウェアを消去していること、またはセキュリティを保てるよう上書きしていることを確実にするために、検証しなければならない。</p>
+				</div>
+
+				<p>16-1-2の項では、策定した対策基準をもとに作成する実施手順について説明します。</p>
+
+				<div class="link_area">
+					<p>詳細理解のため参考となる文献（参考文献）</p>
+					<ul>
+						<li class="li"><span></span><a href="https://www.iso.org/standard/27001" target="_blank">ISO/IEC 27001:2022</a></li>
+					</ul>
+				</div>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="index.html" class="prev">目次</a>
+						<a href="page16-1-2.html" class="next">16-1-2. 実施手順の策定</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

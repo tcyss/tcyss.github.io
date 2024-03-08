@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>ネットワーク制御</title>
+	<meta name="Description" content="各種テーマごとの対策" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar09/page17-2-3.html">
+	<meta name="og:title" content="ネットワーク制御">
+	<meta name="og:description" content="各種テーマごとの対策">
+	<meta name="twitter:title" content="ネットワーク制御">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page17-1-1.html">第17章. 技術的管理策</a> ／ <a href="page17-2-1.html">17-2. 各種テーマごとの対策</a></p>
+			</div>
+			<div class="con_area">
+				<h4>
+					<span>17-2-3.</span>
+					ネットワーク制御
+				</h4>
+
+				<div class="box mb42 mb56_sp">
+					<p class="blue_bold">関連する主な管理策</p>
+					<p class="last">5.23、6.7、8.20~8.24</p>
+				</div>
+
+				<p class="mb28 mb42_sp">
+					ネットワーク制御を説明するにあたって、クラウドサービスについて説明します。<br>
+					クラウドサービスとは、サービス事業者がハードウェアの機能（サーバ、ハードディスクなど）、プラットフォームの機能（データベースやプログラム実行環境など）、ソフトウェアなどを、ネットワーク経由で利用者に提供するサービスのことです。利用者は、どの端末からでもさまざまなサービスを利用することができます。クラウドサービスの利用形態には、主に「IaaS＝アイアース」、「PaaS＝パース」、「SaaS＝サーズ」があります。また、「NaaS＝ナース」と呼ばれるネットワークインフラを提供するサービスもあります。
+				</p>
+
+				<img src="../images/seminar09/1723_cloud.jpg" alt="" class="img_1723_1 mb14_sp">
+				<p class="cap mb56 mb56_sp">図63. クラウドサービス利用形態の概要図</p>
+
+				<div class="box">
+					<p class="blue_bold">IaaS（Infrastructure as a Service）</p>
+					<p class="mb28">IaaSとは、インターネット経由でネットワークやサーバ（CPU・メモリ・ストレージ）などのハードウェアやインフラ機能を提供するサービスのことです。IaaSを利用することで、従来は自社で購入、構築し、運用する必要があったハードウェアやインフラの機能を、必要なときに必要なだけ利用できます。</p>
+					
+					<p class="blue_bold">PaaS（Platform as a Service）</p>
+					<p class="mb28">PaaSとは、インターネット経由でアプリケーションサーバやデータベースなどのアプリケーションを実行するためのプラットフォーム機能を提供するサービスのことです。PaaSを利用することで、アプリケーションの開発前段階で必要な開発環境の準備（サーバの設置やOSや<a class="yogo" id="middleware">ミドルウェア</a>のインストールと設定、ネットワークの設定など）を省略できます。</p>
+					
+					<p class="blue_bold">SaaS（Software as a Service）</p>
+					<p class="mb28">SaaSとは、インターネット経由で電子メール、顧客管理、財務会計などのアプリケーションソフトの機能を提供するサービスのことです。アカウントを持っていれば、インターネット経由でどこからでもアクセスすることができたり、チームでファイルやデータを共有できたりします。</p>
+					
+					<p class="blue_bold">NaaS（Network as a Service）</p>
+					<p class="last">
+						NaaSとは、インターネット経由でネットワークインフラを提供するサービスのことです。<br>
+						NaaSの導入により、ネットワーク環境の変更に柔軟に対応できるようになります。NaaSに含まれる主要な機能として、SDN、SD-WANなどがあります。
+					</p>
+				</div>
+
+				<h5 class="uline">SDN・SD-WAN</h5>
+
+				<p class="mb42 mb56_sp">クラウドサービスやWeb会議、リモートワークの普及に伴い、ネットワーク回線にアクセスが集中し、通信速度が低下したり、サービスへの接続ができなくなったりするなどの問題があります。その解決策としてSDNを応用したSD-WANがあります。SDN、SD-WANについて説明します。</p>
+
+				<p class="blue_bold mb7">SDN（Software Defined Networking）</p>
+				<p class="mb42 mb56_sp">SDNとは、ソフトウェアを用いてネットワーク構成を動的に変更することです。ネットワークを構成している機器（ルータやサーバ、スイッチなど）を、ソフトウェアを介して一括制御することで、機器設定やネットワーク構成を柔軟に変更できます。SDNのメリットは、ネットワーク機器に対して一括で設定を行えることです。従来のルータ、スイッチといった物理的なネットワーク機器・製品は、1台ごとに個別に設定を行う必要があり、大規模なネットワーク構成を変更する際には、大きな作業負荷がかかりました。しかし、SDNを用いてネットワークを制御することで、管理が1か所で行えるようになるため、ネットワーク機器・製品ごとに個別設定が不要になり、作業負荷が大幅に軽減できます。</p>
+
+				<img src="../images/seminar09/1723_network.jpg" alt="" class="img_1723_2 mb7_sp">
+				<p class="cap mb56_sp">図64. 従来のネットワークとSDNによるネットワークの比較</p>
+
+				<p class="blue_bold mb7">SD-WAN（Software Defined-Wide Area Network）</p>
+				<p class="mb28">
+					SD-WANとは、ネットワークをソフトウェアで制御するSDNを、物理的なネットワーク機器で構築した<a class="yogo" id="wan">WAN</a>に適用する技術のことです。企業の拠点間接続や、クラウド接続などにおいて柔軟なネットワーク構成を実現したり、ネットワーク上で発生する通信を適切に制御したりすることができます。<br>
+					たとえば、拠点間の通信には閉域網（不特定多数のユーザが利用するインターネットとは異なり、関係者のみが接続できる通信回線）を使用し、信頼できるクラウドサービスには直接外部インターネットへ接続するように切り替えることで、<a class="yogo" id="Traffic">トラフィック</a>の最適化が行えます。
+				</p>
+
+				<img src="../images/seminar09/1723_sd-wan.jpg" alt="" class="img_1723_3 mb7_sp">
+				<p class="cap">図65. SD-WANで実現できることの例</p>
+
+				<h5 class="uline"><a class="yogo" id="vpn">VPN</a></h5>
+
+				<p class="mb42">個人情報などの重要なデータをインターネット経由で扱う機会が増えたことや、<a class="yogo" id="cyberAttack">サイバー攻撃</a>の手口が年々巧妙化しているなどの状況を背景に、VPNが注目されています。-WANがあります。SDN、SD-WANについて説明します。</p>
+
+				<p class="blue_bold mb7">VPN（Virtual Private Network）</p>
+				<p class="mb28 mb56_sp">インターネット上で安全性の高い通信を実現するための手法です。通信データを<a class="yogo" id="angouka">暗号化</a>し、送信元から送信先までの通信を保護することで、盗聴やデータの<a class="yogo" id="kaizan">改ざん</a>を防ぎます。VPNを使用することで、ユーザは物理的な専用線で通信しているかのような安全な通信を行えます。</p>
+
+				<img src="../images/seminar09/1723_vpn.jpg" alt="" class="img_1723_4 mb7_sp">
+				<p class="cap">図66. VPNの概要図</p>
+
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page17-2-2.html" class="prev">17-2-2. ゼロトラスト・境界防御モデル</a>
+						<a href="page17-2-4.html" class="next">17-2-4. セキュリティ統制</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

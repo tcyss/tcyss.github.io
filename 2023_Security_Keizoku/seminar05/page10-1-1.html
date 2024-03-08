@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>用語の定義と関係性</title>
+	<meta name="Description" content="脅威 、脆弱性、リスクの定義と関係性" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar05/page10-1-1.html">
+	<meta name="og:title" content="用語の定義と関係性">
+	<meta name="og:description" content="脅威 、脆弱性、リスクの定義と関係性">
+	<meta name="twitter:title" content="用語の定義と関係性">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="title">
+		<p>第<span>10</span>章</p>
+		<h2>
+			脅威、脆弱性、リスクの定義と<br class="pc_none">関係性
+			<small>10-1. 用語の定義および関係性と識別方法</small>
+		</h2>
+		<div class="purpose">
+			<p class="purpose_title">章の目的</p>
+			<p class="purpose_text">第10章では、ISO/IEC 27000に記述されている「リスク」、「脅威」、「脆弱性」、「管理策」といった用語の定義、それらの用語の関係性、脅威や脆弱性の識別方法を理解することを目的とします。</p>
+			<p class="purpose_title">主な達成目標</p>
+			<ul>
+				<li class="li purpose_text"><span></span>ISMSの管理策について、テーマと属性という観点を学んだ上で管理策の構成を理解すること</li>
+			</ul>
+		</div> 
+	</section>
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="con_area">
+				<h4>
+					<span>10-1-1.</span>
+					用語の定義と関係性
+				</h4>
+
+				<p class="mb28">
+					企業や組織には様々なセキュリティ上のリスクが存在しています。これらのリスクを効率的に管理するには、リスクマネジメントを行う必要があります。<br>リスクマネジメントを理解するために必要となる「脅威」、「<a class="yogo" id="zeijakusei">脆弱性</a>」、「リスク」といった用語の定義や関係性を説明します。次に、リスクを増大させる要因となる「脅威」や「脆弱性」の識別方法を説明します。
+				</p>
+
+				<div class="box mb42_sp">
+					<p class="blue_bold">主な用語の定義</p>
+
+					<ul class="last">
+						<li class="li check mb28 mb28_sp"><span></span><strong class="bold">脅威</strong>：システム又は組織に損害を与える可能性がある、望ましくないインシデントの潜在的な原因。例えば、不正アクセス、DDoS攻撃のような意図的な人為的脅威、機器の故障や操作ミスのような偶発的な人為的脅威、地震や洪水のような環境的脅威がある。</li>
+						<li class="li check mb28 mb28_sp"><span></span><strong class="bold">脆弱性</strong>：1つ以上の脅威によって付け込まれる可能性のある、資産又は管理策の弱点。例えば、セキュリティホールと呼ばれるソフトウェアの欠陥・不具合。</li>
+						<li class="li check mb28 mb28_sp"><span></span><strong class="bold">情報資産の重要度</strong>：機密性・完全性・可用性が損なわれた場合の事業に対する影響や、法律で安全管理義務があるなどの観点から、情報資産の重要度を判断する。</li>
+						<li class="li check mb28 mb28_sp"><span></span><strong class="bold">セーフガード（管理策）</strong>：リスクを修正する対策。具体的には、リスクを除去あるいは許容できる範囲に制御するための手順や仕組みのこと。</li>
+						<li class="li check mb28 mb28_sp"><span></span><strong class="bold">リスク</strong>：目的に対する不確かさの影響。情報セキュリティにおいては、脅威が組織に損害を与える可能性。</li>
+						<li class="li check"><span></span><strong class="bold">リスク値</strong>：リスクの大きさのこと。「情報資産の重要度」と「機密性・完全性・可用性を損なう事象の発生確率」の積で求められる。</li>
+					</ul>
+				</div>
+
+				<p class="mb28">脅威、脆弱性、情報資産、セーフガード（管理策）、リスクの関係を分かりやすく図で表すと以下のようになります。</p>
+
+				<img src="../images/seminar05/1011_kankei.jpg" alt="" class="img_1011_1">
+				<p class="cap">図43.脅威、脆弱性、情報資産、セーフガード（管理策）、リスクの関係</p>
+
+				<h5 class="uline">（例）業務用ノートパソコン</h5>
+
+				<p class="mb28">業務用ノートパソコンに関する脅威や脆弱性、管理策の関係について説明します。</p>
+
+				<div class="box mb28 mb42_sp">
+					<p class="blue_bold">資産</p>
+					<p class="mb28">ノートパソコン内の情報</p>
+
+					<p class="blue_bold">価値</p>
+					<p class="mb28">営業の業務で必須の情報</p>
+
+					<p class="blue_bold">脅威</p>
+					<p class="mb28">社外への持ち出しによるノートパソコンの紛失</p>
+
+					<p class="blue_bold">リスク</p>
+					<p class="mb28">盗難による情報漏えい</p>
+
+					<p class="blue_bold">脆弱性</p>
+					<p class="mb28">不適切なパスワードの設定（例）わかりやすいパスワード：名前、社員番号、生年月日など</p>
+
+					<p class="blue_bold">保護要求事項</p>
+					<ul class="mb28">
+						<li class="li"><span></span>権限のないものがログインできないようにする</li>
+						<li class="li"><span></span>不要な持ち出しを防ぐ</li>
+					</ul>
+
+					<p class="blue_bold">管理策</p>
+					<ul class="last">
+						<li class="li"><span></span>複雑なパスワードの設定（8.5 セキュリティを保った認証）</li>
+						<li class="li"><span></span>社外の持ち出し管理（7.9 構外にある装置及び資産のセキュリティ（構外にある資産））</li>
+					</ul>
+				</div>
+
+				<img src="../images/seminar05/1011_jirei.jpg" alt="" class="img_1011_2">
+				<p class="cap mb56_sp">図44. 脆弱性、リスクの関係の事例</p>
+
+				<p>上記の図では「脅威」「脆弱性」「資産の価値」のいずれかが増加することで、リスクが増大することが示されています。リスクを減少させるためには、まず「脅威」、「脆弱性」、「資産の価値」を識別し、リスクに対する保護要求事項を明らかにします。そして、保護要求事項に合致するセーフガード（管理策）を適切に実施することが必要です。</p>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page9-1-2.html" class="prev">9-1-2. 管理策のテーマと属性</a>
+						<a href="page10-1-2.html" class="next">10-1-2. 脅威の識別</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

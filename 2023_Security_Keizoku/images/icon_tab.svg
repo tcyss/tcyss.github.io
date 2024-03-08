@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="icon" transform="translate(-404 -1946)">
+    <rect id="size" width="14" height="14" transform="translate(404 1946)" fill="lime" opacity="0"/>
+    <g id="Icon_feather-external-link" data-name="Icon feather-external-link" transform="translate(404.75 1945.75)">
+      <path id="パス_9" data-name="パス 9" d="M10.083,7.389v3.333a1.111,1.111,0,0,1-1.111,1.111H2.861A1.111,1.111,0,0,1,1.75,10.722V4.611A1.111,1.111,0,0,1,2.861,3.5H6.194" transform="translate(0 -0.083)" fill="none" stroke="#00697e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.167"/>
+      <path id="パス_10" data-name="パス 10" d="M8.75,1.75h3.333V5.083" transform="translate(-0.333)" fill="none" stroke="#00697e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.167"/>
+      <path id="パス_11" data-name="パス 11" d="M5.833,7.861,11.944,1.75" transform="translate(-0.194)" fill="none" stroke="#00697e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.167"/>
+    </g>
+  </g>
+</svg>

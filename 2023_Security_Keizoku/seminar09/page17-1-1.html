@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>対策基準の策定</title>
+	<meta name="Description" content="技術的管理策" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar09/page17-1-1.html">
+	<meta name="og:title" content="対策基準の策定">
+	<meta name="og:description" content="技術的管理策">
+	<meta name="twitter:title" content="対策基準の策定">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="title">
+		<p>第<span>17</span>章</p>
+		<h2>
+			技術的管理策
+			<small>17-1. 技術的管理策を参考とした対策基準・実施手順の策定</small>
+		</h2>
+		<div class="purpose">
+			<p class="purpose_title">章の目的</p>
+			<p class="purpose_text">第17章では、情報セキュリティ方針に従ってセキュリティ対策を実施するための具体的な規則としての「対策基準」と、セキュリティ対策の実施手順や方法である「実施手順」について学ぶことを目的とします。また、技術的管理策に関して、テーマごとの対策について学ぶことも目的とします。</p>
+			<p class="purpose_title">主な達成目標</p>
+			<ul>
+				<li class="li purpose_text"><span></span>技術的管理策をもとに、対策基準を策定する手順を理解すること。</li>
+				<li class="li purpose_text"><span></span>策定した対策基準をもとに、具体的な実施手順を策定する方法を理解すること。</li>
+				<li class="li purpose_text"><span></span>Security by Design、ゼロトラスト・境界防御モデル、ネットワーク制御、セキュリティ統制、インシデント対応について理解すること。</li>
+			</ul>
+		</div>
+	</section>
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="con_area">
+				<h4>
+					<span>17-1-1.</span>
+					対策基準の策定
+				</h4>
+
+				<p>
+					ISO/IEC 27001:2022附属書Aの合計93項目の管理策を参考に、対策基準を策定します。<a class="yogo" id="riskAssessment">リスクアセスメント</a>の内容をもとに必要な管理策を選択し、決定した管理策を対策基準とします。
+				</p>
+
+				<h5 class="mb28_sp">ISO/IEC27001:2022に基づき管理策を決定する（例）</h5>
+
+				<p class="mb14 mb0_sp">【凡例】採用：〇・不採用：✕</p>
+
+				<div class="beshi_list sheet s1711 mb56 mb56_sp">
+					<div class="th">
+						<p class="col1">項目</p>
+						<p class="col2">採用、不採用</p>
+					</div>
+					<ul class="s4-8">
+						<li>8.1 利用者エンドポイント機器</li>
+						<li>8.2 特権的アクセス権</li>
+						<li>8.3 情報へのアクセス制限</li>
+						<li>8.4 ソースコードへのアクセス</li>
+						<li>8.5 セキュリティを保った認証</li>
+						<li>8.6 容量・能力の管理</li>
+						<li>8.7 <a class="yogo" id="malware">マルウェア</a>に対する保護</li>
+						<li>8.8 技術的脆弱性の管理</li>
+						<li>8.9 構成管理</li>
+						<li>8.10 情報の削除</li>
+						<li>8.11 <a class="yogo" id="DataMasking">データマスキング</a></li>
+						<li>8.12 データ漏えいの防止</li>
+						<li>8.13 情報のバックアップ</li>
+						<li>8.14 情報処理施設の冗長性</li>
+						<li>8.15 ログ取得</li>
+						<li>8.16 監視活動</li>
+						<li>8.17 クロックの同期</li>
+						<li>8.18 特権的な<a class="yogo" id="UtilityProgram">ユーティリティプログラム</a>の使用</li>
+						<li>8.19 運用システムに関わるソフトウェアの導入</li>
+						<li>8.20 ネットワークのセキュリティ</li>
+						<li>8.21 ネットワークサービスのセキュリティ</li>
+						<li>8.22 ネットワークの分離</li>
+						<li>8.23 ウェブ・フィルタリング</li>
+						<li>8.24 暗号の使用</li>
+						<li>8.25 セキュリティに配慮した開発のライフサイクル</li>
+						<li>8.26 アプリケーションのセキュリティの要求事項</li>
+						<li>8.27 セキュリティに配慮したシステムアーキテクチャ及びシステム構築の原則</li>
+						<li>8.28 セキュリティに配慮した<a class="yogo" id="coding">コーディング</a></li>
+						<li>8.29 開発及び受け入れにおけるセキュリティ試験</li>
+						<li>8.30 外部委託による開発</li>
+						<li>8.31 開発環境、試験環境及び運用環境の分離</li>
+						<li>8.32 変更管理</li>
+						<li>8.33 試験情報</li>
+						<li>8.34 監査試験中の情報システムの保護</li>
+					</ul>
+				</div>
+
+				<p class="mb42 mb28_sp">
+					対策基準の内容は、基本方針とともに公開可能なものとして作成します。<a class="yogo" id="isms">ISMS</a>に基づく管理策を用いて対策基準を策定する際は、ISO/IEC 27001:2022の文献を参照しながら作成してください。
+				</p>
+
+				<div class="box mb42_sp">
+					<img src="../images/seminar08/1411_taisakukijun.png" alt="" class="img_1411_2 mb28">
+
+					<h5>対策基準（例）</h5>
+
+					<p class="blue_bold">8.1 利用者エンドポイント機器</p>
+					<p class="mb28">利用者<a class="yogo" id="endPointDevice">エンドポイントデバイス</a>に保存されている情報、処理される情報、または利用者エンドポイントデバイスを介してアクセス可能な情報を保護しなければならない。</p>
+
+					<p class="blue_bold">8.2 特権的アクセス権</p>
+					<p class="mb28">特権的アクセス権の割り当ておよび利用は、制限し、管理しなければならない。</p>
+
+					<p class="blue_bold">8.3 情報へのアクセス制限</p>
+					<p class="mb28">情報およびその他の関連資産へのアクセスは、確立された<a class="yogo" id="accessControl">アクセス制御</a>に関するトピック固有の方針に従って、制限しなければならない。</p>
+
+					<p class="blue_bold">8.4 ソースコードへのアクセス</p>
+					<p class="mb28">ソースコード、開発ツール、<a class="yogo" id="SoftwareLibrary">ソフトウェアライブラリ</a>への読取りおよび書込みアクセスを、適切に管理しなければならない。</p>
+
+					<p class="blue_bold">8.5 セキュリティを保った認証</p>
+					<p class="mb28">セキュリティを保った認証技術および手順を、情報へのアクセス制限およびアクセス制御に関するトピック固有の方針に基づいて備えなければならない。</p>
+
+					<p class="blue_bold">8.6 容量・能力の管理</p>
+					<p class="mb28">現在および予測される容量・能力の要求事項に合わせて、資源の利用を監視し、調整しなければならない。</p>
+
+					<p class="blue_bold">8.7 マルウェアに対する保護</p>
+					<p class="mb28">マルウェアに対する保護を実施し、利用者の適切な認識によって支援しなければならない。</p>
+
+					<p class="blue_bold">8.8 技術的脆弱性の管理</p>
+					<p class="mb28">利用中の情報システムの技術的脆弱性に関する情報を獲得しなければならない。また、そのような<a class="yogo" id="zeijakusei">脆弱性</a>に組織がさらされている状況を評価し、適切な手段をとらなければならない。</p>
+
+					<p class="blue_bold">8.9 構成管理</p>
+					<p class="mb28">ハードウェア、ソフトウェア、サービスおよびネットワークのセキュリティ構成を含む構成を確立、文書化、実装、監視し、レビューしなければならない。</p>
+
+					<p class="blue_bold">8.10 情報の削除</p>
+					<p class="mb28">情報システム、装置またはその他の記憶媒体に保存している情報は、必要でなくなった時点で削除しなければならない。</p>
+
+					<p class="blue_bold">8.11 データマスキング</p>
+					<p class="mb28">データマスキングは、適用される法令を考慮して、組織のアクセス制御に関するトピック固有の方針およびその他の関連するトピック固有の方針、並びに事業上の要求事項に従って利用しなければならない。</p>
+
+					<p class="blue_bold">8.12 データ漏えいの防止</p>
+					<p class="mb28">データ漏えい防止対策を、取扱いに慎重を要する情報を処理、保存、送信するシステム、ネットワークおよびその他の装置に適用しなければならない。</p>
+
+					<p class="blue_bold">8.13 情報のバックアップ</p>
+					<p class="mb28">合意されたバックアップに関するトピック固有の方針に従って、情報、ソフトウェアおよびシステムのバックアップを維持し、定期的に検査しなければならない。</p>
+
+					<p class="blue_bold">8.14 情報処理施設の冗長性</p>
+					<p class="mb28">情報処理施設・設備は、<a class="yogo" id="kayousei">可用性</a>の要求事項を満たすのに十分な冗長性を持って、導入しなければならない。</p>
+
+					<p class="blue_bold">8.15 ログ取得</p>
+					<p class="mb28">活動、例外処理、過失、その他の関連する事象を記録したログを取得、保存、保護し、分析しなければならない。</p>
+
+					<p class="blue_bold">8.16 監視活動</p>
+					<p class="mb28"><a class="yogo" id="securityIncident">セキュリティインシデント</a>の可能性を評価するために、ネットワーク、システムおよびアプリケーションについて異常な挙動がないか監視し、適切な処置を講じなければならない。</p>
+
+					<p class="blue_bold">8.17 クロックの同期</p>
+					<p class="mb28">組織が使用する情報処理システムのクロックは、国の原子時計から配信される時刻に基づくクロックと同期させなければならない。</p>
+
+					<p class="blue_bold">8.18 特権的なユーティリティプログラムの使用</p>
+					<p class="mb28">システムおよびアプリケーションによる制御を無効にすることのできるユーティリティプログラムの使用は、制限し、厳しく管理しなければならない。</p>
+
+					<p class="blue_bold">8.19 運用システムに関わるソフトウェアの導入</p>
+					<p class="mb28">運用システムへのソフトウェアの導入をセキュリティを保って管理するための手順および対策を実施しなければならない。</p>
+
+					<p class="blue_bold">8.20 ネットワークのセキュリティ</p>
+					<p class="mb28">システムおよびアプリケーション内の情報を保護するために、ネットワークおよびネットワーク装置のセキュリティを保ち、管理し、制御しなければならない。</p>
+
+					<p class="blue_bold">8.21 ネットワークサービスのセキュリティ</p>
+					<p class="mb28">ネットワークサービスのセキュリティ機能、サービスレベルおよびサービスの要求事項を特定し、実装し、監視しなければならない。</p>
+
+					<p class="blue_bold">8.22 ネットワークの分離</p>
+					<p class="mb28">情報サービス、利用者および情報システムは、組織のネットワーク上でグループごとに分離しなければならない。</p>
+
+					<p class="blue_bold">8.23 ウェブ・フィルタリング</p>
+					<p class="mb28">悪意のあるコンテンツにさらされることを減らすために、外部Webサイトへのアクセスを管理しなければならない。</p>
+
+					<p class="blue_bold">8.24 暗号の使用</p>
+					<p class="mb28">暗号鍵の管理を含む、暗号の効果的な利用のための規則を定め、実施しなければならない。</p>
+
+					<p class="blue_bold">8.25 セキュリティに配慮した開発のライフサイクル</p>
+					<p class="mb28">ソフトウェアおよびシステムのセキュリティに配慮した開発のための規則を確立し、適用しなければならない。</p>
+
+					<p class="blue_bold">8.26 アプリケーションのセキュリティの要求事項</p>
+					<p class="mb28">アプリケーションを開発または取得する場合、情報セキュリティ要求事項を特定し、規定し、承認しなければならない。</p>
+
+					<p class="blue_bold">8.27 セキュリティに配慮したシステムアーキテクチャ及びシステム構築の原則</p>
+					<p class="mb28">セキュリティに配慮したシステムを構築するための原則を確立、文書化、維持し、すべての情報システムの開発活動に対して適用しなければならない。</p>
+
+					<p class="blue_bold">8.28 セキュリティに配慮したコーディング</p>
+					<p class="mb28">セキュリティに配慮したコーディングの原則を、ソフトウェア開発に適用しなければならない。</p>
+
+					<p class="blue_bold">8.29 開発及び受入れにおけるセキュリティ試験</p>
+					<p class="mb28">セキュリティテストのプロセスを開発のライフサイクルにおいて定め、実施しなければならない。</p>
+
+					<p class="blue_bold">8.30 外部委託による開発</p>
+					<p class="mb28">組織は、外部委託したシステム開発に関する活動を指揮、監視し、レビューしなければならない。</p>
+
+					<p class="blue_bold">8.31 開発環境、試験環境及び運用環境の分離</p>
+					<p class="mb28">開発環境、テスト環境および本番環境は、分離してセキュリティを保たなければならない。</p>
+
+					<p class="blue_bold">8.32 変更管理</p>
+					<p class="mb28">情報処理設備および情報システムの変更は、変更管理手順に従わなければならない。</p>
+
+					<p class="blue_bold">8.33 試験情報</p>
+					<p class="mb28">テスト用情報は、適切に選定、保護、管理しなければならない。</p>
+
+					<p class="blue_bold">8.34 監査試験中の情報システムの保護</p>
+					<p class="last">運用システムの<a class="yogo" id="assessment">アセスメント</a>を伴う監査におけるテストおよびその他の保証活動を計画し、テスト実施者と適切な管理層との間で合意しなければならない。</p>
+				</div>
+
+				<p>17-1-2の項では、策定した対策基準をもとに作成する実施手順について説明します。</p>
+
+				<div class="link_area">
+					<p>詳細理解のため参考となる文献（参考文献）</p>
+					<ul>
+						<li class="li"><span></span><a href="https://www.iso.org/standard/27001" target="_blank">ISO/IEC 27001:2022</a></li>
+					</ul>
+				</div>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page16-2-2.html" class="prev">16-2-2. MDM（Mobile Device Management）</a>
+						<a href="page17-1-2.html" class="next">17-1-2. 実施手順の策定</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>

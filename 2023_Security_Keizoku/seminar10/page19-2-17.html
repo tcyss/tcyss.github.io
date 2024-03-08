@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>第17章. 技術的管理策</title>
+	<meta name="Description" content="各章のポイント" />
+	<meta name="og:type" content="article">
+	<meta name="og:url" content="https://security-keizoku.metro.tokyo.lg.jp/seminar10/page19-2-17.html">
+	<meta name="og:title" content="第17章. 技術的管理策">
+	<meta name="og:description" content="各章のポイント">
+	<meta name="twitter:title" content="第17章. 技術的管理策">
+
+	<!--#include virtual="../include/head.html"-->
+
+	<link rel="stylesheet" href="../css/seminar.css">
+</head>
+
+<body>
+
+<!--#include virtual="../include/tag2.html"-->
+<!--#include virtual="../include/header.html"-->
+
+
+<main class="seminar_con">
+	<section class="content">
+		<div class="inner_wrap">
+			<div class="chapter">
+				<p><a href="page19-1-1.html">19章. 総括編</a> ／ <a href="page19-2-1.html">19-2. 各章のポイント</a></p>
+			</div>
+			<div class="con_area">
+				<h4 class="mb28">
+					<span>19-2-17.</span>
+					第17章. 技術的管理策
+				</h4>
+				<ul class="mb28">
+					<li class="li"><strong class="bold"><span></span>17-1. 技術的管理策を参考とした対策基準・実施手順の策定</strong></li>
+					<li class="li"><strong class="bold"><span></span>17-2. 各種テーマごとの対策</strong></li>
+				</ul>
+
+				<div class="box mb28">
+					<p class="blue_bold">章の目的</p>
+					<p class="mb28">第17章では、情報セキュリティ方針に従ってセキュリティ対策を実施するための具体的な規則としての「対策基準」と、セキュリティ対策の実施手順や方法である「実施手順」について理解することを目的とします。また、技術的管理策に関して、テーマごとの対策について理解することも目的とします。</p>
+					<p class="blue_bold">主な達成目標</p>
+					<ul class="last">
+						<li class="li"><span></span>技術的管理策をもとに、対策基準を策定する手順を理解すること。</li>
+						<li class="li"><span></span>策定した対策基準をもとに、具体的な実施手順を策定する方法を理解すること。</li>
+						<li class="li"><span></span>Security by Design、<a class="yogo" id="zeroTrust">ゼロトラスト</a>・境界防御モデル、ネットワーク制御、セキュリティ統制、インシデント対応について理解すること。</li>
+					</ul>
+				</div>
+
+				<p class="loupe blue_bold mb7_sp">主なキーワード</p>
+				<p>技術的管理策、Security by Design、ゼロトラスト、ネットワーク制御、セキュリティ統制、インシデント対応</p>
+
+				<h5 class="uline">要旨</h5>
+
+				<div class="box mb42">
+					<p class="blue_bold">17章の全体概要</p>
+					<p class="last"><a class="yogo" id="isms">ISMS</a>の管理策を参考に、対策基準・実施手順を策定する手順について解説しています。17章では「技術的管理策」を参考に対策基準を策定する手順について説明し、対策基準それぞれに対応する実施手順の例を説明しています。またテーマごとの対策として、「Security by Design」、「ゼロトラスト」、「ネットワーク制御」、「セキュリティ統制」、「インシデント対応」を紹介しています。</p>
+				</div>
+
+				<p class="arrow_lightblue blue_bold"><span></span>17-1. 技術的管理策を参考とした対策基準・実施手順の策定</p>
+				<ul class="mb28">
+					<li class="li mb14">
+						<span></span>対策基準の策定<br>
+						ISO/IEC 27001:2022附属書Aの技術的管理策（34項目）を参考に、対策基準を策定します。<a class="yogo" id="riskAssessment">リスクアセスメント</a>の内容をもとに必要な管理策を選択し、決定した管理策を対策基準とします。<br>
+						対策基準の内容は、基本方針とともに公開可能なものとして作成します。ISMSに基づく管理策を用いて対策基準を策定する際は、ISO/IEC 27001:2022の文献を参照しながら作成してください。
+					</li>
+					<li class="li mb14">
+						<span></span>実施手順の策定<br>
+						管理策（対策基準）をもとに策定されたセキュリティ対策の実施手順の例を、それぞれ紹介しています。紹介する例と、ISO/IEC 27002に記載されている各管理策の手引きの内容を参考に、自社に適した実施手順を策定しましょう。
+					</li>
+				</ul>
+
+				<div class="beshi_list mb28_sp">
+					<div class="th_19 s4-8"><p>技術的管理策の項目</p></div>
+					<ul class="s4-8">
+						<li>8.1 利用者エンドポイント機器</li>
+						<li>8.2 特権的アクセス権</li>
+						<li>8.3 情報へのアクセス制限</li>
+						<li>8.4 ソースコードへのアクセス</li>
+						<li>8.5 セキュリティを保った認証</li>
+						<li>8.6 容量・能力の管理</li>
+						<li>8.7 <a class="yogo" id="malware">マルウェア</a>に対する保護</li>
+						<li>8.8 技術的脆弱性の管理</li>
+						<li>8.9 構成管理</li>
+						<li>8.10 情報の削除</li>
+						<li>8.11 <a class="yogo" id="DataMasking">データマスキング</a></li>
+						<li>8.12 データ漏えいの防止</li>
+						<li>8.13 情報のバックアップ</li>
+						<li>8.14 情報処理施設の冗長性</li>
+						<li>8.15 ログ取得</li>
+						<li>8.16 監視活動</li>
+						<li>8.17 クロックの同期</li>
+						<li>8.18 特権的な<a class="yogo" id="UtilityProgram">ユーティリティプログラム</a>の使用</li>
+						<li>8.19 運用システムに関わるソフトウェアの導入</li>
+						<li>8.20 ネットワークのセキュリティ</li>
+						<li>8.21 ネットワークサービスのセキュリティ</li>
+						<li>8.22 ネットワークの分離</li>
+						<li>8.23 ウェブ・フィルタリング</li>
+						<li>8.24 暗号の使用</li>
+						<li>8.25 セキュリティに配慮した開発のライフサイクル</li>
+						<li>8.26 アプリケーションのセキュリティの要求事項</li>
+						<li>8.27 セキュリティに配慮したシステムアーキテクチャ及びシステム構築の原則</li>
+						<li>8.28 セキュリティに配慮した<a class="yogo" id="coding">コーディング</a></li>
+						<li>8.29 開発及び受け入れにおけるセキュリティ試験</li>
+						<li>8.30 外部委託による開発</li>
+						<li>8.31 開発環境、試験環境及び運用環境の分離</li>
+						<li>8.32 変更管理</li>
+						<li>8.33 試験情報</li>
+						<li>8.34 監査試験中の情報システムの保護</li>
+					</ul>
+				</div>
+
+				<p class="arrow_lightblue blue_bold"><span></span>17-2. 各種テーマごとの対策</p>
+				<p class="mb14">テーマごとに、概要や関連する管理策、実施手順などについて説明しています。</p>
+
+				<ul>
+					<li class="li check">
+						<span></span><strong class="bold">Security by Design</strong><br>
+						開発プロセスの早い段階からセキュリティを考慮することで、開発システムのセキュリティを確保するという考え方です。
+					</li>
+					<li class="li check">
+						<span></span><strong class="bold">境界防御モデル・ゼロトラスト</strong><br>
+						境界防御モデルは、信用する領域（社内）と信用しない領域（社外）に境界を設け、境界線でセキュリティ対策を講じることで境界外部からの脅威を防ぐという考え方です。<br>
+						ゼロトラストは、「境界」の概念をなくし、守るべき<a class="yogo" id="informationAssets">情報資産</a>にアクセスするものはすべて確認し、認証・認可を行うことで脅威を防ぐという考え方です。
+					</li>
+					<li class="li check">
+						<span></span><strong class="bold">ネットワーク制御</strong><br>
+						クラウドサービス、SDN、SD-WANについて説明しています。
+					</li>
+					<li class="li check">
+						<span></span><strong class="bold">セキュリティ統制</strong><br>
+						組織が情報資産を守るために採用するセキュリティ対策や仕組みのことです。セキュリティ統制を確立するために実施することができる技術を紹介しています。
+					</li>
+					<li class="li check">
+						<span></span><strong class="bold">インシデント対応</strong><br>
+						インシデント対応の実施手順、<a class="yogo" id="forensics">フォレンジック</a>について説明しています。
+					</li>
+				</ul>
+
+				<h5 class="uline">訴求ポイント</h5>
+
+				<div class="box mb42">
+					<p class="blue_bold">章を通した気づき・学び</p>
+					<p class="last">ISO/IEC 27002の内容を参考に技術的管理策の対策基準を決定し、実施手順を作成することが大切です。ドキュメントの作成・更新は大切ですが、本来の目標は、効果的な情報セキュリティ対策の計画と実行にあることを忘れないことが重要です。</p>
+				</div>
+
+				<p class="bulb blue_bold">認識していただきたい実施概要</p>
+				<ul class="mb56">
+					<li class="li check"><span></span>リスクアセスメントの結果をもとに必要な技術的管理策を選択し、対策基準を策定すること。</li>
+					<li class="li check"><span></span>対策基準は、基本方針とともに公開可能なものとして策定すること。</li>
+					<li class="li check"><span></span>決定した対策基準をもとに、具体的に実践するための実施手順を策定すること。</li>
+					<li class="li check"><span></span>実施手順は、組織の内部文書として従業員に対してわかりやすい実施手順を策定するよう心掛けること。</li>
+					<li class="li check"><span></span>各種テーマごとに概要を理解し、自社に適した実施手順を策定すること。</li>
+				</ul>
+
+				<div class="link_area">
+					<p>実践のために参考となる文献（参考文献）</p>
+					<ul>
+						<li class="li"><span></span><a href="https://www.iso.org/standard/27001" target="_blank">ISO/IEC 27001:2022</a></li>
+						<li class="li"><span></span><a href="https://www.iso.org/standard/75652.html" target="_blank">ISO/IEC 27002:2022</a></li>
+					</ul>
+				</div>
+
+				<div class="page_link_area">
+					<div class="page_link">
+						<a href="page19-2-16.html" class="prev">19-2-16. 第16章. 物理的管理策</a>
+						<a href="page19-2-18.html" class="next">19-2-18. 第18章. セキュリティ対策状況の有効性評価</a>
+					</div>
+					<div class="top_link">
+						<a href="index.html" class="top">目次にもどる</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</main>
+
+<!--#include virtual="../include/footer.html"-->
+
+
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+<script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+</html>
