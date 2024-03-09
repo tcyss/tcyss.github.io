@@ -1,8 +1,0 @@
-
-Options +Includes
-AddHandler server-parsed html
-
-<IfModule mod_rewrite.c> 
-RewriteEngine on
-RewriteRule ^r04(.*)$ /r4$1 [R=301,L]
-</IfModule>
