@@ -12,9 +12,19 @@
   <!-- stylesheet -->
   <link rel="stylesheet" href="/styles/style.css" media="all" />
   <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
-  <!--#include virtual="/include/gtag.inc"-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <!-- [ Reader Start ] -->
   <div class="pageReader">
     <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
@@ -40,6 +50,25 @@
             <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
             <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
                 target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
             <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
                 class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
                   alt="ガイドブックはこちら" /></a></li>
@@ -148,7 +177,9 @@
       <!-- /.main__middle -->
 </div>
     <!-- /#main -->
-<!--#include virtual="/include/footer_slider.inc"-->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
     <div class="c-returnTop js-return">
       <p class="c-returnTop__body">
         <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>

@@ -1,0 +1,13 @@
+id: ExtendTinyMCE
+name: ExtendTinyMCE
+version: 1.1.1
+author_link: http://www.anothersky.pw/
+author_name: Hideki Abe
+description: <MT_TRANS phrase="Extend TinyMCE.">
+l10n_lexicon:
+    ja:
+        Extend TinyMCE.: "TinyMCEの機能拡張セット"
+
+editors:
+    tinymce:
+        extension: extension.tmpl

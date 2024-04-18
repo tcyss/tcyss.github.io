@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>Episode21 偽装は続く～メールの送信元情報を安易に信じないで～</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading catColumn">
+        <div class="p-categoryHeading__body">
+          <div class="p-categoryHeading__body__ttl">
+            <h1><img src="/images/h1_column.png" alt="セキュリティコラム 教えて所長!" /></h1>
+          <p class="p-categoryHeading__body__ttl__lead">所長の助手の小林です。<br />このページでは、僕と一緒にサイバーセキュリティの勉強ができますよ。</p>
+          </div>
+          <div class="p-categoryHeading__body__character">
+            <img src="/images/heading_chara_column__pc.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/column/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティコラム</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">Episode21 偽装は続く～メールの送信元情報を安易に信じないで～</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+<section id="ep21" class="p-epColumn u-m-b30">
+<h2 class="h2Balloon"><span class="h2Balloon__body">Episode21 偽装は続く～メールの送信元情報を安易に信じないで～</span></h2>
+<div class="p-epColumn__body">
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>あれ、最近利用していないクレジットカード会社からメールがきた</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>内容は、・・・弊社カードをご利用いただきありがとうございます<br> お支払日とご利用金額をご確認ください</p>
+<p>下記URLからログインし、ご利用金額をご確認ください・・・か</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_gray__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>このURLからログインして、金額を確認すればいいかな</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>ちょっとまて、小林君！</p>
+<p>本当にそのメールは、利用しているクレジットカード会社からなのか</p>
+<p>不審メールは、以前から注意されていることを忘れていないか</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>でも、このメールのタイトルは、僕が利用しているクレジットカード会社の名前ですよ</p>
+<p>メールアドレスもクレジットカード会社名のドメインが入っているから、心配ないですよ</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_orange__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>いいかい、「送信元の表示名」や「送信元メールアドレス」は、メールソフトやメールサービスの設定で任意に変更して送信することができるんだ</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>例えば、 「送信元情報」の表示名を実在するクレジットカード会社や携帯電話会社にしたり、メールのドメインも実在する会社の一部を入れたりしている</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_orange__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>簡単にいうと、送信者は、メールに偽装を行っているんだ</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>さらに、スマートフォンの場合は、パソコンにくらべて表示の項目が少ない場合もあり、「送信元情報」から真偽の判断をすることは、より一層難しい</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_orange2__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>所長が難しいなら、僕は、どうすればいいんですか</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>送られてきたメールの「送信元情報」から、本物か偽物かを判断することは困難だ</p>
+<p>まずは、公式サイトや信頼できるサイトにアクセスして、メールの信憑性を確認することだ</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_green__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>また、不審メールの対策としては<br> ・添付ファイルを開かない<br> ・記載のURLからのウェブサイトにアクセスしない<br> ・記載の電話番号に電話をしない<br> ・返信しない<br> ことに注意すること</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_green__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>わかりました<br> まずは、公式サイトにアクセスして確認します</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_orange__pc.png" alt="画像：小林"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>あっ、公式サイトに「不審なメールについて」と公開されている<br> 内容が、僕のと同じだ。あやうく騙されるとこだった</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_red__pc.png" alt="画像：冴羽" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>ちなみに、もう忘れているかもしれないが、以前「送信元が自分のアドレスになっている場合がある」ことについて説明したが、これも差出人のメールアドレスを偽装しているぞ。</p>
+<p><a href="https://cybersecurity.metro.tokyo.lg.jp/column/ep20/" target="_blank" rel="noopener noreferrer" title="Episode20 自分のアドレスからメールが届いても慌てないで">Episode20 自分のアドレスからメールが届いても慌てないで</a></p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--left">
+<div class="p-epColumnItem__chara"><img src="/images/column_kobayashi_orange2__pc.png" alt="画像：小林" caption="false" width="80" height="79"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>そういえば、以前に説明を受けたの忘れていた（どこかで偽装について聞いた気がしたんだ・・・）</p>
+</div>
+</div>
+</div>
+<div class="p-epColumnItem--right">
+<div class="p-epColumnItem__chara"><img src="/images/column_saiba_pink__pc.png" alt="画像：冴羽"></div>
+<div class="p-epColumnItem__balloon">
+<div class="p-epColumnItem__balloon__body">
+<p>IPAからも注意喚起が出ているから、参考にしてくれ<br> くれぐれも不審なメールには、注意してくれよ</p>
+<p><a href="https://www.ipa.go.jp/security/anshin/mgdayori20210921.html" target="_blank" rel="noopener noreferrer" title="IPA：メールの見かけ上の送信元情報を安易に信じないで！～ 表示名やメールアドレスは偽装されているかも？～">IPA：<span>メールの見かけ上の送信元情報を安易に信じないで！～ 表示名やメールアドレスは偽装されているかも？～</span></a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/column_episodelist.inc';
+?>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

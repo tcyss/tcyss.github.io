@@ -1,0 +1,5 @@
+#AuthType Basic
+#AuthName "Secret Zone"
+#AuthUserFile /var/sites/site2CS0T101/acl/.htpasswd
+#AuthGroupFile /dev/null
+#Require valid-user

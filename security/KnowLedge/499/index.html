@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>Sec2024-03-01_NISTサイバーセキュリティフレームワーク CSF2.0の改訂概要</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/KnowLedge/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">ナレッジベース</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">Sec2024-03-01_NISTサイバーセキュリティフレームワーク CSF2.0の改訂概要</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">Sec2024-03-01_NISTサイバーセキュリティフレームワーク CSF2.0の改訂概要</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2024.03.11">2024.03.11</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<h3>この資料の趣旨</h3>
+<h4>概要</h4>
+<ul>
+<li>この資料では、CSF2.0の改訂のポイントと、フレームワーク活用するためのオンラインコンテンツを紹介します。</li>
+<li>NISTサイバーセキュリティフレームワーク（NIST CSF）は、サイバーセキュリティリスクに対応するための包括的なフレームワークであり、2024年2月に約10年ぶりに大幅改訂され、正式に公開されました。</li>
+<li>中小企業を含めた組織のサイバーセキュリティ対策は、情報セキュリティマネジメントシステム（ISMS）の要件が定義されているISO/IEC 27001、ISMSの実施ガイドラインであるISO/IEC 27002を補完する形で、CSF2.0も活用することにより、より網羅的、体系的な対策の確立を期待できます。</li>
+</ul>
+<h4>参考文献</h4>
+<ul>
+<li><a href="https://www.nist.gov/cyberframework">Cybersecurity Framework | NIST</a>
+<ul>
+<li><a href="https://www.nist.gov/quick-start-guides">Navigating NIST's CSF 2.0 Quick Start Guides</a>
+<ul>
+<li><a href="https://doi.org/10.6028/NIST.SP.1299">Resource and Overview Guide</a></li>
+<li><a href="https://doi.org/10.6028/NIST.SP.1301">CSF 2.0 Organizational Profiles</a></li>
+<li><a href="https://doi.org/10.6028/NIST.CSWP.32.ipd">CSF 2.0 Community Profiles</a></li>
+<li><a href="https://doi.org/10.6028/NIST.SP.1300">Small Business</a></li>
+<li><a href="https://doi.org/10.6028/NIST.SP.1305.ipd">C-SCRM</a></li>
+<li><a href="https://doi.org/10.6028/NIST.SP.1302.ipd">Tiers</a></li>
+<li><a href="https://doi.org/10.6028/NIST.SP.1303.ipd">Enterprise Risk Management</a></li>
+</ul></li>
+<li><a href="https://doi.org/10.6028/NIST.CSWP.29">CSF 2.0</a></li>
+<li><a href="https://www.nist.gov/profiles-0">CSF 2.0 Profiles</a>
+<ul>
+<li>CSF 2.0 Organizational Profiles
+<ul>
+<li><a href="https://www.nist.gov/document/csf-20-notional-organizational-profile-template">Notional CSF 2.0 Profile Template</a> Download(XLSX)</li>
+<li><a href="https://www.nccoe.nist.gov/examples-community-profiles">CSF 2.0 Community Profiles</a> Vist</li>
+</ul></li>
+</ul></li>
+<li><a href="https://www.nist.gov/informative-references">Informative References (Mappings)</a>
+<ul>
+<li>Download CSF 2.0 Informative Reference in the Core
+-<a href="https://csrc.nist.gov/extensions/nudp/services/json/csf/download?olirids=all"> Directly download all the Informative References for CSF 2.0</a>
+-<a href="https://csrc.nist.gov/projects/cybersecurity-framework/filters#/csf/filters"> Select Informative References to be included with the Core</a> Browse</li>
+<li>CSF 2.0 Implementation Examples
+<ul>
+<li><a href="https://www.nist.gov/document/csf-20-implementation-examples-xlsx">Download (xlsx)</a> <a href="https://www.nist.gov/document/csf-20-implementations-pdf">Download (pdf)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="https://www.nist.gov/faqs">FAQs</a></li>
+<li><a href="https://www.nist.gov/translations#csf-20">Translations of NIST Cybersecurity and Privacy Resources</a></li>
+<li><a href="https://csrc.nist.gov/Projects/cybersecurity-framework/Filters#/csf/filters">NIST Cybersecurity Framework (CSF) 2.0 Reference Tool</a></li>
+</ul></li>
+<li>解説ページ
+<ul>
+<li><a href="https://assured.jp/column/nistcsf2.0_report">NIST CSF2.0解説レポート | assured.jp</a> 2024-2-29 参照</li>
+<li><a href="https://www.nri-secure.co.jp/blog/nist-cybersecurity-framework-2.0">NIST サイバーセキュリティフレームワーク 2.0を解説｜約10年ぶりの大幅改訂、押さえるべき要点とは？｜ブログ｜NRIセキュア</a> 2024-2-29 参照</li>
+<li><a href="https://www.lrm.jp/security_magazine/defference_isms-nist-csf/">ISMSとNIST CSFは何がどう違うの？ | セキュマガ | LRM株式会社が発信する情報セキュリティの専門マガジン</a> 2024-2-29 参照</li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/">『中小企業向けサイバーセキュリティ対策の極意』ポータルサイト</a>
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/435/index.html">情報セキュリティに関する各種フレームワークの概要</a></li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/462/index.html">【本編05】網羅的なセキュリティ対策を知る【フレームワーク】</a></li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/453/index.html">Sec2023-01-02_欧米の各種規格等の最新動向と概要【ドラフト版】</a></li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/docs/Sec01-02-3.pdf">Sec01-02-3 サイバーセキュリティフレームワーク(CSF)フレームワークコア「重要インフラのフレームワークコア</a></li>
+</ul></li>
+</ul></li>
+</ul>
+<h4>この要約資料の改版履歴</h4>
+<ul>
+<li>2024/03/11 Rev.0.1.1 </li>
+<li>2024/03/08 Rev.0.1 暫定版</li>
+</ul>
+<hr />
+<h3>CSF2.0の改訂のポイント</h3>
+NIST Cybersecurity Framework（NIST CSF）のバージョン2.0は、2024年2月26日に正式に公開されました。これは、2014年に初版であるNIST CSF 1.0が公表されて以来、約10年ぶりの大幅改訂です。以下に、NIST CSF 2.0の主な改訂ポイントを解説します。
+<h4>重要インフラだけでなくあらゆる規模の組織へ適応範囲の拡大:</h4>
+<ul>
+<li>CSF2.0は、重要インフラだけでなく、営利・非営利を問わず、あらゆる規模の組織におけるサイバーセキュリティリスクの低減に資することを目的としています。
+<ul>
+<li>フレームワークの正式名称が「Framework for Improving Critical Infrastructure Cybersecurity（重要インフラのサイバーセキュリティを向上させるためのフレームワーク）」から、より汎用的な「Cybersecurity Framework（サイバーセキュリティフレームワーク）」に変更されています。</li>
+</ul></li>
+</ul>
+<h4>経営層の主導で対策を行うためのガバナンス機能の追加</h4>
+<ul>
+<li>ガバナンス機能は他の５つの機能（識別、防御、検知、対応、復旧）の目標達成や組織内の優先順位付けをするためのものと定義され、CSF2.0の中心的機能と位置づけられています。
+<ul>
+<li>NIST CSF 2.0は、新しい機能として「Govern（統治）」を導入し、組織のミッションや目標に沿ったサイバーセキュリティの管理を促している。</li>
+<li>NIST CSF 2.0は、サイバーセキュリティを企業リスクの一つと位置づけ、経営層の主導で対策と改善を行うことを推奨している。</li>
+</ul></li>
+</ul>
+<h4>フレームワーク活用するための補助リソースのリリース</h4>
+<ul>
+<li>CSF2.0本体は大きく次の３つのコンポーネントから構成されています。それらのコンポーネント構成やその定義に大きな変更はありませんが、今回のCSF2.0にあわせてサイバーセキュリティリスク対策を推進・補助するための多くの補助リソースがリリースされています。
+<ul>
+<li><strong>実装例</strong>：これは、特定のサブカテゴリーをどのように実装するかのベストプラクティス（最良の方法）を示している。</li>
+<li><strong>参考情報</strong>：これは、目標達成に役立つ他のガイドラインやリソースを提供している。</li>
+<li><strong>クイック・スタート・ガイド</strong>：これは、中小企業などの特定のニーズに対応した専用のガイダンスを提供している。</li>
+<li>そして、NIST CSF 2.0 リファレンス ツールを使用すると、ユーザーはCSF 2.0 コア（機能、カテゴリ、サブカテゴリ、実装例）を探索できる。このツールは、人間と機械が読み取り可能な形式（JSON および Excel）でコアを提供する。さらに、ユーザーは主要な検索用語を使用してコアの一部を表示し、エクスポートすることも可能。これにより、ユーザーは自分のニーズに合わせて情報を探しやすくなる。</li>
+</ul></li>
+</ul>
+<h4>サプライチェーンリスクマネジメント項目の拡充</h4>
+<ul>
+<li>サプライチェーンリスク管理プロセスが組織のステークホルダーにより識別・確立・管理・監視・改善されること。
+<ul>
+<li>NIST CSF 2.0の最新の改訂では、新たな機能として「GV（統治）」が導入された。この「GV」の下には新しいカテゴリー「GV.SC：サイバーセキュリティサプライチェーンリスクマネジメント」が設けられ、その役割が移行された。これにより、サプライチェーンのリスク管理に必要な対策項目（サブカテゴリー）が大幅に増えた。これは、サプライチェーンのリスクをより効果的に管理するための重要なステップ。</li>
+</ul></li>
+</ul>
+以上が、NIST CSF 2.0の主な改訂ポイントです。これらの改訂により、企業や組織のサイバーセキュリティ対策強化に向けた指針として、本フレームワークの活用は一層進むことが予想されます。
+<hr />
+<h3>ISO/IEC27001,27002とCSF2.0の活用</h3>
+<ul>
+<li><p>ISO/IEC 27001は情報セキュリティマネジメントシステム（ISMS）の要件を定義しており、ISO/IEC 27002はISMSの実施ガイドラインです。これらの規格は、情報セキュリティに関する国際的な指針として広く認知され、活用されています。</p></li>
+<li><p>これに対して、NIST CSFは、サイバーセキュリティリスクに対応するための包括的なフレームワークであり、官民の組織で活用されています。2024年2月に正式に公開されたNIST CSF 2.0は、約10年ぶりの大幅改訂です。</p></li>
+</ul>
+<h4>CSF 2.0を活用する意義</h4>
+<ul>
+<li><strong>包括性と実用性</strong>:
+<ul>
+<li>NIST CSFは広範な管理策をカバーし、サイバーレジリエンスを強化するための具体的なアクションを提供します。これにより、組織は包括的なアプローチでサイバーセキュリティを向上させることができます。</li>
+</ul></li>
+<li><strong>共通言語としての活用</strong>:
+<ul>
+<li>NIST CSFは世界中で広く活用されており、組織内外の関係者とのコミュニケーションに役立ちます。特に「GV（統治）」機能は経営層との共通言語として活用できます。</li>
+</ul></li>
+<li><strong>リスクマネジメントの強化</strong>:
+<ul>
+<li>NIST CSFはリスクベースのアプローチを推進し、サプライチェーンリスクマネジメントを強化します。</li>
+</ul></li>
+</ul>
+<p>ISMSは広範な情報セキュリティを対象としていますが、NIST CSFは特にサイバー攻撃の事後対策（検知、対応、復旧）にも多く言及されています。
+総括すると、NIST CSF 2.0はISO/IEC 27001, 27002と補完しながら、組織のサイバーセキュリティ対策を強化するための有用なツールとなります。</p>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

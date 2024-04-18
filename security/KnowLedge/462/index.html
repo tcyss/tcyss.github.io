@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>【本編05】網羅的なセキュリティ対策を知る【フレームワーク】＜セキュリティ関連知識の保管庫（ナレッジベース2023）＞</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/KnowLedge/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">ナレッジベース</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">【本編05】網羅的なセキュリティ対策を知る【フレームワーク】＜セキュリティ関連知識の保管庫（ナレッジベース2023）＞</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">【本編05】網羅的なセキュリティ対策を知る【フレームワーク】＜セキュリティ関連知識の保管庫（ナレッジベース2023）＞</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2023.03.27">2023.03.27</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<p style="text-align: right;">2023.3.27</p>
+<h3>【本編05】網羅的なセキュリティ対策を知る【フレームワーク】 ＜セキュリティ関連知識の保管庫（ナレッジベース2023）＞</h3>
+<h4>位置づけ</h4>
+<ul>
+<li>（目的：業種、業態、組織規模を問わず、網羅的なサイバーセキュリティ対策の体系を解説する）</li>
+<li><em>具体的な対策の実施の際には、ページ内に記載の【参照資料】のリンク先をご確認ください。</em></li>
+</ul>
+<h3><a href="#text-01"><em>目次</em></a></h3>
+<h4><a href="#text-05"><em>目次.5.網羅的なセキュリティ対策を知る【フレームワーク】</em></a></h4>
+<ul>
+<li><em>網羅的な対策のフレームワーク</em>
+<ul>
+<li>（要旨・キーワード等：ISO/IEC27001:2022、ISO/IEC27002:2022が示すマネジメント基準・管理策基準、5つの属性とその中身）</li>
+<li>（要旨・キーワード等：政府機関、重要インフラとの連携において、NIST文書（SP800シリーズ、CSF（重要インフラのサイバーセキュリティを改善するフレームワーク））等を補足）</li>
+</ul></li>
+<li><a href="#text-05-00"><em>5.0 ITシステム管理・監査関連のフレームワーク</em></a></li>
+<li><a href="#text-05-01"><em>5.1 情報セキュリティマネジメントシステム（ISMS）</em></a></li>
+<li><a href="#text-05-02"><em>5.2 サイバー・フィジカル・セキュリティ対策フレームワーク（CPSF）</em></a></li>
+<li><a href="#text-05-03"><em>5.3 セキュリティ関連NIST文書</em></a></li>
+<li><a href="#text-05-04"><em>5.4 サイバーセキュリティ経営の基本的な姿勢</em></a>
+<ul>
+<li>（要旨・キーワード等：経営者が認識すべき３原則、サイバーセキュリティ経営の重要10項目）</li>
+</ul></li>
+</ul>
+<a id="text-01"></a>
+<h3>＜＜本編＞＞</h3>
+<a id="text-05"></a>
+<h3>5.網羅的なセキュリティ対策を知る【フレームワーク】</h3>
+<ul>
+<li><em>※業種、業態、組織規模を問わず、網羅的なサイバーセキュリティ対策の体系を解説する</em></li>
+<li>これらのフレームワークを活用することにより、自組織で必要と思われるものを選択することにより、対策の漏れをなくすことが可能になる</li>
+<li>ISMS認証等を受ける場合は、内容の理解は必須となる</li>
+</ul>
+<h4>フレームワークの概要</h4>
+<ul>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/435/index.html"><em>情報セキュリティに関する各種フレームワークの概要</em></a></li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/453/index.html"><em>欧米の各種規格等の最新動向と概要【ドラフト版】</em></a></li>
+</ul></li>
+<li><p>情報セキュリティに関する各種フレームワーク</p>
+<ul>
+<li>情報セキュリティ対策を行う上において、様々なフレームワークが存在する。</li>
+<li>現在のフレームワークはどれも必要な全ての対策を網羅していません。企業のセキュリティ対策の目的、状況に応じてそれぞれのフレームワークを補完して活用することが望ましい。</li>
+</ul></li>
+<li><p>政府機関から提示されている各種ガイドブック、ハンドブック、テキスト類</p>
+<ul>
+<li>政府機関から提示されている各種ガイドブック、ハンドブック、テキスト類は、ISMSのフレームワークがベースとなっており、現在のほとんどの組織は、その規格に準拠して、組織の情報セキュリティ対策の規程の整備、それに基づく対策の実施を行っている。</li>
+</ul></li>
+</ul>
+<a id="text-05-00"></a>
+<h4>5.0 【新規】ITシステム管理・監査関連のフレームワーク</h4>
+<ul>
+<li>システムの体系的なサイバーセキュリティ対策を検討するに当たっては、まず、対象となるシステムの管理・監査のフレームワークの概要と実施項目を理解しておくことが重要である。</li>
+<li>【参照資料】
+<ul>
+<li><a href="https://public-comment.e-gov.go.jp/servlet/PcmFileDownload?seqNo=0000247393"><em>【METI】システム監査基準（案）パブリックコメント版【2023年2月】</em></a></li>
+<li><a href="https://public-comment.e-gov.go.jp/servlet/PcmFileDownload?seqNo=0000247394"><em>【METI】システム管理基準（案）パブリックコメント版【2023年2月】</em></a></li>
+<li>【改訂方針】自社で保有する情報システムだけでなく、広く外部のサービスを利用して事業を推進する組織体が多くを占めるようになっている状況や、ボーダレスなIT環境を踏まえて、ITガバナンス及びITマネジメントに関わる国際規格の考え方や体系を取り入れるとともに、今後の組織体におけるITシステムの利活用の進展状況に対応しやすい内容とする</li>
+<li>情報セキュリティに関連する項目は、「情報セキュリティ管理基準（平成28年改正版）」（経済産業省） を参照</li>
+</ul></li>
+</ul>
+<a id="text-05-01"></a>
+<h4>5.1 情報セキュリティマネジメントシステム（ISMS）[ISO/IEC27001:2022, 27002:2022]</h4>
+<ul>
+<li>ISMSは、<strong>「個別の問題毎の技術対策の他に、組織のマネジメントとして、自らのリスクアセスメントにより必要なセキュリティレベルを決め、プランを持ち、資源を配分して、システムを運用すること。」</strong> であり、JIS Q 27001（ISO/IEC 27001）により、組織がISMSを確立し、実施し、維持し、継続的に改善するための要求事項が国際規格として示されている。</li>
+<li>リスクアセスメントの規格としては、情報セキュリティリスクマネジメント(ISO/IEC27005）があり、その内の「8.情報セキュリティリスクアセスメント」にリスクの特定からリスク評価までの基準が示されている。</li>
+<li>なお、セキュリティに関するリスクに限らず全般のマネジメントの規格としては、ISO 31000:2018（JIS Q 31000:2019）がある。</li>
+</ul>
+<h5>ISMSの改訂の動き</h5>
+<ul>
+<li>ISO/IEC 27002は、2013年版から9年を経て、次期改定版が2022年度に発行された。</li>
+<li>新しいISO/IEC 27002では、サイバーセキュリティ脅威や新しいセキュリティ技術の進化に合せて、11個の新規の情報セキュリティ管理策が追加された。</li>
+<li>ISO/IEC 27002の改定の影響を受けて、ISO/IEC 27001の附属書Aの部分を中心としたISO/IEC 27001も改定された。</li>
+</ul>
+<h5>ISMSの用語</h5>
+<ul>
+<li>JIS Q 27001（ISO/IEC 27001）は、
+<ul>
+<li><strong>「ISMSの要求事項を定めた国際規格。」</strong></li>
+<li>初版は、BS7799、ISO/IEC17799、JISX5080</li>
+<li>東京都を含め、一般的な組織は、この規格に基づいて、情報セキュリティ対策を行っており、セキュリティ対策基準、実施手順を作って運用してきた。</li>
+</ul></li>
+<li>JIS Q 27002（ISO/IEC 27002）は、
+<ul>
+<li>2013年版は、<strong>「情報セキュリティ管理策の実践のための規範」</strong> とされていたが、2022年版は、<strong>「情報セキュリティ管理策」</strong>とされた。ISO/IEC27001に基づくISMSにおいて使用されるが、ISMSとは独立した情報セキュリティ管理策の情報源として使用される。</li>
+<li>国際的なベストプラクティスとして、組織において情報セキュリティ管理策を実施するため、また、組織独自の情報セキュリティガイドラインの策定のために利用されることを想定</li>
+<li>新しい脅威や技術動向に合わせて、14の分類を、組織的対策、人的対策、物理的対策、技術的対策の4つの分類に再整理し、114個の管理策を、24個の管理策を統合し、また、11個の新規管理策を加えて、93個の管理策が示されている</li>
+<li>サイバーセキュリティへの対応を強化するための管理策が充実させ、またCSFとの互換性のために、属性としてサイバーセキュリティ概念を導入した。<strong>従来は、ISMSとCSFの双方でカバーしていない項目があったが、これにより、ISMSとしての管理策が、CSFの管理項目を包含した。</strong></li>
+</ul></li>
+<li>ISMS認証とは、
+<ul>
+<li>「第三者であるISMS認証機関が、組織の構築したISMSがISO/IEC27001に基づいて適切に管理されているかを審査し証明すること。」</li>
+</ul></li>
+<li><p>ISMS適合性評価制度は、</p>
+<ul>
+<li>「認証を公正に運用するために、認証機関、認定機関、要員認証機関等の役割と連携を規定した国際的な枠組み」</li>
+</ul></li>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:27002:ed-3:v2:en"><em>ISO/IEC27002:2022(en)</em></a></li>
+<li><a href="https://www.meti.go.jp/policy/netsecurity/is-kansa/"><em>【METI】情報セキュリティ管理基準（平成28年経済産業省告示第37号）</em></a></li>
+<li><a href="https://isms.jp/doc/JIP-ISMS120-62.pdf"><em>ISMS適合性評価制度の概要（パンフレット）</em></a></li>
+</ul></li>
+</ul>
+<h5>社会の進展に対応したISMSの変遷</h5>
+<ul>
+<li>1995年 BS7799 ⇒ 2000年 ISO/IEC17799 ⇒ 2007年 ISO/IEC27002</li>
+</ul>
+<h5>マネジメント基準（ISO/IEC27001:2022）</h5>
+<ul>
+<li><strong>情報セキュリティマネジメントの計画、実行、点検、処置の各プロセスで行うべき事項を明確にしたもの。「マネジメント基準」は、原則、全て実施すべき事項である。</strong></li>
+<li>A.4.4_情報セキュリティマネジメントの確立
+<ul>
+<li>4.4.1 組織の役割、責任及び権限 [27001:2013-5.3 / 5.1]</li>
+<li>4.4.2 組織及びその状況の理解 [27001:2013-4.1]</li>
+<li>4.4.3 利害関係者のニーズ及び期待の理解 [27001:2013-4.2]</li>
+<li>4.4.4 適用範囲の決定 [27001:2013-4.3]</li>
+<li>4.4.5 方針の確立 [27001:2013-5.2 / 6.2 / 5.1]</li>
+<li>4.4.6 リスク及び機会に対処する活動 [27001:2013-6.1]</li>
+<li>4.4.7 情報セキュリティリスクアセスメント [27001:2013-6.1.2]</li>
+<li>4.4.8 情報セキュリティリスク対応 [27001:2013-6.1.3]</li>
+</ul></li>
+<li>A.4.5_情報セキュリティマネジメントの運用
+<ul>
+<li>4.5.1 資源管理 [27001:2013-7.1 / 5.1]</li>
+<li>4.5.2 力量、認識 [27001:2013-7.2 / 7.3 / 5.1]</li>
+<li>4.5.3 コミュニケーション [27001:2013-7.4]</li>
+<li>4.5.4 情報セキュリティマネジメントの運用の計画及び管理 [27001:2013-8.1]</li>
+<li>4.5.5 情報セキュリティリスクアセスメントの実施 [27001:2013-8.2 / 8.3]</li>
+</ul></li>
+<li>A.4.6_情報セキュリティマネジメントの監視及びレビュー
+<ul>
+<li>4.6.1 有効性の継続的改善 [27001:2013-10.2 / 8.2 / 9.2 / 9.3 / 5.1]</li>
+<li>4.6.2 パフォーマンス評価 [27001:2013-9]</li>
+<li>4.6.3 マネジメントレビュー [27001:2013-9.3]</li>
+</ul></li>
+<li>A.4.7_情報セキュリティマネジメントの維持及び改善
+<ul>
+<li>4.7.1 是正処置 [27001:2013-10.1]</li>
+</ul></li>
+<li>A.4.8_文書化した情報の管理
+<ul>
+<li>4.8.1 文書化 [27001:2013-7.5.1]</li>
+<li>4.8.2 文書管理 [27001:2013-7.5.2 / 7.5.3]</li>
+</ul></li>
+</ul>
+<h5>管理策基準（ISO/IEC27001:2022）</h5>
+<ul>
+<li><strong>「管理策基準」は、組織における情報セキュリティマネジメントの確立段階において、リスク対応方
+針に従って管理策を選択する際の選択肢を与えるもの</strong></li>
+<li>A.5_組織的対策
+<ul>
+<li>37項目</li>
+<li>【新規】5.7 Threat intelligence（脅威インテリジェンス）</li>
+<li>【新規】5.23 Information security for use of cloud services（クラウドサービス利用のための情報セキュリティ）</li>
+<li>【新規】5.30 ICT readiness for business continuity（事業継続のためのICTの備え）</li>
+</ul></li>
+<li>A.6_人的対策
+<ul>
+<li>6項目</li>
+</ul></li>
+<li>A.7_物理的対策
+<ul>
+<li>13項目</li>
+<li>【新規】7.4 Physical security monitoring（物理的セキュリティの監視）</li>
+</ul></li>
+<li>A.8_技術的対策
+<ul>
+<li>34項目</li>
+<li>【新規】8.9 Configuration management（構成管理）</li>
+<li>【新規】8.10 Information deletion（情報削除）</li>
+<li>【新規】8.11 Data masking（データマスキング）</li>
+<li>【新規】8.12 Data leakage prevention（データ漏洩防止）</li>
+<li>【新規】8.16 Monitoring activities（監視活動）</li>
+<li>【新規】8.23 Web filtering（Webフィルタリング）</li>
+<li>【新規】8.28 Secure coding（セキュアコーディング）</li>
+</ul></li>
+</ul>
+<h5>属性</h5>
+<ul>
+<li>※他の組織や団体が発行するガイドライン等との関連を明確にするもの</li>
+<li>各管理策は、「preventive 予防」、「detective 検出」、「corrective 是正」のいずれかに分類される。</li>
+<li>また「confidentiality 機密性」、「integrity 完全性」、「availability 可用性」のいずれかに関連付けられる。</li>
+<li>さらに、（サイバーセキュリティの概念、運用能力、セキュアドメインごとに)　属性のグループ分けできる。</li>
+<li>コントロール種別
+<ul>
+<li>予防的；発見的；是正的</li>
+</ul></li>
+<li>情報セキュリティ特性
+<ul>
+<li>機密性；完全性；可用性</li>
+</ul></li>
+<li><em>サイバーセキュリティ概念</em>
+<ul>
+<li>特定；防御；検知；対応；復旧</li>
+<li><em>※CSFのフレームワークコアの分類に対応</em></li>
+</ul></li>
+<li>運用能力
+<ul>
+<li>ガバナンス；資産管理；情報保護；．．．</li>
+</ul></li>
+<li>セキュリティドメイン
+<ul>
+<li>ガバメント及びエコシステム、保護、防御、レジリエンス</li>
+</ul></li>
+</ul>
+<h4>ISO 31000 リスクマネジメント</h4>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.jipdec.or.jp/library/report/20181018.html"><em>[JIPDEC]「ISO31000－2018年版：リスクマネジメント－指針の経営への活用」</em></a></li>
+</ul></li>
+</ul>
+<h4>ISO/IEC 27000ファミリーの規格の改訂状況</h4>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.jipdec.or.jp/project/smpo/u71kba000000jjgv-att/27000family_20220722.pdf"><em>【JIPDEC】ISO/IEC 27000ファミリー規格について</em></a></li>
+<li>27000 ISMS 概要及び用語</li>
+<li>27001 ISMS 要求事項</li>
+<li>27002 情報セキュリティ管理策</li>
+<li>27005 情報セキュリティリスクマネジメントに関する指針</li>
+</ul></li>
+</ul>
+<a id="text-05-02"></a>
+<h4>5.2 サイバー・フィジカル・セキュリティ対策フレームワーク（CPSF）</h4>
+<ul>
+<li>METIにおいては、ISMS、CSFを包含した「サイバー・フィジカル・セキュリティ対策フレームワーク（CPSF」を提唱している。</li>
+<li>単純なサイバー空間におけるセキュリティ対策から、サイバー空間とフィジカル空間のそれぞれにおけるリスクを洗い出し、そのセキュリティ対策を整理するための道具として提示されている。</li>
+<li><p>全体の枠組みに沿って、対象者や具体的な対策を整理し、『サイバーセキュリティ経営ガイドライン』や産業分野別のガイドラインなどの実践的なガイドラインを整備する予定。</p></li>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.meti.go.jp/policy/netsecurity/wg1/cpsf.html"><em>【METI】サイバー・フィジカル・セキュリティ対策フレームワーク</em></a></li>
+<li><a href="https://www.meti.go.jp/policy/netsecurity/wg1/CPSF_ver1.0.pdf"><em>【METI】【文書】 サイバー・フィジカル・セキュリティ対策フレームワーク Ver.1.0【2019年4月18日】</em></a> 全262ページ</li>
+<li><a href="https://www.meti.go.jp/shingikai/mono_info_service/sangyo_cyber/wg_keiei/pdf/008_03_00.pdf"><em>【METI】第8回産業サイバーセキュリティ研究会 ワーキンググループ2（経営・人材・国際）資料3【2022年3月23日】</em></a></li>
+<li>IoT システム／サービス及び中小企業を含む大規模サプライチェーン全体</li>
+<li><a href="https://www.nedo.go.jp/content/100956725.pdf"><em>【内閣府】サイバ―フィジカルセキュリティ対策検討ガイドブック・エグゼクティブサマリー【2023年2月】</em></a></li>
+<li><a href="https://www.nedo.go.jp/content/100956726.pdf"><em>【内閣府】サイバ―フィジカルセキュリティ対策検討ガイドブック【2023年2月】</em></a></li>
+</ul></li>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/pm1A4Lo5ydOIU8IPCeXazHDYmGvI_q_Hh_xtGARW"><em>Sec01-03-04【METI】【スライド】サイバー・フィジカル・セキュリティ対策フレームワークの概要</em></a></li>
+<li><a href="https://share.mindmanager.com/#publish/xRBazqTKGb1TXH2sjVlE7dC0Z5xIf2LwGEBl-yRS"><em>Sec01-03-02産業分野におけるサイバーセキュリティ～CPSFを中心に～</em></a>【METI奥家氏】</li>
+<li>サイバー・フィジカル・セキュリティ対策フレームワークを策定する目的
+<ul>
+<li>「Society5.0」、「Connected Industries」の実現へ向けて、産業構造、社会の変化に伴うサイバー攻撃の脅威の増大に対応することが必要。 </li>
+</ul></li>
+<li>フレームワークの構造～「Society5.0」型サプライチェーン"価値創造過程"への対応
+<ul>
+<li>あらゆるものがつながるIoT、データがインテリジェンスを生み出すAIなどによって実現される「Society5.0」（人間中心の社会）、「Connected Industries」では、 製品/サービスを生み出す工程（サプライチェーン）も従来の定型的・直線的なものとは異なる、多様なつながりによる非定型の形態を取ることになる。</li>
+<li>本フレームワークでは、「Society5.0」型サプライチェーンを、価値創造過程（バリュークリエイションプロセス）と定義し、「Society5.0」、「Connected Industries」によって拡張したサプライチェーンの概念に求められるセキュリティへの対応指針を示す。  </li>
+</ul></li>
+<li>三層構造アプローチ
+<ul>
+<li>第1層：企業の繋がり（従来型サプライチェーン）</li>
+<li>生産された製品等－信頼できる企業が信頼できる生産活動によって仕様どおりの製品やサービスを供給しているか</li>
+<li>第2層：フィジカル空間とサイバー空間のつながり</li>
+<li>センサーで読み込まれたデータ等－フィジカル空間における情報を、 センサーなどのIoT機器が正確にデジタル化し、サイバー空間に"転写"しているか</li>
+<li>第3層：サイバー空間におけるつながり</li>
+<li>データ分析で得られたデータ等－収集する過程で改ざんされていないデータを適切な方法で加工した、 信頼できるデータを活用できるか</li>
+</ul></li>
+</ul></li>
+</ul>
+<h5>意義</h5>
+<ul>
+<li>Society5.0を意識したセキュリティリスクとその対策方法について記述されている。</li>
+<li>自社の事業が従来のサプライチェーンから離れ、新しくバリュークリエイションプロセスへと発展した際に、単純なサイバー空間におけるセキュリティ対策から、サイバー空間とフィジカル空間のそれぞれにおけるリスクを洗い出し、そのセキュリティ対策を整理するための道具としてもCPSFは効果的に活用できると思われる。</li>
+</ul>
+<a id="text-05-03"></a>
+<h4>5.3 セキュリティ関連NIST文書</h4>
+<h5>重要インフラのサイバーセキュリティを改善するためのフレームワーク（CSF）</h5>
+<ul>
+<li>概略
+<ul>
+<li>NIST サイバーセキュリティフレームワーク（CSF）の正式名称は、「重要インフラのサイバーセキュリティを向上させるためのフレームワーク」で、もともとは米国政府機関の重要インフラの運用者を対象として誕生</li>
+<li>NISTで作成されたフレームワークであり、防御にとどまらず、検知・対応・復旧といったステップも含み、インシデント対応を含めており、日本においても、今後普及が見込まれる</li>
+<li>「サイバーセキュリティ経営ガイドライン Ver 3.0 」では、フレームワークとして、「付録D_関連する規格・フレームワーク等との関係」でISMS（ISO/IEC 27001:2022、ISO/IEC 27002:2022）、CSF（NISTサイバーセキュリティフレームワークVer1.1）、CIS Controls Ver8との対応関係とともに、「付録A サイバーセキュリティ経営チェックシート」でCSFの項目との対応関係も提示されている</li>
+<li>CSFの利用方法については、「フレームワークをどのように利用するかは、それを実施する組織に委ねられている。」と述べられており、CSFは汎用的なフレームワークであるがゆえに、指示書やノウハウ集ではない点を理解しておくことが大切</li>
+</ul></li>
+<li>構成
+<ul>
+<li>ISMS（情報セキュリティマネジメントシステム）との関連性</li>
+<li>ISMSの属性の1つである「サイバーセキュリティ概念」の特定；防御；検知；対応；復旧の切り口を識別として、 指針や管理手法の対応が可能</li>
+<li>フレームワークコア</li>
+<li>成果を達成するための対策と参考情報の一覧</li>
+<li>識別：29項目</li>
+<li>防御：39項目</li>
+<li>検知：18項目</li>
+<li>対応：16項目</li>
+<li>復旧：6項目</li>
+<li>フレームワークインプリメンテーションティア</li>
+<li>対策情報を把握するための4段階の評価基準</li>
+<li>ティア1：場当たり的、属人的である</li>
+<li>ティア2：初期プロセスが整備されている</li>
+<li>ティア3：プロセスが継続的に回っている</li>
+<li>ティア4：プロセス自身の継続的改善に努めている</li>
+<li>フレームワークプロファイル</li>
+<li>コアとティアを組合せた、サイバーセキュリティ対策の「現在」と「目標」</li>
+<li>現在のプロファイル：現時点で達成されているサイバーセキュリティ成果</li>
+<li>目標のプロファイル：サイバーセキュリティリスクマネジメントの目標を達成するために必要な成果</li>
+</ul></li>
+<li>【要約資料】
+<ul>
+<li>[<em>Sec01-03-05【スライド】経営リスク管理から考えるSecurity by Design</em>（公開不可）]</li>
+<li>[<em>Cyber Security Framework(CSF)の実践におけるヒント</em>（公開不可）]</li>
+</ul></li>
+</ul>
+<h5>SP800シリーズ</h5>
+<ul>
+<li>NIST SP 800とは？</li>
+<li>CSFとSP 800の位置付け
+<ul>
+<li>セキュリティ管理の具体的な手法と手順を明記したガイドラインSP 800シリーズはCSFの下位概念で、CSFに則って整備されている。</li>
+</ul></li>
+<li><p>NIST SP800-53とは？</p>
+<ul>
+<li>「NIST SP800-53（連邦政府情報システムおよび連邦組織のためのセキュリティ管理策とプライバシー管理策）」は、米国連邦政府の内部セキュリティ基準を示すガイドライン。</li>
+<li>日本においても、政府で導入するクラウドサービスに要求するセキュリティ管理基準（ISMAP)の一つとして本ガイドラインの採用方針を出している。</li>
+</ul></li>
+<li><p>NIST SP 800-53とNIST SP 800-171との関連</p></li>
+<li><p>NIST SP 800-171とは？</p>
+<ul>
+<li>「NIST SP800-171（連邦政府外のシステムと組織における管理された非格付け情報の保護）」は、NIST CSD（Computer Security Division）が提供するセキュリティ対策ガイドラインの一つ。</li>
+<li>SP800シリーズで保護する情報には、政府の機密情報とされるCI（Classified Information）とそれ以外の重要情報と位置付けられるCUI（Controlled Unclassified Information）の2種類があり、米国では、SP800-171でCUIを管理すると定めている。</li>
+<li>日本の防衛装備庁も防衛産業におけるサイバーセキュリティ体制の強化のための施策を一層促進するため、 SP 800-171を参考に、「防衛産業サイバーセキュリティ基準」を整備している。</li>
+</ul></li>
+<li><p>NIST SP 800-161とは？</p>
+<ul>
+<li>「システムと組織のためのサイバーセキュリティ・サプライチェーン・リスクマネジメントのガイダンス」</li>
+<li>調達から販売・供給までの一連のサプライチェーンに存在する業務委託先や関連企業のすべてにおいて、一貫したセキュリティ基準を持つことが必要だと述べられている。</li>
+<li>NIST SP800-161の目的は、業務委託先や関連企業におけるセキュリティ対策である。</li>
+</ul></li>
+<li><p>NIST SP 800-40とは？</p></li>
+<li>NIST プライバシーフレームワーク Ver1.0とは？</li>
+</ul>
+<a id="text-05-04"></a>
+<h4>5.4 サイバーセキュリティ経営の基本的な姿勢</h4>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/445/index.html"><em>「サイバーセキュリティ経営ガイドライン Ver3.0」の改訂概要</em></a>【2023年3月27日】</li>
+<li>サイバー・フィジカル・セキュリティ対策フレームワーク(CPSF)のコンセプトの反映やサプライチェーンの再整理など、所要の改訂</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec93_01.pdf"><em>「サイバーセキュリティ経営ガイドラインVer2.0」の要約</em></a></li>
+</ul></li>
+<li>【参考資料】
+<ul>
+<li><a href="https://www.meti.go.jp/policy/netsecurity/downloadfiles/guide3.0.pdf"><em>【METI】サイバーセキュリティ経営ガイドライン Ver3.0（PDF形式）</em></a>【2023年3月27日METI】</li>
+<li><a href="https://www.ipa.go.jp/security/fy30/reports/ciso/index.html"><em>サイバーセキュリティ経営ガイドラインVer2.0実践のためのプラクティス集」</em></a>【IPA】</li>
+<li>「情報セキュリティの取組みはある程度進めてきたが、サイバー攻撃対策やインシデント対応は強化が必要。それに向けた体制づくりや対策は何から始めるべきか」と考えている経営者やCISO等、セキュリティ担当者を主な読者と想定し、経営ガイドラインの「重要10項目」を実践する際に参考となる考え方やヒント、実施手順、実践事例を記載</li>
+</ul></li>
+</ul>
+<h5>I．サイバーセキュリティは経営問題</h5>
+<ul>
+<li>セキュリティ対策の実施を「コスト」と捉えるのではなく、将来の事業活動・成長に必須なものと位置づけて「投資」と捉えることが重要</li>
+<li>セキュリティ投資は必要不可欠かつ経営者としての責務である。</li>
+</ul>
+<h5>II．経営者が認識すべき３原則</h5>
+<ul>
+<li>(1)経営者は、サイバーセキュリティリスクを認識し、リーダーシップによって対策を進めることが必要
+<ul>
+<li>対策の実施を通じたサイバーセキュリティに関する残留リスクを許容水準まで低減することは経営者の責務である旨を記載</li>
+</ul></li>
+<li>(2)自社は勿論のこと、ビジネスパートナーや委託先も含めたサプライチェーンに対するセキュリティ対策が必要
+<ul>
+<li>サプライチェーン構造の複雑化に伴い、サプライチェーン全体を俯瞰し、総合的なセキュリティを徹底することの必要性等を記載</li>
+</ul></li>
+<li>(3)平時及び緊急時のいずれにおいても、サイバーセキュリティリスクや対策に係る情報開示など、関係者との適切なコミュニケーションが必要
+<ul>
+<li>関係者とのコミュニケーションについて、社外のみならず、社内関係者とも積極的にコミュニケーションをとることが必要である旨を記載</li>
+</ul></li>
+</ul>
+<h5>実行すべき「重要７項目の取組」</h5>
+<ul>
+<li>取組1 情報セキュリティに関する組織全体の対応方針を定める</li>
+<li>取組2 情報セキュリティ対策のための予算や人材などを確保する</li>
+<li>取組3 必要と考えられる対策を検討させて実行を指示する</li>
+<li>取組4 情報セキュリティ対策に関する適宜の見直しを指示する</li>
+<li>取組5 緊急時の対応や復旧のための体制を整備する</li>
+<li>取組6 委託や外部サービス利用の際にはセキュリティに関する責任を明確にする</li>
+<li>取組7 情報セキュリティに関する最新動向を収集する</li>
+</ul>
+<h5>III．サイバーセキュリティ経営の重要１０項目</h5>
+<ul>
+<li>指示1：サイバーセキュリティリスクの認識、組織全体での対応方針の策定</li>
+<li>指示2：サイバーセキュリティリスク管理体制の構築</li>
+<li>指示3：サイバーセキュリティ対策のための資源（予算、人材等）確保
+<ul>
+<li>セキュリティ業務に従事する従業員のみならず、全ての従業員が自らの業務遂行にあたってセキュリティを意識し、必要かつ十分なセキュリティ対策を実現できるスキル向上の取組が必要である旨を記載</li>
+</ul></li>
+<li>指示4：サイバーセキュリティリスクの把握とリスク対応に関する計画の策定</li>
+<li>指示5：サイバーセキュリティリスクに対応するための仕組みの構築</li>
+<li>指示6：サイバーセキュリティ対策におけるPDCAサイクルの実施</li>
+<li>指示7：インシデント発生時の緊急対応体制の整備</li>
+<li>指示8：インシデントによる被害に備えた復旧体制の整備
+<ul>
+<li>事業継続の観点から、制御系も含めた業務の復旧プロセスと整合性のとれた復旧計画・体制の整備の必要性や対象を IT 系・社内・インシデントに限定せず、サプライチェーンも含めた実践的な演習の実施等について記載</li>
+</ul></li>
+<li>指示9：ビジネスパートナーや委託先等を含めたサプライチェーン全体の対策及び状況把握
+<ul>
+<li>自社へのリスク波及を防ぐ観点からサプライチェーン全体での対策が必要であること、委託先に一方的な対策を強いるのでなく、方策の実効性を高めることを記載</li>
+</ul></li>
+<li>指示10：情報共有活動への参加を通じた攻撃情報の入手とその有効活用及び提供
+<ul>
+<li>有益な情報を得るためには適切な情報を提供することも必要であることを強調しつつ、被害の報告・公表への備えをすることやステークホルダーへの情報開示について記載</li>
+</ul></li>
+</ul>
+<h3>備考</h3>
+<h4>改版履歴</h4>
+<ul>
+<li>2023年3月27日 サイバーセキュリティ経営ガイドライン Ver3.0【2023年3月24日】の要約更新</li>
+<li>2023年3月14日 「ナレッジベース2023」として、トップページ、インデックス本編1～8、Annexに分割</li>
+<li>2023年3月10日 『中小企業向けサイバーセキュリティ対策の極意』Ver.2.2.5（EPUBリフロー版）として公開</li>
+<li>2021年10月7日 試験公開を開始</li>
+</ul>
+<table class="border">
+  <tbody>
+    <tr>
+      <td>
+        <dl class="p-lineMarker">
+          <dt class="p-lineMarker__ttl">『中小企業向けサイバーセキュリティ対策の極意』ポータルサイトへのリンク</dt>
+          <dd class="p-lineMarker__body">
+            <ul>
+              <li class="c-linkList__item">⇒ <a href="/security/KnowLedge/">セキュリティ関連知識の保管庫（ナレッジベース2023）（Web版）</a>>
+                <ul>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/458/index.html"><strong>【本編01】サイバーセキュリティを取り巻く背景</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/459/index.html"><strong>【本編02】サイバーセキュリティに関する基礎知識【前提となる組織とスキル】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/460/index.html"><strong>【本編03】これからの企業経営で必要な観点【社会の動向】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/461/index.html"><strong>【本編04】社会全体におけるサイバーセキュリティの現状【国等の方針・施策】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/462/index.html"><strong>【本編05】網羅的なセキュリティ対策を知る【フレームワーク】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/463/index.html"><strong>【本編06】中小企業が組織として策定すべきサイバーセキュリティ対策関連規程【対策基準レベル】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/464/index.html"><strong>【本編07】中小企業が組織として実施すべきサイバーセキュリティ対策【実施手順・実務者マニュアルレベル】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/465/index.html"><strong>【本編08】全体総括】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/457/index.html"><strong>【Annex】別添資料（関連資料・文献等の紹介）</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/471/index.html"><strong>【Appendix】追補資料（最新動向等）</strong></a></li>
+                </ul>
+              <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/456/index.html">＜【2022年版凍結】セキュリティ関連知識の保管庫（ナレッジベース）（Web版）＞</a></li>
+              </li>
+              <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/index.html">ガイドブック『中小企業向けサイバーセキュリティ対策の極意』のページ</a>
+                <ul>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/368/index.html"><strong>電子書籍（EPUB版）の閲覧</strong></a></li>
+                </ul>
+              </li>
+              <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/">『中小企業向けサイバーセキュリティ対策の極意』ポータルサイト</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

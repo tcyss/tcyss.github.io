@@ -12,9 +12,19 @@
   <!-- stylesheet -->
   <link rel="stylesheet" href="/styles/style.css" media="all" />
   <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
-  <!--#include virtual="/include/gtag.inc"-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
   <!-- [ Reader Start ] -->
   <div class="pageReader">
     <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
@@ -40,6 +50,25 @@
             <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
             <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
                 target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
             <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
                 class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
                   alt="ガイドブックはこちら" /></a></li>
@@ -119,58 +148,82 @@
             <div class="p-article__head">
               <h2 class="h2Balloon"><span class="h2Balloon__body">【参考】EPUB形式の電子書籍ビューアの紹介</span></h2>
               <div class="p-article__head__date">
-                <time datetime="2021.07.26">2021.07.26</time>
+                <time datetime="2023.06.15">2023.06.15</time>
               </div>
             </div>
             <div class="p-article__body">
 <div class="l-main__middle__body">
-<h3 class="c-heading4">主な電子書籍ビューア</h3>
-<ul>
-<li>EPUB形式の電子書籍を閲覧できるビューアは各種ありますが、その一例を紹介します。利用者の環境や使い勝手に応じて、選択して閲覧してください。</li>
-</ul>
-<ul>
-<li>Windows10, MacOS, Linux端末
-<ul>
-<li><a href="https://www.edrlab.org/software/thorium-reader/">Thorium（トリウム）リーダー</a>
-<ul>
-<li>Windows10, MacOS, Linuxに対応したオープンソースの電子書籍ビューア。</li>
-<li><a href="https://www.microsoft.com/ja-jp/p/thorium-reader/9nfzp1g7m2sc?activetab=pivot:overviewtab">Windws10版（Windowsストア）</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Android端末
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.books">Google Play ブックス</a>
-<ul>
-<li>Google社が提供するAndroid端末用の電子書籍ビューア。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>iOS端末
-<ul>
-<li><a href="https://apps.apple.com/jp/app/apple-books/id364709193">Apple Books(iBooks)</a>
-<ul>
-<li>Apple社が提供するiOS端末用の電子書籍ビューア。</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>Windows10, MacOS, Linux, Android, iOS端末共通（Webブラウザでの閲覧）
-<ul>
-<li><a href="https://tcyss.github.io/security/docs/bibi/">BiBi</a>
-<ul>
-<li>Chrome, Edge, Firefox等のWebブラウザで動作するオープンソースの電子書籍ビューア。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 class="c-heading4">その他の電子書籍ビューアリスト【準備中】</h3>
-<ul>
-<li>随時、PC、タブレット、スマホ等にそれぞれ対応した電子書籍ビューアをご紹介します。<a></a></li>
-</ul>
+    <h3 id="オープンソースおよび端末機器ベンダーが提供する電子書籍ビューア">オープンソースおよび端末機器ベンダーが提供する電子書籍ビューア</h3>
+    <ul>
+        <li>EPUB形式の電子書籍を閲覧できるビューアは各種ありますが、その一例を紹介します。利用者の環境や使い勝手に応じて、選択して閲覧してください。</li>
+    </ul>
+    <h4 id="windows10-macos-linux端末">Windows10, MacOS, Linux端末</h4>
+    <ul>
+        <li><a href="https://www.edrlab.org/software/thorium-reader/">Thorium（トリウム）リーダー</a>
+            <ul>
+                <li>Windows11, MacOS,
+                    Linuxに対応したオープンソースの電子書籍ビューア。</li>
+                <li><a
+                        href="https://www.microsoft.com/ja-jp/p/thorium-reader/9nfzp1g7m2sc?activetab=pivot:overviewtab">Windws11版（Windowsストア）</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h4 id="android端末">Android端末</h4>
+    <ul>
+        <li><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.books">Google
+                Play ブックス</a>
+            <ul>
+                <li>Google社が提供するAndroid端末用の電子書籍ビューア。</li>
+            </ul>
+        </li>
+    </ul>
+    <h4 id="ios端末">iOS端末</h4>
+    <ul>
+        <li><a href="https://apps.apple.com/jp/app/apple-books/id364709193">Apple
+                Books(iBooks)</a>
+            <ul>
+                <li>Apple社が提供するiOS端末用の電子書籍ビューア。</li>
+            </ul>
+        </li>
+    </ul>
+    <h4 id="windows10-macos-linux-android-ios端末共通webブラウザでの閲覧">Windows10,
+        MacOS, Linux, Android, iOS端末共通（Webブラウザでの閲覧）</h4>
+    <ul>
+        <li><a href="https://tcyss.github.io/security/docs/bibi/">BiBi</a>
+            <ul>
+                <li>Chrome, Edge,
+                    Firefox等のWebブラウザで動作するオープンソースの電子書籍ビューア。</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 id="電子書籍サイトが提供する電子書籍ビューアでの閲覧方法">電子書籍サイトが提供する電子書籍ビューアでの閲覧方法</h3>
+    <ul>
+        <li>PC、タブレット、スマホ等にそれぞれ対応した電子書籍ビューアを順次ご紹介します。</li>
+    </ul>
+    <h4 id="例kindleでの閲覧方法">【例】Kindleでの閲覧方法</h4>
+    <ul>
+        <li>Kindleでは、パーソナルドキュメントとして、EPUBファイルをアップロードして、各種Kindle端末で閲覧できます。
+            <ul>
+                <li>※2022年末までは、Kindle専用フォーマット（AZW,
+                    MOBI）に変換しなければアップロードできませんでしたが、現在はEPUBを直接閲覧できるようになりました。</li>
+            </ul>
+        </li>
+        <li>Amazonの「Send to
+            Kindle」ページで、EPUBファイルをパーソナルドキュメントとしてアップロードします。
+            <ul>
+                <li><a href="https://www.amazon.co.jp/sendtokindle">Send to
+                        Kindle</a></li>
+                <li>「ここにファイルをドラッグ＆ドロップ」の領域にダウンロードしてあるファイルをDrog&amp;Dropします。</li>
+            </ul>
+        </li>
+        <li>「コンテンツと端末の管理」ページで、アップロードされたコンテンツを確認することができます。</li>
+        <li>パーソナルドキュメントとして正常にアップロードされていれば、各種Kindle端末、Kindleアプリ内の「ライブラリ」で一覧を確認して閲覧することができます。</li>
+    </ul>
+    <h4 id="例その他電子書籍ビューアでの閲覧方法準備中">【例】その他電子書籍ビューアでの閲覧方法【準備中】</h4>
+    <ul>
+        <li>順次紹介していきます。</li>
+    </ul>
 </div>
             </div>
           </article>

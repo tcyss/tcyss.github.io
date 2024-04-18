@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>【2022年版】セキュリティ関連知識の保管庫（ナレッジベース）【凍結】</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/KnowLedge/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">ナレッジベース</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">【2022年版】セキュリティ関連知識の保管庫（ナレッジベース）【凍結】</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">【2022年版】セキュリティ関連知識の保管庫（ナレッジベース）【凍結】</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2023.03.13">2023.03.13</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<p style="text-align: right;">2023.3.13</p>
+<h3>【2022年版】セキュリティ関連知識の保管庫（ナレッジベース）【凍結】</h3>
+<h4>位置づけ</h4>
+<ul>
+<li>ガイドブック『中小企業向けサイバーセキュリティ対策の極意』の続編のために要約した次世代IT技術、サイバーセキュリティ対策関連の知識の保管庫（ナレッジベース）です。</li>
+<li>国際標準、NISC,METI,IPA等の政府関連機関が提供するフレームワーク・ガイドライン等の最新版をベースとして、<em>実践的な情報への道しるべとなる情報</em>を提供します。</li>
+<li><em>具体的な対策の実施の際には、ページ内に記載の【参照資料】のリンク先をご確認ください。</em></li>
+</ul>
+<h3><a href="#text-01"><em>目次</em></a></h3>
+<h4><a href="#text-01"><em>目次.1.サイバーセキュリティを取り巻く背景</em></a></h4>
+<ul>
+<li>（目的：クラウドワークロードの複雑化、サプライチェーンの脆弱性、IoT、DX等、新しいテクノロジーへのセキュリティ対策が求められている状況を解説し、Society5.0等で示されている社会の方向性と実現に向けた基本概念、その環境下で中小企業に求められる考え方を提示する）</li>
+<li><a href="#text-01-01"><em>1.1 目標とする対策のレベルを想定</em></a>
+<ul>
+<li>（クイックアプローチ・ベースラインアプローチ・網羅的アプローチ）</li>
+</ul></li>
+<li><a href="#text-01-02"><em>1.2 【事例を知る】重大なインシデント発生から課題解決まで</em></a>
+<ul>
+<li>（要旨・キーワード等：最近の攻撃トレンドを踏まえ、中小企業にも発生しうるサイバー攻撃・被害をケーススタディとして掲載）</li>
+</ul></li>
+<li><a href="#text-01-02"><em>1.3 【社会の動きを知る】社会の現状と今後の動向</em></a>
+<ul>
+<li>（要旨・キーワード等：Society5.0、Cybersecurity for All、DX with Security、プラス・セキュリティ、デジタルリテラシー　等)</li>
+<li><em>DX時代に対応が求められるIT環境</em></li>
+<li>（要旨・キーワード等：IoT、ビッグデータ、ロボット、AI、5G　等）</li>
+<li><em>DX時代に不可欠な人材の確保</em></li>
+<li>（要旨・キーワード等：DX with Securityで必要な人材の役割とスキル　等）</li>
+</ul></li>
+</ul>
+<h4><a href="#text-02"><em>目次.2.サイバーセキュリティに関する基礎知識【前提となる組織とスキル】</em></a></h4>
+<ul>
+<li>（目的：向上支援事業にて到達すると想定されるレベル（Security Action二つ星宣言）の基礎知識を振り返る）</li>
+<li><em>サイバーセキュリティに関する基礎知識</em>
+<ul>
+<li>（要旨・キーワード等：各種試験シラバス（ITパスポート、基本情報処理技術者、情報セキュリティマネジメント）等より基礎知識を掲載）</li>
+</ul></li>
+<li><em>Security Action（IPA）</em>
+<ul>
+<li>（要旨・キーワード等：情報セキュリティ5か条、情報セキュリティ基本方針、情報セキュリティ自社診断　等）</li>
+</ul></li>
+</ul>
+<h4><a href="#text-03"><em>目次.3.これからの企業経営で必要な観点【社会の動向】</em></a></h4>
+<ul>
+<li>（目的：企業経営に必要となるIT活用、サイバーセキュリティ対策の必要性を解説する）</li>
+<li><em>現実社会とサイバー空間の繋がり</em>
+<ul>
+<li>（要旨・キーワード等：サプライチェーンを構成する企業と企業が、フィジカル空間とサイバー空間で繋がっていることを掲載）</li>
+</ul></li>
+<li><em>守りのIT活用</em>
+<ul>
+<li>（要旨・キーワード等：社内業務の効率性・生産性向上や働き方の変革　（デジタルオプティマイゼーション）等）</li>
+</ul></li>
+<li><em>攻めのIT活用</em>
+<ul>
+<li>（要旨・キーワード等：ビジネスの発展や売上・企業価値の向上　（デジタルトランスフォーメーション）等）</li>
+</ul></li>
+<li><em>経営投資としてのサイバーセキュリティ対策</em>
+<ul>
+<li>（要旨・キーワード等：DX白書（IPA）等より経営投資としてのサイバーセキュリティ対策の必要性を掲載）</li>
+</ul></li>
+</ul>
+<h4><a href="#text-04"><em>目次.4.社会全体におけるサイバーセキュリティの現状【国等の方針・施策】</em></a></h4>
+<ul>
+<li>（目的：社会全体におけるサイバーセキュリティの現状を解説する）</li>
+<li><em>国の方針・施策</em>
+<ul>
+<li>（要旨・キーワード等：経済財政運営と改革の基本方針、サイバーセキュリティ基本法、サイバーセキュリティ戦略、サイバーセキュリティ2022、情報セキュリティ白書）</li>
+</ul></li>
+<li><em>脅威</em>
+<ul>
+<li>（要旨・キーワード等：情報セキュリティ10大脅威、サイバー攻撃・犯罪の情勢）</li>
+</ul></li>
+<li><em>法令遵守</em>
+<ul>
+<li>（要旨・キーワード等：関係法令Q&amp;Aハンドブック（NISC）等より法令遵守に関する事項を掲載、GDPR、個人情報保護）</li>
+</ul></li>
+</ul>
+<h4><a href="#text-05"><em>目次.5.網羅的なセキュリティ対策を知る【フレームワーク】</em></a></h4>
+<ul>
+<li>（目的：業種、業態、組織規模を問わず、網羅的なサイバーセキュリティ対策の体系を解説する）</li>
+<li><em>網羅的な対策のフレームワーク</em>
+<ul>
+<li>（要旨・キーワード等：ISO/IEC27001:2022、ISO/IEC27002:2022が示すマネジメント基準・管理策基準、5つの属性とその中身）</li>
+<li>（要旨・キーワード等：政府機関、重要インフラとの連携において、NIST文書（SP800シリーズ、CSF（重要インフラのサイバーセキュリティを改善するフレームワーク））等を補足）</li>
+</ul></li>
+<li><a href="#text-05-00"><em>5.0 ITシステム管理・監査関連のフレームワーク</em></a></li>
+<li><a href="#text-05-01"><em>5.1 情報セキュリティマネジメントシステム（ISMS）</em></a></li>
+<li><a href="#text-05-02"><em>5.2 サイバー・フィジカル・セキュリティ対策フレームワーク（CPSF）</em></a></li>
+<li><a href="#text-05-03"><em>5.3 セキュリティ関連NIST文書</em></a></li>
+<li><a href="#text-05-04"><em>5.4 サイバーセキュリティ経営の基本的な姿勢</em></a>
+<ul>
+<li>（要旨・キーワード等：経営者が認識すべき３原則、サイバーセキュリティ経営の重要10項目）</li>
+</ul></li>
+</ul>
+<h4><a href="#text-06"><em>目次.6.中小企業が組織として策定すべきサイバーセキュリティ対策関連規程【対策基準レベル】</em></a></h4>
+<ul>
+<li>（目的：網羅的なサイバーセキュリティ対策のフレームワーク等を参考に、組織の現状と目標に応じて必要十分な管理策を選択して、中小企業が組織として講じるべき対策（対策基準レベル）の概要を解説する。）</li>
+<li><em>対策基準の策定目標</em>
+<ul>
+<li>（要旨・キーワード等：組織の規模、状況を想定して、①インシデント事例に対応したレベル、②IPA「中小企業の情報セキュリティガイドライン」等のサンプル、ひな形をベースとしたレベル、③ISMSに準拠した対策等にレベルを分けて掲載）</li>
+</ul></li>
+<li><em>情報セキュリティの三大要素（CIA）</em>
+<ul>
+<li>（要旨・キーワード等：機密性・完全性・可用性）</li>
+</ul></li>
+<li><em>リスク評価</em>
+<ul>
+<li>（要旨・キーワード等：組織に関連する脅威、脆弱性、情報の重要度）</li>
+</ul></li>
+<li><em>対策基準に記載されるべき各管理策</em>
+<ul>
+<li>（要旨・キーワード等：フレームワーク等に記載された組織的対策、人的対策、物理的対策、技術的対策から、中小企業のレベルに応じて必要十分な管理策の項目とポイントを掲載）</li>
+</ul></li>
+<li><a href="#text-06-01"><em>6.1 【LV.1】【クイックアプローチ】緊急性のある事象への対策【最近の重大インシデント対応の事例を参考に】</em></a></li>
+<li><a href="#text-06-02"><em>6.2 【LV.2】【ベースラインアプローチ】即効性・実効性のある対策を確保【中小企業の情報セキュリティ対策ガイドライン等のサンプルを活用して】</em></a></li>
+<li><a href="#text-06-03"><em>6.3 【LV.3】【網羅的アプローチ】じっくりと体系的・網羅的に【ISMS等の認証が可能なレベルを目指して】</em></a></li>
+</ul>
+<h4><a href="#text-07"><em>目次.7.中小企業が組織として実施すべきサイバーセキュリティ対策【実施手順・実務者マニュアルレベル】</em></a></h4>
+<ul>
+<li><p>（目的：中小企業が策定した対策基準に基づいて具体的に実施する内容、手順（実施手順レベル）を解説する。対策基準に記載された対策の具体的な実施のためにドキュメント化（仕様書、実施手順、業務マニュアル、ハンドブック、ルールブック、手引書等）して、順次実施すべき事項をひな形等で解説する。）</p></li>
+<li><p><a href="#text-07-01"><em>7.1 実施手順としての作成ドキュメントおよび作成手順</em></a></p>
+<ul>
+<li><p>（要旨・キーワード等：作成するドキュメントの種類を提示（必要に応じて、組織内の所掌等に応じて分冊になることも想定））</p></li>
+<li><p><a href="#text-07-01-01"><em>7.1.1 作成すべきドキュメント（共通及び職種等別）</em></a></p></li>
+<li><a href="#text-07-01-02"><em>【LV.1】</em></a> <a href="#text-07-01-03"><em>【LV.2】</em></a>  <a href="#text-07-01-04"><em>【LV.3】</em></a></li>
+</ul></li>
+<li><p><a href="#text-07-02"><em>7.2 情報セキュリティマネジメントの確立・運用・監視及びレビュー・維持及び改善、文書管理の実施手順</em></a></p>
+<ul>
+<li>（要旨・キーワード等：守るべき情報資産、情報資産への脅威（攻撃）、現状の脆弱性、AsIsのリスク分析、ToBeの設定）</li>
+</ul></li>
+<li><a href="#text-07-03"><em>7.3 組織的対策</em></a>
+<ul>
+<li>（要旨・キーワード等：脅威インテリジェンス、情報資産台帳、IT-BCP、インシデント対応マニュアル、知的財産、プライバシー、セキュリティ対策状況の点検）</li>
+</ul></li>
+<li><a href="#text-07-04"><em>7.4 人的対策</em></a>
+<ul>
+<li>（要旨・キーワード等：雇用契約書、懲戒手続き、雇用の終了の責任、守秘義務または秘密保持契約、リモートワーク実施手順、情報セキュリティ イベントの報告手順書等の作成。人材育成・人材確保：IT及びデジタル人材に必要となるスキル（ITSS+、Di-Lite（デジタルリテラシー領域）、プラス・セキュリティ等）、チェンジマインド、リスキリングのための実施計画及び教育・研修、スキル認定の実施内容）</li>
+<li><a href="#text-07-04-02"><em>7.4.2 IT及びデジタル人材の確保</em></a></li>
+<li><a href="#text-07-04-03"><em>7.4.3 最新の人材育成・人材確保のための標準フレームワーク【デジタルスキル標準（DSS）】</em></a></li>
+<li>(※DX推進における人材の重要性を踏まえ、個人の学習や企業の人材確保・育成の指針（2022年12月21日に公開された「デジタルスキル標準（DSS）」を中心に））</li>
+<li>DXリテラシー標準（DSS-L）</li>
+<li>DX推進スキル標準（DSS-P）</li>
+<li><a href="#text-07-04-04"><em>7.4.4 人材育成・人材確保のための各種スキル標準</em></a></li>
+<li>(※DXへの対応、セキュリティ対策に必要な知識、スキルを効率的に習得するため各種スキル標準)</li>
+</ul></li>
+<li><a href="#text-07-05"><em>7.5 技術的対策</em></a>
+<ul>
+<li>（要旨・キーワード等：境界防御モデル、ZTA（Zero Trust Architecture）、SDP（Software Defined Perimeter）、SASE（Secure Access Service Edge）等のセキュリティフレームワークで示される機能の実装：共同責任モデル（オンプレミス、クラウド）、対象領域（ユーザ・データ・アプリケーション・OS・サーバ・ネットワーク・ストレージ）、ネットワーク制御（VPN,SD-WAN）、セキュリティ統制（ネットワーク、デバイス、アイデンティ、ユーザ認証（FIDO等）、データ、可視化・分析、自動化等））</li>
+<li>（要旨・キーワード等：Security by Design、DevSecOps、開発・運用の委託契約、IT部門と事業部門の連携による顧客課題の解決、システム構築・運用マニュアル、インシデント対応マニュアル（防御・検知・対応・復旧））</li>
+<li><a href="#text-07-05-SASE"><em>～ゼロトラスト、ZTA、SASEのフレームワーク</em></a></li>
+<li><a href="#text-07-05-unyo"><em>～IT環境構築・運用実施手順</em></a></li>
+<li><a href="#text-07-05-incident"><em>～インシデント対応マニュアル</em></a></li>
+<li><a href="#text-07-05-keiyaku"><em>～情報システム関連仕様書・契約書</em></a></li>
+</ul></li>
+<li><a href="#text-07-06"><em>7.6 物理的対策</em></a>
+<ul>
+<li>（要旨・キーワード等：物理的なセキュリティ境界、脅威からの保護、監視（入退室認証システム、BYOD、MDM）、オフプレミスの資産のセキュリティ、機器のメンテナンス、IT機器廃棄手順等）</li>
+</ul></li>
+<li><a href="#text-07-07"><em>7.7 セキュリティ対策状況の有効性評価</em></a>
+<ul>
+<li>（要旨・キーワード等：内部点検、外部監査、（第三者認証）の実施、継続的改善）</li>
+</ul></li>
+</ul>
+<h4><a href="#text-08"><em>目次.8.全体総括</em></a></h4>
+<ul>
+<li>（目的：テキスト全体のポイントを振り返り、知識を定着させる。また、セキュリティ人材として自走するために必要な考え方等を提示する。）</li>
+</ul>
+<h4><a href="#Annex-1"><em>目次.Annex</em></a></h4>
+<ul>
+<li><a href="#Annex-1"><em>Annex-1 関係法規、各種規程、フレームワーク等の紹介</em></a></li>
+<li><a href="#Annex-2"><em>Annex-2 用語解説</em></a></li>
+<li><a href="#Annex-3"><em>Annex-3 参考すべき資料・文献リスト</em></a></li>
+</ul>
+<a id="text-01"></a>
+<h3>＜＜本編＞＞</h3>
+<h3>1.サイバーセキュリティを取り巻く背景</h3>
+<a id="text-01-01"></a>
+<h4>目標とする対策のレベルを想定</h4>
+<ul>
+<li><em>LV.1 【クイックアプローチ】緊急に、狙われやすい大きな穴（セキュリティホール）を塞ぐ</em>
+<ul>
+<li>報道されるような事象、情報セキュリティ10大脅威を参考にして、緊急対応する</li>
+</ul></li>
+<li><em>LV.2 【ベースラインアプローチ】素早く多くの穴を塞ぐ</em>
+<ul>
+<li>ガイドブック、ひな形を参照して、迅速に進める</li>
+</ul></li>
+<li><em>LV.3 【網羅的アプローチ】じっくりと、小さな穴を残さないように確実に塞ぐ</em>
+<ul>
+<li>網羅的な対策が定義されているフレームワークに沿って進める</li>
+</ul></li>
+</ul>
+<a id="text-01-02"></a>
+<h4>【事例を知る】重大なインシデント発生から課題解決まで</h4>
+<ul>
+<li>事案発生⇒課題の抽出（組織的、技術的、社会的）⇒再発防止策の実施（課題への対応・対策）</li>
+<li>自組織における対策状況の見直しのきっかけとして
+<ul>
+<li>ただし、環境は組織によって異なるため、事例は一例に過ぎずそのまま適用しただけでは、重大な事象・対策を見落とす可能性がある。</li>
+</ul></li>
+<li>事例を踏まえて、網羅的な対策のあり方、目標とするレベルを認識の上で、具体的に実施していくことが重要。</li>
+</ul>
+<h5>ランサムウェアの感染</h5>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.handa-hospital.jp/topics/2022/0616/index.html"><em>徳島県つるぎ町立半田病院 コンピュータウイルス感染事案有識者会議調査報告書について</em></a></li>
+</ul></li>
+</ul>
+<a id="text-01-03"></a>
+<h4>【社会の動きを知る】社会の現状と今後の動向【概要】</h4>
+<ul>
+<li>Society5.0等で示されている政府機関が目指す社会の方向性と、実現に向けた基本的な概念を理解する。</li>
+<li>そのような環境の中で、中小企業のビジネス発展のために意識しておくべき考え方を提示する</li>
+</ul>
+<h5>DX時代に対応が求められるIT環境</h5>
+<ul>
+<li>IoT、ビッグデータ、ロボット、AI、5G、、、</li>
+<li>【要約資料】
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/212/index.html"><em>MISSION 3-12～16 IoT、ビッグデータ、AI、ロボットの活用</em></a></li>
+</ul></li>
+</ul>
+<h5>想定されるセキュリティ侵害と対策のあり方</h5>
+<ul>
+<li>LV.1, LV.2, LV.3 を想定して、リスクの大きいものからはじめ、最終的には、網羅的かつ迅速な対策へ</li>
+</ul>
+<h5>DX時代に不可欠な人材の確保</h5>
+<ul>
+<li>チェンジマインド、リスキリング、、、</li>
+</ul>
+<a id="text-02"></a>
+<h3>2.サイバーセキュリティに関する基礎知識【前提となる組織とスキル】</h3>
+<ul>
+<li><em>向上支援事業にて到達すると想定されるレベル（Security Action二つ星宣言）の基礎知識を振り返る</em></li>
+</ul>
+<h4>ITリテラシー</h4>
+<h5>ITパスポート試験（iパス）</h5>
+<ul>
+<li><a href="https://www3.jitec.ipa.go.jp/JitesCbt/html/about/range.html"><em>ITパスポート試験 試験内容・出題範囲</em></a></li>
+<li><p><a href="https://www.jitec.ipa.go.jp/1_13download/youkou_ver5_0.pdf"><em>情報処理技術者試験・情報処理安全確保支援士試験 試験要綱</em></a> 内のITパスポート試験の項を参照</p></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/djTCLdIuDivAn_2IHeblmQQt71sDLD5w6MEBYoml"><em>Bib06-04 ITパスポート試験シラバス</em></a></li>
+</ul></li>
+</ul>
+<h4>Security Action 二つ星レベル</h4>
+<ul>
+<li><a href="https://www.ipa.go.jp/security/security-action/index.html"><em>Security Action (セキュリティ対策自己宣言)</em></a></li>
+</ul>
+<h5>情報セキュリティ5か条</h5>
+<ul>
+<li><a href="https://www.ipa.go.jp/files/000055516.pdf"><em>情報セキュリティ5か条</em></a>
+<ul>
+<li>OSやソフトウェアは常に最新の状態にしよう！</li>
+<li>ウイルス対策ソフトを導入しよう！</li>
+<li>パスワードを強化しよう！</li>
+<li>共有設定を見直そう！</li>
+<li>脅威や攻撃の手口を知ろう！</li>
+</ul></li>
+</ul>
+<h5>5分でできる情報セキュリティ自社診断</h5>
+<ul>
+<li><a href="https://www.ipa.go.jp/files/000055848.pdf"><em>5分でできる情報セキュリティ自社診断</em></a></li>
+</ul>
+<h5>情報セキュリティ基本方針</h5>
+<ul>
+<li><a href="https://www.ipa.go.jp/files/000072146.docx"><em>情報セキュリティ基本方針</em></a>
+<ul>
+<li>経営者の責任</li>
+<li>社内体制の整備</li>
+<li>従業員の取組み</li>
+<li>法令及び契約上の要求事項の遵守</li>
+<li>違反及び事故への対応</li>
+<li>・・・</li>
+</ul></li>
+</ul>
+<h4>導入済と想定するセキュリティ対策機能</h4>
+<ul>
+<li>導入を支援する東京都の事業</li>
+</ul>
+<h5>UTM相当機能</h5>
+<ul>
+<li>【参考】
+<ul>
+<li><a href="https://security-kojo.metro.tokyo.lg.jp/">令和４年度中小企業サイバーセキュリティ向上支援事業【東京都】</a></li>
+</ul></li>
+</ul>
+<h5>EDR相当機能</h5>
+<ul>
+<li>【参考】
+<ul>
+<li><a href="https://security-kyoka.metro.tokyo.lg.jp/">中小企業サイバーセキュリティ対策強化緊急サポート事業【東京都】</a></li>
+</ul></li>
+</ul>
+<a id="text-03"></a>
+<h3>3.これからの企業経営で必要な観点【社会の動向】</h3>
+<ul>
+<li><em>※企業経営に必要となるIT活用、サイバーセキュリティ対策の必要性を解説する</em></li>
+</ul>
+<h4>経済財政運営と改⾰の基本⽅針</h4>
+<ul>
+<li><a href="https://www5.cao.go.jp/keizai-shimon/kaigi/cabinet/2022/decision0607.html"><em>経済財政運営と改革の基本方針2022</em></a>
+<ul>
+<li><em>国の施策の基本方針であり、IT及びセキュリティ関連の施策は、この基本方針に沿った形で実施計画が策定されていることを認識する</em></li>
+</ul></li>
+<li>【要約資料】 <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX96-04_2021.pdf"><em>国の基本方針および実施計画の要約</em></a>
+<ul>
+<li>（２）⺠間部⾨におけるDXの加速</li>
+<li>地⽅における中⼩企業も含めて <strong>⾮対⾯型ビジネスモデル</strong>への変⾰や新産業モデルを創出する。</li>
+<li>このため、企業全体で取り組むデジタル投資を税制により⽀援し、特に中⼩企業においては、IT導⼊サポートを拡充し、そのDX推進を⼤胆に加速するほか、標準化された電⼦インボイスや、⾦融機関による⽀援等も通じた中⼩企業共通EDI等の普及促進を図る。</li>
+<li>また、物流DXや標準化等を通じて、<strong>サプライチェーン全体の徹底した最適化</strong>を図る。加えて、<strong>AI、IoTやビッグデータを活⽤し、新たな付加価値を創造</strong>していく。</li>
+<li>（３）デジタル⼈材の育成、デジタルデバイドの解消、サイバーセキュリティ対策</li>
+<li>IPAが、経済界との協⼒を含む体制整備を⾏い、各種デジタル⼈材のスキルを評価する基準を作成する。
+<ul>
+<li>※データサイエンティスト（統計分析やコンピュータサイエンスの知識を元に、⼤量のビッグデータから新たな知⾒を引き出し、価値を創造する⼈材）、サイバーセキュリティスペシャリスト（個⼈や組織をサイバー攻撃の脅威から守るセキュリティ専⾨⼈材）、<strong>アーキテクト（DX技術を理解して、ビジネスとDX技術導⼊の融合を指揮することのできる⼈材）</strong>、エンジニア（アプリ開発、クラウド等のデジタル技術をフルスタックで⾝に付け、技術のビジネス導⼊を担う⼈材）、オペレータ（DXを⽀えるデジタル基盤の安定稼働を⽀える⼈材）など</li>
+</ul></li>
+<li>特に地域で育成したデジタル⼈材を積極的に活⽤し、デジタル活⽤に不安のある⾼齢者等にオンラインサービスの利⽤⽅法等に関して講習会・出前講座等の助⾔・相談を⾏うとともに、⾏政窓⼝等でのサポートに努めるなど、⽀援の仕組みの充実を図る。</li>
+<li>関係府省庁、電気通信事業者等重要インフラ事業者による積極的なセキュリティ対策を推進するほか、サイバーセキュリティに係るサプライチェーンリスクへの対策を強化する。
+<ul>
+<li>サイバーセキュリティに係るサプライチェーンリスク:製品の開発・製造、設置等の過程で情報の窃取・破壊や悪意ある機能が組み込まれること。</li>
+</ul></li>
+<li>２ 重点化を図るべき分野</li>
+<li>(1)経済社会の活⼒の向上及び持続的発展 〜DX with Cybersecurityの推進〜</li>
+<li>① 経営層の意識改⾰
+<ul>
+<li>デジタル化の進展に応じ、企業の取組状況が、市場を含む企業内外から持続的な企業価値の向上につながるものとして評価され、更なる取組を促進される機運の形成に資するものであること。</li>
+<li>また、経営層に対し、<strong>「プラス・セキュリティ」知識を補充できる環境整備に資するもの</strong>であること。</li>
+</ul></li>
+<li>② 地域・中⼩企業における<strong>DX with Cybersecurityの推進</strong>
+<ul>
+<li>地域・中⼩企業において、<strong>デジタル化と同時にサイバーセキュリティ対策に取り組む</strong>に当たり直⾯する、知⾒や⼈材等のリソース不⾜等の課題への対処に資するものであること。</li>
+</ul></li>
+<li>③新たな価値創出を⽀えるサプライチェーン等の信頼性確保に向けた基盤づくり</li>
+<li>④誰も取り残さない<strong>デジタル／セキュリティ・リテラシーの向上と定着</strong>
+<ul>
+<li>デジタル化の進展に応じ、様々なデジタルサービスに触れる機会が増えていく中、リテラシーの向上と定着に向けて、その機会や⽀援の取組と連動するものであること。</li>
+</ul></li>
+</ul></li>
+</ul>
+<h4>デジタル社会の実現に向けた改⾰</h4>
+<ul>
+<li><p><a href="https://www.digital.go.jp/policies/priority-policy-program/"><em>デジタル社会の実現に向けた重点計画</em></a></p>
+<ul>
+<li>誰一人取り残されない、人に優しいデジタル化を</li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec20-01.pdf"><em>Sec20-01_「デジタル社会の実現に向けた改革」の要約</em></a></li>
+</ul></li>
+</ul>
+<h5>Society5.0</h5>
+<ul>
+<li>最先端の科学技術を用いた <strong>「仮想空間と現実空間の融合」</strong> という手段と、<strong>「人間中心の社会」</strong> という価値観によって、「国民の安全と安心を確保する持続可能で強靭な社会」と「一人ひとりの多様な幸せ（Well-being）が実現できる社会」の実現を目指す。</li>
+<li>【参照資料】
+<ul>
+<li><a href="https://www8.cao.go.jp/cstp/society5_0/"><em>【内閣府】Society 5.0</em></a></li>
+<li><a href="https://www.mext.go.jp/b_menu/hakusho/html/hpaa202201/1421221_00001.html"><em>【文部科学省】令和4年版 科学技術・イノベーション白書</em></a></li>
+<li><a href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/95ff17aa-765a-4d0d-9770-e08a6a3c1e90/5c5c0027/20220401_resources_leveraging_digital_technology_main_01.pdf"><em>【デジタル庁】デジタルを活用する未来に向けて</em></a></li>
+</ul></li>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/aadIYiAOEbTmcDA04WY8dv7--OlVMepYwf5jad10"><em>DAX20-0402-3-1 Society 5.0</em></a></li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/386/index.html"><em>DAX96-01_「令和3年版科学技術・イノベーション白書（文部科学省）」の要約</em></a></li>
+</ul></li>
+</ul>
+<h5>IoT、ビッグデータ、ロボット、AI、5G、、、</h5>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.ipa.go.jp/ikc/our_activities/rs_01.html"><em>【IPA】AI白書</em></a></li>
+</ul></li>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/1Wo2C4LYX6_jsZPFolmwclhsg9AY_XXvE6uSqiu7"><em>DAX25-20-00【書籍】 AI白書2019_目次</em></a></li>
+</ul></li>
+</ul>
+<h5>DX（デジタルトランスフォーメーション）</h5>
+<ul>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.meti.go.jp/policy/it_policy/dx/dx.html"><em>産業界におけるデジタルトランスフォーメーションの推進</em></a></li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/STnF18klr8Boz18dxpuDShLteY3ybpCYhSpnLeDo"><em>DAX21_デジタルトランスフォーメーション（DX）の概念（MindMap版）</em></a></li>
+</ul></li>
+</ul>
+<h5>DX with Security</h5>
+<ul>
+<li>サービスの向上のためにセキュリティ対策は必須</li>
+</ul>
+<h5>CPS（サイバー・フィジカル・システム）</h5>
+<ul>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.jeita.or.jp/cps/about/"><em>【JEITA】CPSとは</em></a></li>
+<li><a href="https://analytics-news.jp/info/cps"><em>サイバーフィジカルシステム(CPS)とは</em></a></li>
+</ul></li>
+<li><p>繋がることに着目した切り口</p>
+<ul>
+<li>サプライチェーンを構成する企業と企業の繋がり</li>
+<li>フィジカル空間とサイバー空間の繋がり</li>
+<li>サイバー空間とサイバー空間の繋がり</li>
+</ul></li>
+</ul>
+<h4>サイバーセキュリティ対策が経営に与える重大な影響</h4>
+<ul>
+<li>POINT1：ビジネスの継続のためにはITの活用は不可欠</li>
+<li>POINT2：ITの活用にはサイバー攻撃などへの備えが必要</li>
+<li><p>POINT3：サイバーセキュリティ対策は経営者が自ら実行</p></li>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/201/index.html"><em>MISSION 3-1 サイバーセキュリティ対策が経営に与える重大な影響</em></a></li>
+</ul></li>
+</ul>
+<h4>生産性向上（経費の削減）</h4>
+<ul>
+<li>従来、IT活用は業務効率化やコスト削減を目的として、定型業務の自動化に集中。（守りのIT投資）</li>
+<li>⇒ デジタルオプティマイゼーション</li>
+</ul>
+<h4>新たなビジネスの展開（先行投資）</h4>
+<ul>
+<li>売り上げ増加を目指したIT投資（攻めのIT投資）</li>
+<li>「既存事業の業務生産性向上や働き方の変革」で得られた原資を「新たな価値の創出」に向けた活動に充当していくことで、企業の競争力と経営体力を高めながら、環境変化にも対応する</li>
+<li>⇒ デジタルトランスフォーメーション</li>
+</ul>
+<h4>次世代技術を活用したビジネス展開</h4>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/211/index.html"><em>MISSION 3-11 次世代技術を活用したビジネス展開</em></a></li>
+<li>【コラム】DX推進はビジネス飛躍のチャンス</li>
+</ul></li>
+</ul>
+<a id="text-04"></a>
+<h3>4.社会全体におけるサイバーセキュリティの現状【国等の方針・施策】</h3>
+<ul>
+<li>※社会全体におけるサイバーセキュリティの現状を解説する</li>
+</ul>
+<h4>国等の方針・施策が現在の内容に至るまで</h4>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/sooIk2GGqj9b8Uv0QtsOcJ_hnFR4KFLQ1HnIOIyz"><em>Sec01-03-01【スライド】クラウド化推進社会と我が国のサイバーセキュリティ戦略</em></a>【NISC三角氏】</li>
+</ul></li>
+</ul>
+<h4>Cybersecurity for All</h4>
+<ul>
+<li>（産業横断的なサプライチェーン管理、サイバー犯罪対策、クラウドサービス利用のための対策の多層的な展開、経済安全保障の視点を含むサイバー空間の信頼性確保）</li>
+</ul>
+<h4>情報セキュリティ白書、10大脅威で示された脅威の実態</h4>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.ipa.go.jp/ikc/our_activities/rs_03.html"><em>情報セキュリティ白書</em></a></li>
+<li><a href="https://www.ipa.go.jp/security/vuln/10threats2022.html"><em>情報セキュリティ10大脅威 2022</em></a></li>
+</ul></li>
+</ul>
+<h4>【NISC】サイバーセキュリティ基本法、サイバーセキュリティ戦略</h4>
+<ul>
+<li>サイバーセキュリティ基本法
+<ul>
+<li><a href="https://www.nisc.go.jp/law/lawlink.html"><em>【NISC】サイバーセキュリティ基本法</em></a></li>
+</ul></li>
+<li>サイバーセキュリティ戦略</li>
+<li><a href="https://www.nisc.go.jp/pdf/policy/kihon-s/cs-senryaku-c.pdf"><em>【NISC】サイバーセキュリティ戦略</em></a></li>
+<li><a href="https://www.nisc.go.jp/pdf/policy/kihon-s/cs2022.pdf"><em>サイバーセキュリティ2022</em></a>
+<ul>
+<li>2021年度年次報告・2022年度年次計画</li>
+</ul></li>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/i3MYo6GsVXs1BXi3xC4KPRkae0mq1F3-u6etRlq0"><em>Sec21-01_サイバーセキュリティ戦略の要約</em></a></li>
+<li>4.1.経済社会の活力の向上及び持続的発展 ～DX with Cybersecurity の推進～
+<ul>
+<li>4.1.1.経営層の意識改革</li>
+<li>4.1.2.地域・中小企業における DX with Cybersecurity の推進</li>
+<li>4.1.3.新たな価値創出を支えるサプライチェーン等の信頼性確保に向けた基盤づくり</li>
+<li>4.1.4.誰も取り残さないデジタル／セキュリティ・リテラシーの向上と定着</li>
+</ul></li>
+<li>4.2.国民が安全で安心して暮らせるデジタル社会の実現
+<ul>
+<li>4.2.1.国民・社会を守るためのサイバーセキュリティ環境の提供</li>
+<li>4.2.3.経済社会基盤を支える各主体における取組①（政府機関等）</li>
+</ul></li>
+<li>4.4.横断的施策
+<ul>
+<li>「デジタル改革を踏まえた<strong>デジタルトランスフォーメーションとサイバーセキュリティの同時推進</strong>」「公共空間化と相互連関・連鎖が進展するサイバー空間全体を俯瞰した安全・安心の確保」「安全保障の観点からの取組強化」という3つの方向性を意識して、取組推進を図る。</li>
+<li>4.4.1.研究開発の推進</li>
+<li>4.4.2.人材の確保、育成、活躍促進</li>
+<li>(1) 「DX with Cybersecurity」に必要な人材に係る環境整備
+<ul>
+<li>デジタル化の進展とあわせてサイバーセキュリティ確保に向けた取組を同時に推進すること（DX with Cybersecurity）が社会全体で実現されるための環境整備</li>
+<li>①「プラス・セキュリティ」知識を補充できる環境整備</li>
+<li>経営層や、特に企業・組織内でDX を推進するマネジメントに関わる人材層をはじめとして、ITやセキュリティに関する専門知識や業務経験を必ずしも有していない様々な人材に対して「プラス・セキュリティ」知識が補充され、内外のセキュリティ専門人材との協働等が円滑に行われることが、社会全体で「DX with Cybersecurity」を推進していく上で非常に重要である。</li>
+<li>様々な企業・組織において、人材育成プログラムを受講する呼びかけ等が行われることや、職員研修等の機会が提供されることが重要である</li>
+<li>②企業・組織内での機能構築、人材の流動性・マッチングに関する取組</li>
+<li>迅速で柔軟な開発・対処、新たなリスクに対応した監視・対処のプラクティスが必要となる。特に、前者の実践に当たっては <strong>「セキュリティ・バイ・デザイン」</strong> の考え方の重要性も一層増し、企画部門や開発運用部門と企業・組織内のセキュリティ機能との連携・協働が一層重要となると考えられる。</li>
+<li>働き方や雇用形態の多様化、デジタル改革の推進を機会としてIT・セキュリティ人材の流動性・マッチング機会の促進が図られるための環境整備が必要である。</li>
+<li>特に地域・中小企業においてセキュリティ人材の不足が顕著であるところ、地域における「共助」の取組や、産業界と教育機関との連携促進・エコシステム構築を通じ、プラクティスの実践に当たって参考となるノウハウやネットワークの提供を行う。</li>
+</ul></li>
+<li>4.4.3.全員参加による協働、普及啓発</li>
+<li><strong>リテラシーを身に付け、自らの判断で脅威から身を守れるよう</strong>、官民が一体となって行動強化につなげるための普及啓発・情報発信に取り組むことが重要である。</li>
+<li>本戦略では「Cybersecurity for All」という考え方を示しているが、これは「全員」が自らの役割を主体的に自覚しサイバーセキュリティに取り組む、という考え方を含んでいる。</li>
+<li>加えて、特に、テレワークの増加やクラウドサービスの普及等の近年の人々の行動や企業活動の変化に応じて、ガイドラインや様々な解説資料等の整備が進められている。</li>
+</ul></li>
+</ul></li>
+</ul>
+<h5>【NISC】ITおよびサイバーセキュリティに関する組織の視点6分類</h5>
+<ul>
+<li><p><a href="http://www.nisc.go.jp/conference/cs/dai09/pdf/09shiryou07.pdf"><em>企業経営のためのサイバーセキュリティの考え⽅の策定について</em></a></p></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/docs/Sec01-11-02.pdf"><em>Sec01-11-02_ITおよびサイバーセキュリティに関する組織の視点6分類別に実施すべき対策</em></a></li>
+<li>【理想的に】ITの利活⽤を事業戦略上に位置づけ、サイバーセキュリティを強く意識し、積極的に競争⼒強化に活⽤しようとしている企業</li>
+<li>【もっと積極的に】IT・セキュリティをビジネスの基盤として捉えている企業</li>
+<li>【無駄な投資】過剰なセキュリティ意識により、ITの利活⽤を著しく制限し、ITの利活⽤を競争⼒強化に活⽤させていない企業</li>
+<li>【危険】情報セキュリティ対策の必要性は理解しているが、必要⼗分なセキュリティ対策が出来ていないにも関わらず、ITの利活⽤を進めている企業</li>
+<li>【危険】情報セキュリティの必要性を理解していない企業⾃らセキュリティ対策を⾏う上で、事業上のリソースの制約が⼤きい企業</li>
+<li>【対象外】ITを利⽤していない企業</li>
+</ul></li>
+</ul>
+<h4>国内外の関係法令等</h4>
+<ul>
+<li><a href="https://www.nisc.go.jp/law/index.html"><em>NISC関連法令等</em></a>
+<ul>
+<li><a href="https://www.nisc.go.jp/law/lawlink.html#cybersecbasic"><em>サイバーセキュリティ基本法関係</em></a></li>
+<li><a href="https://www.nisc.go.jp/law/lawlink.html#cybersecqa"><em>サイバーセキュリティ関係法令Q&amp;Aハンドブック</em></a></li>
+<li><a href="https://www.nisc.go.jp/law/lawlink.html#cybersecrelate"><em>その他サイバーセキュリティに関係する法令の例</em></a></li>
+</ul></li>
+</ul>
+<a id="text-05"></a>
+<h3>5.網羅的なセキュリティ対策を知る【フレームワーク】</h3>
+<ul>
+<li><em>※業種、業態、組織規模を問わず、網羅的なサイバーセキュリティ対策の体系を解説する</em></li>
+<li>これらのフレームワークを活用することにより、自組織で必要と思われるものを選択することにより、対策の漏れをなくすことが可能になる</li>
+<li>ISMS認証等を受ける場合は、内容の理解は必須となる</li>
+</ul>
+<h4>フレームワークの概要</h4>
+<ul>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/435/index.html"><em>情報セキュリティに関する各種フレームワークの概要</em></a></li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/453/index.html"><em>欧米の各種規格等の最新動向と概要【ドラフト版】</em></a></li>
+</ul></li>
+<li><p>情報セキュリティに関する各種フレームワーク</p>
+<ul>
+<li>情報セキュリティ対策を行う上において、様々なフレームワークが存在する。</li>
+<li>現在のフレームワークはどれも必要な全ての対策を網羅していません。企業のセキュリティ対策の目的、状況に応じてそれぞれのフレームワークを補完して活用することが望ましい。</li>
+</ul></li>
+<li><p>政府機関から提示されている各種ガイドブック、ハンドブック、テキスト類</p>
+<ul>
+<li>政府機関から提示されている各種ガイドブック、ハンドブック、テキスト類は、ISMSのフレームワークがベースとなっており、現在のほとんどの組織は、その規格に準拠して、組織の情報セキュリティ対策の規程の整備、それに基づく対策の実施を行っている。</li>
+</ul></li>
+</ul>
+<a id="text-05-00"></a>
+<h4>5.0 【新規】ITシステム管理・監査関連のフレームワーク</h4>
+<ul>
+<li>システムの体系的なサイバーセキュリティ対策を検討するに当たっては、まず、対象となるシステムの管理・監査のフレームワークの概要と実施項目を理解しておくことが重要である。</li>
+<li>【参照資料】
+<ul>
+<li><a href="https://public-comment.e-gov.go.jp/servlet/PcmFileDownload?seqNo=0000247393"><em>【METI】システム監査基準（案）パブリックコメント版【2023年2月】</em></a></li>
+<li><a href="https://public-comment.e-gov.go.jp/servlet/PcmFileDownload?seqNo=0000247394"><em>【METI】システム管理基準（案）パブリックコメント版【2023年2月】</em></a></li>
+<li>【改訂方針】自社で保有する情報システムだけでなく、広く外部のサービスを利用して事業を推進する組織体が多くを占めるようになっている状況や、ボーダレスなIT環境を踏まえて、ITガバナンス及びITマネジメントに関わる国際規格の考え方や体系を取り入れるとともに、今後の組織体におけるITシステムの利活用の進展状況に対応しやすい内容とする</li>
+<li>情報セキュリティに関連する項目は、「情報セキュリティ管理基準（平成28年改正版）」（経済産業省） を参照</li>
+</ul></li>
+</ul>
+<a id="text-05-01"></a>
+<h4>5.1 情報セキュリティマネジメントシステム（ISMS）[ISO/IEC27001:2022, 27002:2022]</h4>
+<ul>
+<li>ISMSは、<strong>「個別の問題毎の技術対策の他に、組織のマネジメントとして、自らのリスクアセスメントにより必要なセキュリティレベルを決め、プランを持ち、資源を配分して、システムを運用すること。」</strong> であり、JIS Q 27001（ISO/IEC 27001）により、組織がISMSを確立し、実施し、維持し、継続的に改善するための要求事項が国際規格として示されている。</li>
+<li>リスクアセスメントの規格としては、情報セキュリティリスクマネジメント(ISO/IEC27005）があり、その内の「8.情報セキュリティリスクアセスメント」にリスクの特定からリスク評価までの基準が示されている。</li>
+<li>なお、セキュリティに関するリスクに限らず全般のマネジメントの規格としては、ISO 31000:2018（JIS Q 31000:2019）がある。</li>
+</ul>
+<h5>ISMSの改訂の動き</h5>
+<ul>
+<li>ISO/IEC 27002は、2013年版から9年を経て、次期改定版が2022年度に発行された。</li>
+<li>新しいISO/IEC 27002では、サイバーセキュリティ脅威や新しいセキュリティ技術の進化に合せて、11個の新規の情報セキュリティ管理策が追加された。</li>
+<li>ISO/IEC 27002の改定の影響を受けて、ISO/IEC 27001の附属書Aの部分を中心としたISO/IEC 27001も改定された。</li>
+</ul>
+<h5>ISMSの用語</h5>
+<ul>
+<li>JIS Q 27001（ISO/IEC 27001）は、
+<ul>
+<li><strong>「ISMSの要求事項を定めた国際規格。」</strong></li>
+<li>初版は、BS7799、ISO/IEC17799、JISX5080</li>
+<li>東京都を含め、一般的な組織は、この規格に基づいて、情報セキュリティ対策を行っており、セキュリティ対策基準、実施手順を作って運用してきた。</li>
+</ul></li>
+<li>JIS Q 27002（ISO/IEC 27002）は、
+<ul>
+<li>2013年版は、<strong>「情報セキュリティ管理策の実践のための規範」</strong> とされていたが、2022年版は、<strong>「情報セキュリティ管理策」</strong>とされた。ISO/IEC27001に基づくISMSにおいて使用されるが、ISMSとは独立した情報セキュリティ管理策の情報源として使用される。</li>
+<li>国際的なベストプラクティスとして、組織において情報セキュリティ管理策を実施するため、また、組織独自の情報セキュリティガイドラインの策定のために利用されることを想定</li>
+<li>新しい脅威や技術動向に合わせて、14の分類を、組織的対策、人的対策、物理的対策、技術的対策の4つの分類に再整理し、114個の管理策を、24個の管理策を統合し、また、11個の新規管理策を加えて、93個の管理策が示されている</li>
+<li>サイバーセキュリティへの対応を強化するための管理策が充実させ、またCSFとの互換性のために、属性としてサイバーセキュリティ概念を導入した。<strong>従来は、ISMSとCSFの双方でカバーしていない項目があったが、これにより、ISMSとしての管理策が、CSFの管理項目を包含した。</strong></li>
+</ul></li>
+<li>ISMS認証とは、
+<ul>
+<li>「第三者であるISMS認証機関が、組織の構築したISMSがISO/IEC27001に基づいて適切に管理されているかを審査し証明すること。」</li>
+</ul></li>
+<li><p>ISMS適合性評価制度は、</p>
+<ul>
+<li>「認証を公正に運用するために、認証機関、認定機関、要員認証機関等の役割と連携を規定した国際的な枠組み」</li>
+</ul></li>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:27002:ed-3:v2:en"><em>ISO/IEC27002:2022(en)</em></a></li>
+<li><a href="https://www.meti.go.jp/policy/netsecurity/is-kansa/"><em>【METI】情報セキュリティ管理基準（平成28年経済産業省告示第37号）</em></a></li>
+<li><a href="https://isms.jp/doc/JIP-ISMS120-62.pdf"><em>ISMS適合性評価制度の概要（パンフレット）</em></a></li>
+</ul></li>
+</ul>
+<h5>社会の進展に対応したISMSの変遷</h5>
+<ul>
+<li>1995年 BS7799 ⇒ 2000年 ISO/IEC17799 ⇒ 2007年 ISO/IEC27002</li>
+</ul>
+<h5>マネジメント基準（ISO/IEC27001:2022）</h5>
+<ul>
+<li><strong>情報セキュリティマネジメントの計画、実行、点検、処置の各プロセスで行うべき事項を明確にしたもの。「マネジメント基準」は、原則、全て実施すべき事項である。</strong></li>
+<li>A.4.4_情報セキュリティマネジメントの確立
+<ul>
+<li>4.4.1 組織の役割、責任及び権限 [27001:2013-5.3 / 5.1]</li>
+<li>4.4.2 組織及びその状況の理解 [27001:2013-4.1]</li>
+<li>4.4.3 利害関係者のニーズ及び期待の理解 [27001:2013-4.2]</li>
+<li>4.4.4 適用範囲の決定 [27001:2013-4.3]</li>
+<li>4.4.5 方針の確立 [27001:2013-5.2 / 6.2 / 5.1]</li>
+<li>4.4.6 リスク及び機会に対処する活動 [27001:2013-6.1]</li>
+<li>4.4.7 情報セキュリティリスクアセスメント [27001:2013-6.1.2]</li>
+<li>4.4.8 情報セキュリティリスク対応 [27001:2013-6.1.3]</li>
+</ul></li>
+<li>A.4.5_情報セキュリティマネジメントの運用
+<ul>
+<li>4.5.1 資源管理 [27001:2013-7.1 / 5.1]</li>
+<li>4.5.2 力量、認識 [27001:2013-7.2 / 7.3 / 5.1]</li>
+<li>4.5.3 コミュニケーション [27001:2013-7.4]</li>
+<li>4.5.4 情報セキュリティマネジメントの運用の計画及び管理 [27001:2013-8.1]</li>
+<li>4.5.5 情報セキュリティリスクアセスメントの実施 [27001:2013-8.2 / 8.3]</li>
+</ul></li>
+<li>A.4.6_情報セキュリティマネジメントの監視及びレビュー
+<ul>
+<li>4.6.1 有効性の継続的改善 [27001:2013-10.2 / 8.2 / 9.2 / 9.3 / 5.1]</li>
+<li>4.6.2 パフォーマンス評価 [27001:2013-9]</li>
+<li>4.6.3 マネジメントレビュー [27001:2013-9.3]</li>
+</ul></li>
+<li>A.4.7_情報セキュリティマネジメントの維持及び改善
+<ul>
+<li>4.7.1 是正処置 [27001:2013-10.1]</li>
+</ul></li>
+<li>A.4.8_文書化した情報の管理
+<ul>
+<li>4.8.1 文書化 [27001:2013-7.5.1]</li>
+<li>4.8.2 文書管理 [27001:2013-7.5.2 / 7.5.3]</li>
+</ul></li>
+</ul>
+<h5>管理策基準（ISO/IEC27001:2022）</h5>
+<ul>
+<li><strong>「管理策基準」は、組織における情報セキュリティマネジメントの確立段階において、リスク対応方
+針に従って管理策を選択する際の選択肢を与えるもの</strong></li>
+<li>A.5_組織的対策
+<ul>
+<li>37項目</li>
+<li>【新規】5.7 Threat intelligence（脅威インテリジェンス）</li>
+<li>【新規】5.23 Information security for use of cloud services（クラウドサービス利用のための情報セキュリティ）</li>
+<li>【新規】5.30 ICT readiness for business continuity（事業継続のためのICTの備え）</li>
+</ul></li>
+<li>A.6_人的対策
+<ul>
+<li>6項目</li>
+</ul></li>
+<li>A.7_物理的対策
+<ul>
+<li>13項目</li>
+<li>【新規】7.4 Physical security monitoring（物理的セキュリティの監視）</li>
+</ul></li>
+<li>A.8_技術的対策
+<ul>
+<li>34項目</li>
+<li>【新規】8.9 Configuration management（構成管理）</li>
+<li>【新規】8.10 Information deletion（情報削除）</li>
+<li>【新規】8.11 Data masking（データマスキング）</li>
+<li>【新規】8.12 Data leakage prevention（データ漏洩防止）</li>
+<li>【新規】8.16 Monitoring activities（監視活動）</li>
+<li>【新規】8.23 Web filtering（Webフィルタリング）</li>
+<li>【新規】8.28 Secure coding（セキュアコーディング）</li>
+</ul></li>
+</ul>
+<h5>属性</h5>
+<ul>
+<li>※他の組織や団体が発行するガイドライン等との関連を明確にするもの</li>
+<li>各管理策は、「preventive 予防」、「detective 検出」、「corrective 是正」のいずれかに分類される。</li>
+<li>また「confidentiality 機密性」、「integrity 完全性」、「availability 可用性」のいずれかに関連付けられる。</li>
+<li>さらに、（サイバーセキュリティの概念、運用能力、セキュアドメインごとに)　属性のグループ分けできる。</li>
+<li>コントロール種別
+<ul>
+<li>予防的；発見的；是正的</li>
+</ul></li>
+<li>情報セキュリティ特性
+<ul>
+<li>機密性；完全性；可用性</li>
+</ul></li>
+<li><em>サイバーセキュリティ概念</em>
+<ul>
+<li>特定；防御；検知；対応；復旧</li>
+<li><em>※CSFのフレームワークコアの分類に対応</em></li>
+</ul></li>
+<li>運用能力
+<ul>
+<li>ガバナンス；資産管理；情報保護；．．．</li>
+</ul></li>
+<li>セキュリティドメイン
+<ul>
+<li>ガバメント及びエコシステム、保護、防御、レジリエンス</li>
+</ul></li>
+</ul>
+<h4>ISO 31000 リスクマネジメント</h4>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.jipdec.or.jp/library/report/20181018.html"><em>[JIPDEC]「ISO31000－2018年版：リスクマネジメント－指針の経営への活用」</em></a></li>
+</ul></li>
+</ul>
+<h4>ISO/IEC 27000ファミリーの規格の改訂状況</h4>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.jipdec.or.jp/project/smpo/u71kba000000jjgv-att/27000family_20220722.pdf"><em>【JIPDEC】ISO/IEC 27000ファミリー規格について</em></a></li>
+<li>27000 ISMS 概要及び用語</li>
+<li>27001 ISMS 要求事項</li>
+<li>27002 情報セキュリティ管理策</li>
+<li>27005 情報セキュリティリスクマネジメントに関する指針</li>
+</ul></li>
+</ul>
+<a id="text-05-02"></a>
+<h4>5.2 サイバー・フィジカル・セキュリティ対策フレームワーク（CPSF）</h4>
+<ul>
+<li>METIにおいては、ISMS、CSFを包含した「サイバー・フィジカル・セキュリティ対策フレームワーク（CPSF」を提唱している。</li>
+<li>単純なサイバー空間におけるセキュリティ対策から、サイバー空間とフィジカル空間のそれぞれにおけるリスクを洗い出し、そのセキュリティ対策を整理するための道具として提示されている。</li>
+<li><p>全体の枠組みに沿って、対象者や具体的な対策を整理し、『サイバーセキュリティ経営ガイドライン』や産業分野別のガイドラインなどの実践的なガイドラインを整備する予定。</p></li>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.meti.go.jp/policy/netsecurity/wg1/cpsf.html"><em>【METI】サイバー・フィジカル・セキュリティ対策フレームワーク</em></a></li>
+<li><a href="https://www.meti.go.jp/policy/netsecurity/wg1/CPSF_ver1.0.pdf"><em>【METI】【文書】 サイバー・フィジカル・セキュリティ対策フレームワーク Ver.1.0【2019年4月18日】</em></a> 全262ページ</li>
+<li><a href="https://www.meti.go.jp/shingikai/mono_info_service/sangyo_cyber/wg_keiei/pdf/008_03_00.pdf"><em>【METI】第8回産業サイバーセキュリティ研究会 ワーキンググループ2（経営・人材・国際）資料3【2022年3月23日】</em></a></li>
+<li>IoT システム／サービス及び中小企業を含む大規模サプライチェーン全体</li>
+<li><a href="https://www.nedo.go.jp/content/100956725.pdf"><em>【内閣府】サイバ―フィジカルセキュリティ対策検討ガイドブック・エグゼクティブサマリー【2023年2月】</em></a></li>
+<li><a href="https://www.nedo.go.jp/content/100956726.pdf"><em>【内閣府】サイバ―フィジカルセキュリティ対策検討ガイドブック【2023年2月】</em></a></li>
+</ul></li>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/pm1A4Lo5ydOIU8IPCeXazHDYmGvI_q_Hh_xtGARW"><em>Sec01-03-04【METI】【スライド】サイバー・フィジカル・セキュリティ対策フレームワークの概要</em></a></li>
+<li><a href="https://share.mindmanager.com/#publish/xRBazqTKGb1TXH2sjVlE7dC0Z5xIf2LwGEBl-yRS"><em>Sec01-03-02産業分野におけるサイバーセキュリティ～CPSFを中心に～</em></a>【METI奥家氏】</li>
+<li>サイバー・フィジカル・セキュリティ対策フレームワークを策定する目的
+<ul>
+<li>「Society5.0」、「Connected Industries」の実現へ向けて、産業構造、社会の変化に伴うサイバー攻撃の脅威の増大に対応することが必要。 </li>
+</ul></li>
+<li>フレームワークの構造～「Society5.0」型サプライチェーン"価値創造過程"への対応
+<ul>
+<li>あらゆるものがつながるIoT、データがインテリジェンスを生み出すAIなどによって実現される「Society5.0」（人間中心の社会）、「Connected Industries」では、 製品/サービスを生み出す工程（サプライチェーン）も従来の定型的・直線的なものとは異なる、多様なつながりによる非定型の形態を取ることになる。</li>
+<li>本フレームワークでは、「Society5.0」型サプライチェーンを、価値創造過程（バリュークリエイションプロセス）と定義し、「Society5.0」、「Connected Industries」によって拡張したサプライチェーンの概念に求められるセキュリティへの対応指針を示す。  </li>
+</ul></li>
+<li>三層構造アプローチ
+<ul>
+<li>第1層：企業の繋がり（従来型サプライチェーン）</li>
+<li>生産された製品等－信頼できる企業が信頼できる生産活動によって仕様どおりの製品やサービスを供給しているか</li>
+<li>第2層：フィジカル空間とサイバー空間のつながり</li>
+<li>センサーで読み込まれたデータ等－フィジカル空間における情報を、 センサーなどのIoT機器が正確にデジタル化し、サイバー空間に"転写"しているか</li>
+<li>第3層：サイバー空間におけるつながり</li>
+<li>データ分析で得られたデータ等－収集する過程で改ざんされていないデータを適切な方法で加工した、 信頼できるデータを活用できるか</li>
+</ul></li>
+</ul></li>
+</ul>
+<h5>意義</h5>
+<ul>
+<li>Society5.0を意識したセキュリティリスクとその対策方法について記述されている。</li>
+<li>自社の事業が従来のサプライチェーンから離れ、新しくバリュークリエイションプロセスへと発展した際に、単純なサイバー空間におけるセキュリティ対策から、サイバー空間とフィジカル空間のそれぞれにおけるリスクを洗い出し、そのセキュリティ対策を整理するための道具としてもCPSFは効果的に活用できると思われる。</li>
+</ul>
+<a id="text-05-03"></a>
+<h4>5.3 セキュリティ関連NIST文書</h4>
+<h5>重要インフラのサイバーセキュリティを改善するためのフレームワーク（CSF）</h5>
+<ul>
+<li>概略
+<ul>
+<li>NIST サイバーセキュリティフレームワーク（CSF）の正式名称は、「重要インフラのサイバーセキュリティを向上させるためのフレームワーク」で、もともとは米国政府機関の重要インフラの運用者を対象として誕生</li>
+<li>NISTで作成されたフレームワークであり、防御にとどまらず、検知・対応・復旧といったステップも含み、インシデント対応を含めており、日本においても、今後普及が見込まれる</li>
+<li>「サイバーセキュリティ経営ガイドライン Ver 2.0 」では、フレームワークとして、「付録D_国際規格ISOIEC27001及び27002との関係」でISMSとの対応関係とともに、「付録A サイバーセキュリティ経営チェックシート」でCSFとの対応関係も提示されている</li>
+<li>CSFの利用方法については、「フレームワークをどのように利用するかは、それを実施する組織に委ねられている。」と述べられており、CSFは汎用的なフレームワークであるがゆえに、指示書やノウハウ集ではない点を理解しておくことが大切</li>
+</ul></li>
+<li>構成
+<ul>
+<li>ISMS（情報セキュリティマネジメントシステム）との関連性</li>
+<li>ISMSの属性の1つである「サイバーセキュリティ概念」の特定；防御；検知；対応；復旧の切り口を識別として、 指針や管理手法の対応が可能</li>
+<li>フレームワークコア</li>
+<li>成果を達成するための対策と参考情報の一覧</li>
+<li>識別：29項目</li>
+<li>防御：39項目</li>
+<li>検知：18項目</li>
+<li>対応：16項目</li>
+<li>復旧：6項目</li>
+<li>フレームワークインプリメンテーションティア</li>
+<li>対策情報を把握するための4段階の評価基準</li>
+<li>ティア1：場当たり的、属人的である</li>
+<li>ティア2：初期プロセスが整備されている</li>
+<li>ティア3：プロセスが継続的に回っている</li>
+<li>ティア4：プロセス自身の継続的改善に努めている</li>
+<li>フレームワークプロファイル</li>
+<li>コアとティアを組合せた、サイバーセキュリティ対策の「現在」と「目標」</li>
+<li>現在のプロファイル：現時点で達成されているサイバーセキュリティ成果</li>
+<li>目標のプロファイル：サイバーセキュリティリスクマネジメントの目標を達成するために必要な成果</li>
+</ul></li>
+<li>【要約資料】
+<ul>
+<li>[<em>Sec01-03-05【スライド】経営リスク管理から考えるSecurity by Design</em>（公開不可）]</li>
+<li>[<em>Cyber Security Framework(CSF)の実践におけるヒント</em>（公開不可）]</li>
+</ul></li>
+</ul>
+<h5>SP800シリーズ</h5>
+<ul>
+<li>NIST SP 800とは？</li>
+<li>CSFとSP 800の位置付け
+<ul>
+<li>セキュリティ管理の具体的な手法と手順を明記したガイドラインSP 800シリーズはCSFの下位概念で、CSFに則って整備されている。</li>
+</ul></li>
+<li><p>NIST SP800-53とは？</p>
+<ul>
+<li>「NIST SP800-53（連邦政府情報システムおよび連邦組織のためのセキュリティ管理策とプライバシー管理策）」は、米国連邦政府の内部セキュリティ基準を示すガイドライン。</li>
+<li>日本においても、政府で導入するクラウドサービスに要求するセキュリティ管理基準（ISMAP)の一つとして本ガイドラインの採用方針を出している。</li>
+</ul></li>
+<li><p>NIST SP 800-53とNIST SP 800-171との関連</p></li>
+<li><p>NIST SP 800-171とは？</p>
+<ul>
+<li>「NIST SP800-171（連邦政府外のシステムと組織における管理された非格付け情報の保護）」は、NIST CSD（Computer Security Division）が提供するセキュリティ対策ガイドラインの一つ。</li>
+<li>SP800シリーズで保護する情報には、政府の機密情報とされるCI（Classified Information）とそれ以外の重要情報と位置付けられるCUI（Controlled Unclassified Information）の2種類があり、米国では、SP800-171でCUIを管理すると定めている。</li>
+<li>日本の防衛装備庁も防衛産業におけるサイバーセキュリティ体制の強化のための施策を一層促進するため、 SP 800-171を参考に、「防衛産業サイバーセキュリティ基準」を整備している。</li>
+</ul></li>
+<li><p>NIST SP 800-161とは？</p>
+<ul>
+<li>「システムと組織のためのサイバーセキュリティ・サプライチェーン・リスクマネジメントのガイダンス」</li>
+<li>調達から販売・供給までの一連のサプライチェーンに存在する業務委託先や関連企業のすべてにおいて、一貫したセキュリティ基準を持つことが必要だと述べられている。</li>
+<li>NIST SP800-161の目的は、業務委託先や関連企業におけるセキュリティ対策である。</li>
+</ul></li>
+<li><p>NIST SP 800-40とは？</p></li>
+<li>NIST プライバシーフレームワーク Ver1.0とは？</li>
+</ul>
+<a id="text-05-04"></a>
+<h4>5.4 サイバーセキュリティ経営の基本的な姿勢</h4>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec93_01.pdf"><em>「サイバーセキュリティ経営ガイドラインVer2.0」の要約</em></a></li>
+<li><a href="https://www.ipa.go.jp/security/fy30/reports/ciso/index.html"><em>「サイバーセキュリティ経営ガイドラインVer2.0実践のためのプラクティス集」</em></a></li>
+<li>「情報セキュリティの取組みはある程度進めてきたが、サイバー攻撃対策やインシデント対応は強化が必要。それに向けた体制づくりや対策は何から始めるべきか」と考えている経営者やCISO等、セキュリティ担当者を主な読者と想定し、経営ガイドラインの「重要10項目」を実践する際に参考となる考え方やヒント、実施手順、実践事例を記載</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/445/index.html"><em>「サイバーセキュリティ経営ガイドライン Ver3.0(案)」の改訂概要</em></a></li>
+<li>サイバー・フィジカル・セキュリティ対策フレームワーク(CPSF)のコンセプトの反映やサプライチェーンの再整理など、所要の改訂</li>
+</ul></li>
+</ul>
+<h5>I．サイバーセキュリティは経営問題</h5>
+<ul>
+<li>セキュリティ対策の実施を「コスト」と捉えるのではなく、将来の事業活動・成長に必須なものと位置づけて「投資」と捉えることが重要</li>
+<li>セキュリティ投資は必要不可欠かつ経営者としての責務である。</li>
+</ul>
+<h5>II．経営者が認識すべき３原則</h5>
+<ul>
+<li>(1)経営者は、サイバーセキュリティリスクを認識し、リーダーシップによって対策を進めることが必要
+<ul>
+<li>対策の実施を通じたサイバーセキュリティに関する残留リスクを許容水準まで低減することは経営者の責務である旨を記載</li>
+</ul></li>
+<li>(2)自社は勿論のこと、ビジネスパートナーや委託先も含めたサプライチェーンに対するセキュリティ対策が必要
+<ul>
+<li>サプライチェーン構造の複雑化に伴い、サプライチェーン全体を俯瞰し、総合的なセキュリティを徹底することの必要性等を記載</li>
+</ul></li>
+<li>(3)平時及び緊急時のいずれにおいても、サイバーセキュリティリスクや対策に係る情報開示など、関係者との適切なコミュニケーションが必要
+<ul>
+<li>関係者とのコミュニケーションについて、社外のみならず、社内関係者とも積極的にコミュニケーションをとることが必要である旨を記載</li>
+</ul></li>
+</ul>
+<h5>実行すべき「重要７項目の取組」</h5>
+<ul>
+<li>取組1 情報セキュリティに関する組織全体の対応方針を定める</li>
+<li>取組2 情報セキュリティ対策のための予算や人材などを確保する</li>
+<li>取組3 必要と考えられる対策を検討させて実行を指示する</li>
+<li>取組4 情報セキュリティ対策に関する適宜の見直しを指示する</li>
+<li>取組5 緊急時の対応や復旧のための体制を整備する</li>
+<li>取組6 委託や外部サービス利用の際にはセキュリティに関する責任を明確にする</li>
+<li>取組7 情報セキュリティに関する最新動向を収集する</li>
+</ul>
+<h5>III．サイバーセキュリティ経営の重要１０項目</h5>
+<ul>
+<li>指示1：サイバーセキュリティリスクの認識、組織全体での対応方針の策定</li>
+<li>指示2：サイバーセキュリティリスク管理体制の構築</li>
+<li>指示3：サイバーセキュリティ対策のための資源（予算、人材等）確保
+<ul>
+<li>セキュリティ業務に従事する従業員のみならず、全ての従業員が自らの業務遂行にあたってセキュリティを意識し、必要かつ十分なセキュリティ対策を実現できるスキル向上の取組が必要である旨を記載</li>
+</ul></li>
+<li>指示4：サイバーセキュリティリスクの把握とリスク対応に関する計画の策定</li>
+<li>指示5：サイバーセキュリティリスクに対応するための仕組みの構築</li>
+<li>指示6：サイバーセキュリティ対策におけるPDCAサイクルの実施</li>
+<li>指示7：インシデント発生時の緊急対応体制の整備</li>
+<li>指示8：インシデントによる被害に備えた復旧体制の整備
+<ul>
+<li>事業継続の観点から、制御系も含めた業務の復旧プロセスと整合性のとれた復旧計画・体制の整備の必要性や対象を IT 系・社内・インシデントに限定せず、サプライチェーンも含めた実践的な演習の実施等について記載</li>
+</ul></li>
+<li>指示9：ビジネスパートナーや委託先等を含めたサプライチェーン全体の対策及び状況把握
+<ul>
+<li>自社へのリスク波及を防ぐ観点からサプライチェーン全体での対策が必要であること、委託先に一方的な対策を強いるのでなく、方策の実効性を高めることを記載</li>
+</ul></li>
+<li>指示10：情報共有活動への参加を通じた攻撃情報の入手とその有効活用及び提供
+<ul>
+<li>有益な情報を得るためには適切な情報を提供することも必要であることを強調しつつ、被害の報告・公表への備えをすることやステークホルダーへの情報開示について記載</li>
+</ul></li>
+</ul>
+<a id="text-06"></a>
+<h3>6.中小企業が組織として策定すべきサイバーセキュリティ対策関連規程【対策基準レベル】</h3>
+<ul>
+<li><p><em>※網羅的なサイバーセキュリティ対策のフレームワーク等を参考に、組織の現状と目標に応じて必要十分な管理策を選択して、中小企業が組織として講じるべき対策（対策基準レベル）の概要を解説する。</em></p></li>
+<li><p><em>網羅的なフレームワークを参考に、組織の現状と目標に応じて必要十分な管理策を選択して、段階的に、組織としての対策基準を策定する。</em></p></li>
+<li>※対策基準を策定することにより、セキュリティ対策をしていることを内外に示し、説明責任を果たす。</li>
+<li>※対策基準のレベルは抽象度が高く、具体的に実践することはできない。この基準に従って、実際に対策が講じられるように、実施手順（実務者マニュアル）等を作成し、運用する。</li>
+<li>※対策基準に実施手順の一部を記載して、実施手順書の作成を省略することも可能。但し、内部での手順を記載した場合は、外部に示すことができず、説明責任は果たせない。</li>
+</ul>
+<h4>DX with Security</h4>
+<ul>
+<li>サービスの向上のためにセキュリティ対策は必須</li>
+</ul>
+<a id="text-06-01"></a>
+<h4>6.1 【LV.1】【クイックアプローチ】緊急性のある事象への対策【最近の重大インシデント対応の事例を参考に】</h4>
+<ul>
+<li>様々なインシデント事案の対応内容を参考として、自組織の対応のレベル、内容を認識することは有益。網羅的な対策を講ずる前に、まず、<strong>"リスクが大きい（発生頻度が高いもの、被害が大きい）"</strong> と思われる事例から重要な対策基準を積み上げることも方法の一つ。（実施手順においても同様）</li>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.handa-hospital.jp/topics/2022/0616/index.html"><em>徳島県つるぎ町立半田病院 コンピュータウイルス感染事案有識者会議調査報告書について</em></a></li>
+<li><a href="https://www.ipa.go.jp/security/vuln/10threats2022.html"><em>【IPA】情報セキュリティ10大脅威 2022</em></a></li>
+<li>ランサムウェアによる被害</li>
+<li>標的型攻撃による機密情報の窃取</li>
+<li>サプライチェーンの弱点を悪用した攻撃</li>
+<li>テレワーク等のニューノーマルな働き方を狙った攻撃</li>
+<li>内部不正による情報漏えい</li>
+<li>脆弱性対策情報の公開に伴う悪用増加</li>
+<li>修正プログラムの公開前を狙う攻撃（ゼロデイ攻撃）</li>
+<li>ビジネスメール詐欺による金銭被害</li>
+<li>予期せぬIT基盤の障害に伴う業務停止</li>
+<li>不注意による情報漏えい等の被害</li>
+<li><a href="https://www.nisc.go.jp/pdf/policy/inquiry/kokai_jireishu.pdf"><em>【NISC】サイバー攻撃を受けた組織における対応事例集（実事例における学びと気づきに関する調査研究）</em></a></li>
+</ul></li>
+</ul>
+<a id="text-06-02"></a>
+<h4>6.2 【LV.2】【ベースラインアプローチ】即効性・実効性のある対策を確保【中小企業の情報セキュリティ対策ガイドラインのサンプルを活用して】</h4>
+<ul>
+<li>ガイドラインを参考に、簡易な手順での策定も可能</li>
+<li>対策が必要な情報資産の洗い出しからリスク分析、リスクの認識</li>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.ipa.go.jp/security/keihatsu/sme/guideline/"><em>【IPA】中小企業の情報セキュリティ対策ガイドライン第3版</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000055518.xlsx"><em>リスク分析シート</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000055518.xlsx"><em>中小企業のためのクラウドサービス安全利用の手引書</em></a></li>
+<li><p><a href="https://www.ipa.go.jp/files/000055794.docx"><em>情報セキュリティ関連規程（サンプル）</em></a></p>
+<ul>
+<li>組織的対策</li>
+<li>人的対策</li>
+<li>情報資産管理</li>
+<li>アクセス制御及び認証</li>
+<li>物理的対策</li>
+<li>IT機器利用</li>
+<li>IT基盤運用管理</li>
+<li>システム開発及び保守</li>
+<li>委託管理</li>
+<li>情報セキュリティインシデント対応ならびに事業継続管理</li>
+<li>個人番号及び特定個人情報の取り扱い</li>
+</ul></li>
+<li><p><a href="https://www.ipa.go.jp/files/000055529.pptx"><em>情報セキュリティハンドブック（ひな形）</em></a> </p>
+<ul>
+<li>※<strong>「ひな形」は、従業員が共通に行うべき、Security Action 二つ星レベルの最低限のルール。</strong>組織の現状と今後に対応して、規程が更に実効性のあるものとなるように、網羅的な実施手順を策定していく必要がある。</li>
+<li>１.全社基本ルール</li>
+<li>２.仕事中のルール</li>
+<li>３.全社共通のルール</li>
+</ul></li>
+<li><a href="https://www.ppc.go.jp/personalinfo/legal/#oyakudati">【個人情報保護委員会】法令・ガイドライン等 お役立ちツール（※中小企業向け）</a></li>
+<li>自己点検チェックリスト</li>
+<li>個人データ取扱要領(例)</li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/372/index.html"><em>INFORMATION 6-2_App.02_経営者の理解のもと、組織としてセキュリティ対策をしっかりと！</em></a></li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/326/index.html"><em>INFORMATION 6-4 中小企業の情報セキュリティ対策の段階的レベルアップ</em></a></li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/339/index.html"><em>INFORMATION 6-4 App.02 情報資産台帳の作成と詳細リスク分析</em></a></li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/337/index.html"><em>INFORMATION 6-4 App.03 情報セキュリティ関連規程に記載すべき項目</em></a></li>
+</ul></li>
+</ul>
+<a id="text-06-03"></a>
+<h4>6.3 【LV.3】【網羅的アプローチ】じっくりと体系的・網羅的に【ISMS等の認証が可能なレベルを目指して】</h4>
+<h4>情報セキュリティのマネジメント基準</h4>
+※フレームワークで提示されている**情報セキュリティマネジメント基準を参考に、組織の現状と目標に応じて必要十分な基準を選択**して、セキュリティ対策の運用基準を明確にする。
+<h5>確立</h5>
+<h5>運用</h5>
+<h5>監視及びレビュー</h5>
+<h5>維持及び改善</h5>
+<h5>ドキュメントの管理</h5>
+<h4>情報セキュリティの管理策</h4>
+<h5>「管理策」</h5>
+※管理策に沿って、対策基準（各種関連規程）を策定する
+<h5>組織的管理規程</h5>
+<h5>人的管理規程</h5>
+<h5>技術的管理規程</h5>
+<h5>物理的管理規程</h5>
+<h4>「属性」</h4>
+※他の組織や団体が発行するガイドライン等との関連を明確にするもの
+<h5>コントロール種別</h5>
+<ul>
+<li>予防的；発見的；是正的</li>
+</ul>
+<h5>情報セキュリティ特性</h5>
+<ul>
+<li>機密性；完全性；可用性</li>
+</ul>
+<h5>サイバーセキュリティ概念</h5>
+<ul>
+<li>特定；防御；検知；対応；復旧
+<ul>
+<li>※CSFと対応</li>
+</ul></li>
+</ul>
+<h5>運用機能</h5>
+<ul>
+<li>ガバナンス；#資産管理；#人的資源のセキュリティ；#物理的セキュリティ；#システム及びネットワークの セキュリティ；#アプリケーションセキュリティ；#セキュリティを保った構成；#識別情報及びアクセスの管理；#脅威及びぜい弱性の管理；#継続；#供給者関係のセキュリティ；#法令及び順守；#情報セキュリティ事象管理；#情報セキュリティ保証</li>
+</ul>
+<h5>セキュリティドメイン</h5>
+<ul>
+<li>ガバメント及びエコシステム；保護；防御；レジリエンス</li>
+</ul>
+<a id="text-07"></a>
+<h3>7.中小企業が組織として実施すべきサイバーセキュリティ対策【実施手順・実務者マニュアルレベル】</h3>
+<ul>
+<li><em>※中小企業が策定した対策基準に基づいて具体的に実施する内容、手順（実施手順レベル）を解説する。</em></li>
+<li>対策基準に記載された対策の具体的な実施のための仕様書、実施手順、業務マニュアル、ハンドブック、ルールブック、手引書等に記載すべき事項をひな形等で解説する</li>
+<li>補足
+<ul>
+<li>公開を前提とせず、対策基準で明記した規程を具体的に行うために、組織内の各職制において、どんな時に何をどのように行うかを明示する。 </li>
+<li>※対策基準が策定されても、具体的な手順等が用意されなければ、実効性を担保することは困難</li>
+<li>※また、対策基準を策定せずに、いきなり実施手順を作成すると、対策に漏れが生じて、十分な対策とならない可能性がある。</li>
+<li>※必要に応じて、職制毎、事象毎のガイドブックとして分冊とすることが有効</li>
+</ul></li>
+</ul>
+<a id="text-07-01"></a>
+<h3>7.1 実施手順としての作成ドキュメントおよび作成手順</h3>
+<a id="text-07-01-01"></a>
+<h4>7.1.1 作成すべきドキュメント（共通及び職種等別）</h4>
+<ul>
+<li>全社共通</li>
+<li>経営者層</li>
+<li>企画管理部門</li>
+<li>システム構築実務者</li>
+<li>サービス提供実務者</li>
+<li>サービス利用者（一般従業員）</li>
+</ul>
+<h5>一般従業員向け</h5>
+<h5>システム管理者・担当者向け</h5>
+<h5>組織経営者・責任者向け</h5>
+<a id="text-07-01-02"></a>
+<h4>7.1.2 【LV.1】【クイックアプローチ】緊急性のある事象への対策【最近の重大インシデント対応の事例を参考に】</h4>
+<ul>
+<li>様々なインシデント事案の対応内容を参考として、自組織の対応のレベル、内容を認識することは有益。網羅的な対策を講ずる前に、まず、事例から重要な対策を積み上げることも方法の一つ。
+<ul>
+<li><a href="https://www.handa-hospital.jp/topics/2022/0616/index.html"><em>徳島県つるぎ町立半田病院 コンピュータウイルス感染事案有識者会議調査報告書について</em></a></li>
+<li><a href="https://www.nisc.go.jp/pdf/policy/inquiry/kokai_jireishu.pdf"><em>【NISC】サイバー攻撃を受けた組織における対応事例集（実事例における学びと気づきに関する調査研究）</em></a></li>
+<li>サイバー攻撃を受けた組織における対応事例集</li>
+<li>組織がインシデント経験から得た主な気付きと取組み</li>
+</ul></li>
+</ul>
+<a id="text-07-01-03"></a>
+<h4>7.1.3 【LV.2】【ベースラインアプローチ】即効性・実効性のある対策を確保【中小企業の情報セキュリティ対策ガイドライン等のサンプルを活用して】</h4>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.ipa.go.jp/security/keihatsu/sme/guideline/"><em>【IPA】中小企業の情報セキュリティ対策ガイドライン第3版</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000055518.xlsx"><em>リスク分析シート</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000055518.xlsx"><em>中小企業のためのクラウドサービス安全利用の手引書</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000055794.docx"><em>情報セキュリティ関連規程（サンプル）</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000055529.pptx"><em>情報セキュリティハンドブック（ひな形）</em></a> </li>
+<li><a href="https://www.ipa.go.jp/icscoe/program/core_human_resource/final_project/visualization-costs.html"><em>【IPA】セキュリティ関連費用の可視化</em></a> </li>
+<li>企業のセキュリティ担当者がセキュリティ対策を遂行するために経営陣に対して予算取りを行う際に利用するお助けツール「NANBOK」</li>
+<li><a href="https://security-portal.nisc.go.jp/guidance/handbook.html">【NISC】インターネットの安全・安心ハンドブックVer 5.00</a></li>
+</ul></li>
+<li>【要約資料】
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/455/index.html">Sec2023-02-02「インターネットの安全・安心ハンドブック」の概要</a></li>
+</ul></li>
+</ul>
+<a id="text-07-01-04"></a>
+<h4>7.1.4 【LV.3】【網羅的アプローチ】じっくりと体系的・網羅的に【ISMS等の認証が可能なレベルを目指して】</h4>
+<ul>
+<li>作成した対策基準が、「絵に書いた餅」にならないよう、7.1 以降の各項目に対応した手順を作成する</li>
+</ul>
+<a id="text-07-02"></a>
+<h3>7.2 情報セキュリティマネジメントの確立・運用・監視及びレビュー・維持及び改善、文書管理の実施手順</h3>
+<a id="text-07-03"></a>
+<h3>7.3 組織的対策</h3>
+<h4>作成する候補となる実施手順書類</h4>
+<ul>
+<li>情報化・サイバーセキュリティ・個人情報保護に関連する実施手順書（役割分担表、職務、管理責任、広報）作成及び実施（ISO/IEC27002:2022より抜粋）</li>
+<li>「脅威インテリジェンス」(情報セキュリティの脅威に関連する情報を収集・分析)の実施手順書作成及び実施</li>
+<li>情報資産台帳作成・維持実施手順書（情報のアクセス権限、分類、ラベル付け、アクセス制御、アイデンティティ管理、認証情報）の作成及び運用</li>
+<li>クラウドサービス利用のための情報セキュリティ実施手順書、運用手引書等の作成</li>
+<li>情報セキュリティインシデント管理の計画、インシデント対応マニュアル（防御・検知・対応・復旧）の作成</li>
+<li>ICTサービスに関しての事業継続計画策定、実施、維持、テスト実施手順書の作成</li>
+<li>法的、法的、規制および契約上の要件等の確認手順書の作成</li>
+<li>知的財産、データ、プライバシー等の管理手順書の作成</li>
+<li>セキュリティ対策状況の点検・監査・評価・認証</li>
+<li>文書化された各手順書のレビュー</li>
+</ul>
+<h4>情報化・サイバーセキュリティ・個人情報保護に関連する実施手順書作成及び実施</h4>
+<ul>
+<li>（役割分担表、職務、管理責任、広報）</li>
+</ul>
+<h4>情報セキュリティの脅威に関連する情報を収集・分析)の実施手順書作成及び実施</h4>
+<ul>
+<li>「脅威インテリジェンス」</li>
+</ul>
+<h4>情報資産台帳作成・維持実施手順書の作成及び運用</h4>
+<ul>
+<li>（情報のアクセス権限、分類、ラベル付け、アクセス制御、アイデンティティ管理、認証情報）</li>
+</ul>
+<h4>クラウドサービス利用のための情報セキュリティ実施手順書、運用手引書等の作成</h4>
+<h4>情報セキュリティインシデント管理の計画、インシデント対応マニュアルの作成</h4>
+<ul>
+<li>（防御・検知・対応・復旧）</li>
+</ul>
+<h4>ICTサービスに関しての事業継続計画(IT-BCP)策定、実施、維持、テスト実施手順書の作成</h4>
+<ul>
+<li><a href="https://www.nisc.go.jp/pdf/policy/general/itbcp1-1_3.pdf"><em>【NISC】「政府機関等における情報システム運用継続計画ガイドライン」(第3版)</em></a></li>
+</ul>
+<h4>法的、法的、規制および契約上の要件等の確認手順書の作成</h4>
+<h4>知的財産、データ、プライバシー等の管理手順書の作成</h4>
+<h4>セキュリティ対策状況の点検・監査・評価・認証</h4>
+<h4>外部委託契約(⇒技術的対策)</h4>
+<a id="text-07-04"></a>
+<h3>7.4 人的対策</h3>
+<h4>作成する候補となる実施手順書類</h4>
+<ul>
+<li>スクリーニング、雇用契約書、懲戒手続き、雇用の終了または変更後の責任、守秘義務または秘密保持契約、リモートワーク実施手順、情報セキュリティ イベントの報告手順書等の作成・維持と運用</li>
+</ul>
+<a id="text-07-04-02"></a>
+<h4>7.4.2 IT及びデジタル人材の確保</h4>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/328/index.html"><em>INFORMATION 6-6 DX時代に不可欠な人材の確保</em></a></li>
+<li>S1 ビジネスの発展のための人材確保のポイント
+<ul>
+<li>S1.1.企業の維持・発展のために経営者が意識すること</li>
+<li>SDGsの達成への貢献：社会的要請に応えることにより企業価値を創造</li>
+<li>DXへの早期対応：他組織に先駆けて対応することによるビジネスチャンス</li>
+<li>DX時代のビジネスチャンスを生かすためには、デジタルリテラシーを持った人材の確保が重要</li>
+<li>S1.2.IT及びデジタル人材の確保
+<ul>
+<li>「デジタルを作る人材」の確保</li>
+<li>「デジタルを作る人材」だけでなく「デジタルを使う人材」の育成も必須</li>
+<li>「リスキリング」：システム関連部署だけでなく、全員がデジタルリテラシーを持つ</li>
+<li>網羅的な素養を確保：人材育成が困難な場合は、外部の人材を積極的に活用</li>
+</ul></li>
+<li>S1.3.サイバーセキュリティ対策人材
+<ul>
+<li>DX with Security：サービスの向上のためにセキュリティ対策は必須</li>
+<li>まずはデジタルリテラシーを：具体的なセキュリティ対策実践するために</li>
+</ul></li>
+<li>S1.4.人材育成：必要な素養を効率的・効果的に身に付けるために</li>
+</ul></li>
+<li>S2. DX推進に必要な知識・スキルの体系</li>
+<li>S3. 役割毎に必要な素養・スキル・知識のレベル
+<ul>
+<li>経営者層</li>
+<li>企画管理部門</li>
+<li>システム構築実務者</li>
+<li>サービス提供実務者</li>
+<li>サービス利用者</li>
+<li>その他</li>
+</ul></li>
+<li><a href="https://share.mindmanager.com/#publish/75_5abMJhoJSDyXOTtR_eBCjKbusr03tdcp7sx8p"><em>DAX96-05_DX時代のビジネス展開のためのデジタルリテラシーの必要性と人材育成【詳細】</em></a></li>
+</ul></li>
+</ul>
+<h5>チェンジマインド</h5>
+<ul>
+<li>※特に経営者の意識改革</li>
+<li>【要約資料】
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/351/index.html"><em>INFORMATION 6-6_App.01 経営者の意識改革の方向性</em></a></li>
+<li>経営者の意識改革のポイント
+<ul>
+<li>経営者の「チェンジマネジメント」の重要性の認識</li>
+<li>社員の能力再開発「リスキリング」</li>
+</ul></li>
+<li>中小企業における人材育成の戦略
+<ul>
+<li>①守りのIT・セキュリティ対策</li>
+<li>②攻めのIT・セキュリティ対策</li>
+</ul></li>
+</ul></li>
+</ul>
+<h5>「デジタルを作る人材」の確保</h5>
+<ul>
+<li>DXに対応するためには、「デジタルを作る人材」であるシステム関連部門では、従来からのITスキルに加えて、データサイエンス・AIを生かせるスキル、知識等が必要である。</li>
+</ul>
+<h5>「デジタルを使う人材」の育成</h5>
+<ul>
+<li>DXの推進には、「デジタルを使う人材」である事業担当部門でも、基礎的なデジタルリテラシーを持つことが必要である。</li>
+</ul>
+<h5>「リスキリング」</h5>
+<ul>
+<li>システム関連部署だけでなく、全員がデジタルリテラシーを持つ
+<ul>
+<li>「デジタルを作る人材」、「デジタルを使う人材」は、「リスキリング」等により、現状にプラスするデジタルリテラシーを持った人材へとスキルアップすることが効果的である。</li>
+<li>「リスキリング」とは、組織が従業員が成果を発揮し続けられるように新たなスキルを獲得できるようにすることである。企業には、従業員にどんな新しいスキルを獲得してほしいのかを示し、スキル獲得の基盤を構築する責任がある。</li>
+<li>IT及びデジタルを扱うシステムを担当する人材がいないために、十分なITスキルを持たない従業員に、システム管理者として、責任を負わせているケースも多い。その状態では、費用対効果の高い環境構築・運用は難しく、障害等に対応することは更に困難である。</li>
+</ul></li>
+</ul>
+<a id="text-07-04-03"></a>
+<h4>7.4.3 最新の人材育成・人材確保のための標準フレームワーク【デジタルスキル標準（DSS）】</h4>
+<ul>
+<li>DXに理解・関心を持ち自分事としてとらえている状態を実現することが不可欠</li>
+<li>実際に企業がDX戦略を推進するには、関連する専門性をもった人材が活躍することが重要</li>
+<li><p>個人の学習や企業の人材確保・育成の指針として、リテラシーと推進スキルの2つのレベルに分けて「デジタルスキル標準（DSS）」を策定</p>
+<ul>
+<li>DXリテラシー標準（DSS-L）：全てのビジネスパーソンが身につけるべき能力・スキルの標準</li>
+<li>DX推進スキル標準（DSS-P）：DXを推進する人材の役割や習得すべきスキルの標準</li>
+</ul></li>
+<li><p>【活用の有用性】</p>
+<ul>
+<li>従来の各種スキル標準を再定義して、DXの推進に必要なセキュリティも含めた人材に必要なスキルと知識が網羅的に体系付けられている。DX及びセキュリティに関する今後の人材育成の体系として、全ての従業員、推進の役割を持つ従業員に対して、教育の枠組みとして活用することにより、体系的、網羅的なスキル、知識の習得が効果的に行えると思われる。</li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/2QAAtGBYpArukyyGybCnglYjdwoTLlciUWcoSO6W"><em>DBX2023-01-01_デジタルスキル標準（DSS)の要約</em></a></li>
+</ul></li>
+<li><p>【新規】【参照資料】</p>
+<ul>
+<li><a href="https://www.ipa.go.jp/files/000106867.pdf"><em>【IPA】「デジタルスキル標準」第1部 デジタルスキル標準の概要【2022年12月21日】</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000106869.pdf"><em>【IPA】「デジタルスキル標準」第2部 DXリテラシー標準【2022年12月21日】</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000106871.pdf"><em>【IPA】「デジタルスキル標準」第3部 DX推進スキル標準【2022年12月21日】</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000106872.pdf"><em>【IPA】デジタルスキル標準ver.1.0【2022年12月】</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000106873.xlsx"><em>【IPA】デジタルリテラシー標準EXCEL版【2022年12月】</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000106874.xlsx"><em>【IPA】デジタルスキル標準_共通スキルリスト（スキルマッピング、スキル項目一覧、学習項目例一覧）EXCEL版【2022年12月】</em></a></li>
+</ul></li>
+</ul>
+<h5>DXリテラシー標準（DSS-L）</h5>
+<h5>DX推進スキル標準（DSS-P）</h5>
+<a id="text-07-04-04"></a>
+<h4>7.4.4 人材育成・人材確保のための各種スキル標準</h4>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/docs/DAX40-06-3.pdf"><strong>★DAX40-06-3 システムの構築に必要なスキル・知識</strong></a></li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/docs/DAX96-03.pdf"><em>DAX96-03 DXの推進と人材育成関連【参考文献要約】</em></a></li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/344/index.html"><em>INFORMATION 6-6_App.02 デジタルリテラシーを持つ人材に必要な知識とスキル</em></a></li>
+<li>デジタルリテラシー</li>
+<li>「デジタルリテラシー」の習得
+<ul>
+<li>デジタルリテラシーの浸透に向けたツール</li>
+<li>デジタルリテラシー領域「Di-Lite」</li>
+</ul></li>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/343/index.html"><em>INFORMATION 6-6 App.04 デジタルリテラシーに「プラス・セキュリティ」</em></a></li>
+</ul></li>
+</ul>
+<h5>基礎情報技術者試験シラバス</h5>
+<h5>情報セキュリティマネジメント試験シラバス</h5>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/K2jOtatRlr1wtU7iKAq2ocMHxC4E4Ck8Zq78Dg-t"><em>情報セキュリティマネジメントに要求される知識と技能【シラバス】（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib05-13.pdf"><em>（mmapPDF版）</em></a></li>
+</ul></li>
+</ul>
+<h5>デジタルリテラシー領域（Di-Lite）</h5>
+<ul>
+<li>組織において、DXの推進には、これまでの「デジタルを作る人材」だけでなく、「デジタルを使う人材」も含めた両輪の育成が必要となる。</li>
+<li>全てのビジネスパーソンがデジタル時代のコア・リテラシーを身につけていくことが求められる。</li>
+<li><p>スキル・知識の領域</p>
+<ul>
+<li>マインド: デジタルに取り組むスタンス、マインド</li>
+<li>知識体系: デジタル活用分野/適用事例、デジタル知識</li>
+<li>デジタルを扱うスキル</li>
+<li>基礎： 使う、作る/なおす</li>
+<li>応用： より上手に使う/広める、発想する/活用方針を示す、新たに作る/教える</li>
+</ul></li>
+<li><p>領域をカバーする認定試験等</p>
+<ul>
+<li>ITパスポート試験（iパス）</li>
+<li>IT及びデジタルを扱う人が持っているべき基礎知識。「社会人の常識」とされている。</li>
+<li>G検定（ジェネラリスト検定）</li>
+<li>AI をビジネスに活用するための基礎素養。AIを活用した事業設計から、関連する法規、契約や倫理にまつわる内容など、 広い範囲のビジネス活用の知識。</li>
+<li>データサイエンティスト検定（リテラシーレベル）</li>
+<li>データサイエンティストに必要なデータサイエンス力・データエンジニアリング力・ビジネス力についてそれぞれ見習いレベルの実務能力や知識。</li>
+</ul></li>
+</ul>
+<h5>ITSS+</h5>
+<ul>
+<li><p>アジャイル開発</p>
+<ul>
+<li>【要約資料】</li>
+<li><a href="https://share.mindmanager.com/#publish/OWGW8DbzDiyxkIgpe9iaHh77VhapLmORbtZHr4Lp"><em>Bib10-11 アジャイル開発「ITSS+」（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib10-11.pdf"><em>（mmapPDF版）</em></a></li>
+</ul></li>
+<li><p>データサイエンス領域</p>
+<ul>
+<li>【要約資料】</li>
+<li><a href="https://share.mindmanager.com/#publish/kzpK4r4cEWpl-SU-ucnGkZStn6W9-BVBgEu3CPlI"><em>Bib10-09 データサイエンス領域のスキル標準「ITSS+」（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib10-09.pdf"><em>（mmapPDF版）</em></a></li>
+</ul></li>
+<li><p>セキュリティ領域</p>
+<ul>
+<li>専門的なセキュリティ業務の役割の観点により、 経営課題への対応から設計・開発、 運用・保守、 セキュリティ監査における13の専門分野を具体化し、それぞれの専門分野ごとのタスクと必要なスキルを定義したもの</li>
+<li>【要約資料】</li>
+<li><a href="https://share.mindmanager.com/#publish/jMfASMhDCefQjh2OT-zcwGou0Zh-VKHM0M373k5z"><em>Bib10-10_セキュリティ領域のスキル標準「ITSS+」（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib10-10.pdf"><em>（mmapPDF版）</em></a></li>
+</ul></li>
+<li><p>IoTソリューション領域</p></li>
+</ul>
+<h5>プラス・セキュリティ</h5>
+<ul>
+<li>様々な人材層・部門において、専門人材との協働が求められる。（協働のためには、互いの領域への相互理解が前提となる。）</li>
+<li>ユーザ企業の主体的なIT活用・DX実施において経営・事業を担う者がセキュリティ知識を補充できるように</li>
+</ul>
+<a id="text-07-05"></a>
+<h3>7.5 技術的対策</h3>
+<h4>作成する候補となる実施手順書類</h4>
+<ul>
+<li>エンドポイントデバイス、 特権アクセス権、安全な認証、マルウェアに対する保護、技術的脆弱性の管理、バックアップ、冗長化、ロギング、監視、特権ユーティリティの使用、ネットワークの分離、Webフィルタリング、暗号の使用、開発ライフサイクル、アプリケーションのセキュリティ要件、セキュアコーディング、受入検査時のセキュリティテスト、外部委託開発要件、本番環境の分離、変更管理、テスト情報、情報システムの保護等に関する実施手順書</li>
+</ul>
+<h4>Security by Design</h4>
+<ul>
+<li>IT環境の構築に当たっては、企画・設計段階において、サービスの機能要件と併せて非機能要件のセキュリティ対策も設計し実装する。</li>
+</ul>
+<h4>共同責任モデル</h4>
+<ul>
+<li>オンプレミス（自社構築）、クラウド（IaaS、PaaS、SaaS）</li>
+</ul>
+<h4>対象領域</h4>
+<ul>
+<li>ユーザ、データ、アプリケーション、OS、サーバ、ネットワーク、ストレージ</li>
+</ul>
+<h4>「境界防御モデル」</h4>
+<ul>
+<li>FW、VPN、Proxy、IDS、IPS、UTM、EDR等</li>
+</ul>
+<a id="text-07-05-SASE"></a>
+<h4>ゼロトラスト、ZTA（Zero Trust Architecture）、SASE（Secure Access Service Edge）のフレームワーク</h4>
+<ul>
+<li>ゼロトラストとは、「内部であっても信頼しない、外部も内部も区別なく疑ってかかる」という「性悪説」に基づいた考え方</li>
+<li>SASE（Secure Access Service Edge）は、「境界防御モデル」、「セロトラスト」に加えて、ユーザーの利便性や運用の最適化までを含めたセキュリティ対策の概念</li>
+<li><p>ゼロトラスト、SASE等の概念に含まれる機能の中から組織で必要な機能を選択して実装する</p></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec202202-01.pdf"><em>SASE(Secure Access Service Edge)とゼロトラストセキュリティ（PDF版）</em></a></li>
+<li><a href="https://share.mindmanager.com/#publish/cgdI8TOQmg8KQtm5D3km235DgDuFd2JVTFkqWZbw"><em>SASE(Secure Access Service Edge)の概念整理（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec33-01.pdf"><em>（mmap_PDF版）</em></a></li>
+</ul></li>
+</ul>
+<h4>ネットワーク制御（Network as a Service）</h4>
+<ul>
+<li>VPN</li>
+<li><strong>SD-WAN</strong>
+<ul>
+<li>VPNに代わって今後の普及が見込まれる。</li>
+<li>SD-WAN（Software Defined-Wide Area Network）とは、ネットワークをソフトウェアで制御するSDN（Software Defined Networking）の技術をWANに適用し、拠点間接続やクラウド接続などにおいて柔軟なネットワーク構成やトラフィックコントロールなどを実現する技術やサービス</li>
+</ul></li>
+</ul>
+<h4>セキュリティ統制（Security as a Service）</h4>
+<ul>
+<li>ネットワーク・セキュリティ
+<ul>
+<li>SWG (Secure Web Gateway)</li>
+<li>Webアクセスを中継するプロキシの一種で、危険なサイトやコンテンツへのアクセスを遮断するセキュリティ機能をクラウドサービスとして提供する</li>
+<li>SDP (Software Defined Perimeter)</li>
+<li>仮想的かつ動的なマイクロセグメンテーションおよびセキュアなリモートアクセスを実現する</li>
+</ul></li>
+<li>デバイス・セキュリティ
+<ul>
+<li><strong>EDR (Endpoint Detection and Response)</strong></li>
+<li>エンドポイントの一元管理を行うUEM※4やマルウェア侵入後の対策を支援する</li>
+<li>EPP (Endpoint Protection Platform)</li>
+<li>エンドポイントを保護するためにプラットフォーム</li>
+<li>MDM (Mobile Device Management)</li>
+</ul></li>
+<li>アイデンティティ・セキュリティ
+<ul>
+<li>IAM (Identity and Access Management)</li>
+<li>IDの管理・認証・認可を行う</li>
+<li><strong>FIDO (Fast Identity Online)</strong></li>
+<li>FIDO認証の持つ大きな特徴は、単に、「パスワードを使わない」 「生体認証やセキュリティキーを使う」ということではなく、<strong>「サーバーとユーザーで秘密の情報を共有しない」</strong> こと</li>
+<li>認証結果を公開鍵暗号方式により」ネットワーク上で安全にやりとりするための仕様が定められており、認証に必要な秘密情報は認証を行う端末のみに保存され、ネットワーク上での伝送やサーバーに保存する必要がない
+<ul>
+<li>サーバがユーザの秘密（秘密鍵やユーザデバイスの生体認証情報など）を保管しないため、通信経路、事業者側環境から認証情報が漏洩することはない</li>
+</ul></li>
+</ul></li>
+<li>ワークロード・セキュリティ
+<ul>
+<li>CWPP (Cloud Workload Protection Platform)</li>
+<li>クラウド上の仮想マシン、データベース、コンテナー、アプリケーション等を中心とした監視と保護のセキュリティソリューション</li>
+</ul></li>
+<li>データ・セキュリティ
+<ul>
+<li>DLP (Data Loss Prevention)</li>
+<li>機密情報を特定することで、ユーザではなく、情報に対するアクセスや操作を監視することで漏えいを防止する仕組み。</li>
+</ul></li>
+<li>可視化と分析
+<ul>
+<li>CASB (Cloud Access Security Broker)</li>
+<li>統合的にログを管理・可視化・分析するSIEM※6やインターネットアクセスを可視化・制御する</li>
+<li>SIEM (Security Information and Event Management)</li>
+<li>ファイアウォールや<a href="https://www.ntt.com/bizon/glossary/e-i/ips-ids.html">IDS／IPS</a>、プロキシなどから出力されるログやデータを一元的に集約し、それらのデータを組み合わせて相関分析を行うことにより、ネットワークの監視やサイバー攻撃や<a href="https://www.ntt.com/bizon/glossary/j-m/malware.html">マルウェア</a>感染などのインシデントを検知することを目的とした仕組み</li>
+<li>CSPM (Cloud Security Posture Management)</li>
+<li>IaaS／PaaSの設定ミス・脆弱性などクラウドのセキュリティ常態を可視化・管理する</li>
+</ul></li>
+<li>自動化
+<ul>
+<li>SOAR (Security Orchestration and Automation Response)</li>
+<li>インシデントレスポンスを自動化する</li>
+</ul></li>
+</ul>
+<a id="text-07-05-unyo"></a>
+<h4>IT環境構築・運用実施手順</h4>
+<ul>
+<li>Security by Design
+<ul>
+<li>IT環境の構築に当たっては、企画・設計段階において、サービスの機能要件と併せて非機能要件のセキュリティ対策も設計し実装する。</li>
+</ul></li>
+<li>DevSecOps
+<ul>
+<li>DevSecOpsとは、情報システムにおいて開発（Development）と運用（Operations）が密に連携することで、開発にかかる期間を短縮し、リリース頻度を高める開発スタイル。</li>
+<li>このDevOpsにセキュリティ（Security）も融合させることで、セキュリティを確保しつつ、開発スピードを損なわないスタイル。</li>
+</ul></li>
+</ul>
+<h5>サービス構築・運用マニュアル</h5>
+<ul>
+<li>【参照資料】
+<ul>
+<li>政府情報システムの整備及び管理に関する標準ガイドライン【一般論】【実務手引書】</li>
+</ul></li>
+</ul>
+<h4>従来型開発モデル【ウォーターフォールモデル】での開発プロセス</h4>
+<h5>サービス要件定義と留意点</h5>
+<ul>
+<li><p>要件定義書記載項目（一般要件）</p>
+<ul>
+<li>業務要件</li>
+<li>・・・</li>
+<li>業務の継続の方針等
+<ul>
+<li>業務の継続に伴うリスク及び基本的な考え方。なお、業務継続計画を策定する必要がある業務にあっては当該計画の策定時に検討</li>
+<li>定常時と大規模災害等の発災時に考慮すべき要因</li>
+</ul></li>
+<li><p>情報セキュリティ対策基準を適用する対策（組織的、人的、物理的対策）</p>
+<ul>
+<li>取り扱われる情報の格付・取扱制限等に応じた情報セキュリティ対策の基本的な考え方</li>
+<li>情報セキュリティ上のリスクを特定し、その対策をシステム化要件（機能要件及び非機能要件）として定義できるように、情報セキュリティ対策の対象となる情報について、情報セキュリティポリシーに準拠した格付の区分及び取扱制限を明確化</li>
+</ul></li>
+<li><p>機能要件</p></li>
+<li>・・・</li>
+<li>画面（GUI)（GUI)に関する事項
+<ul>
+<li>ユーザ認証等を含めた画面遷移の基本的考え方、画面入出力要件・画面設計要件等</li>
+</ul></li>
+<li>外部インタフェース（API)に関する事項
+<ul>
+<li>外部インタフェース一覧、相手先システム、送受信データ、送受信タイミング、送受信の条件等</li>
+</ul></li>
+<li>・・・</li>
+<li>非機能要件</li>
+<li>・・・</li>
+<li>信頼性に関する事項
+<ul>
+<li>稼働率等の可用性要件・目標値、データの滅失・改変を防止する完全性要件</li>
+</ul></li>
+<li>継続性に関する事項
+<ul>
+<li>障害、災害等による情報システムの問題発生時に求められる必要最低限の機能、その目標復旧時間等</li>
+</ul></li>
+<li>情報セキュリティに関する事項（技術的対策）
+<ul>
+<li>主体認証、アクセス制御、権限管理、ログ取得及びログ管理、暗号化及び電子署名、ソフトウェアの脆弱性対策、不正プログラム対策、サービス不能攻撃対策、標的型攻撃対策等</li>
+</ul></li>
+<li>・・・</li>
+</ul></li>
+</ul>
+<h5>各仕様書の妥当性評価</h5>
+<ul>
+<li><p>各仕様書の記述内容</p>
+<ul>
+<li>（サービス要件定義書、システム化要件定義書、調達仕様書、開発段階での仕様書、作業指示書、、）</li>
+<li>曖昧性・不確実性の排除</li>
+<li>プロセスと成果物の具体化度を明確にしないで、成果物名のみの提示は齟齬が生じる</li>
+<li>「柔軟に対応できること？」は、工数が見積もれない</li>
+<li>読むべき人が理解できるか？</li>
+<li>その仕様書をインプットとして、難易度の認識、妥当な工数見積もりができるかを評価</li>
+<li>方法としての選択肢は可</li>
+<li>コストが高くても将来性、柔軟性のある方法</li>
+<li>コストが安いが、当面の課題は解決で</li>
+</ul></li>
+<li><p>参考見積書の評価</p>
+<ul>
+<li>曖昧な仕様書では安全係数が大きくなり、高額な見積もりになる</li>
+<li>業者の高額な参考見積もりを鵜呑みにして安易な要件緩和やスペックダウンはしない</li>
+<li>提案もしくは指示した実施方法が明確な場合は、具体的な作業と要する工数を評価する</li>
+<li>ある程度の実地の経験は必要</li>
+<li>競争入札になれば、適正な価格に近づく。随意契約の場合は、妥当と思われるまで調整する必要がある</li>
+<li>「単価が高いから見積もりが高くなる」という評価は正しくない</li>
+</ul></li>
+</ul>
+<h5>開発タスクと作成ドキュメント</h5>
+<ul>
+<li>★政府標準ガイドラインに沿った開発タスクとドキュメント、ドキュメントに記載されるべき項目</li>
+<li>企画段階</li>
+<li>予算要求～調達準備</li>
+<li>提案要求～契約</li>
+<li>設計・開発～本番移行</li>
+<li>運用開始～保守</li>
+<li>システム監査</li>
+</ul>
+<h5>調達方式の決定の判断、調達方式の違いによる仕様書の精緻度</h5>
+<ul>
+<li>◇請負業務</li>
+<li>公募</li>
+<li>一般競争入札
+<ul>
+<li>最低価格落札方式</li>
+<li>基本は、一般競争入札（最低価格落札方式）</li>
+<li>・仕様書の解釈により、実施内容にブレがでない詳細な仕様提示が必要</li>
+<li>・予定価格の妥当性の評価は必要だが、業者見積もりの妥当性は評価する能力は求められない</li>
+<li>総合評価落札方式</li>
+<li>・提案者の創意工夫の余地を残し、提案内容の優劣を技術点で評価する</li>
+</ul></li>
+<li>企画競争
+<ul>
+<li>・具体的な実装方式を特定せず、提案者の創意工夫の内容の優劣で評価する</li>
+<li>・業者を選定後は、随意契約として扱われる</li>
+</ul></li>
+<li>随意契約
+<ul>
+<li>・業者の言いなりにならないようにすることが肝要</li>
+<li>実施内容と業者見積もり額の妥当性を精緻に評価する能力が必要</li>
+</ul></li>
+<li>◇委任契約</li>
+</ul>
+<h5>情報システム関連仕様書・契約書</h5>
+<ul>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://cio.go.jp/node/1426"><em>【旧版】【政府CIO】政府情報システムの整備及び管理に関する標準ガイドライン</em></a></li>
+<li><a href="https://www.ipa.go.jp/ikc/reports/20201222.html"><em>【IPA】改正民法に対応した「情報システム・モデル取引・契約書」</em></a></li>
+<li><a href="https://cio.go.jp/node/2651"><em>【METI】AI・データの利用に関する契約ガイドライン</em></a></li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li>DAX47-01_改正民法に対応した「情報システム・モデル取引・契約書」【本文】【実務手引書】</li>
+<li>DAX22-01 AI・データの利用に関する契約ガイドライン（概要資料）（データ編）（AI編）</li>
+</ul></li>
+</ul>
+<h4>アジャイル開発モデルでの進め方と留意点</h4>
+<ul>
+<li><p>留意点</p>
+<ul>
+<li>技術的実現性やビジネスの成否が不確実な状況において、全体の要件を確定することは困難。</li>
+<li>小さな単位で実装とテストを繰り返して、運用時の技術的評価結果や顧客の反応に基づいて、素早く改善を繰り返して完成させていく（以前の表現では、プロトタイピング手法、スパイラス手法に近い）</li>
+<li>アジャイル開発では、全体の仕様を確定させて調達する請負業務契約をそのまま適用と、中間成果物、最終成果物の完成度に対する評価等に齟齬が生じる可能性が高い。⇒準委任契約が妥当</li>
+<li>ウォータフォールモデルを参考に、アジャイル開発の固有の概念を反映させる形にカスタマイズしていくこと効率的。</li>
+<li>※準委任契約の特徴</li>
+<li>請負契約は、あらかじめ内容が特定された成果物を予定したとおりに完成させることに対して対価を支払う</li>
+<li>準委任契約は、業務を受託したベンダ企業が、専門家としての注意義務を果たしながら業務を遂行することそれ自体に対価を支払う</li>
+<li>アジャイルの手法は、ソフトウェア開発に限らず、IT環境、セキュリティ環境構築にも有効な手段。また、このような業務が外注するより、組織内に人材を確保して、できるだげ内製化できる方向で進めることが、ビジネスの発展を見込める</li>
+</ul></li>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.ipa.go.jp/ikc/reports/20200331_1.html"><em>【IPA】アジャイル開発版 情報システム・モデル取引・契約書 ユーザ／ベンダ間の緊密な協働によるシステム開発で、DXを推進</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000081484.pdf"><em>【IPA】～情報システム・モデル取引・契約書＜アジャイル開発版＞～アジャイル開発外部委託モデル契約【2021年10月6日更新】</em></a></li>
+<li>[<em>【IPA】アジャイル領域へのスキル変革の指針【2018年4月】</em>]</li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/OWGW8DbzDiyxkIgpe9iaHh77VhapLmORbtZHr4Lp"><em>Bib10-11 アジャイル開発「ITSS+」</em></a></li>
+</ul></li>
+</ul>
+<h4>政府標準ガイドラインに沿った開発タスクと必要なスキル・知識の選択的習得</h4>
+<ul>
+<li><p>i コンピテンシ ディクショナリ（iCD）</p>
+<ul>
+<li>企業においてITを利活用するビジネスに求められる業務（タスク）と、それを支えるIT人材の能力や素養（スキル）を「タスクディクショナリ」、「スキルディクショナリ」として体系化したもので、企業は経営戦略などの目的に応じた人材育成に利用することができる。</li>
+<li>iCD2022 では、ITSS＋「データサイエンス領域」2021改訂版、情報処理技術者試験 試験要綱Ver.5.1に対応</li>
+<li>タスクプロフィール一覧</li>
+<li>タスク一覧</li>
+<li>スキル一覧</li>
+<li>知識一覧</li>
+<li>認定試験レベル</li>
+<li>情報処理技術者試験等×スキル対応</li>
+</ul></li>
+<li><p>【参照資料】</p>
+<ul>
+<li><a href="https://www.ipa.go.jp/jinzai/hrd/i_competency_dictionary/download.html"><em>【IPA】iコンピテンシディクショナリ（iCD2022）</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000060168.pdf"><em>【IPA】iCD2022_iコンピテンシディクショナリ解説書</em></a></li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href=""><em>政府標準ガイドライン等に沿ったシステム構築と運用</em>【公開準備中】</a></li>
+<li><a href=""><em>政府ガイドライン、iコンピテンシ・ディクショナリの適用</em>【公開準備中】</a></li>
+</ul></li>
+</ul>
+<a id="text-07-05-incident"></a>
+<h4>インシデント対応マニュアル</h4>
+<ul>
+<li><a href="https://www.handa-hospital.jp/topics/2022/0616/index.html"><em>【事例】徳島県つるぎ町立半田病院 コンピュータウイルス感染事案有識者会議調査報告書について</em></a></li>
+<li><a href="https://www.nisc.go.jp/pdf/policy/inquiry/kokai_jireishu.pdf"><em>【追加】【NISC】サイバー攻撃を受けた組織における対応事例集（実事例における学びと気づきに関する調査研究）</em></a></li>
+<li><p><a href="https://www.nca.gr.jp/activity/imgs/development-hr20220331.pdf"><em>【追加】【CSIRT】CSIRT⼈材の育成Ver.1.0</em></a></p>
+<ul>
+<li>「CSIRT ⼈材の定義と確保 Ver.2.11」により定義されたCSIRTに必要な役割とスキルをベースとして、その役割毎にどのように育成していくのかという解決策、また要員不⾜に対しては兼任できる役割をグループ化して育成するという解決策をベストプラクティスとして集約</li>
+</ul></li>
+<li><p><a href="https://www.soumu.go.jp/main_content/000867112.pdf"><em>【追加】【総務省】サイバー攻撃被害に係る情報の共有・公表ガイダンス【2023年3月8日】</em></a></p>
+<ul>
+<li><a href="https://www.soumu.go.jp/main_content/000867113.pdf"><em>【追加】【総務省】サイバー攻撃被害に係る情報の共有・公表ガイダンスの概要【2023年3月8日】</em></a></li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/222/index.html"><em>MISSION 4-1～4-6 緊急時対応用マニュアルの作成</em></a></li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/355/index.html"><em>INFORMATION 6-1 App.01 もしかしてサイバー攻撃？ 緊急時には、ここに連絡を！【クイックリスト】【詳細版】</em></a></li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/356/index.html"><em>INFORMATION 6-2 App.01 やられる前に、しっかり予防を！ ここに相談！【詳細版】</em></a></li>
+</ul></li>
+</ul>
+<a id="text-07-05-keiyaku"></a>
+<h4>IT部門と事業部門の連携による顧客課題の解決</h4>
+<ul>
+<li>事業部門の参画</li>
+</ul>
+<a id="text-07-06"></a>
+<h3>7.6 物理的対策</h3>
+<ul>
+<li>物理的なセキュリティ境界、物理的セキュリティの監視、物理的および環境的脅威からの保護、オフプレミスの資産のセキュリティ、機器のメンテナンス</li>
+<li>入退室認証システム</li>
+<li>BYOD（Bring Your Own Device）
+<ul>
+<li>【参照資料】<a href="https://www.saj.or.jp/activity/support/sample/byod.html"><em>「BYOD」導入検討企業向け情報提供ページ</em></a></li>
+</ul></li>
+<li>MDM（Mobile Device Management）
+<ul>
+<li>【参考資料】<a href="https://www.optimalbiz.jp/blog/why-we-need-mdm/"><em>MDMってどうして必要なの？機能や導入ポイントをわかりやすく解説</em></a></li>
+</ul></li>
+<li>IT機器廃棄手順等</li>
+</ul>
+<a id="text-07-07"></a>
+<h3>7.7 セキュリティ対策状況の有効性評価</h3>
+<ul>
+<li>内部点検
+<ul>
+<li>当事者による検査</li>
+</ul></li>
+<li>内部監査
+<ul>
+<li>組織内の当事者以外の者による検査</li>
+<li>自社のルールや文書が要求事項を満たしているか、そしてルール通りに実施できているかを自社内でチェックすること</li>
+<li>ドキュメント：1)内部監査計画 2)内部監査チェックリスト 3)内部監査報告書 等</li>
+</ul></li>
+<li>外部監査
+<ul>
+<li>組織外の者による検査</li>
+</ul></li>
+<li>第三者認証
+<ul>
+<li><a href="https://isms.jp/isms.html"><em>ISMS適合性評価制度</em></a></li>
+</ul></li>
+</ul>
+<a id="text-08"></a>
+<h3>8.全体総括</h3>
+<h4>全体のポイントの振り返り</h4>
+<h4>今後の方向性</h4>
+<a id="Annex-1"></a>
+<h3>Annex-1 関係法規、各種規程、フレームワーク等の紹介</h3>
+<h4>関係法規・各種規程</h4>
+<ul>
+<li><a href="https://www.nisc.go.jp/law/index.html">内閣官房内閣サイバーセキュリティセンター（NISC） 関係法令等</a>
+<ul>
+<li><a href="https://www.nisc.go.jp/law/lawlink.html#cybersecbasic">サイバーセキュリティ基本法関係</a></li>
+<li><a href="https://www.nisc.go.jp/law/lawlink.html#cybersecqa">サイバーセキュリティ関係法令Q&amp;Aハンドブック</a></li>
+<li><a href="https://www.nisc.go.jp/law/lawlink.html#cybersecrelate">その他サイバーセキュリティに関係する法令の例</a></li>
+</ul></li>
+<li><a href="https://www.nisc.go.jp/pdf/policy/infra/kitei.pdf">内閣サイバーセキュリティセンター重要インフラグループ関係規程集</a> </li>
+</ul>
+<h4>セキュリティ関係フレームワーク</h4>
+<ul>
+<li>ISMS</li>
+<li>CPSF</li>
+</ul>
+<a id="Annex-2"></a>
+<h3>Annex-2 用語解説</h3>
+<ul>
+<li>SD-WAN</li>
+<li>FIDO</li>
+<li>SASE</li>
+<li>．．．</li>
+</ul>
+<a id="Annex-3"></a>
+<h3>Annex-3 参考にすべき文献・Webサイトリスト</h3>
+<ul>
+<li>本書に沿って具体的なセキュリティ対策を講ずる際に、参考となる文献、
+Webサイトを列挙する。</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/341/index.html"><em>INFORMATION 6-3 App.01 セキュリティお役立ちリンク【詳細編】</em></a></li>
+</ul>
+<h4>国等の施策・計画文書・白書・解説書</h4>
+<h5>基本文書（法律・基本計画・各種方針等）</h5>
+<ul>
+<li><em>【NISC】デジタル社会形成基本法</em>
+<ul>
+<li><a href="https://www.nisc.go.jp/law/lawlink.html"><em>【NISC】サイバーセキュリティ基本法</em></a></li>
+</ul></li>
+<li><p><em>【NISC】サイバーセキュリティ戦略</em></p>
+<ul>
+<li><a href="https://www.nisc.go.jp/pdf/policy/kihon-s/cs-senryaku-c.pdf"><em>【NISC】サイバーセキュリティ戦略</em></a></li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/1PHhhWbcWXzS359TQ1bwLzqEHDNaCfWT8-HIJZlf"><em>国の基本方針および実施計画の要約（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX96-04_2021.pdf"><em>（mmapPDF版）</em></a>（2021.12.27更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/HB3QOAeDOQ6iZVOA18R5RduIF3-pzSC3CmVeVPr7"><em>「デジタル社会の実現に向けた改革」の要約（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec20-01.pdf"><em>（mmapPDF版）</em></a>（2022.1.20更新）</li>
+</ul></li>
+</ul>
+<h5>各種白書・年次報告書類</h5>
+<ul>
+<li><a href="https://cio.go.jp/digi-gov-actionplan"><em>【デジタル庁】デジタル・ガバメント実行計画</em></a></li>
+<li><a href="https://www.mext.go.jp/b_menu/hakusho/html/kagaku.htm"><em>【MEXT】科学技術・イノベーション白書</em></a></li>
+<li><a href="https://www.soumu.go.jp/johotsusintokei/whitepaper/"><em>【総務省】情報通信白書</em></a></li>
+<li><a href="https://www.ipa.go.jp/ikc/our_activities/rs_01.html"><em>【IPA】AI白書</em></a></li>
+<li><a href="https://www.ipa.go.jp/ikc/publish/dx_hakusho.html"><em>【IPA】DX白書</em></a></li>
+<li><p><a href="https://www.ipa.go.jp/security/publications/hakusyo/2022.html"><em>【IPA】情報セキュリティ白書</em></a></p></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/386/index.html"><em>「令和3年版科学技術・イノベーション白書（文部科学省）」の要約</em></a>（2021.12.23更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/454/index.html"><em>「DX白書2023」（IPA）の要約</em></a>（2023.2.20更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/387/index.html"><em>「DX白書2021エグゼクティブサマリー」（IPA）の要約</em></a>（2021.12.23更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/xUtz_RfABOC1jnUEWd234A1yXjKXaCFbPcTXiIDC"><em>「DX白書2021本編」（IPA)の目次（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX96-06-02.pdf"><em>（mmap_PDF版）</em></a>（2022.1.21更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/61oJWLRpaerX9M24GzrShvtu10u2lfPsG22forPo"><em>「情報セキュリティ白書2021」（IPA）の目次（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec22-01.pdf"><em>（mmap_PDF版</em>）</a>（2021.12.23更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/5DlOi0YAkKBqm_QvBEOO8d6ngVnA4zfxjGpK3H2O"><em>【バックナンバー】平成28年度情報通信白書【総務省】の要約（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX25-09.pdf"><em>（mmap_PDF版）</em></a>（2022.1.28更新）</li>
+</ul></li>
+</ul>
+<h5>システム管理・監査関連の基準</h5>
+<ul>
+<li><a href="https://public-comment.e-gov.go.jp/servlet/PcmFileDownload?seqNo=0000247393"><em>【METI】システム監査基準（案）パブリックコメント版【2023年2月】</em></a></li>
+<li><a href="https://public-comment.e-gov.go.jp/servlet/PcmFileDownload?seqNo=0000247394"><em>【METI】システム管理基準（案）パブリックコメント版【2023年2月】</em></a></li>
+</ul>
+<h5>情報セキュリティ関連フレームワーク及び規格類</h5>
+<ul>
+<li><em>ISMS</em>
+<ul>
+<li><a href="https://www.iso.org/obp/ui/#iso:std:iso-iec:27002:ed-3:v2:en"><em>(ISO/IEC27001:2022, ISO/IEC27002:2022(en))</em></a></li>
+<li><a href="https://www.meti.go.jp/policy/netsecurity/is-kansa/"><em>【METI】情報セキュリティ管理基準</em></a></li>
+</ul></li>
+<li><em>ISMS認証制度</em>
+<ul>
+<li>・・・</li>
+</ul></li>
+<li><p><a href="https://www.meti.go.jp/press/2019/04/20190418002/20190418002.html"><em>【METI】CPSF（サイバー・フィジカル・セキュリティ対策フレームワーク）</em></a></p></li>
+<li><p><a href="https://www.ipa.go.jp/security/publications/nist/index.html"><em>【NIST(IPA翻訳)】セキュリティ関連NIST文書</em></a></p>
+<ul>
+<li><a href="https://www.ipa.go.jp/files/000093059.pdf"><em>【NIST(IPA翻訳)】管理対象非機密情報を保護するための拡張セキュリティ要件NIST SP 800-171 の補足</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000092657.pdf"><em>【NIST(IPA翻訳)】組織と情報システムのためのセキュリティおよびプライバシー管理策 SP800-53 Revision 5</em></a></li>
+<li><a href="https://www.ipa.go.jp/files/000025341.pdf"><em>【NIST(IPA翻訳)】コンピュータセキュリティ インシデント対応ガイド SP800-61 Revision 1</em></a></li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><p><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/435/index.html"><em>情報セキュリティに関する各種フレームワークの概要</em></a>（2022.8.19更新）</p></li>
+<li><p><a href="https://share.mindmanager.com/#publish/nszC2-qIZeRXlXgH5ikFkYKabxxSF6u-wr4K6Vhf"><em>サイバーセキュリティ経営ガイドラインVer2.0_付録D_国際規格ISO/IEC27001及び27002との関係【要約】（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec93_01_01.pdf">（<em>mmapPDF版</em>）</a>（2022.1.5更新）</p></li>
+<li><p><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec202201-01.pdf"><em>改定版ISO/IEC 27002の概要（PDF版）</em></a>（2022.1.18更新）</p></li>
+<li><p><a href="https://share.mindmanager.com/#publish/GAGmgCVcUERJus9kerwmlymIQ7XDl5KfGCljt5-x"><em>サイバーセキュリティフレームワーク(CSF)フレームワークコア体系図（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec01-02-3.pdf"><em>（mmapPDF版）</em></a>（2022.1.20更新）</p></li>
+<li><a href="https://share.mindmanager.com/#publish/890yEb5vCx8c1Jz6KbGiygOTauMvFfMX_k0r5Pvm"><em>CSFの活用法（Tier設定の前提となる実施事項の例）（MindMap版）</em></a>（2022.10.14更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/438/index.html"><em>「安定したクラウドサービスの実現に向けて（概要）～ISO/IEC20000の活用～」の要約</em></a>（2022.8.19更新）</li>
+</ul></li>
+</ul>
+<h4>サイバーセキュリティ対策関連ガイドライン</h4>
+<ul>
+<li><p><a href="https://www.meti.go.jp/policy/netsecurity/mng_guide.html"><em>【METI】サイバーセキュリティ経営ガイドラインと支援ツール</em></a></p>
+<ul>
+<li>前回改訂時（2017年11月）以降のサイバーセキュリティ経営を取り巻く情勢の変化等を踏まえ、サイバーセキュリティ経営ガイドラインについて、2022年度中に改訂される予定。</li>
+<li>サイバー・フィジカル・セキュリティ対策フレームワーク(CPSF)のコンセプトの反映やサプライチェーンの再整理など、所要の改訂を行う予定。</li>
+<li>CPSF等新たなガイドラインのコンセプトの反映</li>
+<li>サプライチェーンの再整理</li>
+<li>経営者がコミュニケーションを行うべき関係者の再定義</li>
+<li>クラウド等最新技術と留意点の盛り込み</li>
+<li>制御系を含むインシデント演習の必要性</li>
+</ul></li>
+<li><p><a href="https://www.ipa.go.jp/security/keihatsu/sme/guideline/"><em>【IPA】中小企業の情報セキュリティ対策ガイドライン</em></a></p></li>
+<li><a href="https://www.ipa.go.jp/security/fy30/reports/ciso/index.html"><em>【追加】【IPA】サイバーセキュリティ経営ガイドラインVer2.0実践のためのプラクティス集</em></a></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/vhyoFhHVzCrrqLIm9yNEUCApIZc0CFgcq4fyWDDq"><em>サイバーセキュリティ経営ガイドラインVer2.0【要約】（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec93_01.pdf"><em>（mmap_PDF版</em>）</a>（2022.1.6更新）</li>
+<li><p>（付録A、付録Dにおいて、CSFとISMSとの関係が示されている。 ）</p></li>
+<li><p><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/445/index.html"><em>「サイバーセキュリティ経営ガイドライン Ver3.0(案)」の改訂概要</em></a>（2022.10.28更新）</p></li>
+</ul></li>
+</ul>
+<h4>組織的・人的対策全般</h4>
+<h5>働き方改革関連</h5>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec202201-05.pdf"><em>中小企業等担当者向けテレワークセキュリティの手引きの概要（PDF版）</em></a>（2022.1.31更新）</li>
+</ul></li>
+</ul>
+<h5>プライバシーガバナンス－個人情報保護－関連</h5>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec202201-02.pdf"><em>改訂個人情報保護法の概要（PDF版）</em></a>（2022.1.18更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec202202-02.pdf"><em>「DX時代における企業のプライバシーガバナンスガイドブックver1.2」の経営者向け概要（PDF版）</em></a>（2022.2.22更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec202201-04.pdf"><em>プライバシー・バイ・デザインの概要（PDF版）</em></a>（2022.1.28更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/412/index.html"><em>トラフィックライトプロトコル／TRAFFIC LIGHT PROTOCOL(TLP)</em></a>（2022.4.8更新）</li>
+</ul></li>
+</ul>
+<h5>事業継続計画関連</h5>
+<ul>
+<li><p><a href="https://www.nisc.go.jp/pdf/policy/general/itbcp1-1_3.pdf"><em>【追加】【NISC】「政府機関等における情報システム運用継続計画ガイドライン」(第3版)</em></a></p></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/349/index.html"><em>MISSION 4.7 App.01 IT-BCPの必要性と策定・運用のポイント</em></a></li>
+</ul></li>
+</ul>
+<h4>技術的対策全般</h4>
+<h5>DX、DX with Security関連</h5>
+<ul>
+<li><p>【要約資料】</p>
+<ul>
+<li><p><a href="https://share.mindmanager.com/#publish/STnF18klr8Boz18dxpuDShLteY3ybpCYhSpnLeDo"><em>デジタルトランスフォーメーション（DX）の概念（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX21.pdf"><em>（mmap_PDF版）</em></a>（2022.2.21更新）</p></li>
+<li><p><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec202202-01.pdf"><em>SASE(Secure Access Service Edge)とゼロトラストセキュリティ（PDF版）</em></a>（2022.2.10更新）</p></li>
+<li><a href="https://share.mindmanager.com/#publish/cgdI8TOQmg8KQtm5D3km235DgDuFd2JVTFkqWZbw"><em>SASE(Secure Access Service Edge)の概念整理（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec33-01.pdf"><em>（mmap_PDF版）</em></a>（2022.2.10更新）</li>
+</ul></li>
+</ul>
+<h5>IoT、ビッグデータ、ロボット、AI、5G関連</h5>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/iEBX1nFw8zjZ3QIbyrsgYkoh5aECMPHZ62AuxxIU"><em>AIに関する基礎知識（まとめ）（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX20-04.pdf"><em>（mmapPDF版）</em></a>（2022.1.28更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec202201-03.pdf"><em>機器のサイバーセキュリティ確保のためのセキュリティ検証の手引きの概要（PDF版）</em></a>（2022.1.25更新）</li>
+</ul></li>
+</ul>
+<h5>DX及びセキュリティ人材育成</h5>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.ipa.go.jp/jinzai/skill-standard/dss/index.html"><em>【IPA】デジタルスキル標準（DXリテラシー標準、DX推進スキル標準）</em></a>  </li>
+<li><a href="https://www.ipa.go.jp/jinzai/hrd/i_competency_dictionary/download.html"><em>【IPA】iコンピテンシディクショナリ（iCD2022）</em></a></li>
+</ul></li>
+<li><p>【要約資料】</p>
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/2XHhsC6SVcF_jp1NlHBPyBhMcGgmzGVuNNd9AJax"><em>DAX51-01_DXへの対応からサイバーセキュリティ対策</em></a></li>
+<li>【持続的発展のため】組織の発展を目指した戦略的なIT活用とサイバーセキュリティ対策</li>
+<li>「次世代IT技術の活用からセキュリティ対策まで」の解説の流れ</li>
+<li><p><a href="https://share.mindmanager.com/#publish/TnZmxkithHmXTrVV7HZ7GoGCc1WUfvyyNAU-amdU"><em>セキュリティ対策を確実にするための⼈材育成の事業紹介【NISCポータル,JTAG等】（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec32-01.pdf"><em>（mmap_PDF版）</em></a>（2022.2.8更新）</p></li>
+<li><p><a href="https://share.mindmanager.com/#publish/otsTclx1cDDLscmsI5QFs5J_6MFTYmHxhyZiXEsP"><em>DXの推進と人材育成関連【参考文献要約】(MindMap版)</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX96-03.pdf"><em>(mmapPDF版)</em></a>（2021.12.28更新）</p></li>
+<li><a href="https://share.mindmanager.com/#publish/Pa61Zcdv5OPXl9klVauHCTvigKO1yWjrH_k0edrI"><em>システムの構築に必要なスキル・知識（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX40-06-3.pdf"><em>（mmapPDF版）</em></a>（2021.12.28更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/lFqxhpOp7u_GSu92da-EZGKAuksin2c9ow1pGWTZ"><em>最低限知っておくべき情報処理技術（ITリテラシー）（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib06-05.pdf"><em>（mmapPDF版）</em></a>（2022.1.11更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/bzu02puwTMZACPCYFk2a5UOvhogICXzVfLnUL2Xc"><em>ITパスポート試験シラバス（Tree図）（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib06-04D.pdf"><em>（mmapPDF版）</em></a>（2022.1.18更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/OWGW8DbzDiyxkIgpe9iaHh77VhapLmORbtZHr4Lp"><em>アジャイル開発「ITSS+」（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib10-11.pdf"><em>（mmapPDF版）</em></a>（2022.1.11更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/kzpK4r4cEWpl-SU-ucnGkZStn6W9-BVBgEu3CPlI"><em>データサイエンス領域のスキル標準「ITSS+」（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib10-09.pdf"><em>（mmapPDF版）</em></a>（2022.1.11更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/jMfASMhDCefQjh2OT-zcwGou0Zh-VKHM0M373k5z"><em>セキュリティ領域のスキル標準「ITSS+」（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib10-10.pdf"><em>（mmapPDF版）</em></a>（2022.1.11更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/K2jOtatRlr1wtU7iKAq2ocMHxC4E4Ck8Zq78Dg-t"><em>情報セキュリティマネジメントに要求される知識と技能【シラバス】（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Bib05-13.pdf"><em>（mmapPDF版）</em></a>（2022.1.11更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/EqQ25jA7Y7C53zLmBKfdljXXCbjrFwps-hApD88r"><em>「東京都デジタル人材確保・育成基本方針」の要約（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/Sec32-02.pdf"><em>（mmap_PDF版）</em></a>（2022.2.17更新）</li>
+</ul></li>
+</ul>
+<h5>サービス企画・設計</h5>
+<ul>
+<li><a href="https://www.digital.go.jp/resources/introduction-to-web-accessibility-guidebook/"><em>【デジタル庁】ウェブアクセシビリティ導入ガイドブック</em></a></li>
+</ul>
+<h5>システム開発・運用</h5>
+<ul>
+<li>【要約資料】
+<ul>
+<li><a href="https://share.mindmanager.com/#publish/UexXax4Cb7HV1nkUw5ww154kJ2WRyddrqZR26jqb"><em>情報システムの標準的な構築プロセス【要約】（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX40-06-2.pdf"><em>（mmap_PDF版）</em></a>（2021.12.27更新）</li>
+<li><a href="https://share.mindmanager.com/#publish/F3pcoqNkC2mSUswQgQ6bvfkLGfC-8v33Upk8o5T2"><em>改正民法に対応した「情報システム・モデル取引・契約書」【要約】（MindMap版）</em></a> / <a href="https://cybersecurity.metro.tokyo.lg.jp/security/docs/DAX47-01.pdf"><em>（mmapPDF版）</em></a>（2021.12.27更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/411/index.html"><em>Minimum Viable Secure Product 最低限のセキュリティベースライン</em></a>（2022.3.23更新）</li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/439/index.html"><em>脅威分析モデルSTRIDE</em></a>（2022.8.19更新）</li>
+</ul></li>
+</ul>
+<h5>インシデント対応関連</h5>
+<ul>
+<li><a href="https://www.handa-hospital.jp/topics/2022/0616/index.html"><em>【事例】徳島県つるぎ町立半田病院 コンピュータウイルス感染事案有識者会議調査報告書について</em></a></li>
+<li><a href="https://www.nisc.go.jp/pdf/policy/inquiry/kokai_jireishu.pdf"><em>【NISC】サイバー攻撃を受けた組織における対応事例集（実事例における学びと気づきに関する調査研究）</em></a></li>
+</ul>
+<h4>手元に置いておきたい書籍、電子書籍</h4>
+<ul>
+<li><a href="https://security-portal.nisc.go.jp/blue_handbook/index.html"><em>「小さな中小企業とNPO向け情報セキュリティハンドブック 」</em></a></li>
+<li><a href="https://security-portal.nisc.go.jp/handbook/index.html"><em>「インターネットの安全・安心ハンドブック Ver 5.00」</em></a></li>
+<li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/"><em>ガイドブック『中小企業向けサイバーセキュリティ対策の極意』</em></a></li>
+</ul>
+<h4>網羅的な情報の中から素早く見つけるためポータルサイト</h4>
+<ul>
+<li><a href="https://security-portal.nisc.go.jp/"><em>【NISC】みんなで使おうサイバーセキュリティ・ポータルサイト</em></a></li>
+<li><a href="https://www.ipa.go.jp/security/kokokara/"><em>【IPA】ここからセキュリティ！</em></a>2023.1.23</li>
+</ul>
+<h3>本ページでの主な参考資料・文献名（発行元別）</h3>
+<ul>
+<li>| 発行元 | 資料・文献名 |</li>
+<li>| :---- | :---- |</li>
+<li>| 東京都 | <a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/">中小企業向けサイバーセキュリティ対策の極意（冊子及びサイトでの追補ページ）</a> 、<a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/">セキュリティ関連知識の保管庫（ナレッジベース）</a>  |</li>
+<li>| 内閣サイバーセキュリティセンター（NISC） | サイバーセキュリティ基本法、サイバーセキュリティ戦略、サイバーセキュリティ2022、関係法令Q&amp;Aハンドブック、小さな中小企業とNPO向け情報セキュリティハンドブック、 <a href="https://security-portal.nisc.go.jp/guidance/handbook.html">インターネットの安全・安心ハンドブック Ver.5.00</a>、 <a href="https://www.nisc.go.jp/pdf/policy/infra/kitei.pdf">内閣サイバーセキュリティセンター重要インフラグループ関係規程集</a> |</li>
+<li>| 内閣府 | 経済財政運営と改革の基本方針、デジタル社会形成基本法、Society5.0、サイバ―フィジカルセキュリティ対策検討ガイドブック |</li>
+<li>| デジタル庁 | デジタル・ガバメント実行計画、政府情報システムにおけるゼロトラストの運用の取り組み |</li>
+<li>| 総務省 | 情報通信白書、DX時代における企業のプライバシーガバナンスガイドブック、中小企業等担当者向けテレワークセキュリティの手引き、<a href="https://www.soumu.go.jp/main_content/000867112.pdf">サイバー攻撃被害に係る情報の共有・公表ガイダンス</a> |</li>
+<li>| 文部科学省 | 科学技術・イノベーション白書 |</li>
+<li>| 経済産業省 | サイバーセキュリティ経営ガイドライン（Ver3.0）、情報セキュリティ管理基準、CPSF（サイバー・フィジカル・セキュリティ対策フレームワーク）、産業界におけるデジタルトランスフォーメーションの推進、デジタル産業の創出に受けた研究会の報告書『DXレポート2.1（DXレポート追補版）』 |</li>
+<li>| 独立行政法人 情報処理推進機構（IPA） | DX白書2023、AI白書、情報セキュリティ白書、中小企業の情報セキュリティ対策ガイドライン（第3.1版）、情報セキュリティ10大脅威2023、情報処理技術者試験シラバス、改正民法に対応した「情報システム・モデル取引・契約書」、<a href="https://www.ipa.go.jp/jinzai/skill-standard/dss/index.html">デジタルスキル標準（DXリテラシー標準、DX推進スキル標準）</a> 、<a href="https://www.ipa.go.jp/jinzai/hrd/i_competency_dictionary/download.html">iコンピテンシディクショナリ（iCD2022）</a>、<a href="https://www.ipa.go.jp/icscoe/program/core_human_resource/final_project/visualization-costs.html">セキュリティ関連費用の可視化</a> |</li>
+<li>| 個人情報保護委員会 | GDPR（一般データ保護規則）関連資料、<a href="https://www.ppc.go.jp/personalinfo/legal/#oyakudati">法令・ガイドライン等 お役立ちツール（※中小企業向け）</a> |</li>
+<li>| 一般社団法人JPCERTコーディネーションセンター（JPCERT/CC） | インシデントハンドリングマニュアル、CSIRT⼈材の育成|</li>
+<li>| 日本情報経済社会推進協会（JIPDEC） | ISMS適合性評価制度関連資料、改正個人情報保護法の実務対応ポイント |</li>
+<li>| ISO規格、JIS規格 | ISMS(ISO/IEC27001,27002:2022、JISQ27001,27002) |</li>
+<li>| 米国国立標準技術研究所（NIST） | セキュリティ関連NIST文書 |</li>
+</ul>
+<h3>備考</h3>
+<h4>改版履歴</h4>
+<ul>
+<li>2023年3月13日 随時改訂中</li>
+<li>2023年3月10日 「サイバー攻撃被害に係る情報の共有・公表ガイダンス」追記</li>
+<li>2023年2月27日 DX白書2023、「インターネットの安全・安心ハンドブック Ver.5.00」追記</li>
+<li>2023年2月7日 「内閣サイバーセキュリティセンター重要インフラグループ関係規程集」追記</li>
+<li>2023年1月23日 iコンピテンシディクショナリ（iCD2022）を追加</li>
+<li>2023年1月4日 7.4.3 最新の人材育成・人材確保のための標準フレームワーク【デジタルスキル標準（DSS）】を追加</li>
+<li>2022年11月22日 知識の保管庫（ナレッジベース）Ver.2.0として、「極意」の続編と位置づけ、フレームワークに準拠した体系的なセキュリティ対策の教則本の目次としてリニューアル。</li>
+<li>2022年7月11日 「サイバーセキュリティ2022（2021年度年次報告・2022年度年次計画）」のポイント要約を追加 </li>
+<li>2022年6月25日 各ドキュメントのMindMap版を追加 </li>
+<li>2022年2月17日 「東京都デジタル人材確保・育成基本方針」の要約を追加 </li>
+<li>2022年2月8日 セキュリティ対策を確実にするための⼈材育成の事業紹介を追加 </li>
+<li>2022年1月28日 補足・コラム、個人情報保護関連を追加 </li>
+<li>2022年1月20日 NIST関連、デジタル社会の実現に向けた改革関連を追加 </li>
+<li>2022年1月18日 ISO/IEC 27002、個人情報保護法の改正関連を追加 </li>
+<li>2022年1月11日 ITSS+関連を追加 </li>
+<li>2021年12月27日 「サイバーセキュリティ戦略（NISC）」の要約等を追加 </li>
+<li>2021年10月7日 試験公開を開始</li>
+</ul>
+<table class="border">
+  <tbody>
+    <tr>
+      <td>
+        <dl class="p-lineMarker">
+          <dt class="p-lineMarker__ttl">『中小企業向けサイバーセキュリティ対策の極意』ポータルサイトへのリンク</dt>
+          <dd class="p-lineMarker__body">
+            <ul>
+              <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/index.html">ガイドブック『中小企業向けサイバーセキュリティ対策の極意』のページ</a>
+                <ul>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/368/index.html"><strong>電子書籍（EPUB版）の閲覧</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/369/index.html"><strong>冊子イメージ（PDF版）の閲覧・印刷</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/index.html"><strong>Webページの閲覧</strong></a></li>
+                </ul>
+              </li>
+              <li class="c-linkList__item">⇒ <a href="/security/KnowLedge/">セキュリティ関連知識の保管庫（ナレッジベース）（Web版）</a></li>
+              <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/">『中小企業向けサイバーセキュリティ対策の極意』ポータルサイト</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

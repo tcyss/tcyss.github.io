@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>【本編01】サイバーセキュリティを取り巻く背景＜セキュリティ関連知識の保管庫（ナレッジベース2023）＞</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/KnowLedge/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">ナレッジベース</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">【本編01】サイバーセキュリティを取り巻く背景＜セキュリティ関連知識の保管庫（ナレッジベース2023）＞</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">【本編01】サイバーセキュリティを取り巻く背景＜セキュリティ関連知識の保管庫（ナレッジベース2023）＞</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2023.03.16">2023.03.16</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<p style="text-align: right;">2023.3.13</p>
+<h3>【本編01】サイバーセキュリティを取り巻く背景＜セキュリティ関連知識の保管庫（ナレッジベース2023）＞</h3>
+<h4>位置づけ</h4>
+<ul>
+<li>ガイドブック『中小企業向けサイバーセキュリティ対策の極意』の続編のために要約した次世代IT技術、サイバーセキュリティ対策関連の知識の保管庫（ナレッジベース）です。</li>
+<li>国際標準、NISC,METI,IPA等の政府関連機関が提供するフレームワーク・ガイドライン等の最新版をベースとして、<em>実践的な情報への道しるべとなる情報</em>を提供します。</li>
+<li><em>具体的な対策の実施の際には、ページ内に記載の【参照資料】のリンク先をご確認ください。</em></li>
+</ul>
+<h3><a href="#text-01"><em>目次</em></a></h3>
+<h4><a href="#text-01"><em>目次.1.サイバーセキュリティを取り巻く背景</em></a></h4>
+<ul>
+<li>（目的：クラウドワークロードの複雑化、サプライチェーンの脆弱性、IoT、DX等、新しいテクノロジーへのセキュリティ対策が求められている状況を解説し、Society5.0等で示されている社会の方向性と実現に向けた基本概念、その環境下で中小企業に求められる考え方を提示する）</li>
+<li><a href="#text-01-01"><em>1.1 目標とする対策のレベルを想定</em></a>
+<ul>
+<li>（クイックアプローチ・ベースラインアプローチ・網羅的アプローチ）</li>
+</ul></li>
+<li><a href="#text-01-02"><em>1.2 【事例を知る】重大なインシデント発生から課題解決まで</em></a>
+<ul>
+<li>（要旨・キーワード等：最近の攻撃トレンドを踏まえ、中小企業にも発生しうるサイバー攻撃・被害をケーススタディとして掲載）</li>
+</ul></li>
+<li><a href="#text-01-02"><em>1.3 【社会の動きを知る】社会の現状と今後の動向</em></a>
+<ul>
+<li>（要旨・キーワード等：Society5.0、Cybersecurity for All、DX with Security、プラス・セキュリティ、デジタルリテラシー　等）</li>
+<li><em>DX時代に対応が求められるIT環境</em></li>
+<li>（要旨・キーワード等：IoT、ビッグデータ、ロボット、AI、5G　等）</li>
+<li><em>DX時代に不可欠な人材の確保</em></li>
+<li>（要旨・キーワード等：DX with Securityで必要な人材の役割とスキル　等）</li>
+</ul></li>
+</ul>
+<a id="text-01"></a>
+<h3>1.サイバーセキュリティを取り巻く背景</h3>
+<a id="text-01-01"></a>
+<h4>目標とする対策のレベルを想定</h4>
+<ul>
+<li><em>LV.1 【クイックアプローチ】緊急に、狙われやすい大きな穴（セキュリティホール）を塞ぐ</em>
+<ul>
+<li>報道されるような事象、情報セキュリティ10大脅威を参考にして、緊急対応する</li>
+</ul></li>
+<li><em>LV.2 【ベースラインアプローチ】素早く多くの穴を塞ぐ</em>
+<ul>
+<li>ガイドブック、ひな形を参照して、迅速に進める</li>
+</ul></li>
+<li><em>LV.3 【網羅的アプローチ】じっくりと、小さな穴を残さないように確実に塞ぐ</em>
+<ul>
+<li>網羅的な対策が定義されているフレームワークに沿って進める</li>
+</ul></li>
+</ul>
+<a id="text-01-02"></a>
+<h4>【事例を知る】重大なインシデント発生から課題解決まで</h4>
+<ul>
+<li>事案発生⇒課題の抽出（組織的、技術的、社会的）⇒再発防止策の実施（課題への対応・対策）</li>
+<li>自組織における対策状況の見直しのきっかけとして
+<ul>
+<li>ただし、環境は組織によって異なるため、事例は一例に過ぎずそのまま適用しただけでは、重大な事象・対策を見落とす可能性がある。</li>
+</ul></li>
+<li>事例を踏まえて、網羅的な対策のあり方、目標とするレベルを認識の上で、具体的に実施していくことが重要。</li>
+</ul>
+<h5>ランサムウェアの感染</h5>
+<ul>
+<li>【参照資料】
+<ul>
+<li><a href="https://www.handa-hospital.jp/topics/2022/0616/index.html"><em>徳島県つるぎ町立半田病院 コンピュータウイルス感染事案有識者会議調査報告書について</em></a></li>
+</ul></li>
+</ul>
+<a id="text-01-03"></a>
+<h4>【社会の動きを知る】社会の現状と今後の動向【概要】</h4>
+<ul>
+<li>Society5.0等で示されている政府機関が目指す社会の方向性と、実現に向けた基本的な概念を理解する。</li>
+<li>そのような環境の中で、中小企業のビジネス発展のために意識しておくべき考え方を提示する</li>
+</ul>
+<h5>DX時代に対応が求められるIT環境</h5>
+<ul>
+<li>IoT、ビッグデータ、ロボット、AI、5G、、、</li>
+<li>【要約資料】
+<ul>
+<li><a href="https://www.cybersecurity.metro.tokyo.lg.jp/security/guidebook/212/index.html"><em>MISSION 3-12～16 IoT、ビッグデータ、AI、ロボットの活用</em></a></li>
+</ul></li>
+</ul>
+<h5>想定されるセキュリティ侵害と対策のあり方</h5>
+<ul>
+<li>LV.1, LV.2, LV.3 を想定して、リスクの大きいものからはじめ、最終的には、網羅的かつ迅速な対策へ</li>
+</ul>
+<h5>DX時代に不可欠な人材の確保</h5>
+<ul>
+<li>チェンジマインド、リスキリング、、、</li>
+</ul>
+<h3>備考</h3>
+<h4>改版履歴</h4>
+<ul>
+<li>2023年3月14日 「ナレッジベース2023」として、トップページ、インデックス本編1～8、Annexに分割</li>
+<li>2023年3月10日 『中小企業向けサイバーセキュリティ対策の極意』Ver.2.2.5（EPUBリフロー版）として公開</li>
+<li>2021年10月7日 試験公開を開始</li>
+</ul>
+<table class="border">
+  <tbody>
+    <tr>
+      <td>
+        <dl class="p-lineMarker">
+          <dt class="p-lineMarker__ttl">『中小企業向けサイバーセキュリティ対策の極意』ポータルサイトへのリンク</dt>
+          <dd class="p-lineMarker__body">
+            <ul>
+              <li class="c-linkList__item">⇒ <a href="/security/KnowLedge/">セキュリティ関連知識の保管庫（ナレッジベース2023）（Web版）</a>>
+                <ul>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/458/index.html"><strong>【本編01】サイバーセキュリティを取り巻く背景</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/459/index.html"><strong>【本編02】サイバーセキュリティに関する基礎知識【前提となる組織とスキル】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/460/index.html"><strong>【本編03】これからの企業経営で必要な観点【社会の動向】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/461/index.html"><strong>【本編04】社会全体におけるサイバーセキュリティの現状【国等の方針・施策】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/462/index.html"><strong>【本編05】網羅的なセキュリティ対策を知る【フレームワーク】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/463/index.html"><strong>【本編06】中小企業が組織として策定すべきサイバーセキュリティ対策関連規程【対策基準レベル】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/464/index.html"><strong>【本編07】中小企業が組織として実施すべきサイバーセキュリティ対策【実施手順・実務者マニュアルレベル】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/465/index.html"><strong>【本編08】全体総括】</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/457/index.html"><strong>【Annex】セキュリティ関連関連資料</strong></a></li>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/KnowLedge/456/index.html">＜【2022年版凍結】セキュリティ関連知識の保管庫（ナレッジベース）（Web版）＞</a></li>
+                </ul>
+              </li>
+              <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/index.html">ガイドブック『中小企業向けサイバーセキュリティ対策の極意』のページ</a>
+                <ul>
+                  <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/368/index.html"><strong>電子書籍（EPUB版）の閲覧</strong></a></li>
+                </ul>
+              </li>
+              <li class="c-linkList__item">⇒ <a href="https://cybersecurity.metro.tokyo.lg.jp/">『中小企業向けサイバーセキュリティ対策の極意』ポータルサイト</a></li>
+            </ul>
+          </dd>
+        </dl>
+      </td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

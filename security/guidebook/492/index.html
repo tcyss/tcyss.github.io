@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>【旧版】【2023年版】ガイドブック『中小企業向けサイバーセキュリティ対策の極意』</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/guidebook/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">ガイドブック</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">【旧版】【2023年版】ガイドブック『中小企業向けサイバーセキュリティ対策の極意』</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">【旧版】【2023年版】ガイドブック『中小企業向けサイバーセキュリティ対策の極意』</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2023.12.26">2023.12.26</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<div class="l-main__middle__body">
+    <h2 class="c-heading3">ガイドブック『中小企業向けサイバーセキュリティ対策の極意』</h2>
+    <p>ガイドブック『中小企業向けサイバーセキュリティ対策の極意』の内容を掲載しております。<br> 下記、リンクよりご覧になりたい形式、項目を選択してください。</p>
+    <ul class="p-ttlBtnList">
+        <li class="p-ttlBtnList__item"><a class="p-ttlBtn" href="#Section1"> <span class="p-ttlBtn__body"> <span
+                        class="p-ttlBtn__body__left">Section1</span> <span
+                        class="p-ttlBtn__body__right">電子書籍（EPUB版）の閲覧</span> </span> </a></li>
+        <li class="p-ttlBtnList__item"><a class="p-ttlBtn" href="#Section2"> <span class="p-ttlBtn__body"> <span
+                        class="p-ttlBtn__body__left">Section2</span> <span
+                        class="p-ttlBtn__body__right">冊子イメージ（PDF版）の閲覧・印刷</span> </span> </a></li>
+        <li class="p-ttlBtnList__item"><a class="p-ttlBtn" href="#Section3"> <span class="p-ttlBtn__body"> <span
+                        class="p-ttlBtn__body__left">Section3</span> <span
+                        class="p-ttlBtn__body__right">Webページ（html版）の閲覧</span> </span> </a></li>
+        <li class="p-ttlBtnList__item"><a class="p-ttlBtn" href="#KnowLedge"> <span class="p-ttlBtn__body"> <span
+                        class="p-ttlBtn__body__left">KnowLedge</span> <span
+                        class="p-ttlBtn__body__right">セキュリティ関連知識の保管庫</span> </span> </a></li>
+        <!--
+            <li class="p-ttlBtnList__item">
+                <a class="p-ttlBtn" href="#Section4"> <span class="p-ttlBtn__body"> <span class="p-ttlBtn__body__left">Section4</span> <span class="p-ttlBtn__body__right">関連情報</span> </span>
+                </a>
+            </li>
+            -->
+    </ul>
+    <h2 class="c-heading3" id="Section1">電子書籍（EPUB版）の閲覧</h2>
+    <ul>
+        <li class="c-linkList__item"><a href="/security/guidebook/368/index.html"><b
+                    color="blue">『中小企業向けサイバーセキュリティ対策の極意』Ver.2.2.8（EPUBリフロー版）（2023.7.24更新）</b></a>
+            <ul>
+                <li>特に、スマホなど小さなディスプレイを備えた端末で、読むことに適しています。</li>
+                <li>リフロー型で作成されており、視力に応じて、文字を拡大・縮小して閲覧することができます。</li>
+                <li>電子書籍版は、必要の都度、最新情報を反映して、改版し公開していきます。</li>
+            </ul>
+        </li>
+    </ul>
+    <!--
+                    <h3 class="c-heading4">ブラウザ(EPUBビューア)での閲覧</h3>
+                    <ul>
+                        <li><a href="/security/docs/bibi/?book=CyberSecurity.Ver.2.1.epub"><b>【最新版】『中小企業向けサイバーセキュリティ対策の極意』Ver.2.1（EPUBリフロー版）</b></a>
+                            <ul>
+                                <li>最新バージョンです。都度、最新情報を反映していきます。
+                                    <ul>
+                                        <li><a href="/security/guidebook/361/index.html">ガイドブック『中小企業向けサイバーセキュリティ対策の極意』の改訂について</a></li>
+                                    </ul>
+                                </li>
+                                <li>※PC、スマホ等の各種インターネットブラウザで閲覧できます。（閲覧用のアプリ、プラグインのインストールは不要です。）</li>
+                            </ul>
+                        </li>
+                        <li><a href="/security/docs/bibi/?book=cybersecurity.V2.epub">【旧版】『中小企業向けサイバーセキュリティ対策の極意』Ver.2.0（EPUBリフロー版）</a>
+                            <ul>
+                                <li>Ver.2.0 PDF版と同様の内容のリフロー版です。</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3 class="c-heading4">電子書籍ビューアでの閲覧用ファイルのダウンロード</h3>
+                    <ul>
+                        <li><a href="/security/docs/bibi-bookshelf/CyberSecurity.Ver.2.1.epub"><b>【最新版】『中小企業向けサイバーセキュリティ対策の極意』Ver.2.1（EPUB版:44.2MB）</b></a>
+                            <ul>
+                                <li>各種電子書籍ビューアおよび電子書籍端末で閲覧できるEPUB3.0形式のファイルです。</li>
+                                <li>ダウンロードして、各ビューアの所定のフォルダーに格納して閲覧してください。</li>
+                            </ul>
+                        </li>
+                        <li><a href="/security/docs/bibi-bookshelf/CyberSecurity.Ver.2.2.1.mobi">【最新版】『中小企業向けサイバーセキュリティ対策の極意』Ver.2.2.1（Kindle版:23.7MB）</a>
+                            <ul>
+                                <li>KindleビューアおよびKindle端末で閲覧できるmobi形式のファイルです。</li>
+                                <li>ダウンロードし、所定のフォルダーに格納して閲覧してください。</li>
+                            </ul>
+                        </li>
+                        <li>※電子書籍ビューアは、<a href="/security/guidebook/336/index.html">「【参考】EPUB形式の電子書籍ビューアの紹介」</a>のページを参考に選択してください。</li>
+                    </ul>
+                                    -->
+    <h2 class="c-heading3" id="Section2">冊子イメージ（PDF版）の閲覧・印刷</h2>
+    <ul>
+        <li class="c-linkList__item"><a href="/security/guidebook/369/index.html"><b
+                    color="blue">『中小企業向けサイバーセキュリティ対策の極意』Ver.2.2（PDF版）（2022.5.17更新）</b></a>
+            <ul>
+                <li>固定レイアウトで作成されており、PC、タブレットなど大きいディスプレイを備えた端末で読むことに適しています。</li>
+                <li>ダウンロードして、Adobe Acrobat Reader等のPDFビューアで閲覧すると、冊子のように見開きで閲覧できます。</li>
+            </ul>
+        </li>
+    </ul>
+    <!--
+                    <ul>
+                        <li class="p-ttlBtnList__item">全編一括ダウンロード</li>
+                        <ul>
+                            <li><a href="/security/docs/cybersecurity.V2_pack.pdf"><strong>『中小企業向けサイバーセキュリティ対策の極意』Ver.2.0【全体編】（PDF版:20.4MB）</strong></a>
+                                <ul>
+                                    <li>冊子としての利用をご希望の方は、PDF版を印刷してご利用ください。</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li class="p-ttlBtnList__item">各Mission毎のダウンロード</li>
+                        <ul>
+                            <li><a href="/security/docs/chapter00_v2.pdf">MISSION0 はじめに（PDF版:7.8MB）</a></li>
+                            <li><a href="/security/docs/chapter01_v2.pdf">MISSION1 知っておきたいサイバー攻撃の知識（PDF版:7.8MB）</a></li>
+                            <li><a href="/security/docs/chapter02_v2.pdf">MISSION2 すぐやろう！対サイバー攻撃アクション（PDF版:11.2MB）</a></li>
+                            <li><a href="/security/docs/chapter03_v2.pdf">MISSION3 経営者は事前に何を備えればよいのか？（PDF版:13.3MB）</a></li>
+                            <li><a href="/security/docs/chapter04_v2.pdf">MISSION4 もしもマニュアル（PDF版:3.9MB）</a></li>
+                            <li><a href="/security/docs/chapter05_v2.pdf">MISSION5 やってみよう！サイバー攻撃対策シミュレーション（PDF版:9.0MB）</a></li>
+                            <li><a href="/security/docs/chapter06_v2.pdf">MISSION6 インフォメーション（PDF版:5.5MB）</a></li>
+                        </ul>
+                    </ul>
+                -->
+    <h2 class="c-heading3" id="Section3">Webページの閲覧</h2>
+    <ul>
+        <li>EPUB版での更新を、順次、反映させていきます。</li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-0">はじめに</h3>
+    <ul>
+        <li><a href="/security/guidebook/374/index.html">ガイドブックの使い方</a>（Ver.2.1.1: 2021.12.13更新）</li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-0-1">クイックリスト</h3>
+    <ul>
+        <li class="coler-info"><b>被害に遭ったとき、状況に応じた的確な連絡先を知りたい</b>
+            <ul>
+                <li>⇒<b><a href="/security/guidebook/355/index.html">もしかしてサイバー攻撃？ 緊急時には、ここに連絡を！</a></b></li>
+            </ul>
+        </li>
+        <li class="coler-info"><b>被害に遭う前に、予防策を講じるためにはどんな支援があるか知りたい</b>
+            <ul>
+                <li>⇒<a href="/security/guidebook/356/index.html">やられる前に、しっかり予防を！ ここに相談！</a></li>
+            </ul>
+        </li>
+        <li class="coler-info"><b>被害に遭わないように、どんな手順でセキュリティ対策をしたらいいかを知りたい</b>
+            <ul>
+                <li>⇒<a href="/security/guidebook/372/index.html">経営者の理解のもと、組織としてセキュリティ対策をしっかりと！</a></li>
+            </ul>
+        </li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-1-0">MISSION0 ケーススタディー</h3>
+    <ul>
+        <li><a href="/security/guidebook/181/index.html">ケーススタディー１：なぜ、こんな小さな会社が狙われたの？</a></li>
+        <li><a href="/security/guidebook/182/index.html">ケーススタディー２：ある日突然、銀行口座の預金残高が消えた！</a></li>
+        <li><a href="/security/guidebook/183/index.html">ケーススタディー３：取引先企業への踏み台にされた</a></li>
+        <li><a href="/security/guidebook/322/index.html">ケーススタディー４：企業データが人質に！日常に潜むサイバー攻撃の魔手</a></li>
+        <li><a href="/security/guidebook/323/index.html">ケーススタディー５：メールで届いた入金指示に従ったら詐欺の被害者に！</a></li>
+        <li><a href="/security/guidebook/324/index.html">ケーススタディー６：セキュリティはサプライチェーン全体の責任</a></li>
+        <li><a href="/security/guidebook/325/index.html">ケーススタディー７：サイバー保険に入っていれば......</a></li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-1-1">MISSION1 知っておきたいサイバー攻撃の知識</h3>
+    <ul>
+        <li><a href="/security/guidebook/159/index.html">1-1：標的型攻撃による情報流出</a></li>
+        <li><a href="/security/guidebook/160/index.html">1-2：ランサムウェアを使った詐欺・恐喝</a></li>
+        <li><a href="/security/guidebook/161/index.html">1-3：Webサービスからの個人情報窃取</a></li>
+        <li><a href="/security/guidebook/162/index.html">1-4：集中アクセスによるサービス停止</a></li>
+        <li><a href="/security/guidebook/168/index.html">1-5：内部不正による情報漏えいと業務停止</a></li>
+        <li><a href="/security/guidebook/169/index.html">1-6：Webサイトの改ざん</a></li>
+        <li><a href="/security/guidebook/170/index.html">1-7：インターネットバンキングの不正送金</a></li>
+        <li><a href="/security/guidebook/171/index.html">1-8：悪意のあるスマホアプリ</a></li>
+        <li><a href="/security/guidebook/172/index.html">1-9：巧妙・悪質化するワンクリック詐欺</a></li>
+        <li><a href="/security/guidebook/173/index.html">1-10：Webサービスへの不正ログイン</a></li>
+        <li><a href="/security/guidebook/174/index.html">1-11：公開された脆弱性対策情報の悪用</a></li>
+        <li><a href="/security/guidebook/175/index.html">1-12：IoT機器を踏み台にした攻撃</a></li>
+        <li><a href="/security/guidebook/176/index.html">1-13：中小企業におけるサイバー攻撃被害の例</a></li>
+        <li><a href="/security/guidebook/319/index.html">1-14：なりすましECサイトの被害と回避策</a></li>
+        <li><a href="/security/guidebook/320/index.html">1-15：ビジネスメール詐欺（BEC）にご注意</a></li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-1-2">MISSION2 すぐやろう！対サイバー攻撃アクション</h3>
+    <ul>
+        <li><a href="/security/guidebook/185/index.html">2-1：サイバー攻撃に対して何ができるか</a></li>
+        <li><a href="/security/guidebook/186/index.html">2-2：OSとソフトウェアのアップデート</a></li>
+        <li><a href="/security/guidebook/187/index.html">2-3：ウイルス対策ソフト・機器の導入</a></li>
+        <li><a href="/security/guidebook/188/index.html">2-4：定期的なバックアップ</a></li>
+        <li><a href="/security/guidebook/189/index.html">2-5：パスワードの管理</a></li>
+        <li><a href="/security/guidebook/190/index.html">2-6：アクセス管理</a></li>
+        <li><a href="/security/guidebook/191/index.html">2-7：紛失や盗難による情報漏えい対策</a></li>
+        <li><a href="/security/guidebook/192/index.html">2-8：テレワーク等での持ち出し・持ち込み機器対策</a></li>
+        <li><a href="/security/guidebook/193/index.html">2-9：電子メールの安全利用</a></li>
+        <li><a href="/security/guidebook/194/index.html">2-10：標的型攻撃メールへの対応</a></li>
+        <li><a href="/security/guidebook/195/index.html">2-11：迷惑メール発信への対応</a></li>
+        <li><a href="/security/guidebook/196/index.html">2-12：安全なWebサイト利用</a></li>
+        <li><a href="/security/guidebook/197/index.html">2-13：閲覧制限</a></li>
+        <li><a href="/security/guidebook/198/index.html">2-14：重要情報の洗い出し</a></li>
+        <li><a href="/security/guidebook/199/index.html">2-15：重要情報の保管</a></li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-1-3">MISSION3 経営者は事前に何を備えればよいのか？</h3>
+    <ul>
+        <li><a href="/security/guidebook/201/index.html">3-1：サイバーセキュリティ対策が経営に与える重大な影響</a></li>
+        <li><a href="/security/guidebook/202/index.html">3-2：サイバー攻撃を受けると企業が被る不利益</a></li>
+        <li><a href="/security/guidebook/203/index.html">3-3：経営者に問われる責任</a></li>
+        <li><a href="/security/guidebook/204/index.html">3-4：投資効果（費用対効果）を認識する</a></li>
+        <li><a href="/security/guidebook/205/index.html">3-5：ITの活用診断</a></li>
+        <li><a href="/security/guidebook/206/index.html">3-6：サイバーセキュリティ投資診断</a></li>
+        <li><a href="/security/guidebook/207/index.html">3-7：情報セキュリティ対策診断</a></li>
+        <li><a href="/security/guidebook/208/index.html">3-8：業務の効率化、サービス維持のために</a></li>
+        <li><a href="/security/guidebook/209/index.html">3-9：経営者が意識すべきサイバーセキュリティ経営3原則</a></li>
+        <li><a href="/security/guidebook/210/index.html">3-10：経営者がやらなければならないサイバーセキュリティ経営の重要10項目</a></li>
+        <li><a href="/security/guidebook/211/index.html">3-11：次世代技術を活用したビジネス展開</a></li>
+        <li><a href="/security/guidebook/212/index.html">3-12：IoT、ビッグデータ、AI、ロボットの活用</a></li>
+        <li><a href="/security/guidebook/213/index.html">3-13：IoTが果たす役割と効果</a></li>
+        <li><a href="/security/guidebook/214/index.html">3-14：人工知能（AI）が果たす役割と効果</a></li>
+        <li><a href="/security/guidebook/215/index.html">3-15：IoTを活用する際のサイバーセキュリティ上の留意点</a></li>
+        <li><a href="/security/guidebook/216/index.html">3-16：IoTを活用するための基本ルール</a></li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-1-4">MISSION4 もしもマニュアル</h3>
+    <ul>
+        <li><a href="/security/guidebook/222/index.html">4-1：緊急事態応用マニュアルの作成</a></li>
+        <li><a href="/security/guidebook/223/index.html">4-2：基本事項の決定</a></li>
+        <li><a href="/security/guidebook/224/index.html">4-3：漏えい・流出発生時の対応</a></li>
+        <li><a href="/security/guidebook/225/index.html">4-4：改ざん・消失・破壊・サービス停止発生時の対応</a></li>
+        <li><a href="/security/guidebook/226/index.html">4-5：ウイルス感染時の初期対応</a></li>
+        <li><a href="/security/guidebook/227/index.html">4-6：届け出および相談</a></li>
+        <li><a href="/security/guidebook/228/index.html">4-7：大規模災害などによる事業中断と事業継続管理</a>
+            <ul>
+                <li><a href="/security/guidebook/349/index.html">4.7
+                        App.01：IT-BCPの必要性と策定・運用のポイント</a>（Ver.2.08:2021.10.8更新）</li>
+            </ul>
+        </li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-1-5">MISSION5 やってみよう！サイバー攻撃対策シミュレーション</h3>
+    <ul>
+        <li><a href="/security/guidebook/229/index.html">5-1：サイバー攻撃前夜</a></li>
+        <li><a href="/security/guidebook/230/index.html">5-2：攻撃発生その瞬間</a></li>
+        <li><a href="/security/guidebook/231/index.html">5-3：サイバー攻撃直後</a></li>
+        <li><a href="/security/guidebook/232/index.html">5-4：潜入拡大</a></li>
+        <li><a href="/security/guidebook/233/index.html">5-5：顧客への被害拡大 取引先への被害拡大</a></li>
+        <li><a href="/security/guidebook/234/index.html">5-6：サイバー攻撃の発覚</a></li>
+        <li><a href="/security/guidebook/235/index.html">5-7：原因が判明 ウイルス感染が原因</a></li>
+        <li><a href="/security/guidebook/236/index.html">5-8：再発防止策の作成</a></li>
+        <li><a href="/security/guidebook/237/index.html">5-9：復旧回復</a></li>
+        <li><a href="/security/guidebook/321/index.html">5-10：大切なのは社内意識の向上！～感染を狙うメールに注意～</a></li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-1-6">MISSION6 インフォメーション</h3>
+    <ul>
+        <li><a href="/security/guidebook/239/index.html">6-1：もしかしてサイバー攻撃？ここに連絡を！</a>
+            <ul>
+                <li><a href="/security/guidebook/355/index.html">6-1 App.01：もしかしてサイバー攻撃？
+                        緊急時には、ここに連絡を！【クイックリスト】【詳細版】</a>（Ver.2.1.3: 2022.1.14更新）</li>
+                <li><a href="/security/guidebook/405/index.html">【特設ページ】Emotet関連の問い合わせの急増について</a>（Ver.2.1.5:
+                    2022.3.17更新）</li>
+            </ul>
+        </li>
+        <li><a href="/security/guidebook/240/index.html">6-2：その他の主な報告・連絡・相談窓口等</a>
+            <ul>
+                <li><a href="/security/guidebook/356/index.html">6-2 App.01：やられる前に、しっかり予防を！ ここに相談！【詳細版】</a>（Ver.2.1.4:
+                    2022.2.2更新）</li>
+                <li><a href="/security/guidebook/372/index.html">6-2
+                        App.02：経営者の理解のもと、組織としてセキュリティ対策をしっかりと！</a>（Ver.2.1.1: 2021.11.9更新）</li>
+            </ul>
+        </li>
+        <li><a href="/security/guidebook/331/index.html">6-3：セキュリティお役立リンク</a>
+            <ul>
+                <li><a href="/security/guidebook/341/index.html">6-3_App.01：セキュリティお役立ちリンク【詳細編】</a>（Ver.2.1:
+                    2021.10.15更新）</li>
+            </ul>
+        </li>
+        <li><a href="/security/guidebook/326/index.html">6-4：中小企業の情報セキュリティ対策の段階的レベルアップ</a> （Ver.2.03: 2021.8.13更新）
+            <ul>
+                <li><a href="/security/guidebook/339/index.html">6-4 App.02：情報資産台帳の作成と詳細リスク分析</a>（Ver.2.08: 2021.10.8更新）
+                </li>
+                <li><a href="/security/guidebook/337/index.html">6-4 App.03：情報セキュリティ関連規程に記載すべき項目</a>（Ver.2.08:
+                    2021.10.8更新）</li>
+            </ul>
+        </li>
+        <li><a href="/security/guidebook/327/index.html">6-5：中小企業のためのクラウドサービス安全利用手引き</a></li>
+        <li><a href="/security/guidebook/328/index.html">6-6：DX時代に不可欠な人材の確保</a> （Ver.2.05:2021.9.3更新）
+            <ul>
+                <li><a href="/security/guidebook/351/index.html">6-6 App.01：DX時代での経営者の意識改革の方向性</a> （Ver.2.05:
+                    2021.9.3更新）</li>
+                <li><a href="/security/guidebook/344/index.html">6-6 App.02：DX時代に不可欠な人材の確保と育成</a> （Ver.2.05: 2021.9.3更新）
+                </li>
+                <li><a href="/security/guidebook/343/index.html">6-6_App.04：デジタルリテラシーに「プラス・セキュリティ」</a> （Ver.2.05:
+                    2021.9.3更新）</li>
+                <li><a href="/security/guidebook/402/index.html">6-6_App.05：【コラム】「東京都デジタル人材確保・育成基本方針」</a> （Ver.2.1.4:
+                    2022.2.17更新）</li>
+            </ul>
+        </li>
+        <li><a href="/security/guidebook/329/index.html">6-7：情報セキュリティ関連法令</a></li>
+        <li><a href="/security/guidebook/330/index.html">6-8：情報管理が不適切な場合の処罰など</a></li>
+        <li>6-10：サプライチェーン関連
+            <ul>
+                <li><a href="/security/guidebook/345/index.html">6-10_App.01：ICTサプライチェーンとは</a> （Ver.2.1: 2021.10.15更新）
+                </li>
+                <li><a href="/security/guidebook/346/index.html">6-10_App.02：テレワークにおけるクラウド利用とセキュリティ</a> （Ver.2.1:
+                    2021.10.15更新）</li>
+                <li><a href="/security/guidebook/350/index.html">6-10_App.03：ゼロトラストセキュリティ</a> （Ver.2.1: 2021.10.15更新）
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3 class="c-heading4" id="Section3-1-9">おわりに</h3>
+    <ul>
+        <li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/357/index.html">参考文献</a> （Ver.2.1:
+            2021.10.15更新）</li>
+        <li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/361/index.html">改訂履歴</a> （Ver.2.1:
+            2021.10.15更新）</li>
+    </ul>
+    <h3 class="c-heading4" id="other">追補情報・参考情報</h3>
+    <p>冊子のガイドブックには掲載されていませんが、参考となる情報、より詳細な情報等を、追補情報として掲載しています。</p>
+    <ul>
+        <li>Mission 2-5
+            <ul>
+                <li><a href="/security/guidebook/269/index.html">S.01 メールアドレス・パスワードの流出チェック</a></li>
+            </ul>
+        </li>
+        <li>Mission 2-6
+            <ul>
+                <li><a href="/security/guidebook/276/index.html">S.02 公衆無線LANの安全な利用（偽アクセスポイント）</a></li>
+            </ul>
+        </li>
+        <li>Mission 2-12
+            <ul>
+                <li><a href="/security/guidebook/286/index.html">S.03 独自ドメインを取得・使用している際に注意したいこと</a></li>
+            </ul>
+        </li>
+        <li>Mission 3-16
+            <ul>
+                <li><a href="/security/guidebook/271/index.html">S.04 IoT機器のIDとパスワード 初期値は危険</a></li>
+            </ul>
+        </li>
+        <li>Mission 4-7
+            <ul>
+                <li><a href="/security/guidebook/349/index.html">4.7 App.01 IT-BCPの必要性と策定・運用のポイント</a></li>
+            </ul>
+        </li>
+        <li>Mission 6-1
+            <ul>
+                <li><a href="/security/guidebook/355/index.html">6-1 App.01 もしかしてサイバー攻撃？ 緊急時には、ここに連絡を！【詳細版】</a></li>
+                <li><a href="/security/guidebook/405/index.html">【特設ページ】Emotet関連の問い合わせの急増について</a></li>
+            </ul>
+        </li>
+        <li>Mission 6-2
+            <ul>
+                <li><a href="/security/guidebook/356/index.html">6-2 App.01 やられる前に、しっかり予防を！ ここに相談！【詳細版】</a></li>
+                <li><a href="/security/guidebook/372/index.html">6-2 App.02 経営者の理解のもと、組織としてセキュリティ対策をしっかりと！</a></li>
+            </ul>
+        </li>
+        <li>Mission 6-3
+            <ul>
+                <li><a href="/security/guidebook/341/index.html">6-3_App.01 セキュリティお役立ちリンク【詳細編】</a></li>
+            </ul>
+        </li>
+        <li>Mission 6-4
+            <ul>
+                <li><a href="/security/guidebook/339/index.html">6-4 App.02 情報資産台帳の作成と詳細リスク分析</a></li>
+                <li><a href="/security/guidebook/337/index.html">6-4 App.03 情報セキュリティ関連規程に記載すべき項目</a></li>
+            </ul>
+        </li>
+        <li>Mission 6-6
+            <ul>
+                <li><a href="/security/guidebook/328/index.html">Mission 6-6 DX時代に不可欠な人材の確保</a></li>
+                <li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/351/index.html">6-6 App.01
+                        DX時代での経営者の意識改革の方向性 </a></li>
+                <li><a href="https://cybersecurity.metro.tokyo.lg.jp/security/guidebook/344/index.html">6-6 App.02
+                        DX時代に不可欠な人材の確保と育成</a></li>
+                <li><a href="/security/guidebook/343/index.html">6-6_App.04 デジタルリテラシーに「プラス・セキュリティ」</a></li>
+            </ul>
+        </li>
+    </ul>
+    <hr>
+    <h2 class="c-heading3" id="KnowLedge">セキュリティ関連知識の保管庫（ナレッジベース2023）</h2>
+    <p>冊子のガイドブックには掲載されていませんが、相談対応業務のために要約した次世代IT技術、サイバーセキュリティ対策に関連した知識を随時掲載しています。</p>
+    <ul>
+        <li class="c-linkList__item"><a href="/security/KnowLedge/">セキュリティ関連知識の保管庫（ナレッジベース2023）</a></li>
+    </ul>
+    <hr>
+    <h2 class="c-heading3" id="Section4">備考</h2>
+    <h3 class="c-heading4">ガイドブックの更新情報等</h3>
+    <ul>
+        <li>2023年7月24日　Ver.2.2.8 EPUB版を改訂しました。</li>
+        <li>2023年5月8日　Ver.2.2.7 EPUB版を改訂しました。</li>
+        <li>2023年3月20日　Ver.2.2.6 EPUB版を改訂しました。</li>
+        <li>2023年3月2日　Ver.2.2.5 EPUB版を改訂しました。</li>
+        <li>2023年1月4日　Ver.2.2.4 EPUB版を改訂しました。</li>
+        <li>2022年8月22日　Ver.2.2.2 EPUB版を改訂しました。</li>
+        <li>2022年6月30日　Ver.2.2.1 EPUB版を改訂しました。</li>
+        <li>2022年5月17日　Ver.2.2.1 EPUB版を改訂しました。</li>
+        <li>2022年3月17日　Ver.2.1.5 EPUB版を改訂しました。</li>
+        <li>2022年2月17日　Ver.2.1.4 EPUB版を改訂しました。</li>
+        <li>2022年2月3日　Ver.2.1.4 EPUB版を公開しました。</li>
+        <li>2022年1月7日　Ver.2.1.3 EPUB版を公開しました。</li>
+        <li>2021年12月2日　Ver.2.1.2 EPUB版を公開しました。</li>
+        <li>2021年11月9日　Ver.2.1.1 EPUB版を公開しました。</li>
+        <li>2021年10月15日　Ver.2.1 EPUB版を公開しました。</li>
+        <li>2021年9月3日　Ver.2.05 WEB版を試験公開しました。</li>
+        <li>2021年8月6日　Ver.2.0 EPUB版を公開しました。</li>
+        <li>2021年3月26日　Ver.2.0 PDF版、WEB版を公開しました。</li>
+    </ul>
+    <h3 class="c-heading4">ガイドブックの利用について</h3>
+    <p>このガイドブックは、東京都が著作権を保有しておりますが、利用に際しては、非営利目的、サイバーセキュリティ対策の普及・啓発目的であれば、事前の申請等は必要ありません。</p>
+    <p>全体を利用されるのであればそのままご利用いただけます。また、一部分の「引用・参考・参照・転載」であれば、出典元を明記して頂ければご利用いただけます。</p>
+    <p>なお、冊子の発行は未定ですので、電子版を有効にご活用ください。</p>
+    <h4 class="c-heading5">★ガイドブックのライセンス</h4>
+    <p></p>
+    <img alt="BY-NC-SA" src="/security/images/BY-NC-SA.png">
+    <p>このガイドブックは、利用の条件として、クリエイティブコモンズライセンス 「表示-非営利-継承4.0国際（CC BY-NC-SA 4.0）」を適用しています。</p>
+    <ul>
+        <li>※「表示-非営利-継承4.0国際（CC BY-NC-SA 4.0）」とは、
+            <ul>原作者のクレジット（氏名、作品タイトルなど）を表示し、かつ非営利目的に限り、また改変を行った際には元の作品と同じ組み合わせのCCライセンスで公開することを主な条件に、改変したり再配布したりすることができるCCライセンスです。
+            </ul>
+        </li>
+    </ul>
+    <dl class="p-lineMarker">
+        <dt class="p-lineMarker__ttl">他の形式へのリンク</dt>
+        <dd class="p-lineMarker__body">
+            <ul>
+                <li class="c-linkList__item">⇒ <a
+                        href="/security/guidebook/index.html">ガイドブック『中小企業向けサイバーセキュリティ対策の極意』</a>
+                    <ul>
+                        <li class="c-linkList__item">⇒ <a
+                                href="/security/guidebook/368/index.html"><strong>電子書籍（EPUB版）の閲覧</strong></a></li>
+                        <li class="c-linkList__item">⇒ <a
+                                href="/security/guidebook/369/index.html"><strong>冊子イメージ（PDF版）の閲覧・印刷</strong></a></li>
+                        <li class="c-linkList__item">⇒ <a
+                                href="/security/guidebook/index.html"><strong>Webページの閲覧</strong></a></li>
+                    </ul>
+                </li>
+                <li class="c-linkList__item">⇒ <a href="/security/KnowLedge/">セキュリティ関連知識の保管庫（ナレッジベース）（Web版）</a></li>
+                <li class="c-linkList__item">⇒ <a
+                        href="https://cybersecurity.metro.tokyo.lg.jp/">『中小企業向けサイバーセキュリティ対策の極意』ポータルサイト</a></li>
+            </ul>
+        </dd>
+    </dl>
+</div>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

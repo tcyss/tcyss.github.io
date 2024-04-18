@@ -1,0 +1,60 @@
+<section class="p-topContents__bottom">
+          <div class="p-pickup">
+            <div class="p-pickup__body">
+              <h2 class="p-sectionTtl"><img src="/images/section_ttl_pickup__pc.png" width="182" height="53" alt="PICK UP" /></h2>
+			  <div class="p-pickupContent">
+              <div class="p-pickupContent">
+                <div class="p-pickupContent__item">
+                  <a class="p-pickupCard" href="/security/cyberthreat/398/index.html">
+                    <p class="p-pickupCard__date">2022.02.10</p>
+                    <p class="p-pickupCard__ttl">【IPA】情報セキュリティ10大脅威 2022について</p>
+                    <p class="p-pickupCard__txt">【IPA】情報セキュリティ10大脅威 2022に関するページです。</p>
+                    <p class="p-pickupCard__more"><span>詳細をチェック</span></p>
+                  </a>
+                </div>
+                <div class="p-pickupContent__item">
+                  <a class="p-pickupCard" href="/security/cyberthreat/395/index.html">
+                    <p class="p-pickupCard__date">2022.02.01</p>
+                    <p class="p-pickupCard__ttl">【JPCERT/CC】「モバイル端末を狙うマルウェアへの対応FAQ」について</p>
+                    <p class="p-pickupCard__txt">JPCERT/CCからの「モバイル端末を狙うマルウェアへの対応FAQ」に関するページです。</p>
+                    <p class="p-pickupCard__more"><span>詳細をチェック</span></p>
+                  </a>
+                </div>
+                <div class="p-pickupContent__item">
+                  <a class="p-pickupCard" href="/security/cyberthreat/390/index.html">
+                    <p class="p-pickupCard__date">2022.01.25</p>
+                    <p class="p-pickupCard__ttl">【JPCERT/CC】「侵入型ランサムウェア攻撃を受けたら読むFAQ」について</p>
+                    <p class="p-pickupCard__txt">JPCERT/CCからの「侵入型ランサムウェア攻撃を受けたら読むFAQ」に関するページです。</p>
+                    <p class="p-pickupCard__more"><span>詳細をチェック</span></p>
+                  </a>
+                </div>
+                <div class="p-pickupContent__item">
+                  <a class="p-pickupCard" href="/security/cyberthreat/379/index.html">
+                    <p class="p-pickupCard__date">2021.12.20</p>
+                    <p class="p-pickupCard__ttl">CentOS 8のサポート期間終了に関する注意喚起について</p>
+                    <p class="p-pickupCard__txt">2021年12月31日にサポート終了を迎えるCentOS 8のサポート期間終了に関する注意喚起に関するページです。</p>
+                    <p class="p-pickupCard__more"><span>詳細をチェック</span></p>
+                  </a>
+                </div>
+                <div class="p-pickupContent__item">
+                  <a class="p-pickupCard" href="/torikumi/370/">
+                    <p class="p-pickupCard__date">2021.11.02</p>
+                    <p class="p-pickupCard__ttl">(令和２年度）中小企業サイバーセキュリティ向上支援事業の実施結果の報告</p>
+                    <p class="p-pickupCard__txt">令和２年度に実施した「中小企業サイバーセキュリティ向上支援事業」の実施結果の報告に関するページです。</p>
+                    <p class="p-pickupCard__more"><span>詳細をチェック</span></p>
+                  </a>
+                </div>
+                <div class="p-pickupContent__item">
+                  <a class="p-pickupCard" href="/security/guidebook/361/index.html">
+                    <p class="p-pickupCard__date">2021.10.15</p>
+                    <p class="p-pickupCard__ttl">ガイドブック『中小企業向けサイバーセキュリティ対策の極意』の電子書籍（EPUB版）をVer.2.1版に改訂し公開</p>
+                    <p class="p-pickupCard__txt">ICT関連、サイバーセキュリティ関連の最新情報、詳細情報を反映して、EPUB版をVer.2.1に改訂しました。引き続き、順次、更新しています。</p>
+                    <p class="p-pickupCard__more"><span>詳細をチェック</span></p>
+                  </a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </section>

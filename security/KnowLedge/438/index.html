@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <title>「安定したクラウドサービスの実現に向けて（概要）～ISO/IEC20000の活用～」の要約</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!-- IEの互換表示防止 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="/styles/style.css" media="all" />
+  <link href="/images/favicon.ico" rel="icon" type="image/vnd.microsoft.icon" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TFGK2T8');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFGK2T8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <p><a id="reader-pagetop" tabindex="-1">ページの先頭です</a></p>
+  </div>
+  <!-- [ Reader End ] -->
+  <!-- [ Reader Start ] -->
+  <div class="pageReader">
+    <dl>
+      <dt>ページ内を移動するためのリンク</dt>
+      <dd><a href="#reader-content" accesskey="c" tabindex="-1">本文(c)へ</a></dd>
+    </dl>
+  </div>
+  <!-- [ Reader End ] -->
+  <div id="base" class="l-base">
+    <header id="header" class="l-header">
+      <div class="l-header__body">
+        <div class="l-header__body__top">
+          <p class="p-logo">
+            <a href="http://www.sangyo-rodo.metro.tokyo.jp/" target="_blank"><img src="/images/logo_sanrou.png"
+                width="190" height="24" alt="東京都産業労働局" /></a>
+          </p>
+          <ul class="c-headerList">
+            <li class="c-headerList__item"><a href="/sitemap/" class="c-headerList__link">サイトマップ</a></li>
+            <li class="c-headerList__item"><a href="http://www.metro.tokyo.jp/" class="c-headerList__link"
+                target="_blank">都庁総合トップページ</a></li>
+            <li class="c-headerList__item">
+            <form method="get" action=https://search.metro.tokyo.lg.jp/ target="_blank">
+        <div>
+            <input type="hidden" name="ie" value="u" />
+        </div>
+        <div class="searchbox">
+            <label for="query"></label>
+            <input type="text" title="サイト内検索" name="kw" class="h0box" size="20" maxlength="256" id="searchword" value="" />
+            <input type="submit" name="btnG" class="h0bt02" value="検索" />
+        </div>
+        <input type="hidden" name="num" value="10">
+        <input type="hidden" name="sitesearch" value="cybersecurity.metro.tokyo.lg.jp">
+        <input type="hidden" name="filetype" value="">
+        <input type="hidden" name="start_dt" value="">
+        <input type="hidden" name="end_dt" value="">
+        <input type="hidden" name="ord" value="">
+        <input type="hidden" name="category_serialized" value="">
+        <input type="hidden" name="temp" value="">
+</form></li>
+            <li class="c-headerList__item c-headerList__item--banner"><a href="/security/guidebook/"
+                class="c-headerList__link"><img src="/images/header_banner.png" width="241" height="48"
+                  alt="ガイドブックはこちら" /></a></li>
+          </ul>
+        </div>
+        <!-- /.l-header__top -->
+        <div class="l-header__body__bottom">
+          <nav id="navGlobal" class="c-navGlobal">
+            <div class="c-navGlobal__body">
+              <div class="c-listGnav">
+                <div class="c-listGnav__item c-listGnav__item--logo"><a href="/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body"><img src="/images/gnav_logo.png" width="142" height="64"
+                        alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></span></a></div>
+                <div class="c-listGnav__item"><a href="/security/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティの部屋</span></a></div>
+                <div class="c-listGnav__item"><a href="/column/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">セキュリティコラム</span></a></div>
+                <div class="c-listGnav__item"><a href="/ghost/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">サイバーゴースト</span></a></div>
+                <div class="c-listGnav__item"><a href="/support/" class="c-listGnav__link"><span
+                      class="c-listGnav__link__body">相談窓口</span></a></div>
+              </div>
+              <!-- /.listGnav -->
+            </div>
+            <!-- /.c-navGlobal -->
+          </nav>
+        </div>
+        <!-- /.l-header__bottom -->
+      </div>
+      <div class="l-header__sp">
+        <p class="p-logo--sp">
+          <a href="/"><img src="/images/logo_sp.png" width="202" height="39" alt="中小企業向けサイバーセキュリティ対策の極意 ポータルサイト" /></a>
+        </p>
+        <div class="c-navToggle">
+          <button class="c-navToggle__btn">
+            <span>メニュー</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- /#header -->
+    <div id="main" class="l-main">
+<div class="p-categoryHeading--lv3 catSecurity">
+      <h1><img src="/images/h1_security.png" alt="セキュリティの部屋" /></h1>
+    </div>
+      <!-- /.category-heading -->
+<div id="breadCrumb" class="c-breadCrumb">
+        <div class="c-breadCrumb__body">
+          <ol class="c-listBreadCrumb" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <li class="c-listBreadCrumb__item">
+              <a href="/" class="c-listBreadCrumb__item__link" itemprop="url"><span itemprop="title">TOP</span></a>
+            </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">セキュリティの部屋</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <a href="/security/KnowLedge/" class="c-listBreadCrumb__item__link" itemprop="url"><span
+                    itemprop="title">ナレッジベース</span></a>
+              </li>
+              <li class="c-listBreadCrumb__item">
+                <span itemprop="title">「安定したクラウドサービスの実現に向けて（概要）～ISO/IEC20000の活用～」の要約</span>
+              </li>
+          </ol>
+        </div>
+        <!-- /.c-breadCrumb__body -->
+      </div>
+      <!-- /.c-breadCrumb -->
+      <div class="l-main__middle">
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-content" tabindex="-1">ここから本文です。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+        <div class="l-main__middle__body">
+<article class="p-article">
+            <div class="p-article__head">
+              <h2 class="h2Balloon"><span class="h2Balloon__body">「安定したクラウドサービスの実現に向けて（概要）～ISO/IEC20000の活用～」の要約</span></h2>
+              <div class="p-article__head__date">
+                <time datetime="2022.08.19">2022.08.19</time>
+              </div>
+            </div>
+            <div class="p-article__body">
+<h3>この概要資料の趣旨</h3>
+<h4>目的</h4>
+<p>中小企業においてもクラウドサービスの利用が普及しつつある状況において、安定したクラウドサービス実現されていることが求められている。</p>
+<p>中小企業が、外部サービスであるクラウドサービスを選定・利用するにあっては、クラウドサービスがどのようにして「可用性」を高め、事業継続性を維持しようとしているかについて把握しておくことは重要です。</p>
+<p>ここでは、資料のポイントを提示します。具体的な内容は、下記の原本資料を参照してください。</p>
+<h4>原本（参照元）</h4>
+<p><a href="https://isms.jp/itsms.html">「安定したクラウドサービスの実現に向けて（概要）～ISO／IEC20000の活用～」</a>（2022年8月10日 一般財団法人日本情報経済社会推進協会（JIPDEC））</p>
+<h3>概要</h3>
+<p>クラウドサービスの急速な普及とともに、昨今ではクラウドサービスの停止によって社会公共インフラに多大な影響を与えるような障害も生じており、クラウドサービスを利用する上での懸念事項となっています。</p>
+<p>そこで、JIPDECは、この「サービスの停止」、つまりクラウドサービスの提供と利用にかかる「可用性」に関する課題に焦点をあてた具体的な障害事例に対して、ITサービスの国際規格であるISO/IEC 20000を用いてそのようなトラブルを防止する方法を紹介することを目的に本書を発行いたしました。ISO/IEC 20000-1:2018を参考に、どのようにサービスの可用性を高め、事業継続性を維持するのか等について解説されています。</p>
+<p>ISO/IEC 20000は、ITサービスの品質向上のための仕組みを定めた国際規格であり、サービスのセキュリティ、可用性はもとより、安定した運用の強化に役立つ様々な手法が記載されており、クラウドサービスの効果的かつ安全な運用に役立つものです。クラウドサービスとISO/IEC 20000の関連を理解いただくとともに、ISO/IEC 20000を活用して安全で安定したクラウドサービスの構築、運用の参考になることが期待されます。</p>
+<h3>ポイント</h3>
+<h4>◇ISO/IEC 20000とは</h4>
+<p>現在、多くの企業が、競争力維持・強化のために、DXに取り組んでいますが、課題として、次があげられます。</p>
+<p>（1）DXによりビジネスをどう変えるかといった経営戦略の決定</p>
+<p>（2）「2025年の壁」と呼ばれる、既存システムの老朽化・複雑化・ブラックボックス化</p>
+<p>また、これらの課題を克服しようと、新しいデジタル技術やクラウドサービスを運用又は活用し、効率的かつ高可用性の維持のためにIT投資にリソースを振り向けるように取り組んでいます。その矢先に、昨今のクラウドサービスにおけるミッションクリティカルシステムの可用性に関する障害の事例は、相当なインパクトを各企業に与えたと考えられます。</p>
+<h4>◇サービスマネジメントシステム（SMS Service Management System）の導入</h4>
+<p>特に、DXを目指す企業にとっては、顧客からのサービスの要求事項に対してサービスを通じて価値を提供する仕組みであるSMSを、経営戦略の方向性に沿って迅速に導入し、DX活動の推進のためのエンジンとして機能させることが重要です。</p>
+<p>ISO/IEC 20000-1:2018（サービスマネジメントシステム要求事項）は、SMSの導入に役立つ国際規格として、広くグローバルに認知されており、サービス可用性管理を含む、サービス品質の運用・向上に必要な事項が記載されています。そのため、国際的に展開する多くのクラウドサービス事業者にとって、包括的にこれらの課題を解決するのに役立ちます。</p>
+<p>また、2020年11月より経済産業省が設けたDX認定制度において、認定を受けるのに必要である次の申請項目を満たすために、この規格を参照することが役立ちます。</p>
+<p>（1）企業経営の方向性及び情報処理技術の活用の方向性の決定</p>
+<p>（2）企業経営及び情報処理技術の活用の具体的な方策（戦略）の決定、等</p>
+<h4>◇ISO/IEC 20000-1:2018の要求事項</h4>
+<p>サービスマネジメントシステム（SMS）の箇条</p>
+<ul>
+<li>組織の状況</li>
+<li>リーダシップ</li>
+<li>計画</li>
+<li>SMSの支援</li>
+<li>SMSの運用
+<ul>
+<li>運用の計画及び管理</li>
+<li>サービスポートフォリオ</li>
+<li>関係及び合意</li>
+<li>供給および需要</li>
+<li>サービスの設計、構築及び移行</li>
+<li>解決及び実現</li>
+<li>サービス保証</li>
+</ul></li>
+<li>パフォーマンス</li>
+<li>改善</li>
+</ul>
+<h4>◇解説</h4>
+この規格は、SMS全体にかかる「計画、SMSの運用、パフォーマンス評価、改善」といったPDCAと称されるマネジメントシステムの導入について必要な個々のプロセスについて要求するものです。
+本書では、クラウドサービス提供における高可用性の実現を課題として取り上げていますが、これらの課題に対しては、「8.7 サービス保証」の「8.7.1 サービス可用性管理」、「8.7.2 サービス継続管理」のプロセスとサービスの高可用性を阻害する問題やインシデントを解決するためのプロセス「8.6 解決及び実現」のプロセスを組み合わせて、適用することが重要と考えます。
+第3章以降では、サービスの可用性管理、継続性管理の意義や重要性について解説し、4章において、3章で示したISO/IEC 20000-1:2018の「8.7 サービス保証」と密接な関係のある「8.6 解決及び実現」の各プロセスとの連携（プロセス間の連携）について解説します。また、5章では、これらのプロセスを実装し、サービス提供を効率的に展開している事例を紹介しています。
+<h3>原本目次</h3>
+<ul>
+<li>はじめに</li>
+<li>１IaaSに見るクラウドサービスの可用性と障害事例
+<ul>
+<li>1.1 クラウドサービス（IaaS）の可用性</li>
+<li>1.2 可用性の障害事例</li>
+<li>コラム：クラウドサービスの利用における留意点～提供者と利用者の責任範囲～</li>
+</ul></li>
+<li>２トラブルを防止するためのISO/IEC 20000の適用
+<ul>
+<li>2.1 ISO/IEC 20000とは
+<ul>
+<li>サービスマネジメントシステム（SMS：Service Management System）の導入</li>
+<li>SMS導入のメリット</li>
+</ul></li>
+<li>コラム：DX認定制度</li>
+</ul></li>
+<li>３サービス可用性管理、サービス継続管理の重要性
+<ul>
+<li>3.1 サービス可用性管理</li>
+<li>3.2 サービス継続管理</li>
+<li>3.3 クラウドサービス（IaaS）の提供におけるサービス可用性管理とサービス継続管理</li>
+</ul></li>
+<li>４サービス可用性、サービス継続を支える活動　インシデント管理、問題管理
+<ul>
+<li>4.1 インシデント管理とは</li>
+<li>4.2 問題管理とは</li>
+<li>4.3 サービス可用性管理とインシデント管理及び問題管理</li>
+<li>4.4 サービス継続管理とインシデント管理及び問題管理</li>
+</ul></li>
+<li>５実践事例と導入効果の紹介　株式会社TKC
+<ul>
+<li>5.1 会社説明、サービス説明</li>
+<li>5.2 SMS導入の目的（期待していた効果）</li>
+<li>5.3 実際に得られた成果（全般）</li>
+<li>5.4 実際にSMSを導入、運用してみた感想（クラウドサービスとの親和性）</li>
+<li>5.5 SMSをクラウドサービスへ適用するためのポイント
+<ul>
+<li>（1） 適用組織の決定</li>
+<li>（2）各プロセス管理の役割と目標設定</li>
+</ul></li>
+</ul></li>
+<li>６サービスの信頼性を示すには　ITSMS適合評価制度
+<ul>
+<li>コラム：認定機関がITSMS認証機関を認定する意義</li>
+</ul></li>
+<li>おわりに</li>
+<li>付録　１章における架空の障害事例（P社）の技術背景
+<ul>
+<li>クラウドサービス（IaaS）の可用性</li>
+<li>クラウドサービス（IaaS）の障害事例</li>
+<li>コラム：ストレージサブシステム、RAID、ファームウェア</li>
+</ul></li>
+</ul>
+<h4>&lt;引用元></h4>
+<p>「安定したクラウドサービスの実現に向けて～ISO/IEC 20000の活用」
+<a href="https://isms.jp/itsms.html">https://isms.jp/itsms.html</a>
+一般財団法人日本情報経済社会推進協会（JIPDEC）情報マネジメントシステム認定センター
+2022年8月10日</p>
+            </div>
+          </article>
+        </div>
+        <!-- /.l-main__middle__body -->
+        <!-- [ Reader Start ] -->
+        <div class="pageReader">
+          <p><a id="reader-contentEnd" tabindex="-1">本文ここまでです。</a></p>
+        </div>
+        <!-- [ Reader End ] -->
+      </div>
+      <!-- /.main__middle -->
+</div>
+    <!-- /#main -->
+<?php
+require_once $_SERVER['DOCUMENT_ROOT']. '/include/footer_slider.inc';
+?>
+    <div class="c-returnTop js-return">
+      <p class="c-returnTop__body">
+        <a href="#reader-pagetop" class="c-returnTop__body__link">ページトップへ</a>
+      </p>
+    </div>
+    <!-- /.returnTop -->
+    <footer id="footer" class="l-footer">
+      <div class="l-footer__body">
+        <ul class="c-footer__list">
+          <li class="c-footer__list__item"><a href="/sitepolicy/" class="c-footer__list__item__link">サイトポリシー</a></li>
+          <li class="c-footer__list__item"><a href="/sitepolicy/#inquiry" class="c-footer__list__item__link">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <p class="c-copyright">Copyright &copy; 2018 Bureau of Industrial and Labor Affairs, Tokyo Metropolitan
+        Government. All Rights Reserved.</p>
+    </footer>
+  </div>
+  <!-- /#l-base -->
+  <!-- javascript -->
+  <script src="/script/vendor.js"></script>
+  <script src="/script/main.js"></script>
+</body>
+</html>

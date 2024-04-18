@@ -1,7 +1,22 @@
+# for prage
+#AuthType Digest
+#AuthName "SecretZone"
+#AuthUserFile /var/sites/site2CS0T001/acl/.htpasswd
+#Require valid-user
+
+# before
 #AuthType Basic
 #AuthName "Secret Zone"
-#AuthUserFile "c:/var/www/acl/cybersecurity-tokyo/.htpasswd"
+#AuthUserFile /var/sites/site2CS0T001/acl/.htpasswd
 #AuthGroupFile /dev/null
 #Require valid-user
 
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cybersecurity\.metro\.tokyo\.lg\.jp$
+RewriteRule ^(.*)$ https://www.cybersecurity.metro.tokyo.lg.jp/$1 [R=301,L]
+</IfModule>
+
 Redirect /topics/73/ /security/cyberthreat/73/
+
+Header set X-Content-Type-Options nosniff
